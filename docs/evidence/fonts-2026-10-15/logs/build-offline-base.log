@@ -1,0 +1,41 @@
+
+> on-it-workspace@0.1.0 prebuild
+> node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+
+assets:sync OK — 256 assets, 44 clients indexed; wrote assets.generated.ts + assets-index.json.
+design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+
+> on-it-workspace@0.1.0 build
+> next build
+
+▲ Next.js 16.2.10 (Turbopack)
+- Experiments (use with caution):
+  · clientTraceMetadata
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+[next]/internal/font/google/manrope_7d0f6077.module.css
+next/font: error:
+Failed to fetch `Manrope` from Google Fonts.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/manrope_7d0f6077.module.css
+    [next]/internal/font/google/manrope_7d0f6077.js
+    ./src/app/design-system/layout.tsx
+
+
+[next]/internal/font/google/noto_serif_display_205e940d.module.css
+next/font: error:
+Failed to fetch `Noto Serif Display` from Google Fonts.
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/noto_serif_display_205e940d.module.css
+    [next]/internal/font/google/noto_serif_display_205e940d.js
+    ./src/app/design-system/layout.tsx
+
+

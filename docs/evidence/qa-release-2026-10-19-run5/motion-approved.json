@@ -1,0 +1,90 @@
+{
+  "base": "https://www.zitrone.mx",
+  "date": "2026-10-19T21:25:11.449Z",
+  "results": [
+    {
+      "locale": "es",
+      "width": 1440,
+      "moves": true,
+      "brokenImages": [],
+      "fonts": [
+        true,
+        true
+      ],
+      "focusVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "movesReduced": false
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "moves": true,
+      "brokenImages": [],
+      "fonts": [
+        true,
+        true
+      ],
+      "focusVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "movesReduced": false
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "moves": true,
+      "brokenImages": [],
+      "fonts": [
+        true,
+        true
+      ],
+      "focusVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "movesReduced": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "moves": true,
+      "brokenImages": [],
+      "fonts": [
+        true,
+        true
+      ],
+      "focusVisible": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "movesReduced": false
+    }
+  ]
+}

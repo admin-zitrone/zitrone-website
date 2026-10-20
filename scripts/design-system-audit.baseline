@@ -1,0 +1,10 @@
+# Design-system audit ratchet.
+# Violations currently tolerated per check. These may only go DOWN.
+# Regenerate after a cleanup: zsh scripts/design-system-audit.sh --update-baseline
+primitive-leaks=491
+stale-aliases=0
+raw-measures=1
+focus-ring-bypass=10
+raw-typography=0
+stat-typography-wiring=0
+grid-templates=9

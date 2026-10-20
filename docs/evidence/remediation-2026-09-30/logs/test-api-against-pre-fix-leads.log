@@ -1,0 +1,24 @@
+  ✖ anonymous: cannot list, read, update, delete or export (28.46475ms)
+  ✔ anonymous: cannot create a lead through the CMS API (4.01575ms)
+  ✖ editor: no access to leads or the export (5.611834ms)
+  ✔ admin: can list and read (9.513209ms)
+  ✖ admin: status and notes change; submitted data, attribution and delivery do not (18.914875ms)
+  ✖ server process: email delivery bookkeeping still updates (contact route / retry script path) (6.533666ms)
+  ✖ admin: export is a no-store CSV with formula cells neutralised (8.340459ms)
+  ✔ admin: can delete a lead (13.190583ms)
+  ✔ existing role protection: an editor cannot promote themselves (17.807709ms)
+✖ contact requests: access by actor (4658.082375ms)
+ℹ tests 9
+ℹ suites 1
+ℹ pass 4
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4774.132209
+✖ failing tests:
+✖ anonymous: cannot list, read, update, delete or export (28.46475ms)
+✖ editor: no access to leads or the export (5.611834ms)
+✖ admin: status and notes change; submitted data, attribution and delivery do not (18.914875ms)
+✖ server process: email delivery bookkeeping still updates (contact route / retry script path) (6.533666ms)
+✖ admin: export is a no-store CSV with formula cells neutralised (8.340459ms)

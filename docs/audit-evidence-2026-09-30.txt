@@ -1,0 +1,149 @@
+Commit: 7d67dac6796446eeb512ed3040ffa7c3560273ed
+Local audit, 2026-09-30
+Contracts 76/76; contact 26/26; migration 30/30; a11y 17 passed / 4 failed.
+Build and typecheck passed.
+Design gate: primitive references 566 vs 519; raw typography 38 vs 0.
+
+LINT
+
+> on-it-workspace@0.1.0 lint
+> eslint
+
+
+/Users/a1085/Documents/Zitrone/Zitrone Website/src/app/_components/home/home-page.tsx
+  219:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/a1085/Documents/Zitrone/Zitrone Website/src/app/_components/home/home-page.tsx:219:5
+  217 |     if (widget.metrics.length < 2) return
+  218 |     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+> 219 |     setAnimated(true)
+      |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  220 |
+  221 |     const interval = window.setInterval(() => {
+  222 |       setCurrent((index) => (index + 1) % widget.metrics.length)  react-hooks/set-state-in-effect
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+A11Y
+Error: 
+    2 violation(s) on /en:
+
+      [serious] color-contrast: Elements must meet minimum color contrast ratio thresholds
+        https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+          - .ds-operating-profile-day-meals
+            Fix any of the following:
+              Element has insufficient color contrast of 3.72 (foreground color: #6b8a8c, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
+      [serious] target-size: All touch targets must be 24px large, or leave sufficient space
+        https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright
+          - .ds-service-spotlight-dot[aria-label="Program 2 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 3 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 4 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 5 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 6 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+
+Error: 
+    2 violation(s) on /es:
+
+      [serious] color-contrast: Elements must meet minimum color contrast ratio thresholds
+        https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright
+          - .ds-operating-profile-day-meals
+            Fix any of the following:
+              Element has insufficient color contrast of 3.72 (foreground color: #6b8a8c, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
+      [serious] target-size: All touch targets must be 24px large, or leave sufficient space
+        https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright
+          - .ds-service-spotlight-dot[aria-label="Programa 2 de 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Programa 3 de 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Programa 4 de 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Programa 5 de 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Programa 6 de 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+
+Error: 
+    1 violation(s) at 320px:
+
+      [serious] target-size: All touch targets must be 24px large, or leave sufficient space
+        https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright
+          - .ds-service-spotlight-dot[aria-label="Program 2 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 3 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 4 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 5 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 6 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+
+Error: 
+    1 violation(s) with the menu open:
+
+      [serious] target-size: All touch targets must be 24px large, or leave sufficient space
+        https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright
+          - .ds-service-spotlight-dot[aria-label="Program 2 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 3 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 4 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 5 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.
+          - .ds-service-spotlight-dot[aria-label="Program 6 of 6"]
+            Fix any of the following:
+              Target has insufficient size (8px by 8px, should be at least 24px by 24px)
+              Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px.

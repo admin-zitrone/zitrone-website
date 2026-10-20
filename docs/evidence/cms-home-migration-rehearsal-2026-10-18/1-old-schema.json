@@ -1,0 +1,43 @@
+{
+  "es": {
+    "shown": {
+      "footer.ctaPrimary.internalHref": "Hablemos -> /contact?src=footer",
+      "footer.ctaSecondary.internalHref": "Ver servicios -> /services",
+      "header.primaryCta.internalHref": "Hablemos -> /contact?src=nav"
+    },
+    "unlabeled": 23,
+    "ctaLabel": "Hablemos"
+  },
+  "en": {
+    "shown": {
+      "footer.columns[0].links[0].link.internalHref": "Services -> #service-system",
+      "footer.columns[0].links[1].link.internalHref": "How we work -> #outcomes",
+      "footer.columns[0].links[2].link.internalHref": "Find your solution -> #profiler",
+      "footer.columns[0].links[3].link.internalHref": "Client stories -> #stories",
+      "footer.columns[0].links[4].link.internalHref": "FAQs -> #faq",
+      "footer.columns[1].links[0].link.internalHref": "All services -> /services",
+      "footer.columns[1].links[1].link.internalHref": "Corporate dining -> /services/corporate-dining",
+      "footer.columns[1].links[2].link.internalHref": "Corporate cafe -> /services/corporate-cafe",
+      "footer.columns[1].links[3].link.internalHref": "Snacks & beverages -> /services/pantry-restocking",
+      "footer.columns[1].links[4].link.internalHref": "Coffee machines & water dispensers -> /services/coffee-water",
+      "footer.columns[1].links[5].link.internalHref": "Service carts -> /services/service-carts",
+      "footer.columns[1].links[6].link.internalHref": "Corporate catering -> /services/corporate-catering",
+      "footer.columns[2].links[0].link.internalHref": "Blog -> /blog",
+      "footer.columns[2].links[1].link.internalHref": "Blog RSS feed -> /blog/feed.xml",
+      "footer.contact.links[0].link.externalHref": "General inquiries -> mailto:opina@zitrone.com.mx",
+      "footer.contact.links[1].link.externalHref": "Phone -> tel:+525512054000",
+      "footer.ctaPrimary.internalHref": "Contact us -> /contact?src=footer",
+      "footer.ctaSecondary.internalHref": "View services -> /services",
+      "footer.legal.links[0].link.internalHref": "Privacy notice -> /privacy-notice",
+      "footer.legal.links[1].link.internalHref": "Billing -> mailto:facturacion@zitrone.com.mx,contabilidad@zitrone.com.mx?subject=Invoice%20request%20%2F%20Solicitud%20de%20factura&body=Attached%20are%20my%20RFC%20and%20purchase%20ticket.",
+      "header.primaryCta.internalHref": "Contact us -> /contact?src=nav",
+      "header.primaryNav[0].link.anchor": "Services -> service-system",
+      "header.primaryNav[1].link.anchor": "How we work -> outcomes",
+      "header.primaryNav[2].link.internalHref": "Blog -> /en/blog",
+      "header.primaryNav[3].link.anchor": "FAQs -> faq",
+      "header.primaryNav[4].link.anchor": "Contact -> cta"
+    },
+    "unlabeled": 0,
+    "ctaLabel": "Contact us"
+  }
+}

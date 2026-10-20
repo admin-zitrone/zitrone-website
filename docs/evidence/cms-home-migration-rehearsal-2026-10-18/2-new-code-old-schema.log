@@ -1,0 +1,2 @@
+probe read failed: Failed query: select "header"."id", "header"."primary_cta_type", "header"."updated_at", "header"."created_at", "header_primaryNav"."data" as "primaryNav", "header__locales"."data" as "_locales" from "header" "header" left join lateral (select coalesce(json_agg(json_build_array("header_primaryNav"."_order", "header_primaryNav"."id", "header_primaryNav"."link_type", "header_primar
+params: 1

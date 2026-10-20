@@ -1,0 +1,691 @@
+/* ── Bento Features ───────────────────────────────────────────
+   Maven-style 3-column bento (5 + 4 + 3 of 12) with 2 stacked
+   cards per column. Deep-green cards on warm bg with noise.
+   ───────────────────────────────────────────────────────────── */
+
+/* Section — uses [data-surface="frame"] + .ds-section-surface from
+   the design system for the rounded warm panel. No overrides needed. */
+
+.semantic-bento-section .ds-section-surface {
+  padding-block-end: var(--primitive-space-9);
+}
+
+/* Header: heading left + text right */
+.semantic-bento-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-content-gap-loose) var(--primitive-space-8);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-section-head-to-body);
+}
+
+.semantic-bento-heading {
+  flex: 1 1 34rem;
+  max-width: 16ch;
+}
+
+.semantic-bento-title-group {
+  display: grid;
+  flex: 1 1 34rem;
+  gap: var(--primitive-space-4);
+}
+
+.semantic-bento-text {
+  flex: 0 1 28rem;
+  max-width: 20.5rem;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* ── Grid: 3 columns ──────────────────────── */
+.semantic-bento-grid {
+  --bento-card-min-height-mobile: 15.6rem;
+  display: grid;
+  grid-template-columns: 5fr 4fr 3fr;
+  gap: var(--space-grid-gap);
+  min-height: clamp(42rem, 55vw, 52rem);
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+  list-style: none;
+}
+
+/* Column — vertical stack of 2 cards */
+.semantic-bento-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-grid-gap);
+  min-height: 0;
+}
+
+/* ── Card base ────────────────────────────── */
+.semantic-bento-card {
+  --bento-sub-color: color-mix(in srgb, var(--primitive-color-white) 88%, transparent);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 0%;
+  min-height: 0;
+  padding: var(--space-card-inset);
+  border-radius: var(--primitive-radius-4);
+  background: var(--color-surface-bento-deep);
+  color: var(--color-text-inverse);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Noise texture on all cards */
+.semantic-bento-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle at 20% 18%, color-mix(in srgb, var(--primitive-color-white) 12%, transparent), transparent 28%),
+    radial-gradient(circle at 82% 12%, color-mix(in srgb, var(--primitive-color-white) 8%, transparent), transparent 26%);
+  background-size: cover;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Content layer above noise */
+.semantic-bento-card-body {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-content: start;
+  gap: var(--primitive-space-2);
+}
+
+/* Heading — h5 equivalent, smaller for card context */
+.semantic-bento-card-heading {
+  margin: 0;
+  max-width: 24ch;
+  font-family: var(--font-body);
+  font-size: var(--type-title-small-size);
+  font-weight: var(--type-title-small-weight);
+  line-height: var(--type-title-small-line-height);
+  text-wrap: balance;
+}
+
+.semantic-bento-card--fill-slate {
+  --bento-sub-color: color-mix(in srgb, var(--primitive-color-white) 92%, transparent);
+  background: var(--color-surface-bento-light);
+  color: var(--primitive-color-ocean-950);
+}
+
+.semantic-bento-card--fill-green {
+  background: var(--color-surface-bento-raised);
+  color: var(--color-text-inverse);
+}
+
+.semantic-bento-card--fill-natural {
+  --bento-sub-color: color-mix(in srgb, var(--primitive-color-white) 92%, transparent);
+  background: var(--primitive-color-lime-100);
+  color: var(--primitive-color-ocean-950);
+}
+
+.semantic-bento-card--fill-slate::before,
+.semantic-bento-card--fill-natural::before {
+  opacity: 0.18;
+}
+
+.semantic-bento-card--fill-slate .semantic-bento-clock-face {
+  border-color: color-mix(in srgb, var(--primitive-color-ocean-950) 28%, transparent);
+}
+
+.semantic-bento-card--fill-slate .semantic-bento-clock-hour,
+.semantic-bento-card--fill-slate .semantic-bento-clock-minute,
+.semantic-bento-card--fill-slate .semantic-bento-clock-dot {
+  background: color-mix(in srgb, var(--primitive-color-ocean-950) 48%, transparent);
+}
+
+/* Sub-text — smaller supporting detail shown on hover-capable screens */
+.semantic-bento-card-sub {
+  max-width: 23ch;
+  margin: 0;
+  color: var(--bento-sub-color);
+  font-family: var(--font-body);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-small-line-height);
+  text-wrap: balance;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .semantic-bento-card-sub {
+    opacity: 0;
+    transform: translateY(0.35rem);
+    transition:
+      opacity 220ms ease,
+      transform 220ms ease;
+  }
+
+  .semantic-bento-card:hover .semantic-bento-card-sub,
+  .semantic-bento-card:focus-within .semantic-bento-card-sub {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Cover image cards ────────────────────── */
+.semantic-bento-card-bg,
+.semantic-bento-icon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform var(--motion-transition-slow, 600ms) var(--motion-ease-standard, ease-out);
+}
+
+.semantic-bento-card[data-image-fit='contain'] .semantic-bento-card-bg,
+.semantic-bento-card[data-image-fit='contain'] .semantic-bento-icon {
+  inset: clamp(2.25rem, 8%, 3.5rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.semantic-bento-card[data-image-fit='contain'] {
+  justify-content: center;
+}
+
+.semantic-bento-card[data-image-fit='contain'] .semantic-bento-card-body {
+  position: absolute;
+  inset: var(--space-card-inset) var(--space-card-inset) auto;
+}
+
+.semantic-bento-card[data-card-title='Flexible Programs'] .semantic-bento-card-bg {
+  inset: auto;
+  top: 56%;
+  left: 50%;
+  width: min(78%, 22rem);
+  height: auto;
+  max-height: 62%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  object-position: center center;
+}
+
+.semantic-bento-icon {
+  position: relative;
+  max-width: none;
+}
+
+.semantic-bento-card:hover .semantic-bento-card-bg,
+.semantic-bento-card:hover .semantic-bento-icon {
+  transform: scale(1.02);
+}
+
+.semantic-bento-card[data-image-fit='contain']:hover .semantic-bento-card-bg,
+.semantic-bento-card[data-image-fit='contain']:hover .semantic-bento-icon {
+  transform: none;
+}
+
+.semantic-bento-card[data-card-title='Flexible Programs']:hover .semantic-bento-card-bg {
+  transform: translate(-50%, -50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .semantic-bento-card-bg,
+  .semantic-bento-icon {
+    transition: none;
+  }
+  .semantic-bento-card:hover .semantic-bento-card-bg,
+  .semantic-bento-card:hover .semantic-bento-icon {
+    transform: none;
+  }
+}
+
+/* Gradient scrim over image cards for readability */
+.semantic-bento-card:has(.semantic-bento-card-bg)::after,
+.semantic-bento-card:has(.semantic-bento-icon-wrap)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primitive-color-ocean-950) 62%, transparent) 0%,
+    color-mix(in srgb, var(--primitive-color-ocean-950) 25%, transparent) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* ── Clock card (24/7) ────────────────────── */
+.semantic-bento-clock {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.semantic-bento-clock-face {
+  position: relative;
+  width: clamp(6rem, 10vw, 10rem);
+  height: clamp(6rem, 10vw, 10rem);
+  border: var(--border-width-strong) solid var(--primitive-color-ocean-700);
+  border-radius: 50%;
+}
+
+.semantic-bento-clock-hour,
+.semantic-bento-clock-minute {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: var(--primitive-radius-0-5);
+  background: var(--primitive-color-ocean-300);
+}
+
+.semantic-bento-clock-hour {
+  width: var(--border-width-strong);
+  height: 28%;
+  transform: translateX(-50%) rotate(30deg);
+}
+
+.semantic-bento-clock-minute {
+  width: var(--border-width-default);
+  height: 38%;
+  transform: translateX(-50%) rotate(190deg);
+  animation: bento-clock-spin 12s linear infinite;
+}
+
+.semantic-bento-clock-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background: var(--primitive-color-ocean-300);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes bento-clock-spin {
+  to {
+    transform: translateX(-50%) rotate(550deg);
+  }
+}
+
+/* ── Specialties card — provider boxes ────── */
+.semantic-bento-card--specialties {
+  flex: 1.42 1 0%;
+  justify-content: space-between;
+  gap: var(--primitive-space-4);
+}
+
+.semantic-bento-boxes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--primitive-space-2);
+  padding-block: var(--primitive-space-3);
+  margin-block: auto;
+}
+
+.semantic-bento-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--primitive-space-2);
+  padding: var(--primitive-space-2) var(--primitive-space-3);
+  border-radius: var(--primitive-radius-3);
+  font-family: var(--font-body);
+  font-weight: var(--primitive-font-weight-regular);
+  line-height: 1;
+  box-shadow: var(--primitive-shadow-2);
+}
+
+.semantic-bento-box img {
+  flex-shrink: 0;
+}
+
+.semantic-bento-box--sm {
+  background: color-mix(in srgb, var(--primitive-color-ocean-50) 40%, transparent);
+  color: var(--primitive-color-ocean-950);
+  opacity: 0.5;
+  font-size: var(--type-body-small-size);
+}
+
+.semantic-bento-box--md {
+  background: color-mix(in srgb, var(--primitive-color-white) 14%, transparent);
+  color: var(--color-text-inverse);
+  opacity: 0.84;
+  font-size: var(--type-body-size);
+}
+
+.semantic-bento-box--lg {
+  background: color-mix(in srgb, var(--primitive-color-white) 22%, transparent);
+  color: var(--color-text-inverse);
+  font-size: var(--type-body-large-size);
+}
+
+.semantic-bento-logo-marquee {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 1;
+  display: grid;
+  /* One gap drives chip spacing, the seam between the duplicated tracks, and the
+     keyframe distance — they must agree or the loop stutters once per cycle.
+     Floor is set by the optical scales (see hero-logo-scales.ts) overflowing
+     their chip: DoorDash spills ~13px per side, so under ~18px neighbours touch.
+     Do NOT copy the hero's 2.75rem here: this strip is ~510px wide against the
+     hero's full-bleed ribbon, and that gap leaves only four logos on screen,
+     reading as a hole drifting past rather than a continuous ribbon. */
+  --bento-logo-marquee-gap: var(--primitive-space-5);
+  gap: var(--primitive-space-3);
+  padding: 0 var(--space-card-inset) calc(var(--space-card-inset) + var(--primitive-space-2));
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, black 10%, black 90%, transparent 100%);
+  pointer-events: none;
+}
+
+.semantic-bento-logo-row {
+  display: flex;
+  width: max-content;
+  /* Seam between the two duplicate tracks: same as the gap between chips, so the
+     rhythm doesn't break where the loop wraps. */
+  gap: var(--bento-logo-marquee-gap);
+  align-items: center;
+}
+
+.semantic-bento-logo-row--forward {
+  animation: semantic-bento-logo-scroll-forward 28s linear infinite;
+}
+
+.semantic-bento-logo-row--reverse {
+  animation: semantic-bento-logo-scroll-reverse 30s linear infinite;
+}
+
+.semantic-bento-logo-track {
+  display: flex;
+  align-items: center;
+  gap: var(--bento-logo-marquee-gap);
+}
+
+/* Fit percentages below match the hero ribbon's, so a shared optical scale acts
+   on identically-fitted artwork and the marks keep the hero's relative balance. */
+.semantic-bento-logo-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(4.25rem, 8vw, 6rem);
+  height: 1.75rem;
+  opacity: 0.82;
+  --logo-fit-max-width: 78%;
+  --logo-fit-max-height: 90%;
+}
+
+.semantic-bento-logo-chip img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: var(--logo-fit-max-width);
+  max-height: var(--logo-fit-max-height);
+  object-fit: contain;
+  transform: scale(var(--logo-scale, 1));
+  transform-origin: center;
+  filter: brightness(0) invert(1);
+}
+
+.semantic-bento-logo-chip[data-logo-fit="wide"] {
+  --logo-fit-max-width: 96%;
+  --logo-fit-max-height: 82%;
+}
+
+.semantic-bento-logo-chip[data-logo-fit="compact"] {
+  --logo-fit-max-width: 60%;
+  --logo-fit-max-height: 82%;
+}
+
+.semantic-bento-card--logos,
+.semantic-bento-card--stats {
+  justify-content: space-between;
+}
+
+.semantic-bento-card--logos .semantic-bento-card-body,
+.semantic-bento-card--stats .semantic-bento-card-body {
+  margin: 0;
+}
+
+.semantic-bento-proof-stats {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: var(--primitive-space-5);
+  margin: auto 0;
+  padding: var(--primitive-space-8) 0;
+}
+
+.semantic-bento-proof-stat {
+  display: grid;
+  gap: var(--primitive-space-1);
+}
+
+.semantic-bento-proof-stat dt,
+.semantic-bento-proof-stat dd {
+  margin: 0;
+}
+
+.semantic-bento-proof-stat dt {
+  color: var(--bento-sub-color);
+  font-size: var(--type-meta-size);
+  font-weight: var(--type-meta-weight);
+  line-height: var(--type-meta-line-height);
+}
+
+.semantic-bento-proof-stat dd {
+  order: -1;
+  font-family: var(--stat-number-family);
+  font-size: var(--type-stat-number-size);
+  font-weight: var(--stat-number-weight);
+  line-height: var(--stat-number-line-height);
+  letter-spacing: var(--letter-spacing-default);
+}
+
+.semantic-bento-client-ribbon {
+  margin-top: var(--primitive-space-8);
+  padding-top: 0;
+}
+
+/* -50% of the row is one track plus half the seam, so backing off another half
+   seam lands exactly one track along — the duplicate sits where the original
+   started and the wrap is invisible. Must use the same gap the row does. */
+@keyframes semantic-bento-logo-scroll-forward {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - (var(--bento-logo-marquee-gap) / 2)));
+  }
+}
+
+@keyframes semantic-bento-logo-scroll-reverse {
+  from {
+    transform: translateX(calc(-50% - (var(--bento-logo-marquee-gap) / 2)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ── Studies card — icon at bottom ────────── */
+.semantic-bento-card--studies {
+  flex: 0.82 1 0%;
+  justify-content: space-between;
+}
+
+.semantic-bento-card--studies .semantic-bento-card-body {
+  margin-bottom: var(--primitive-space-5);
+}
+
+.semantic-bento-icon-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.semantic-bento-icon {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+/* ── Globe card ───────────────────────────── */
+
+/* ── Responsive ───────────────────────────── */
+
+/* Tablet — 2 columns */
+@media (max-width: 64rem) {
+  .semantic-bento-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-content-gap);
+    margin-bottom: var(--space-content-gap-loose);
+  }
+
+  .semantic-bento-heading {
+    flex-basis: auto;
+    max-width: 22ch;
+  }
+
+  .semantic-bento-title-group {
+    flex-basis: auto;
+  }
+
+  .semantic-bento-text {
+    flex-basis: auto;
+    max-width: 38ch;
+  }
+
+  .semantic-bento-grid {
+    grid-template-columns: 1fr 1fr;
+    min-height: auto;
+  }
+
+  .semantic-bento-col--3 {
+    grid-column: 1 / -1;
+  }
+
+  .semantic-bento-col--3 {
+    flex-direction: row;
+  }
+
+  .semantic-bento-col--3 .semantic-bento-card {
+    flex: 1;
+  }
+
+  .semantic-bento-card {
+    min-height: clamp(18rem, 36vw, 24rem);
+  }
+}
+
+/* Mobile — 1 column */
+@media (max-width: 40rem) {
+  .semantic-bento-section .ds-section-surface {
+    padding-block-end: var(--primitive-space-6);
+  }
+
+  .semantic-bento-header {
+    gap: var(--primitive-space-4);
+  }
+
+  .semantic-bento-heading {
+    font-size: var(--type-section-heading-size);
+    max-width: 100%;
+  }
+
+  .semantic-bento-text {
+    max-width: 100%;
+    font-size: var(--type-body-size);
+  }
+
+  .semantic-bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .semantic-bento-col--3 {
+    flex-direction: column;
+  }
+
+  .semantic-bento-card {
+    min-height: var(--bento-card-min-height-mobile);
+    padding: var(--primitive-space-5);
+  }
+
+  .semantic-bento-card:has(.semantic-bento-card-bg)::after,
+  .semantic-bento-card:has(.semantic-bento-icon-wrap)::after {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--primitive-color-ocean-950) 84%, transparent) 0%,
+      color-mix(in srgb, var(--primitive-color-ocean-950) 68%, transparent) 58%,
+      color-mix(in srgb, var(--primitive-color-ocean-950) 38%, transparent) 100%
+    );
+  }
+
+  .semantic-bento-card-heading {
+    max-width: 100%;
+  }
+
+  .semantic-bento-card-sub {
+    max-width: 100%;
+  }
+
+  .semantic-bento-boxes {
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--primitive-space-2);
+  }
+
+  .semantic-bento-logo-chip {
+    width: 4.75rem;
+  }
+
+  .semantic-bento-proof-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--primitive-space-4);
+    padding: var(--primitive-space-7) 0;
+  }
+
+  .semantic-bento-proof-stat dd {
+    font-size: var(--type-stat-number-size-small);
+  }
+
+  .semantic-bento-client-ribbon {
+    margin-top: var(--primitive-space-7);
+  }
+
+  .semantic-bento-box {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: var(--primitive-space-2);
+  }
+
+  .semantic-bento-box img {
+    width: var(--primitive-size-5);
+    height: var(--primitive-size-5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .semantic-bento-clock-minute {
+    animation: none;
+    transform: translateX(-50%) rotate(190deg);
+  }
+}

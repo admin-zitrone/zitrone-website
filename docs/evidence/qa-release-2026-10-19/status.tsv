@@ -1,0 +1,4 @@
+catalog	PASS	coincide con el inventario y el snapshot
+extract	PASS	volcado de las tablas aprobadas
+restore:counts	PASS	ok
+restore:free-text	FAIL	falló: qa orig /var/folders/8b/n2hhf0hn0l9bc18y0b_zk8lm0000gn/T//zitrone-qa/20261019-1223-6c78/wt/cand-seed

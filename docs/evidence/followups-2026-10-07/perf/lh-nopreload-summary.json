@@ -1,0 +1,78 @@
+{
+ "es_contact_serifnopreload": [
+  {
+   "lcp": 3162.051,
+   "fcp": 3162.051,
+   "tbt": 40.66899999999987,
+   "score": 87,
+   "phases": {
+    "TTFB": 580.936,
+    "Load Delay": 0,
+    "Load Time": 0,
+    "Render Delay": 2581.115
+   }
+  },
+  {
+   "lcp": 3169.649,
+   "fcp": 3169.649,
+   "tbt": 43.02800000000025,
+   "score": 87,
+   "phases": {
+    "TTFB": 582.7399997558593,
+    "Load Delay": 0,
+    "Load Time": 0,
+    "Render Delay": 2586.9090002441408
+   }
+  },
+  {
+   "lcp": 3173.394,
+   "fcp": 3173.394,
+   "tbt": 44.85199975585874,
+   "score": 87,
+   "phases": {
+    "TTFB": 582.609,
+    "Load Delay": 0,
+    "Load Time": 0,
+    "Render Delay": 2590.785
+   }
+  }
+ ],
+ "es_serifnopreload": [
+  {
+   "lcp": 3500.458,
+   "fcp": 3500.458,
+   "tbt": 57.56799975585909,
+   "score": 76,
+   "phases": {
+    "TTFB": 591.715,
+    "Load Delay": 603.7880000209808,
+    "Load Time": 1746.9660000801086,
+    "Render Delay": 557.9889998989106
+   }
+  },
+  {
+   "lcp": 3457.51,
+   "fcp": 3457.51,
+   "tbt": 47.46299999999974,
+   "score": 76,
+   "phases": {
+    "TTFB": 589.7630002441406,
+    "Load Delay": 594.0019998607636,
+    "Load Time": 1743.7039999961853,
+    "Render Delay": 530.0409998989107
+   }
+  },
+  {
+   "lcp": 3465.467,
+   "fcp": 3465.467,
+   "tbt": 48.34600000000046,
+   "score": 76,
+   "phases": {
+    "TTFB": 588.6129997558594,
+    "Load Delay": 594.6850003414154,
+    "Load Time": 1735.2450001239777,
+    "Render Delay": 546.9239997787477
+   }
+  }
+ ]
+}

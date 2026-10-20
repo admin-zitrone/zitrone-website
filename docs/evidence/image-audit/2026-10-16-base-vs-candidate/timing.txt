@@ -1,0 +1,6 @@
+started 2026-10-16T01:42:42Z
+run.sh exit 1
+finished 2026-10-16T02:27:35Z
+visual re-run started 2026-10-16T02:28:13Z (step 3 only; DB ETIMEDOUT on base server aborted the first attempt)
+visual exit 0
+visual re-run finished 2026-10-16T02:30:55Z

@@ -1,0 +1,4 @@
+source  COUNTS {"users":1,"contactRequests":1,"blogPosts":1,"lead":"drill.lead@example.invalid"}
+backup  $TMPDIR/drill-20260930-233131.dump (672K) pg_dump 16.15
+restore COUNTS {"users":1,"contactRequests":1,"blogPosts":1,"lead":"drill.lead@example.invalid"}
+RESULT match

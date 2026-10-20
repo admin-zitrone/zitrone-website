@@ -1,0 +1,17 @@
+01-npm-ci rc=0 29s
+02-env-check rc=0 2s
+03-lint rc=0 4s
+04-tsc rc=0 5s
+05-assets rc=0 0s
+06-email rc=0 0s
+07-design rc=0 1s
+08-contracts rc=0 4s
+09-build rc=0 26s
+10-e2e rc=0 51s
+11-test-scripts rc=0 4s
+12-test-api rc=0 29s
+13-test-cache rc=0 26s
+15-build-fresh-1 rc=0 406s
+15-build-fresh-2 rc=0 19s
+15-build-fresh-3 rc=0 16s
+15-build-fresh-4 rc=1 951s

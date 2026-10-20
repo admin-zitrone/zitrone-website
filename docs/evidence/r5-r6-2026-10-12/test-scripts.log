@@ -1,0 +1,28 @@
+
+> on-it-workspace@0.1.0 test:scripts
+> tsx --test tests/scripts/*.test.ts
+
+▶ test-db.sh: TEST_PG_URL is loopback only
+  ✔ rejects remote hostname before any connection or SQL (119.500584ms)
+  ✔ rejects malformed URL before any connection or SQL (122.381583ms)
+  ✔ rejects ?host= override of a loopback URL before any connection or SQL (119.136792ms)
+  ✔ rejects ?hostaddr= override before any connection or SQL (117.828875ms)
+  ✔ rejects other query options before any connection or SQL (117.5005ms)
+  ✔ rejects non-postgres scheme before any connection or SQL (117.013625ms)
+  ✔ rejects loopback-looking remote host before any connection or SQL (118.87825ms)
+  ✔ rejects missing user before any connection or SQL (117.394167ms)
+  ✔ rejects nested path before any connection or SQL (117.795417ms)
+  ✔ accepts a local URL and connects only to the normalized loopback address (189.883042ms)
+✔ test-db.sh: TEST_PG_URL is loopback only (1260.723875ms)
+▶ test-db.sh: Docker mode
+  ✔ uses the container's credentials and published port, admin through docker exec (539.215375ms)
+  ✔ stops when the container cannot be resolved (63.827334ms)
+✔ test-db.sh: Docker mode (603.126875ms)
+ℹ tests 12
+ℹ suites 2
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1992.829917

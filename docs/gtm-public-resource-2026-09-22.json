@@ -1,0 +1,315 @@
+{
+  "version": "9",
+  "macros": [
+    {
+      "function": "__e"
+    },
+    {
+      "function": "__c",
+      "vtp_value": "G-E48BCCXZEC"
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementClasses",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__awec",
+      "vtp_mode": "AUTO",
+      "vtp_enableElementBlocking": false,
+      "vtp_isAutoCollectPiiEnabledFlag": true
+    },
+    {
+      "function": "__u",
+      "vtp_enableMultiQueryKeys": false,
+      "vtp_enableIgnoreEmptyQueryParam": false
+    },
+    {
+      "function": "__d",
+      "vtp_elementSelector": "#email\\:r3\\:",
+      "vtp_selectorType": "CSS"
+    },
+    {
+      "function": "__awec",
+      "vtp_mode": "MANUAL",
+      "vtp_email": [
+        "macro",
+        5
+      ],
+      "vtp_isAutoCollectPiiEnabledFlag": true
+    },
+    {
+      "function": "__d",
+      "vtp_elementSelector": "#__next > main > section > div > div > div > div:nth-child(2) > div > div > div > form > div:nth-child(4) > label > span",
+      "vtp_selectorType": "CSS"
+    },
+    {
+      "function": "__awec",
+      "vtp_mode": "MANUAL",
+      "vtp_email": [
+        "macro",
+        7
+      ],
+      "vtp_isAutoCollectPiiEnabledFlag": true
+    },
+    {
+      "function": "__u",
+      "vtp_component": "URL",
+      "vtp_enableMultiQueryKeys": false,
+      "vtp_enableIgnoreEmptyQueryParam": false
+    },
+    {
+      "function": "__u",
+      "vtp_component": "HOST",
+      "vtp_enableMultiQueryKeys": false,
+      "vtp_enableIgnoreEmptyQueryParam": false
+    },
+    {
+      "function": "__u",
+      "vtp_component": "PATH",
+      "vtp_enableMultiQueryKeys": false,
+      "vtp_enableIgnoreEmptyQueryParam": false
+    },
+    {
+      "function": "__f",
+      "vtp_component": "URL"
+    },
+    {
+      "function": "__e"
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.element",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementId",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementTarget",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementUrl",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__aev",
+      "vtp_varType": "TEXT"
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.element",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementClasses",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementId",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementTarget",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__v",
+      "vtp_name": "gtm.elementUrl",
+      "vtp_dataLayerVersion": 1
+    },
+    {
+      "function": "__aev",
+      "vtp_varType": "TEXT"
+    },
+    {
+      "function": "__ctv"
+    },
+    {
+      "function": "__r"
+    },
+    {
+      "function": "__cid"
+    },
+    {
+      "function": "__hid"
+    }
+  ],
+  "tags": [
+    {
+      "function": "__gclidw",
+      "metadata": [
+        "map"
+      ],
+      "once_per_event": true,
+      "vtp_enableCrossDomain": false,
+      "vtp_enableUrlPassthrough": false,
+      "vtp_enableCookieOverrides": false,
+      "tag_id": 4
+    },
+    {
+      "function": "__googtag",
+      "metadata": [
+        "map"
+      ],
+      "once_per_event": true,
+      "vtp_tagId": [
+        "macro",
+        1
+      ],
+      "vtp_configSettingsTable": [
+        "list",
+        [
+          "map",
+          "parameter",
+          "send_page_view",
+          "parameterValue",
+          "true"
+        ]
+      ],
+      "tag_id": 7
+    },
+    {
+      "function": "__awct",
+      "metadata": [
+        "map"
+      ],
+      "once_per_event": true,
+      "vtp_enableNewCustomerReporting": false,
+      "vtp_enableConversionLinker": true,
+      "vtp_enableProductReporting": false,
+      "vtp_enableEnhancedConversion": true,
+      "vtp_cssProvidedEnhancedConversionValue": [
+        "macro",
+        3
+      ],
+      "vtp_conversionCookiePrefix": "_gcl",
+      "vtp_enableShippingData": false,
+      "vtp_conversionId": "779424827",
+      "vtp_conversionLabel": "JqU6COCq65ABELuo1PMC",
+      "vtp_rdp": false,
+      "vtp_url": [
+        "macro",
+        4
+      ],
+      "vtp_enableProductReportingCheckbox": true,
+      "vtp_enableNewCustomerReportingCheckbox": true,
+      "vtp_enableEnhancedConversionsCheckbox": false,
+      "vtp_enableRdpCheckbox": true,
+      "vtp_enableTransportUrl": false,
+      "vtp_enableCustomParams": false,
+      "vtp_enableSmartDestinationId": true,
+      "vtp_enableEventParameters": false,
+      "tag_id": 9
+    },
+    {
+      "function": "__gaawe",
+      "metadata": [
+        "map"
+      ],
+      "once_per_event": true,
+      "vtp_sendEcommerceData": false,
+      "vtp_enhancedUserId": false,
+      "vtp_eventSettingsTable": [
+        "list",
+        [
+          "map",
+          "parameter",
+          "button_text",
+          "parameterValue",
+          "Enviar"
+        ]
+      ],
+      "vtp_eventName": "form_submit",
+      "vtp_measurementIdOverride": "G-E48BCCXZEC",
+      "vtp_enableUserProperties": true,
+      "vtp_enableEuid": true,
+      "vtp_migratedToV2": true,
+      "vtp_demoV2": false,
+      "tag_id": 16
+    },
+    {
+      "function": "__cl",
+      "tag_id": 17
+    }
+  ],
+  "predicates": [
+    {
+      "function": "_eq",
+      "arg0": [
+        "macro",
+        0
+      ],
+      "arg1": "gtm.js"
+    },
+    {
+      "function": "_eq",
+      "arg0": [
+        "macro",
+        0
+      ],
+      "arg1": "pageView"
+    },
+    {
+      "function": "_eq",
+      "arg0": [
+        "macro",
+        2
+      ],
+      "arg1": "styles__Button-sc-1q4vzjf-0 dOFLwW"
+    },
+    {
+      "function": "_eq",
+      "arg0": [
+        "macro",
+        0
+      ],
+      "arg1": "gtm.click"
+    }
+  ],
+  "rules": [
+    [
+      [
+        "if",
+        0
+      ],
+      [
+        "add",
+        0,
+        1,
+        4
+      ]
+    ],
+    [
+      [
+        "if",
+        1
+      ],
+      [
+        "add",
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        "if",
+        2,
+        3
+      ],
+      [
+        "add",
+        2,
+        3
+      ]
+    ]
+  ]
+}

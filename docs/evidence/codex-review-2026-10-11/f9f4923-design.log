@@ -1,0 +1,20 @@
+
+> on-it-workspace@0.1.0 design:audit
+> zsh scripts/design-system-audit.sh
+
+Design-system audit
+Repo: /private/tmp/zitrone-review-f9f4923-20261011
+
+PASS  no primitive leaks in reusable component/layout css
+  Known debt held at 491 violations.
+PASS  no stale banned token aliases
+PASS  no raw governed measure values in component/layout css
+  Known debt held at 1 violations.
+PASS  no generic focus ring bypass in marketing components
+  Known debt held at 10 violations.
+PASS  no raw font-size / line-height / letter-spacing / font-weight in component css
+PASS  no direct stat typography wiring in marketing component grammar
+PASS  no proof/footer column templates in marketing component grammar
+  Known debt held at 9 violations.
+
+Audit passed. Known debt: 511 violation(s) held at baseline.

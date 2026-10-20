@@ -1,0 +1,67 @@
+
+> on-it-workspace@0.1.0 prebuild
+> node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+
+assets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+
+> on-it-workspace@0.1.0 build
+> next build
+
+▲ Next.js 16.2.10 (Turbopack)
+- Experiments (use with caution):
+  · clientTraceMetadata
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+[next]/internal/font/google/noto_serif_display_205e940d.module.css:58:8
+Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'
+  [90m56 |[0m   font-stretch: [35m100[0m%;
+  [90m57 |[0m   font-display: swap;
+[31m[1m>[0m [90m58 |[0m   src: url(@vercel/turbopack-next/internal/font/google/font?{%[35m22[0murl%[35m22[0m:%[35m22[0mhttps:[90m//fonts.gs...[0m
+  [90m   |[0m        [31m[1m^[0m
+  [90m59 |[0m   unicode-range: [33mU[0m+[35m0100[0m-[35m02[0m[33mBA[0m, [33mU[0m+[35m02[0m[33mBD[0m-[35m02[0m[33mC5[0m, [33mU[0m+[35m02[0m[33mC7[0m-[35m02[0m[33mCC[0m, [33mU[0m+[35m02[0m[33mCE[0m-[35m02[0m[33mD7[0m, [33mU[0m+[35m02[0m[33mDD[0m-[35m02[0m[33mFF[0m, [33mU[0m+[35m0304[0m, [33m.[0m.[35m.[0m
+  [90m60 |[0m }
+  [90m61 |[0m [90m/* latin */[0m
+
+Import map: Resolved by import map
+
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/noto_serif_display_205e940d.module.css
+    [next]/internal/font/google/noto_serif_display_205e940d.js
+    ./src/app/design-system/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[next]/internal/font/google/noto_serif_display_205e940d.module.css:128:8
+Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'
+  [90m126 |[0m   font-stretch: [35m100[0m%;
+  [90m127 |[0m   font-display: swap;
+[31m[1m>[0m [90m128 |[0m   src: url(@vercel/turbopack-next/internal/font/google/font?{%[35m22[0murl%[35m22[0m:%[35m22[0mhttps:[90m//fonts.g...[0m
+  [90m    |[0m        [31m[1m^[0m
+  [90m129 |[0m   unicode-range: [33mU[0m+[35m0100[0m-[35m02[0m[33mBA[0m, [33mU[0m+[35m02[0m[33mBD[0m-[35m02[0m[33mC5[0m, [33mU[0m+[35m02[0m[33mC7[0m-[35m02[0m[33mCC[0m, [33mU[0m+[35m02[0m[33mCE[0m-[35m02[0m[33mD7[0m, [33mU[0m+[35m02[0m[33mDD[0m-[35m02[0m[33mFF[0m, [33mU[0m+[35m0304[0m,.[33m.[0m.
+  [90m130 |[0m }
+  [90m131 |[0m [90m/* latin */[0m
+
+Import map: Resolved by import map
+
+
+Import trace:
+  Server Component:
+    [next]/internal/font/google/noto_serif_display_205e940d.module.css
+    [next]/internal/font/google/noto_serif_display_205e940d.js
+    ./src/app/design-system/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:58:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:128:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

@@ -1,0 +1,5 @@
+
+> on-it-workspace@0.1.0 env:check
+> tsx scripts/validate-env.ts
+
+Environment validation passed. mode=runtime sentryBuildCredentials=false

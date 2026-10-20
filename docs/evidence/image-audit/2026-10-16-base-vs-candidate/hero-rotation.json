@@ -1,0 +1,377 @@
+{
+  "base": "http://127.0.0.1:3105",
+  "path": "/es",
+  "date": "2026-10-16T02:09:25.973Z",
+  "checks": [
+    {
+      "scenario": "normal",
+      "ok": true,
+      "what": "rotates through frames: dining-hall-skyline → coffee-bar-lounge → buffet-line → food-hall-service → dining-hall-skyline"
+    },
+    {
+      "scenario": "normal",
+      "ok": true,
+      "what": "every rotated-in frame was loaded when it became active"
+    },
+    {
+      "scenario": "normal",
+      "ok": true,
+      "what": "accent word stable per photo: [[\"dining-hall-skyline\",[\"alimenta\"]],[\"coffee-bar-lounge\",[\"cuida\"]],[\"buffet-line\",[\"conecta\"]],[\"food-hall-service\",[\"impulsa\"]]]"
+    },
+    {
+      "scenario": "late",
+      "ok": true,
+      "what": "late frame eventually shown: dining-hall-skyline@110 → coffee-bar-lounge@6206 → buffet-line@20388 → food-hall-service@26262"
+    },
+    {
+      "scenario": "late",
+      "ok": true,
+      "what": "never activated a frame that was not loaded"
+    },
+    {
+      "scenario": "late",
+      "ok": true,
+      "what": "held the previous photo (coffee-bar-lounge) until the late frame arrived (shown at 20388 ms, slot was ~12000 ms)"
+    },
+    {
+      "scenario": "late",
+      "ok": true,
+      "what": "accent word stable per photo: [[\"dining-hall-skyline\",[\"alimenta\"]],[\"coffee-bar-lounge\",[\"cuida\"]],[\"buffet-line\",[\"conecta\"]],[\"food-hall-service\",[\"impulsa\"]]]"
+    },
+    {
+      "scenario": "error",
+      "ok": true,
+      "what": "failed frame never shown: dining-hall-skyline → coffee-bar-lounge → buffet-line → dining-hall-skyline → coffee-bar-lounge → buffet-line"
+    },
+    {
+      "scenario": "error",
+      "ok": true,
+      "what": "rotation continues past the failed frame"
+    },
+    {
+      "scenario": "error",
+      "ok": true,
+      "what": "never activated a frame that was not loaded"
+    },
+    {
+      "scenario": "error",
+      "ok": true,
+      "what": "accent word stable per photo: [[\"dining-hall-skyline\",[\"alimenta\"]],[\"coffee-bar-lounge\",[\"cuida\"]],[\"buffet-line\",[\"conecta\"]]]"
+    },
+    {
+      "scenario": "slow3g",
+      "ok": true,
+      "what": "never activated a frame that was not loaded: dining-hall-skyline@8411 → coffee-bar-lounge@46611 → buffet-line@57530"
+    },
+    {
+      "scenario": "slow3g",
+      "ok": true,
+      "what": "accent word stable per photo: [[\"dining-hall-skyline\",[\"alimenta\"]],[\"coffee-bar-lounge\",[\"cuida\"]],[\"buffet-line\",[\"conecta\"]]]"
+    }
+  ],
+  "results": [
+    {
+      "name": "normal",
+      "requested": [
+        "dining-hall-skyline",
+        "coffee-bar-lounge",
+        "buffet-line",
+        "food-hall-service"
+      ],
+      "timeline": [
+        {
+          "t": 108,
+          "mounted": 1,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 311,
+          "mounted": 2,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 6224,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 7035,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 12302,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 13111,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 18176,
+          "mounted": 4,
+          "active": "food-hall-service",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 19189,
+          "mounted": 4,
+          "active": "food-hall-service",
+          "activeLoaded": true,
+          "word": "impulsa"
+        },
+        {
+          "t": 24253,
+          "mounted": 4,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "impulsa"
+        },
+        {
+          "t": 25065,
+          "mounted": 4,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        }
+      ]
+    },
+    {
+      "name": "late",
+      "requested": [
+        "dining-hall-skyline",
+        "coffee-bar-lounge",
+        "buffet-line",
+        "food-hall-service"
+      ],
+      "timeline": [
+        {
+          "t": 110,
+          "mounted": 1,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 313,
+          "mounted": 2,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 6206,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 7220,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 20388,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 21200,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 26262,
+          "mounted": 4,
+          "active": "food-hall-service",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 27074,
+          "mounted": 4,
+          "active": "food-hall-service",
+          "activeLoaded": true,
+          "word": "impulsa"
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "requested": [
+        "dining-hall-skyline",
+        "coffee-bar-lounge",
+        "buffet-line",
+        "food-hall-service"
+      ],
+      "timeline": [
+        {
+          "t": 110,
+          "mounted": 1,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 313,
+          "mounted": 2,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 6202,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 7013,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 12284,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 13097,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 18365,
+          "mounted": 4,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "conecta"
+        },
+        {
+          "t": 19176,
+          "mounted": 4,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 24240,
+          "mounted": 4,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 25052,
+          "mounted": 4,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 30319,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 31128,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "conecta"
+        }
+      ]
+    },
+    {
+      "name": "slow3g",
+      "requested": [
+        "dining-hall-skyline",
+        "coffee-bar-lounge",
+        "buffet-line",
+        "food-hall-service"
+      ],
+      "timeline": [
+        {
+          "t": 8411,
+          "mounted": 1,
+          "active": "dining-hall-skyline",
+          "activeLoaded": false,
+          "word": "alimenta"
+        },
+        {
+          "t": 25129,
+          "mounted": 2,
+          "active": "dining-hall-skyline",
+          "activeLoaded": false,
+          "word": "alimenta"
+        },
+        {
+          "t": 28168,
+          "mounted": 2,
+          "active": "dining-hall-skyline",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 46611,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "alimenta"
+        },
+        {
+          "t": 47420,
+          "mounted": 3,
+          "active": "coffee-bar-lounge",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 57530,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "cuida"
+        },
+        {
+          "t": 58545,
+          "mounted": 4,
+          "active": "buffet-line",
+          "activeLoaded": true,
+          "word": "conecta"
+        }
+      ]
+    }
+  ]
+}

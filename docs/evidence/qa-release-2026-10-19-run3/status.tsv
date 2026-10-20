@@ -1,0 +1,25 @@
+catalog	PASS	coincide con el inventario y el snapshot
+extract	PASS	volcado de las tablas aprobadas
+restore:counts	PASS	ok
+restore:free-text	PASS	ok
+states:status-before	PASS	ok
+states:capture-new-code	INFO	la captura con el código nuevo falla sobre el esquema anterior, como indica el procedimiento
+states:capture	PASS	ok
+states:baseline-links	PASS	ok
+states:baseline-home	PASS	ok
+states:migrate	PASS	ok
+states:status-after	PASS	ok
+states:all-migrated	PASS	todas aplicadas
+states:old-code-migrated	PASS	ok
+states:new-code-migrated	PASS	ok
+states:admin	PASS	ok
+states:migrated-home	PASS	ok
+states:rb-migrate-down	PASS	ok
+states:rb-old-after-down	PASS	ok
+states:rb-old-home	PASS	ok
+states:rb-migrate	PASS	ok
+states:rb-new-home	PASS	ok
+states:roll-forward	PASS	home igual a la copia migrada
+states:links-after-migrate	PASS	migrar no cambia ningún enlace, con el código anterior ni con el nuevo
+states:rb3-links	INFO	código anterior tras migrate:down: 0 diferencia(s), esperadas por diseño
+mirror:complete	FAIL	849 archivo(s), 93 no encontrados

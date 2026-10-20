@@ -1,0 +1,76 @@
+[
+  {
+    "url": "https://www.zitrone.mx/es",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 200 ",
+      "date: Tue, 13 Oct 2026 04:23:13 GMT",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://www.zitrone.mx/en",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 200 ",
+      "date: Tue, 13 Oct 2026 04:23:14 GMT",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://zitrone.mx/",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 307 ",
+      "date: Tue, 13 Oct 2026 04:23:15 GMT",
+      "location: https://www.zitrone.mx/",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://zitrone.com.mx/",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 200 ",
+      "date: Tue, 13 Oct 2026 04:23:16 GMT",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://www.zitrone.com.mx/",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 308 ",
+      "date: Tue, 13 Oct 2026 04:23:17 GMT",
+      "location: https://zitrone.com.mx/",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://www.zitrone.mx/es/contacto?utm_source=handoff-check",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 308 ",
+      "date: Tue, 13 Oct 2026 04:23:19 GMT",
+      "location: /es/contact?utm_source=handoff-check",
+      "server: Vercel"
+    ],
+    "error": ""
+  },
+  {
+    "url": "https://www.zitrone.mx/en/services/coffee-shop?utm_source=handoff-check",
+    "exit": 0,
+    "headers": [
+      "HTTP/2 308 ",
+      "date: Tue, 13 Oct 2026 04:23:19 GMT",
+      "location: /en/services/corporate-cafe?utm_source=handoff-check",
+      "server: Vercel"
+    ],
+    "error": ""
+  }
+]

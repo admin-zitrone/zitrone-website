@@ -1,0 +1,91 @@
+> on-it-workspace@0.1.0 test:api
+> zsh scripts/test-api-isolated.sh
+✔ CMS down: getResolvedBlogPosts throws instead of serving the static files (3025.525583ms)
+✔ CMS down: getResolvedBlogPost throws instead of serving the static files (3048.165958ms)
+✔ CMS down: getAllResolvedBlogSlugs throws instead of serving the static files (3069.838ms)
+✔ without a CMS configured the committed articles are the blog (local development) (2772.047125ms)
+[09:20:39] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+▶ blog: CMS publishing lifecycle
+  ✔ an empty CMS is an empty blog: static files do not fill it (54.71225ms)
+[ai/embeddings] embedding skipped — OPENAI_API_KEY is not configured.
+  ✔ a draft is not published by any fallback (57.599208ms)
+  ✔ publishing shows it in both languages, paired, enriched by the static file (50.361917ms)
+  ✔ editing a published post changes what is shown (30.770541ms)
+  ✔ unpublishing removes it everywhere, though its static file still ships (28.742583ms)
+  ✔ republishing recovers it (31.8545ms)
+  ✔ related posts never link to an unpublished post (74.745ms)
+  ✔ deleting removes it everywhere (22.644834ms)
+✔ blog: CMS publishing lifecycle (3062.617125ms)
+[09:20:43] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"create","actorRole":"unknown","targetRole":"admin"}
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"create","actorRole":"unknown","targetRole":"editor"}
+[Vercel Web Analytics] Track "payload_auth_login_success" with data {"collection":"users","role":"admin","hasUser":true}
+[Vercel Web Analytics] Track "payload_auth_login_success" with data {"collection":"users","role":"editor","hasUser":true}
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+▶ contact requests: access by actor
+  ✔ anonymous: cannot list, read, update, delete or export (31.434125ms)
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  ✔ anonymous: cannot create a lead through the CMS API (3.493459ms)
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:44] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:45] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  ✔ editor: no access to leads or the export (17.939083ms)
+  ✔ admin: can list and read (9.69025ms)
+  ✔ admin: status and notes change; submitted data, attribution and delivery do not (19.124541ms)
+  ✔ server process: email delivery bookkeeping still updates (contact route / retry script path) (5.931625ms)
+  ✔ admin: export is a no-store CSV with formula cells neutralised (4.136167ms)
+  ✔ admin: can delete a lead (12.731209ms)
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"update","actorRole":"editor","targetRole":"editor"}
+  ✔ existing role protection: an editor cannot promote themselves (13.186583ms)
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"delete","actorRole":"unknown","targetRole":"editor"}
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"delete","actorRole":"unknown","targetRole":"admin"}
+✔ contact requests: access by actor (4619.629417ms)
+✔ the runner hands the suites no provider credentials (0.639084ms)
+✔ any non-local request is refused (0.297292ms)
+[09:20:47] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+[ai/embeddings] embedding skipped — provider unavailable. Run `vercel env pull .env.local` to provision OIDC credentials. Error: network-guard: blocked non-local destination https://api.openai.com/v1/embeddings
+    at refuse (file:///Users/a1085/Documents/Zitrone/Zitrone%20Website/tests/api/network-guard.mjs:19:17)
+    at guardedFetch (file:///Users/a1085/Documents/Zitrone/Zitrone%20Website/tests/api/network-guard.mjs:36:31)
+    at postToApi (/Users/a1085/Documents/Zitrone/Zitrone Website/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:98:28)
+    at postJsonToApi (/Users/a1085/Documents/Zitrone/Zitrone Website/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:31:3)
+    at OpenAIEmbeddingModel.doEmbed (/Users/a1085/Documents/Zitrone/Zitrone Website/node_modules/@ai-sdk/openai/src/embedding/openai-embedding-model.ts:65:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async fn (/Users/a1085/Documents/Zitrone/Zitrone Website/node_modules/ai/src/embed/embed.ts:137:37)
+    at async <anonymous> (/Users/a1085/Documents/Zitrone/Zitrone Website/node_modules/ai/src/telemetry/record-span.ts:32:24) {
+  code: 'ZITRONE_NETWORK_BLOCKED'
+}
+✔ a blog hook with a fake OpenAI key cannot reach the embeddings API (2764.202125ms)
+[09:20:50] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"create","actorRole":"unknown","targetRole":"sales"}
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"create","actorRole":"unknown","targetRole":"editor"}
+[ai/embeddings] embedding skipped — OPENAI_API_KEY is not configured.
+[Vercel Web Analytics] Track "payload_auth_login_success" with data {"collection":"users","role":"sales","hasUser":true}
+[Vercel Web Analytics] Track "payload_auth_login_success" with data {"collection":"users","role":"editor","hasUser":true}
+▶ roles: sales works leads, editors work content
+  ✔ sales: reads leads and changes status/notes only (25.40075ms)
+  ✔ sales: exports leads (17.816417ms)
+[09:20:52] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  ✔ sales: cannot delete a lead (6.327125ms)
+[09:20:52] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:52] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[09:20:52] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  ✔ sales: cannot edit or create site content (16.100542ms)
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"update","actorRole":"sales","targetRole":"sales"}
+  ✔ sales: cannot promote itself (15.980083ms)
+[09:20:52] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  ✔ editor: edits content and globals, still no leads (46.89625ms)
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"delete","actorRole":"unknown","targetRole":"editor"}
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"delete","actorRole":"unknown","targetRole":"sales"}
+✔ roles: sales works leads, editors work content (4614.927292ms)
+ℹ tests 30
+ℹ suites 3
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 27560.47375

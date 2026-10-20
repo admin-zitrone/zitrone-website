@@ -1,0 +1,382 @@
+/* ─────────────────────────────────────────────────────────────
+   Consent — bottom sheet for Google Consent Mode v2 capture
+
+   Pinned rather than modal: outside the EEA the tags are already
+   running under a granted default, so blocking the page would
+   misrepresent what the choice does. Inside the EEA the gating is
+   handled by the consent default itself, not by this overlay.
+   ───────────────────────────────────────────────────────────── */
+
+.ds-consent {
+  position: fixed;
+  inset-inline: 0;
+  inset-block-end: 0;
+  z-index: 90;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-6, 1.5rem);
+  padding-block-end: max(var(--space-6, 1.5rem), env(safe-area-inset-bottom));
+  pointer-events: none;
+}
+
+/* Compact and corner-anchored rather than a full-width bar: the choice is
+   real but it is not the reason anyone came to the page, so it should sit
+   beside the content instead of across it. No border — elevation alone
+   separates it from the page, which keeps the panel quiet on both themes. */
+.ds-consent__panel {
+  pointer-events: auto;
+  width: min(100%, 21.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3, 0.75rem);
+  padding: var(--space-5, 1.25rem);
+  border: none;
+  /* --radius-card resolves to 0.5rem, which is the control scale, not the
+     surface scale. Real surfaces on this site sit at 1.5–1.625rem and the
+     buttons inside this panel are 1.25rem, so the container has to be larger
+     than its contents for the nesting to read correctly. */
+  border-radius: var(--primitive-radius-4);
+  /* Frosted glass, matching the navbar shell: translucent surface + blur.
+     80% keeps body copy at AA over the busiest hero photography (and the
+     white client logos) even where backdrop-filter is unsupported. The inset
+     hairline is the glass edge. */
+  background: color-mix(in srgb, var(--color-surface-container) 80%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--color-surface-container) 55%, transparent),
+    0 1px 2px rgb(0 0 0 / 0.06),
+    0 16px 48px -16px rgb(0 0 0 / 0.30);
+  animation: ds-consent-rise 320ms cubic-bezier(0.22, 0.76, 0.2, 1) both;
+}
+
+@keyframes ds-consent-rise {
+  from { opacity: 0; transform: translate3d(0, 16px, 0) scale(0.985); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-consent__panel { animation: none; }
+}
+
+.ds-consent__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2, 0.5rem);
+}
+
+.ds-consent__title {
+  margin: 0;
+  font-family: var(--font-family-heading, inherit);
+  font-size: var(--type-meta-size);
+  line-height: var(--type-meta-line-height);
+  font-weight: var(--type-meta-weight);
+  color: var(--color-text-heading);
+}
+
+/* Focus moves here programmatically when the panel opens so screen-reader
+   and keyboard users land on it. No visible ring: the visitor did not
+   navigate here by keyboard, so a focus outline would read as an error. */
+.ds-consent__title:focus,
+.ds-consent__title:focus-visible {
+  outline: none;
+}
+
+.ds-consent__copy,
+.ds-consent__note {
+  margin: 0;
+  font-size: var(--type-caption-size);
+  line-height: var(--type-caption-line-height);
+  color: var(--color-text-secondary);
+  max-width: 62ch;
+}
+
+.ds-consent__note {
+  font-size: var(--type-caption-size);
+  color: var(--color-text-muted);
+}
+
+/* Both secondary links stay quiet: they are escape hatches, not the decision.
+   Underline appears on hover so they still read as links without competing
+   with the two buttons for attention. */
+/* Same two-column track as the buttons below, so each link starts on the
+   left edge of the button it sits over instead of floating right. */
+.ds-consent__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  justify-items: start;
+  column-gap: var(--space-3, 0.75rem);
+}
+
+.ds-consent__link {
+  font-size: var(--type-caption-size);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.ds-consent__link:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ── Inline preferences drawer ──────────────────────────────── */
+
+/* 0fr → 1fr animates to the content's true height. A max-height guess would
+   either clip translated copy or coast through empty space at the end. */
+.ds-consent__drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 320ms cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.ds-consent__panel[data-expanded="true"] .ds-consent__drawer {
+  grid-template-rows: 1fr;
+}
+
+/* Closed, the drawer is a 0px row that would still collect the panel's gap
+   on both sides; cancel one so body and actions sit at a single gap. */
+.ds-consent__panel:not([data-expanded="true"]) .ds-consent__drawer {
+  margin-block-start: calc(-1 * var(--space-3, 0.75rem));
+}
+
+.ds-consent__drawer-inner {
+  overflow: hidden;
+  min-height: 0;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.ds-consent__panel[data-expanded="true"] .ds-consent__drawer-inner {
+  opacity: 1;
+  transition-delay: 80ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-consent__drawer,
+  .ds-consent__drawer-inner { transition: none; }
+}
+
+/* ── Category list ──────────────────────────────────────────── */
+
+.ds-consent__categories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ds-consent__category {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4, 1rem);
+  padding-block: var(--space-2, 0.5rem);
+}
+
+/* A hairline between rows, not a box around them. */
+.ds-consent__category + .ds-consent__category {
+  box-shadow: inset 0 1px 0 var(--color-border-subtle);
+}
+
+.ds-consent__category-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1, 0.25rem);
+}
+
+.ds-consent__category-title {
+  font-size: var(--type-meta-size);
+  font-weight: var(--type-meta-weight);
+  color: var(--color-text-primary);
+}
+
+.ds-consent__category-copy {
+  font-size: var(--type-caption-size);
+  line-height: var(--type-caption-line-height);
+  color: var(--color-text-secondary);
+  max-width: 48ch;
+}
+
+.ds-consent__locked {
+  flex-shrink: 0;
+  font-size: var(--type-caption-size);
+  color: var(--color-text-secondary);
+  padding-block-start: 0.15rem;
+}
+
+/* ── Switch ─────────────────────────────────────────────────── */
+
+.ds-consent__switch {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 0.5rem);
+  background: none;
+  border: none;
+  padding: 0.15rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--type-caption-size);
+  color: var(--color-text-secondary);
+}
+
+.ds-consent__switch-track {
+  position: relative;
+  inline-size: 2.5rem;
+  block-size: 1.375rem;
+  border-radius: var(--primitive-radius-round);
+  background: var(--color-surface-disabled);
+  border: none;
+  transition: background-color 200ms cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.ds-consent__switch-thumb {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 0.1875rem;
+  inline-size: 0.875rem;
+  block-size: 0.875rem;
+  border-radius: 50%;
+  background: var(--color-surface-container);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.2);
+  transform: translateY(-50%);
+  transition: transform 200ms cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.ds-consent__switch[aria-checked="true"] .ds-consent__switch-track {
+  background: var(--color-accent-brand-strong, var(--color-text-action));
+}
+
+.ds-consent__switch[aria-checked="true"] .ds-consent__switch-thumb {
+  transform: translate(1.1875rem, -50%);
+}
+
+/* Keyboard focus still has to be visible — that is not decoration. Rendered
+   as a soft ring rather than a hard outline so it matches the borderless
+   panel instead of reintroducing a stroke. */
+.ds-consent__switch:focus-visible {
+  outline: none;
+  border-radius: var(--primitive-radius-round);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-text-action) 30%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-consent__switch-track,
+  .ds-consent__switch-thumb { transition: none; }
+}
+
+.ds-consent__switch-label {
+  min-inline-size: 4.5ch;
+  text-align: start;
+}
+
+/* ── Actions ────────────────────────────────────────────────── */
+
+/* The two real choices get their own row so neither can be squeezed into
+   wrapping while the other stays on one line — at this width, three items in
+   a row makes the longer label look like the lesser option. */
+.ds-consent__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3, 0.75rem);
+}
+
+/* Accept is the emphasised action (dark fill); Reject is a muted hairline.
+   Both keep the same size, height and position, adjacent, so refusing is
+   never harder to reach than accepting — only the visual weight differs.
+   The third option is a text button. */
+.ds-consent__choices {
+  display: flex;
+  gap: var(--space-3, 0.75rem);
+}
+
+/* Compact scale for the panel: the site's default button is sized for hero
+   CTAs. Both buttons share it, so reject and accept stay the same size. */
+.ds-consent__choices .ds-button {
+  --button-min-height: 2.125rem;
+  --button-padding-block: 0.4rem;
+  --button-padding-inline: 1rem;
+  --button-font-size: 0.75rem;
+  flex: 1 1 0;
+  justify-content: center;
+}
+
+/* Scoped past `.ds-button[data-variant='secondary']`, which is a class plus
+   an attribute and would otherwise keep its fill. */
+.ds-consent .ds-button.ds-consent__btn--quiet {
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-text-primary) 20%, transparent);
+  color: var(--color-text-secondary);
+}
+
+.ds-consent .ds-button.ds-consent__btn--quiet:hover,
+.ds-consent .ds-button.ds-consent__btn--quiet:active {
+  /* Same tile as the service-spotlight feature icons (page surface mixed
+     toward the default border), with their action ink as the label. */
+  background: color-mix(in srgb, var(--color-surface-page) 84%, var(--color-border-default));
+  box-shadow: none;
+  color: var(--color-text-action);
+}
+
+.ds-consent .ds-button.ds-consent__btn--primary {
+  background: var(--consent-primary-background);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  color: var(--consent-primary-text);
+}
+
+.ds-consent .ds-button.ds-consent__btn--primary:hover,
+.ds-consent .ds-button.ds-consent__btn--primary:active {
+  background: var(--consent-primary-background-hover);
+  color: var(--consent-primary-text-hover);
+}
+
+.ds-consent__tertiary {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: var(--type-caption-size);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ds-consent__tertiary:hover {
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.ds-consent__tertiary:focus-visible {
+  outline: none;
+  border-radius: var(--radius-control);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-text-action) 30%, transparent);
+}
+
+
+
+@media (max-width: 30rem) {
+  .ds-consent { justify-content: stretch; padding: var(--space-3, 0.75rem); }
+  .ds-consent__panel { width: 100%; }
+}
+
+/* Footer entry point back into preferences. */
+/* Zero specificity: a host class (e.g. the footer legal link) styles the
+   button like its sibling links; this only supplies the button reset. */
+:where(.ds-consent-reopen) {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}

@@ -1,0 +1,275 @@
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 256 assets, 44 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 9.7s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 304ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 5.1s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer]     at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[WebServer] }
+[WebServer]     at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer] ✓ Generating static pages using 11 workers (48/48) in 692ms
+[WebServer]   Finalizing page optimization ...
+[WebServer] 
+[WebServer] Route (app)
+[WebServer] ┌ ○ /_not-found
+[WebServer] ├ ● /[locale]
+[WebServer] │ ├ /es
+[WebServer] │ └ /en
+[WebServer] ├ ƒ /[locale]/blog
+[WebServer] ├ ● /[locale]/blog/[slug]
+[WebServer] │ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[WebServer] │ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[WebServer] │ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[WebServer] │ └ [+3 more paths]
+[WebServer] ├ ● /[locale]/blog/authors/[author]
+[WebServer] │ ├ /en/blog/authors/zitrone-operations-team
+[WebServer] │ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[WebServer] ├ ƒ /[locale]/blog/category/[category]
+[WebServer] ├ ƒ /[locale]/blog/feed.xml
+[WebServer] ├ ● /[locale]/blog/reviewers/[reviewer]
+[WebServer] │ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[WebServer] │ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[WebServer] ├ ● /[locale]/contact
+[WebServer] │ ├ /es/contact
+[WebServer] │ └ /en/contact
+[WebServer] ├ ● /[locale]/privacy-notice
+[WebServer] │ ├ /es/privacy-notice
+[WebServer] │ └ /en/privacy-notice
+[WebServer] ├ ● /[locale]/services
+[WebServer] │ ├ /es/services
+[WebServer] │ └ /en/services
+[WebServer] ├ ● /[locale]/services/[slug]
+[WebServer] │ ├ /en/services/corporate-dining
+[WebServer] │ ├ /en/services/corporate-cafe
+[WebServer] │ ├ /en/services/pantry-restocking
+[WebServer] │ └ [+9 more paths]
+[WebServer] ├ ƒ /admin/[[...segments]]
+[WebServer] ├ ƒ /api/[...slug]
+[WebServer] ├ ƒ /api/contact-request
+[WebServer] ├ ƒ /api/leads/export
+[WebServer] ├ ○ /design-system
+[WebServer] ├ ○ /robots.txt
+[WebServer] └ ○ /sitemap.xml
+[WebServer] 
+[WebServer] 
+[WebServer] ƒ Proxy (Middleware)
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 start
+[WebServer] > next start --hostname 127.0.0.1 --port 3100
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10
+[WebServer] - Local:         http://127.0.0.1:3100
+[WebServer] - Network:       http://127.0.0.1:3100
+[WebServer] ✓ Ready in 77ms
+
+Running 1 test using 1 worker
+
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✘  1 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (1.0s)
+
+
+  1) [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page 
+
+    Error: footer control "Contact us" is covered while focused
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      165 |       })
+      166 |       if (!stop) continue
+    > 167 |       expect(stop.visible, `footer control "${stop.label}" is covered while focused`).toBe(true)
+          |                                                                                       ^
+      168 |       if (await reopen.evaluate((el) => el === document.activeElement)) break
+      169 |     }
+      170 |     await expect(reopen).toBeFocused()
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/error-context.md
+
+  1 failed
+    [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page 

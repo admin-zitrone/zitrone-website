@@ -1,0 +1,926 @@
+:root {
+  /* Button component API. */
+  /* Framer "Primary Large" metrics: 56px tall, 20px corner radius,
+     padding 0 8px 0 20px, 12px gap to a 40px icon chip with 16px radius. */
+  --button-radius: 1.25rem;
+  --button-border-width: var(--border-width-default);
+  --button-min-height: 3.5rem;
+  --button-chip-size: 2.5rem;
+  --button-chip-inset: 0.5rem;
+  --button-chip-gap: 0.75rem;
+  --button-chip-radius: 1rem;
+  --button-padding-block: var(--primitive-space-3);
+  --button-padding-inline: var(--primitive-space-5);
+  --button-font-family: var(--font-body);
+  --button-font-size: var(--type-button-size);
+  --button-font-weight: var(--type-button-weight);
+  --button-line-height: var(--type-button-line-height);
+  --button-focus-ring-width: var(--focus-ring-width);
+  --button-focus-ring-color: var(--color-focus-ring);
+  --button-focus-ring-color-inverse: var(--color-focus-ring-inverse);
+
+  --button-color-background-primary: var(--color-action-primary-background);
+  --button-color-background-primary-hover: var(--color-action-primary-background-hover);
+  --button-color-background-primary-active: var(--color-action-primary-background-active);
+  --button-color-text-primary: var(--color-action-primary-text);
+  --button-color-text-primary-active: var(--color-action-primary-text-active);
+  --button-color-border-primary: var(--color-action-primary-border);
+  --button-color-border-primary-hover: var(--color-action-primary-border-hover);
+  --button-color-border-primary-active: var(--color-action-primary-border-active);
+
+  --button-color-background-secondary: var(--color-action-secondary-background);
+  --button-color-background-secondary-hover: var(--color-action-secondary-background-hover);
+  --button-color-background-secondary-active: var(--color-action-secondary-background-active);
+  --button-color-text-secondary: var(--color-action-secondary-text);
+  --button-color-text-secondary-hover: var(--color-action-secondary-text-hover);
+  --button-color-text-secondary-active: var(--color-action-secondary-text-active);
+  --button-color-border-secondary: var(--color-action-secondary-border);
+  --button-color-border-secondary-hover: var(--color-action-secondary-border-hover);
+  --button-color-border-secondary-active: var(--color-action-secondary-border-active);
+
+  --button-color-background-inverse-primary: var(--color-action-inverse-primary-background);
+  --button-color-background-inverse-primary-hover: var(
+    --color-action-inverse-primary-background-hover
+  );
+  --button-color-background-inverse-primary-active: var(
+    --color-action-inverse-primary-background-active
+  );
+  --button-color-text-inverse-primary: var(--color-action-inverse-primary-text);
+  --button-color-text-inverse-primary-active: var(--color-action-inverse-primary-text-active);
+  --button-color-border-inverse-primary: var(--color-action-inverse-primary-border);
+  --button-color-border-inverse-primary-hover: var(--color-action-inverse-primary-border-hover);
+  --button-color-border-inverse-primary-active: var(--color-action-inverse-primary-border-active);
+
+  --button-color-background-inverse-secondary: var(--color-action-inverse-secondary-background);
+  --button-color-background-inverse-secondary-hover: var(
+    --color-action-inverse-secondary-background-hover
+  );
+  --button-color-background-inverse-secondary-active: var(
+    --color-action-inverse-secondary-background-active
+  );
+  --button-color-text-inverse-secondary: var(--color-action-inverse-secondary-text);
+  --button-color-text-inverse-secondary-hover: var(--color-action-inverse-secondary-text-hover);
+  --button-color-text-inverse-secondary-active: var(--color-action-inverse-secondary-text-active);
+  --button-color-border-inverse-secondary: var(--color-action-inverse-secondary-border);
+  --button-color-border-inverse-secondary-hover: var(--color-action-inverse-secondary-border-hover);
+  --button-color-border-inverse-secondary-active: var(
+    --color-action-inverse-secondary-border-active
+  );
+
+  --button-color-background-accent: var(--color-action-accent-background);
+  --button-color-background-accent-hover: var(--color-action-accent-background-hover);
+  --button-color-background-accent-active: var(--color-action-accent-background-active);
+  --button-color-text-accent: var(--color-action-accent-text);
+  --button-color-text-accent-active: var(--color-action-accent-text-active);
+  --button-color-border-accent: var(--color-action-accent-border);
+  --button-color-border-accent-hover: var(--color-action-accent-border-hover);
+  --button-color-border-accent-active: var(--color-action-accent-border-active);
+
+  --button-color-background-disabled: var(--color-action-disabled-background);
+  --button-color-text-disabled: var(--color-action-disabled-text);
+  --button-color-border-disabled: var(--color-action-disabled-border);
+
+  /* Pill, tag, and kicker component API. */
+  --pill-radius: var(--radius-pill);
+  --pill-border-width: var(--border-width-default);
+  --pill-padding-block: var(--primitive-space-2);
+  --pill-padding-inline: var(--primitive-space-3);
+  --pill-font-family: var(--font-label);
+  --pill-font-size: var(--type-label-size);
+  --pill-font-weight: var(--type-label-weight);
+  --pill-line-height: var(--type-label-line-height);
+  --pill-color-border: var(--color-border-default);
+  --pill-color-border-inverse: var(--color-border-inverse);
+  --pill-color-text: var(--color-text-primary);
+  --pill-color-text-inverse: var(--color-text-inverse);
+  --pill-color-background: transparent;
+  --pill-color-background-inverse: transparent;
+
+  --heading-color: var(--color-text-heading);
+  --copy-color: var(--color-text-primary);
+
+  --kicker-font-family: var(--font-label);
+  --kicker-font-size: var(--type-label-size);
+  --kicker-font-weight: var(--type-label-weight);
+  --kicker-line-height: var(--type-label-line-height);
+  --kicker-text-transform: var(--type-label-transform);
+  /* ocean-500, not the vivid ocean-400: a kicker is a signpost label read at
+     14px, and 400 on natural-50 is 3.3:1. Dark surfaces keep their own value
+     below. */
+  --kicker-color: var(--primitive-color-ocean-500);
+  --kicker-color-inverse: var(--color-text-inverse-secondary);
+
+  /* Navigation/header component API. */
+  --nav-layer: var(--layer-sticky);
+  --nav-border-width: var(--border-width-default);
+  --nav-min-height: var(--primitive-space-9);
+  --nav-min-height-scrolled: var(--primitive-space-8);
+  --nav-gap: var(--space-content-gap);
+  --nav-link-gap: var(--space-content-gap);
+  --nav-brand-font-family: var(--font-display);
+  --nav-brand-font-size: var(--type-brand-size);
+  --nav-brand-font-weight: var(--type-brand-weight);
+  --nav-brand-line-height: var(--type-brand-line-height);
+  --nav-link-font-family: var(--font-label);
+  --nav-link-font-size: var(--type-nav-size);
+  --nav-link-font-weight: var(--type-nav-weight);
+  --nav-focus-ring-width: var(--focus-ring-width);
+  --nav-focus-ring-color: var(--color-focus-ring);
+  --nav-color-background: var(--color-surface-navigation);
+  --nav-color-border: var(--color-border-subtle);
+  --nav-color-brand: var(--color-text-primary);
+  --nav-color-link: var(--color-text-link);
+  --nav-color-link-hover: var(--color-text-link-hover);
+  --nav-shadow-scrolled: var(--elevation-sticky);
+  --nav-backdrop-blur-scrolled: var(--effect-backdrop-blur-sticky);
+  --nav-stack-padding-block: var(--primitive-space-4);
+  --nav-link-padding-block-compact: var(--primitive-space-1);
+
+  /* Media component API. */
+  --media-frame-background: var(--color-surface-container-strong);
+  --media-frame-radius-contained: var(--radius-media);
+  --media-frame-radius-bleed: 0;
+  --media-frame-ratio-wide: var(--media-ratio-wide);
+  --media-frame-ratio-landscape: var(--media-ratio-landscape);
+  --media-frame-ratio-square: var(--media-ratio-square);
+  --media-frame-ratio-portrait: var(--media-ratio-portrait);
+  --media-frame-object-position-default: var(--media-object-position-default);
+  --media-frame-object-position-feature: var(--media-object-position-feature);
+  --media-frame-object-position-feature-small: var(--media-object-position-feature-small);
+  --media-frame-object-position-portrait: var(--media-object-position-portrait);
+  --media-frame-object-position-portrait-small: var(--media-object-position-portrait-small);
+  --media-frame-overlay-scrim: var(--media-overlay-scrim);
+  --media-frame-overlay-surface: var(--media-overlay-surface);
+  --hero-media-min-height: var(--media-hero-min-height);
+  --hero-media-min-height-small: var(--media-hero-min-height-small);
+  --hero-media-position: var(--media-object-position-hero);
+  --hero-media-position-small: var(--media-object-position-hero-small);
+  --hero-media-overlay: var(--media-overlay-hero);
+  --hero-frame-inset: var(--size-hero-frame-inset);
+  --hero-frame-radius: var(--radius-hero-frame);
+  /* The curve a scrolling sheet ends on when it uncovers a sticky panel behind
+     it. Same value the page shell uses to reveal the site footer. */
+  --section-reveal-radius: clamp(56px, 6vw, 96px);
+  --hero-frame-max-height: var(--size-hero-frame-max-height);
+  --hero-stage-min-height: min(
+    100svh,
+    calc(var(--hero-frame-max-height) + (var(--hero-frame-inset) * 2))
+  );
+  --hero-frame-min-height: calc(var(--hero-stage-min-height) - (var(--hero-frame-inset) * 2));
+  --hero-frame-background: var(--color-surface-page);
+  --hero-shell-max-width: var(--size-container-main);
+  --site-masthead-shell-max-width: var(--hero-shell-max-width);
+  /* Compensated margin: subtracts the frame inset so hero content aligns
+     with --size-page-margin on the sections below. One margin rule, page-wide. */
+  --hero-container-margin: calc(var(--size-page-margin) - var(--hero-frame-inset));
+  --site-masthead-shell-inline-margin: var(--hero-container-margin);
+  --site-masthead-shell-min-height: 5rem;
+  --blog-hero-section-block-space: clamp(var(--primitive-space-3), 3vw, var(--primitive-space-5));
+  --blog-hero-break-space-after: clamp(var(--primitive-space-1), 2vw, var(--primitive-space-3));
+  --blog-hero-break-overlap: clamp(1.5rem, 3vw, 2.5rem);
+  --hero-masthead-padding-top: var(--space-card-inset);
+  --hero-masthead-padding-top-compact: var(--primitive-space-5);
+  --hero-brand-font-family: var(--type-brand-font-family);
+  --hero-brand-font-size: var(--type-brand-size);
+  --hero-brand-font-weight: var(--type-brand-weight);
+  --hero-brand-line-height: var(--type-brand-line-height);
+  --hero-nav-font-family: var(--nav-link-font-family);
+  --hero-nav-font-size: var(--nav-link-font-size);
+  --hero-nav-font-weight: var(--nav-link-font-weight);
+  --hero-nav-line-height: var(--type-nav-line-height);
+  --hero-menu-breakpoint: 68.75rem;
+  --hero-menu-toggle-size: var(--primitive-size-7);
+  --hero-menu-toggle-radius: var(--radius-pill);
+  --hero-menu-toggle-gap: var(--primitive-space-1);
+  --hero-menu-toggle-line-width: var(--primitive-size-4);
+  --hero-menu-toggle-line-thickness: var(--border-width-strong);
+  --hero-menu-toggle-background: var(--color-surface-inverse-soft);
+  --hero-menu-toggle-background-active: var(--color-surface-inverse-strong);
+  --hero-menu-toggle-border: var(--color-border-inverse-strong);
+  --hero-menu-toggle-shadow: none;
+  --hero-menu-sheet-background: linear-gradient(180deg, rgb(4 30 38 / 0.985), rgb(5 40 53 / 0.975));
+  --hero-menu-sheet-padding: var(--primitive-space-4);
+  --hero-menu-sheet-gap: var(--primitive-space-6);
+  --hero-menu-sheet-link-min-height: var(--primitive-space-9);
+  --hero-menu-sheet-divider: var(--color-border-inverse-subtle);
+  --hero-menu-sheet-shadow: var(--primitive-shadow-3);
+  --hero-menu-sheet-link-font-weight: var(--hero-nav-font-weight);
+  --hero-menu-blur-overlay: var(--color-overlay-hero-menu);
+  --hero-menu-content-dim: var(--color-overlay-hero-menu-dim);
+  --hero-ribbon-background: linear-gradient(
+    180deg,
+    rgb(5 40 53 / 0.02) 0%,
+    rgb(5 40 53 / 0.18) 36%,
+    rgb(5 40 53 / 0.34) 100%
+  );
+  --hero-ribbon-border: var(--color-border-inverse-subtle);
+  /* 8px: the ribbon glass sits over the always-animating hero, so its
+     blur re-renders every frame — radius is the main cost lever. */
+  --hero-ribbon-backdrop-blur: 0.5rem;
+  --hero-ribbon-label-color: var(--color-text-inverse-secondary);
+  --hero-ribbon-marquee-gap: var(--space-content-gap);
+  --hero-ribbon-marquee-duration: 44s;
+  --media-ribbon-marquee-gap: clamp(var(--primitive-space-6), 5vw, var(--primitive-space-9));
+  --media-ribbon-marquee-duration: 38s;
+  --media-ribbon-logo-opacity-rest: 0.5;
+  --media-ribbon-logo-opacity-active: 1;
+  --media-ribbon-logo-opacity-dim: 0.2;
+  --media-ribbon-mask: linear-gradient(90deg, transparent 0, black 8%, black 92%, transparent 100%);
+  --hero-logo-chip-border: var(--color-border-inverse-subtle);
+  --hero-logo-chip-border-hover: var(--color-border-inverse);
+  --hero-logo-chip-background: rgb(255 255 255 / 0.06);
+  --hero-logo-chip-background-hover: rgb(255 255 255 / 0.12);
+  --hero-logo-chip-text: var(--color-text-inverse-secondary);
+  --hero-logo-image-slot-width: clamp(5.75rem, 8vw, 7rem);
+  --hero-logo-image-slot-height: 1.75rem;
+  --hero-logo-image-opacity-rest: 0.72;
+  --hero-logo-image-opacity-active: 1;
+  --hero-logo-image-filter: brightness(0) invert(1) drop-shadow(0 1px 0 rgb(0 0 0 / 0.18));
+  --hero-logo-image-max-width: 88%;
+  --hero-logo-image-max-height: 100%;
+  --hero-content-max-width: var(--size-hero-layout-max);
+  --hero-content-max-width-medium: var(--size-hero-layout-medium);
+  --hero-content-max-width-small: var(--size-hero-layout-small);
+  --hero-heading-max-width: var(--type-display-hero-measure);
+  --hero-copy-measure: var(--size-measure-hero-copy);
+  --hero-content-layer: var(--layer-content);
+  --hero-actions-gap: var(--space-cluster-gap);
+  --hero-cta-gap: var(--primitive-space-2);
+  --hero-cta-shadow: none;
+  --hero-media-parallax-scale: var(--motion-media-parallax-scale);
+  --hero-media-parallax-distance: var(--motion-media-parallax-distance);
+  --media-panel-min-height: var(--size-panel-media);
+  --media-panel-min-height-small: var(--size-panel-media-small);
+  --stories-quote-family: var(--type-quote-family);
+  --stories-quote-size: var(--type-quote-size-small);
+  --stories-quote-weight: var(--type-quote-weight);
+  --stories-quote-style: var(--type-accent-word-style);
+  --stories-quote-line-height: var(--type-quote-line-height);
+  /* The stories block renders on both light and dark surfaces, so this has to
+     follow the accent role rather than pin the raw lime primitive. */
+  --stories-quote-highlight-color: var(--color-text-accent);
+  --stories-quote-highlight-weight: var(--primitive-font-weight-medium);
+  --stories-tab-count: 1;
+  --stories-menu-margin-bottom: var(--primitive-space-6);
+  --stories-menu-padding-bottom: calc(var(--primitive-space-3) + var(--stories-rail-height));
+  --stories-tab-padding-bottom: var(--primitive-space-2);
+  --stories-logo-stage-height: clamp(1.8rem, 2.64vw, 2.1rem);
+  --stories-logo-stage-height-small: 1.5rem;
+  --stories-logo-stage-padding-inline: clamp(
+    var(--primitive-space-2),
+    1.8vw,
+    var(--primitive-space-4)
+  );
+  --stories-logo-stage-padding-inline-small: var(--primitive-space-2);
+  --stories-logo-max-width: 8.19rem;
+  --stories-logo-max-height: 1.248rem;
+  --stories-logo-max-width-small: 6.63rem;
+  --stories-logo-max-height-small: 0.975rem;
+  --stories-logo-scale: 1;
+  --stories-rail-height: var(--border-width-strong);
+  --stories-rail-segment-size: calc(100% / var(--stories-tab-count));
+  --stories-rail-color-strong: color-mix(
+    in srgb,
+    var(--primitive-color-ocean-100) 18%,
+    transparent
+  );
+  --stories-rail-color-soft: color-mix(in srgb, var(--primitive-color-ocean-100) 12%, transparent);
+  --stories-rail-active-color: var(--primitive-color-lime-400);
+  --stories-media-scale-rest: 1.01;
+  --stories-media-scale-hover: 1.06;
+  --stories-media-transition: 700ms var(--motion-ease-standard);
+  --stories-media-enter-duration: 700ms;
+  --stories-media-enter-ease: cubic-bezier(0.22, 0.7, 0.2, 1);
+  --stories-media-enter-opacity-start: 0.72;
+  --stories-panel-fade-duration: 560ms;
+  --stories-panel-fade-distance: 0.14rem;
+  --stories-panel-fade-ease: cubic-bezier(0.22, 0.7, 0.2, 1);
+
+  /* Carousel component API. */
+  --carousel-control-size: 4rem;
+  --carousel-control-size-mobile: 3.5rem;
+  --carousel-control-radius: var(--primitive-radius-round);
+  --carousel-control-border-width: 0.5px;
+  --carousel-control-padding-inline: 0;
+  --carousel-control-background: transparent;
+  --carousel-control-background-hover: transparent;
+  --carousel-control-background-active: color-mix(
+    in srgb,
+    var(--primitive-color-ocean-950) 8%,
+    transparent
+  );
+  --carousel-control-border: color-mix(in srgb, var(--primitive-color-ocean-950) 84%, transparent);
+  --carousel-control-border-hover: var(--primitive-color-lime-500);
+  --carousel-control-border-active: var(--primitive-color-ocean-950);
+  --carousel-control-text: var(--primitive-color-ocean-950);
+  --carousel-control-text-hover: var(--primitive-color-lime-500);
+  --carousel-control-text-active: var(--primitive-color-ocean-950);
+  --carousel-control-shadow: none;
+  --carousel-control-disabled-opacity: 0.42;
+  --carousel-control-focus-ring-width: var(--focus-ring-width);
+  --carousel-control-focus-ring-color: var(--color-focus-ring);
+  --carousel-control-focus-ring-color-inverse: var(--color-focus-ring-inverse);
+  --carousel-track-focus-ring-width: var(--focus-ring-width);
+  --carousel-track-focus-ring-color: var(--color-focus-ring);
+  --carousel-track-focus-ring-color-inverse: var(--color-focus-ring-inverse);
+  --carousel-control-background-inverse: transparent;
+  --carousel-control-background-inverse-hover: transparent;
+  --carousel-control-background-inverse-active: rgb(255 255 255 / 0.08);
+  --carousel-control-border-inverse: var(--color-border-inverse-subtle);
+  --carousel-control-border-inverse-hover: var(--color-border-inverse);
+  --carousel-control-border-inverse-active: var(--color-border-inverse);
+  --carousel-control-text-inverse: var(--color-text-inverse-secondary);
+  --carousel-control-text-inverse-hover: var(--color-text-inverse);
+  --carousel-control-text-inverse-active: var(--color-text-inverse);
+  --carousel-icon-size: 1.25rem;
+  --carousel-controls-gap: var(--space-content-gap);
+  --carousel-controls-gap-mobile: var(--primitive-space-3);
+  --carousel-controls-after-card-gap-mobile: var(--primitive-space-3);
+  --carousel-dot-size: var(--primitive-size-2);
+  --carousel-dot-color: var(--color-border-default);
+  --carousel-dot-color-active: var(--color-text-action);
+  --carousel-dot-color-inverse: var(--color-border-inverse-subtle);
+  --carousel-dot-color-active-inverse: var(--color-text-inverse);
+  --carousel-dot-focus-ring-width: var(--focus-outline-width);
+  --carousel-dot-focus-ring-offset: var(--focus-outline-offset);
+  --carousel-dot-focus-ring-color: var(--color-focus-ring);
+  --carousel-progress-thickness: var(--border-width-default);
+  --carousel-progress-radius: var(--radius-pill);
+  --carousel-progress-min-width: var(--size-carousel-progress-min);
+  --carousel-progress-max-width: var(--size-carousel-progress-max);
+  --carousel-progress-background: var(--color-border-default);
+  --carousel-progress-background-inverse: rgb(255 255 255 / 0.24);
+  --carousel-progress-fill: var(--color-text-action);
+  --carousel-progress-fill-inverse: var(--color-text-inverse);
+  /* The outcomes rail closes the service run on a dark panel, so the photo
+     above it and the cards inside it share one ocean ground. */
+  --outcomes-section-background: var(--primitive-color-ocean-950);
+  /* Reveal panel: the establishing photo parked behind the white service sheet
+     and uncovered through its curve, carrying the section heading on its lower
+     half. Held under a viewport so it is fully in frame at the moment the curve
+     clears it. */
+  --outcomes-reveal-height: clamp(30rem, 84svh, 50rem);
+  /* "Así trabajamos contigo" dark glass: one fill for every smoked pane
+     (menu switch, service hours, notices). Dense enough that a light photo
+     behind doesn't wash it to grey-teal while a dark one sits darker. */
+  --operating-glass-dark-fill: color-mix(in srgb, var(--primitive-color-ocean-950) 72%, transparent);
+  /* Operating widgets: colour. White cards with ocean ink, smoked glass panes
+     with white ink, lime as the one live/data accent. Card secondary text is a
+     solid AA tone; the old 58% ocean alpha measured 3.72:1 on white. */
+  --operating-widget-ink: var(--primitive-color-ocean-900);
+  --operating-widget-ink-soft: var(--color-text-secondary);
+  --operating-widget-paper: var(--primitive-color-white);
+  --operating-widget-accent: var(--primitive-color-lime-400);
+  --operating-widget-accent-strong: var(--color-text-accent-brand);
+  --operating-widget-shadow-tint: var(--primitive-color-ocean-950);
+  --operating-widget-radius: var(--primitive-radius-round);
+  /* Operating widgets: type. Compact UI copy at caption/body-small sizes,
+     plus a few headline figures sized to fit their card. */
+  --operating-widget-weight-strong: var(--primitive-font-weight-bold);
+  --operating-widget-weight-emphasis: var(--primitive-font-weight-semibold);
+  --operating-widget-leading-tight: var(--primitive-line-height-compact);
+  --operating-widget-leading-relaxed: var(--primitive-line-height-relaxed);
+  --operating-widget-figure-tracking: var(--primitive-letter-spacing-tight-1);
+  --operating-widget-display-tracking: -0.03em;
+  --operating-widget-day-size: 1.6rem;
+  --operating-widget-figure-size: 1.75rem;
+  --operating-widget-ring-size: var(--primitive-font-size-heading-small);
+  --operating-widget-display-size: 2.25rem;
+  --operating-widget-axis-size: 0.6875rem;
+  --operating-widget-axis-size-compact: 0.625rem;
+  /* On a phone the photo is a lead-in to the heading, not a full screen. */
+  --outcomes-reveal-height-small: clamp(26rem, 64svh, 34rem);
+  /* Room between the heading on the photo and the panel's lower edge. */
+  --section-cover-copy-inset: clamp(2.5rem, 5vw, 4.5rem);
+  /* The services cover keeps its heading low so more of the photo shows. */
+  --outcomes-cover-copy-inset: var(--primitive-space-2);
+  /* Heading-to-strip and strip-to-edge rhythm: the heading reads as the
+     strip's own title, so the two sit close with little dead space below. */
+  --outcomes-strip-offset-top: var(--primitive-space-10);
+  --outcomes-strip-offset-top-small: var(--primitive-space-6);
+  --outcomes-strip-offset-bottom: var(--primitive-space-6);
+  /* Heading block matches the services spotlight intro above it: same
+     kicker → title → copy rhythm and the same title measure. */
+  --outcomes-cover-head-gap: var(--service-spotlight-head-gap);
+  --outcomes-cover-title-measure: var(--service-spotlight-title-measure);
+  /* Light eyebrow: white at reduced strength, a quieter step than the name. */
+  --outcomes-eyebrow-color: color-mix(in srgb, var(--color-text-inverse) 62%, transparent);
+  /* The client credit is a caption on the photo, one step quieter again. */
+  --outcomes-credit-color: color-mix(in srgb, var(--color-text-inverse) 40%, transparent);
+  /* Cover sequence: a slow dissolve between client photos, each pushing in
+     gently for longer than it is shown so the motion never visibly stops. */
+  --outcomes-cover-fade: 2.4s;
+  --outcomes-cover-push: 1.06;
+  --outcomes-cover-push-duration: 10s;
+  /* Strip — the flat alternative to the rack: one endless row of equal
+     portrait cards, each carrying its own name and link. */
+  --strip-card-width: clamp(15rem, 26vw, 22.5rem);
+  --strip-card-ratio: 0.78;
+  --strip-card-radius: 0.625rem;
+  --strip-gap: 0.75rem;
+  --strip-card-inset: var(--primitive-space-5);
+  --strip-viewport-padding: var(--primitive-space-5);
+
+  --outcomes-carousel-marquee-gap: var(--primitive-space-4);
+  --outcomes-carousel-marquee-duration: 80s;
+  --outcomes-carousel-card-width: 20.75rem;
+  --outcomes-carousel-card-radius: 2.5rem;
+  --outcomes-carousel-card-media-radius: 2rem;
+  --outcomes-carousel-card-inset: var(--primitive-space-2);
+  --outcomes-carousel-card-content-inset: var(--primitive-space-5);
+  --outcomes-carousel-card-content-gap: var(--primitive-space-4);
+  --outcomes-carousel-card-min-height: 29rem;
+  --outcomes-carousel-card-hover-image-blur: var(--primitive-space-1);
+  --outcomes-carousel-card-hover-image-brightness: 0.62;
+  --outcomes-carousel-card-transition: var(--motion-duration-carousel) var(--motion-ease-standard);
+
+  /* Client ribbon closing the services section. Marks keep their brand colour
+     here, so the only rest/hover treatment is opacity. */
+  --client-ribbon-offset: var(--primitive-space-8);
+  --client-ribbon-offset-small: var(--primitive-space-6);
+  --client-ribbon-marquee-gap: var(--primitive-space-7);
+  --client-ribbon-marquee-duration: 42s;
+  --client-ribbon-slot-width: clamp(5rem, 9vw, 8rem);
+  --client-ribbon-slot-height: 2rem;
+  --client-ribbon-opacity-rest: var(--primitive-opacity-80);
+  --client-ribbon-opacity-active: var(--primitive-opacity-100);
+
+  /* Card component API. */
+  --card-radius: var(--radius-card);
+  --card-media-radius: var(--radius-media);
+  --card-border-width: var(--border-width-default);
+  --card-padding: var(--space-card-inset);
+  --card-gap: var(--space-card-gap);
+  --card-title-measure: var(--type-card-heading-measure);
+  --card-title-font-family: var(--type-card-heading-family);
+  --card-title-font-size: var(--type-card-heading-size);
+  --card-title-font-size-small: var(--type-card-heading-size-small);
+  --card-title-font-weight: var(--type-card-heading-weight);
+  --card-title-line-height: var(--type-card-heading-line-height);
+  --card-copy-color: var(--color-text-secondary);
+  --card-copy-font-size: var(--type-body-size);
+  --card-copy-line-height: var(--type-body-line-height);
+  --card-shadow-hover: var(--elevation-raised);
+  --card-color-background: var(--color-surface-container);
+  --card-color-background-muted: var(--color-surface-container-muted);
+  --card-color-text: var(--color-text-primary);
+  --card-color-border: var(--color-border-subtle);
+
+  --service-card-min-height: 18rem;
+  --service-card-media-min-height: 31rem;
+  --service-card-media-min-height-medium: var(--size-service-card-media-medium);
+  --service-card-media-min-height-small: var(--size-service-card-media-small);
+  --service-card-accent-width: var(--primitive-space-8);
+  --service-card-accent-height: var(--primitive-space-3);
+  --service-card-accent-radius: var(--primitive-radius-1);
+  --service-card-tag-radius: var(--radius-pill);
+  --service-card-tag-padding-block: var(--primitive-space-1);
+  --service-card-tag-padding-inline: var(--primitive-space-2);
+  --service-card-tag-border-width: var(--border-width-default);
+  --service-tag-font-family: var(--font-label);
+  --service-tag-font-size: var(--type-meta-size);
+  --service-tag-font-weight: var(--type-meta-weight);
+  --service-tag-line-height: var(--type-meta-line-height);
+  --service-card-media-border-width: var(--border-width-default);
+  --service-card-media-border-color: rgb(255 255 255 / 0.14);
+  --service-card-media-overlay: linear-gradient(
+    180deg,
+    rgb(5 40 53 / 0.04) 0%,
+    rgb(5 40 53 / 0.38) 54%,
+    rgb(5 40 53 / 0.88) 100%
+  );
+  --service-card-content-layer: var(--layer-content);
+  --service-card-content-max-width: var(--size-measure-service-card-content);
+  --service-card-title-font-family: var(--type-card-heading-family);
+  --service-card-title-font-size: var(--type-card-heading-size-small);
+  --service-card-title-font-weight: var(--type-card-heading-weight);
+  --service-card-title-line-height: var(--line-height-heading);
+  --service-card-copy-max-width: var(--size-measure-support-copy);
+  --service-card-copy-font-size: var(--type-meta-size);
+  --service-card-copy-line-height: var(--type-meta-line-height);
+  --service-card-copy-color: var(--color-text-secondary);
+  --service-card-copy-color-inverse: var(--color-text-inverse-secondary);
+  --service-orbit-min-height: 46.3125rem;
+  --service-orbit-min-height-medium: 36rem;
+  --service-orbit-min-height-small: 31rem;
+  --service-orbit-circle-size: 74rem;
+  --service-orbit-circle-size-tablet: 58.5rem;
+  --service-orbit-circle-size-mobile: 45rem;
+  --service-orbit-circle-top: 91%;
+  --service-orbit-circle-top-tablet: 86%;
+  --service-orbit-circle-top-mobile: 78%;
+  --service-orbit-card-size: 7.25rem;
+  --service-orbit-card-size-tablet: 6rem;
+  --service-orbit-card-size-mobile: 4.9rem;
+  --service-orbit-card-radius: var(--primitive-radius-2);
+  --service-orbit-panel-max-width: 32rem;
+  --service-orbit-panel-max-width-tablet: 24rem;
+  --service-orbit-panel-max-width-mobile: 18.5rem;
+  --service-orbit-panel-top: 52%;
+  --service-orbit-panel-top-tablet: 62%;
+  --service-orbit-panel-top-mobile: 64%;
+  --service-orbit-panel-gap: var(--space-content-gap-tight);
+  --service-orbit-panel-padding: var(--space-card-inset);
+  --service-orbit-transition: 700ms cubic-bezier(0.22, 0.7, 0.2, 1);
+  --service-orbit-panel-transition: 560ms cubic-bezier(0.22, 0.7, 0.2, 1);
+  --service-orbit-spin-duration: 52s;
+  --service-orbit-spin-duration-hover: 52s;
+  --service-orbit-image-overlay: linear-gradient(
+    180deg,
+    rgb(5 40 53 / 0.04) 0%,
+    rgb(5 40 53 / 0.54) 100%
+  );
+  --service-orbit-fade-height: 15rem;
+  --service-orbit-fade-blur: 0rem;
+
+  --proof-card-padding: var(--space-card-inset);
+  --proof-card-gap: var(--space-content-gap-tight);
+  --proof-card-color-background: var(--card-color-background);
+  --proof-card-color-border: var(--card-color-border);
+  --proof-card-title-color: var(--color-text-action);
+  --proof-card-title-font-family: var(--font-label);
+  --proof-card-title-font-size: var(--type-meta-size);
+  --proof-card-title-font-weight: var(--type-meta-weight);
+  --proof-card-title-line-height: var(--type-meta-line-height);
+  --proof-card-copy-max-width: var(--type-body-measure);
+  --proof-card-copy-font-size: var(--type-body-size);
+  --proof-card-copy-line-height: var(--type-body-line-height);
+  --proof-card-copy-color: var(--color-text-secondary);
+
+  --stat-card-padding: var(--space-stat-inset);
+  --stat-card-gap: var(--space-stat-gap);
+  --stat-card-color-background: var(--card-color-background);
+  --stat-card-color-border: var(--card-color-border);
+  --stat-card-copy-max-width: var(--size-measure-support-copy);
+  --stat-number-color: var(--color-text-primary);
+  --stat-number-family: var(--type-stat-number-family);
+  --stat-number-size: var(--type-stat-number-size);
+  --stat-number-size-small: var(--type-stat-number-size-small);
+  --stat-number-weight: var(--type-stat-number-weight);
+  --stat-number-line-height: var(--type-stat-number-line-height);
+
+  --story-card-padding: var(--space-quote-inset);
+  --story-card-gap: var(--space-quote-gap);
+  --story-meta-color: var(--color-text-secondary);
+  --story-meta-font-size: var(--type-support-size);
+  --story-meta-line-height: var(--type-support-line-height);
+
+  --logo-row-gap: var(--space-cluster-gap);
+  --tab-font-family: var(--font-label);
+  --tab-font-size: var(--type-meta-size);
+  --tab-font-weight: var(--type-meta-weight);
+  --tab-line-height: var(--type-meta-line-height);
+  --tab-color-text: var(--color-text-secondary);
+  --tab-color-text-active: var(--color-text-primary);
+  --tab-focus-ring-width: var(--focus-ring-width);
+  --tab-focus-ring-color: var(--color-focus-ring);
+  --logo-chip-padding-block: var(--primitive-space-2);
+  --logo-chip-padding-inline: var(--primitive-space-3);
+  --logo-chip-radius: var(--radius-pill);
+  --logo-chip-border-width: var(--border-width-default);
+  --logo-chip-border: var(--color-border-subtle);
+  --logo-chip-background: var(--color-surface-container);
+  --logo-chip-text: var(--color-text-secondary);
+  --logo-chip-font-family: var(--font-label);
+  --logo-chip-font-size: var(--type-meta-size);
+  --logo-chip-font-weight: var(--type-meta-weight);
+  --logo-chip-line-height: var(--type-meta-line-height);
+
+  --cta-block-gap: var(--space-content-gap-loose);
+
+  --footer-group-gap: var(--space-content-gap-loose);
+  --footer-link-gap: var(--space-content-gap-tight);
+  --footer-brand-font-family: var(--font-display);
+  --footer-brand-font-size: var(--type-brand-size);
+  /* Phone footer wordmark is a display-size brand moment, not a type role. */
+  --footer-brand-font-size-small: clamp(2.75rem, 16vw, 4rem);
+  --footer-brand-font-weight: var(--type-brand-weight);
+  --footer-brand-line-height: var(--type-brand-line-height);
+  --footer-copy-measure: var(--type-body-large-measure);
+  --footer-copy-color: var(--color-text-secondary);
+  --footer-group-title-font-family: var(--font-label);
+  --footer-group-title-font-size: var(--type-meta-size);
+  --footer-group-title-font-weight: var(--type-meta-weight);
+  --footer-group-title-line-height: var(--type-meta-line-height);
+  --footer-link-font-family: var(--font-label);
+  --footer-link-font-size: var(--type-nav-size);
+  --footer-link-font-weight: var(--type-nav-weight);
+  --footer-link-color: var(--color-text-link);
+  --footer-link-color-hover: var(--color-text-link-hover);
+  --footer-link-focus-ring-width: var(--focus-ring-width);
+  --footer-link-focus-ring-color: var(--color-focus-ring);
+
+  /* Section component API. */
+  --section-padding-block: var(--space-section-medium);
+  --section-color-background: var(--color-surface-page);
+  --section-color-text: var(--color-text-primary);
+
+  /* Corporate dining operations bento — testimonial media over a dark process panel. */
+  --service-operations-bento-background: var(--color-surface-bento-deep);
+  --service-operations-bento-text: var(--color-text-inverse);
+  /* Three neutral tiers: title (white) > intro (lead) > point copy (support). */
+  --service-operations-bento-lead: var(--color-text-inverse-lead);
+  --service-operations-bento-copy: var(--color-text-inverse-support);
+  /* The bento is a dark surface (background/text above), so the accent is the
+     vivid brand lime, not the light-surface accent. */
+  --service-operations-bento-accent: var(--color-text-accent-brand);
+  --service-operations-bento-rule: var(--color-border-inverse-subtle);
+  --service-operations-bento-radius: 2.5rem;
+  --service-operations-bento-radius-small: var(--radius-section-surface-small);
+  --service-operations-bento-inset: var(--space-section-small);
+  --service-operations-bento-inset-small: var(--space-card-inset);
+  --service-operations-bento-section-padding: var(--space-section-small);
+  --service-operations-bento-section-padding-small: var(--space-card-inset);
+  --service-operations-bento-panel-gap: var(--space-split-gap);
+  --service-operations-bento-panel-gap-medium: var(--space-content-gap-loose);
+  --service-operations-bento-content-gap: var(--space-content-gap);
+  --service-operations-bento-content-gap-loose: var(--space-content-gap-loose);
+  --service-operations-bento-testimonial-min-height: 45rem;
+  --service-operations-bento-testimonial-min-height-small: 36rem;
+  --service-operations-bento-testimonial-measure: 52rem;
+  --service-operations-bento-testimonial-radius: var(--radius-section-surface);
+  --service-operations-bento-testimonial-radius-small: var(--radius-section-surface-small);
+  --service-operations-bento-testimonial-content-padding: var(--primitive-space-6);
+  --service-operations-bento-testimonial-content-gap: calc(
+    var(--primitive-space-6) + var(--primitive-space-2)
+  );
+  --service-operations-bento-quote-measure: var(--type-quote-measure);
+  --service-operations-bento-quote-family: var(--font-body);
+  --service-operations-bento-quote-size: clamp(
+    var(--type-card-heading-size-small),
+    2vw,
+    var(--type-quote-size)
+  );
+  --service-operations-bento-quote-size-small: var(--type-card-heading-size-small);
+  --service-operations-bento-quote-weight: var(--type-quote-weight);
+  --service-operations-bento-quote-line-height: var(--type-quote-line-height);
+  --service-operations-bento-star-color: var(--primitive-color-yellow-400);
+  --service-operations-bento-star-size: var(--primitive-space-5);
+  --service-operations-bento-star-gap: var(--space-content-gap-tight);
+  --service-operations-bento-logo-width: 6.5rem;
+  --service-operations-bento-logo-height: 2.25rem;
+  --service-operations-bento-process-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  --service-operations-bento-items-columns: repeat(2, minmax(0, 1fr));
+  --service-operations-bento-heading-measure: 12ch;
+  --service-operations-bento-process-copy-measure: 44ch;
+  --service-operations-bento-process-copy-size: var(--type-body-large-size);
+  --service-operations-bento-process-copy-line-height: var(--type-body-large-line-height);
+  --service-operations-bento-items-column-gap: var(--space-grid-gap-large);
+  --service-operations-bento-items-row-gap: var(--space-section-small);
+  --service-operations-bento-step-gap: var(--space-content-gap);
+  /* Phone: compact rows, icon beside the text like the overview benefits. */
+  --service-operations-bento-items-row-gap-phone: var(--space-content-gap-loose);
+  --service-operations-bento-step-columns-phone: auto minmax(0, 1fr);
+  --service-operations-bento-step-gap-phone: var(--service-lp-benefit-gap-phone);
+  --service-operations-bento-content-gap-phone: var(--space-content-gap-tight);
+  /* Matches the hero proof-list marks: same square, same radius, same glyph. */
+  --service-operations-bento-step-icon-size: 3rem;
+  --service-operations-bento-step-icon-glyph-size: 1.4rem;
+  --service-operations-bento-step-icon-radius: 1rem;
+  --service-operations-bento-step-title-size: var(--type-card-heading-size-small);
+  --service-operations-bento-step-title-line-height: var(--type-card-heading-line-height);
+  --service-operations-bento-step-copy-size: var(--type-support-size);
+  --service-operations-bento-step-copy-line-height: var(--type-support-line-height);
+  --service-operations-bento-step-copy-weight: var(--primitive-font-weight-regular);
+  --service-operations-bento-scrim:
+    linear-gradient(
+      180deg,
+      rgb(0 41 42 / 0.2) 0%,
+      rgb(0 41 42 / 0.52) 42%,
+      rgb(0 41 42 / 0.94) 100%
+    ),
+    linear-gradient(90deg, rgb(0 41 42 / 0.42), rgb(0 41 42 / 0.12));
+
+  /* System tabs — pill chip on dark media. */
+  --system-tabs-index-border-color: rgb(255 255 255 / 0.28);
+  --system-tabs-index-background: rgb(255 255 255 / 0.12);
+
+  /* System tabs visual — legibility scrim layered over ocean-950 media. */
+  --system-tabs-scrim-background:
+    linear-gradient(
+      90deg,
+      rgb(0 41 42 / 0.72) 0%,
+      rgb(0 41 42 / 0.28) 48%,
+      rgb(0 41 42 / 0.08) 100%
+    ),
+    linear-gradient(180deg, rgb(0 41 42 / 0.08) 0%, rgb(0 41 42 / 0.22) 100%);
+
+  /* Service system card — dark bottom-left anchor that supports copy legibility. */
+  --service-system-scrim-background:
+    linear-gradient(
+      180deg,
+      rgb(0 41 42 / 0.02) 0%,
+      rgb(0 41 42 / 0.06) 26%,
+      rgb(0 41 42 / 0.65) 70%,
+      rgb(0 41 42 / 0.92) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgb(0 41 42 / 0.5) 0%,
+      rgb(0 41 42 / 0.24) 26%,
+      rgb(0 41 42 / 0.06) 46%,
+      rgb(0 41 42 / 0) 64%
+    );
+
+  /* Service spotlight — split media/detail slide on the light page surface.
+     Panels are full-width, so the media block carries the vertical rhythm. */
+  --service-spotlight-section-background: var(--color-surface-container);
+
+  /* Section cover: full-bleed establishing shot that dissolves into the
+     surface of the section carrying it, so what follows reads as the same
+     block of page. A band, not a viewport-filling panel — it opens a section
+     rather than standing in for one. */
+  --section-cover-height: clamp(22rem, 44vw, 34rem);
+  --section-cover-height-small: clamp(16rem, 58vw, 22rem);
+  --section-cover-to-nav: var(--primitive-space-9);
+  /* Overscan gives the parallax slack to travel into without exposing an edge;
+     it must stay >= the travel distance. */
+  --section-cover-overscan: 5rem;
+  --section-cover-travel: 5rem;
+
+  --service-spotlight-panel-gap: var(--space-split-gap);
+  --service-spotlight-panel-gap-medium: var(--primitive-space-7);
+  --service-spotlight-panel-columns: minmax(0, 1.04fr) minmax(0, 1fr);
+  /* Detail rhythm: name and copy read as one block, then more air before
+     the feature list and more again before the CTA. */
+  --service-spotlight-name-to-copy: var(--primitive-space-3);
+  --service-spotlight-copy-to-features: var(--primitive-space-6);
+  --service-spotlight-features-to-cta: 2.5rem;
+  --service-spotlight-head-gap: var(--primitive-space-4);
+  --service-spotlight-head-to-stage: var(--primitive-space-8);
+  --service-spotlight-stage-to-controls: var(--primitive-space-6);
+  --service-spotlight-stage-to-controls-small: var(--primitive-space-4);
+  /* Spotlight dot target: 8px dot plus 8px each side, the WCAG minimum target of 24px */
+  --service-spotlight-dot-hit-padding: var(--primitive-space-2);
+  --service-spotlight-slide-duration: var(--primitive-duration-5);
+  --service-spotlight-slide-easing: cubic-bezier(0.22, 0.75, 0.24, 1);
+  /* Card width is the viewport minus (gap + sliver) on each side, so the
+     neighbour always clears the gap with a meaningful preview. A flat vw
+     share silently loses the peek as the viewport narrows.
+
+     The subtraction is written out rather than composed from the gap/peek
+     tokens: a custom property declared here resolves its own inner var()s
+     against :root, so a deeper override of the gap would not re-derive it. */
+  --service-spotlight-track-gap: 5rem;
+  --service-spotlight-card-peek: 5rem;
+  --service-spotlight-card-width: min(64.25rem, calc(100vw - 20rem));
+  --service-spotlight-edge-fade-width: 10rem;
+  --service-spotlight-active-opacity: var(--primitive-opacity-100);
+  /* 40% dimmed the card's text to 3.0:1 against the section behind it. The
+     inactive panels are still visible and still clickable, so they are content
+     and must meet AA; 60% is the lowest step that clears it (4.8:1) while
+     keeping an obvious step down from the active card. */
+  --service-spotlight-inactive-opacity: var(--primitive-opacity-60);
+  /* gap 1.5rem + peek 1rem, doubled */
+  --service-spotlight-track-gap-small: 1.5rem;
+  --service-spotlight-card-width-small: calc(100vw - 5rem);
+
+  --service-spotlight-media-radius: 1.5rem;
+  --service-spotlight-media-radius-small: 1.25rem;
+  --service-spotlight-media-min-height: 33rem;
+  --service-spotlight-media-min-height-medium: 24rem;
+  --service-spotlight-media-min-height-small: 18rem;
+  --service-spotlight-media-ring: inset 0 0 0 var(--primitive-border-width-1)
+    var(--color-border-subtle);
+
+  --service-spotlight-title-font-family: var(--type-section-heading-family);
+  --service-spotlight-title-font-size: var(--type-section-heading-size);
+  --service-spotlight-title-font-size-small: var(--type-section-heading-size-small);
+  --service-spotlight-title-font-weight: var(--type-section-heading-weight);
+  --service-spotlight-title-line-height: var(--type-section-heading-line-height);
+  --service-spotlight-title-measure: 24ch;
+
+  --service-spotlight-name-font-family: var(--type-card-heading-family);
+  --service-spotlight-name-font-size: var(--type-card-heading-size);
+  --service-spotlight-name-font-size-small: var(--type-card-heading-size-small);
+  --service-spotlight-name-font-weight: var(--type-card-heading-weight);
+  --service-spotlight-name-line-height: var(--type-card-heading-line-height);
+  --service-spotlight-name-measure: var(--type-card-heading-measure);
+  --service-spotlight-name-color: var(--color-text-heading);
+
+  --service-spotlight-copy-font-size: var(--type-body-large-size);
+  --service-spotlight-copy-line-height: var(--type-body-large-line-height);
+  --service-spotlight-copy-measure: 32ch;
+  --service-spotlight-copy-color: var(--color-text-body);
+
+  --service-spotlight-rule-color: var(--color-border-subtle);
+  --service-spotlight-features-gap: var(--primitive-space-4);
+  --service-spotlight-features-measure: 40rem;
+  --service-spotlight-feature-gap: var(--primitive-space-4);
+  --service-spotlight-feature-icon-size: 3.25rem;
+  --service-spotlight-feature-icon-glyph-size: 1.45rem;
+  --service-spotlight-feature-icon-radius: 1rem;
+  --service-spotlight-feature-icon-background: var(--color-surface-container-muted);
+  --service-spotlight-feature-icon-color: var(--color-text-action);
+  --service-spotlight-feature-title-color: var(--color-text-heading);
+  --service-spotlight-feature-title-font-size: var(--type-support-size);
+  --service-spotlight-feature-title-font-weight: var(--primitive-font-weight-medium);
+  --service-spotlight-feature-text-color: var(--color-text-secondary);
+  --service-spotlight-feature-text-font-size: var(--type-meta-size);
+  --service-spotlight-feature-text-line-height: var(--type-support-line-height);
+
+  /* Switcher — a pill rail with a thumb that travels to the active tab.
+     The rail and the thumb are two steps of the same raised-inverse ramp, so
+     the thumb reads as lifted off the rail rather than tinted. */
+  --service-spotlight-switch-background: var(--color-surface-container-muted);
+  --service-spotlight-switch-radius: 1080px;
+  --service-spotlight-switch-padding: var(--primitive-space-2);
+  --service-spotlight-switch-gap: var(--primitive-space-1);
+  --service-spotlight-thumb-background: var(--color-surface-container);
+  --service-spotlight-thumb-radius: 2rem;
+  --service-spotlight-thumb-shadow:
+    0 1px 2px rgb(0 41 42 / 0.12), 0 1px 0 rgb(255 255 255 / 0.6) inset;
+
+  --service-spotlight-chip-color: var(--color-text-secondary);
+  --service-spotlight-chip-color-active: var(--color-text-heading);
+  --service-spotlight-chip-font-size: var(--type-support-size);
+  --service-spotlight-chip-padding-block: var(--primitive-space-2);
+  --service-spotlight-chip-padding-inline: var(--primitive-space-4);
+  --service-spotlight-chip-focus-ring-width: var(--focus-ring-width);
+  --service-spotlight-chip-focus-ring-color: var(--color-focus-ring);
+
+  /* Slide card — raised panel holding an inset image, 24px inside a 32px card. */
+  --service-spotlight-card-background: var(--color-surface-cool);
+  --service-spotlight-card-radius: 2rem;
+  --service-spotlight-card-radius-small: 1.5rem;
+  --service-spotlight-card-inset: var(--primitive-space-5);
+  --service-spotlight-card-inset-small: var(--primitive-space-4);
+  --service-spotlight-card-ring: none;
+
+  --service-spotlight-counter-color: var(--color-text-secondary);
+  --service-spotlight-counter-color-total: var(--color-text-secondary);
+  --service-spotlight-counter-font-family: var(--type-stat-number-family);
+  --service-spotlight-counter-font-size: var(--type-body-large-size);
+
+  /* Service system card — active hover and focus elevations. */
+  --service-system-card-hover-shadow:
+    0 var(--primitive-space-4) var(--primitive-space-8) rgb(0 41 42 / 0.18),
+    inset 0 0 0 var(--primitive-border-width-1) rgb(255 255 255 / 0.38);
+  --service-system-card-focus-inset: inset 0 0 0 var(--primitive-border-width-1)
+    rgb(255 255 255 / 0.38);
+
+  /* Footer site CTA card — hover elevation. */
+  --footer-site-cta-hover-shadow: 0 16px 36px rgb(0 0 0 / 0.22);
+
+  /* Footer site locale/menu popover. */
+  --footer-site-menu-background: rgb(1 22 23 / 0.97);
+  --footer-site-menu-shadow: 0 18px 44px rgb(0 0 0 / 0.28);
+
+  /* Hero transfer preview — media scrim (ocean-800 tint). */
+  --hero-transfer-media-scrim:
+    linear-gradient(
+      90deg,
+      rgb(5 40 53 / 0.94) 0%,
+      rgb(5 40 53 / 0.78) 28%,
+      rgb(5 40 53 / 0.38) 56%,
+      rgb(5 40 53 / 0.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(5 40 53 / 0.18) 0%,
+      rgb(5 40 53 / 0.08) 38%,
+      rgb(5 40 53 / 0.44) 100%
+    );
+
+  /* Hero transfer preview — ribbon backdrop (navy tint). */
+  --hero-transfer-ribbon-scrim: linear-gradient(
+    180deg,
+    rgb(3 35 77 / 0.04) 0%,
+    rgb(3 35 77 / 0.22) 42%,
+    rgb(3 35 77 / 0.38) 100%
+  );
+
+  /* FAQ accordion: questions step down on phones so they stay above the
+     16px answer text without wrapping to three lines. */
+  --faq-question-size: var(--primitive-font-size-4);
+  --faq-question-size-small: var(--primitive-font-size-2);
+
+  /* Cookie consent primary button: deep ink at rest, lime accent on hover. */
+  --consent-primary-background: var(--primitive-color-ocean-950);
+  --consent-primary-text: var(--primitive-color-natural-50);
+  --consent-primary-background-hover: var(--color-action-accent-background-hover);
+  --consent-primary-text-hover: var(--color-action-accent-text);
+
+  /* Blog card: light meta line, regular-weight recommended title, lime hover
+     on brand/inverse listings. */
+  --blog-card-meta-weight: var(--primitive-font-weight-light);
+  --blog-card-recommended-title-weight: var(--primitive-font-weight-regular);
+  --blog-card-title-hover-inverse: var(--primitive-color-lime-400);
+
+  /* Section cover credit: corner inset from the cover frame. */
+  --section-cover-credit-inset: var(--primitive-space-6);
+  --section-cover-credit-inset-small: var(--primitive-space-4);
+
+  /* Service landing overview benefit rows. */
+  --service-lp-benefit-gap: clamp(var(--primitive-space-3), 1.4vw, var(--primitive-space-4));
+  /* Icon-to-text gap for point lists on phones (benefits + operations). */
+  --service-lp-benefit-gap-phone: var(--space-grid-gap);
+  --service-lp-benefit-padding-block: var(--primitive-space-6);
+  --service-lp-benefit-padding-inline-end: clamp(var(--primitive-space-2), 0.4vw, var(--primitive-space-3));
+}
+
+@media (max-width: 40rem) {
+  :root {
+    --service-spotlight-copy-font-size: var(--type-support-size);
+  }
+}

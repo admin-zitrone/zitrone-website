@@ -1,0 +1,28 @@
+NOTICE:  database "zitrone_home_cache_api_test" does not exist, skipping
+seeding the home from the code content…
+[22:42:40] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+[Vercel Web Analytics] Track "payload_user_changed" with data {"collection":"users","operation":"create","actorRole":"unknown","targetRole":"admin"}
+parity: the CMS home matches the code content
+building against the throwaway CMS (CMS mode)…
+▶ home: CMS edits through Next's cache
+  ✔ pre-rendered pages are served from the cache before any change (86.953166ms)
+home edit visible after 1 visit(s)
+  ✔ a saved draft of the home does not reach the site; publishing does (2830.763083ms)
+nav edit on /es after 1 visit(s)
+nav edit on /es/services after 1 visit(s)
+nav edit on /es/services/comedor-corporativo after 1 visit(s)
+nav edit on /es/blog after 1 visit(s)
+nav edit on /es/contact after 1 visit(s)
+nav edit on /es/privacy-notice after 1 visit(s)
+  ✔ a header navigation edit reaches every page (2174.478291ms)
+  ✔ a footer edit reaches every page (2442.138625ms)
+  ✔ removing the ribbon figure falls back to the ribbon label (737.670166ms)
+✔ home: CMS edits through Next's cache (8405.771125ms)
+ℹ tests 5
+ℹ suites 1
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8510.728125

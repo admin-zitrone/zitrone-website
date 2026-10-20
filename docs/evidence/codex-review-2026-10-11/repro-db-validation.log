@@ -1,0 +1,3 @@
+TEST_PG_URL must be local
+VALIDATION_DID_NOT_STOP
+{ validatedHost: '127.0.0.1', pgActualHost: 'example.invalid' }

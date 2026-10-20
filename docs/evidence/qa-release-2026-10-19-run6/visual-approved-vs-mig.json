@@ -1,0 +1,889 @@
+{
+  "base": "https://www.zitrone.mx",
+  "candidate": "http://127.0.0.1:3105",
+  "date": "2026-10-19T22:51:08.797Z",
+  "results": [
+    {
+      "path": "/en",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x8192",
+      "changedPixels": 78031,
+      "changedPct": 0.661,
+      "files": [
+        "en-desktop-base.jpg",
+        "en-desktop-candidate.jpg",
+        "en-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8158",
+      "changedPixels": 17189,
+      "changedPct": 0.54,
+      "files": [
+        "en-mobile-base.jpg",
+        "en-mobile-candidate.jpg",
+        "en-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x2373",
+      "changedPixels": 3810,
+      "changedPct": 0.111,
+      "files": [
+        "en_blog-desktop-base.jpg",
+        "en_blog-desktop-candidate.jpg",
+        "en_blog-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3162",
+      "changedPixels": 2796,
+      "changedPct": 0.227,
+      "files": [
+        "en_blog-mobile-base.jpg",
+        "en_blog-mobile-candidate.jpg",
+        "en_blog-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/afternoon-slump-office-pantry",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x6218",
+      "changedPixels": 46360,
+      "changedPct": 0.518,
+      "files": [
+        "en_blog_afternoon-slump-office-pantry-desktop-base.jpg",
+        "en_blog_afternoon-slump-office-pantry-desktop-candidate.jpg",
+        "en_blog_afternoon-slump-office-pantry-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/afternoon-slump-office-pantry",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6711",
+      "changedPixels": 13806,
+      "changedPct": 0.527,
+      "files": [
+        "en_blog_afternoon-slump-office-pantry-mobile-base.jpg",
+        "en_blog_afternoon-slump-office-pantry-mobile-candidate.jpg",
+        "en_blog_afternoon-slump-office-pantry-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/authors/zitrone-operations-team",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1919",
+      "changedPixels": 6989,
+      "changedPct": 0.253,
+      "files": [
+        "en_blog_authors_zitrone-operations-team-desktop-base.jpg",
+        "en_blog_authors_zitrone-operations-team-desktop-candidate.jpg",
+        "en_blog_authors_zitrone-operations-team-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/authors/zitrone-operations-team",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3366",
+      "changedPixels": 4941,
+      "changedPct": 0.376,
+      "files": [
+        "en_blog_authors_zitrone-operations-team-mobile-base.jpg",
+        "en_blog_authors_zitrone-operations-team-mobile-candidate.jpg",
+        "en_blog_authors_zitrone-operations-team-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/category/building-a-program",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1850",
+      "changedPixels": 3,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/blog/category/building-a-program",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2198",
+      "changedPixels": 515,
+      "changedPct": 0.06
+    },
+    {
+      "path": "/en/blog/category/culture-retention",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1850",
+      "changedPixels": 13,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/blog/category/culture-retention",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2198",
+      "changedPixels": 494,
+      "changedPct": 0.058
+    },
+    {
+      "path": "/en/blog/category/wellbeing-and-productivity",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1850",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/blog/category/wellbeing-and-productivity",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2198",
+      "changedPixels": 185,
+      "changedPct": 0.022
+    },
+    {
+      "path": "/en/blog/feed.xml",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x900",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/blog/feed.xml",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x1166",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/blog/office-food-employee-retention",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x6477",
+      "changedPixels": 39866,
+      "changedPct": 0.427,
+      "files": [
+        "en_blog_office-food-employee-retention-desktop-base.jpg",
+        "en_blog_office-food-employee-retention-desktop-candidate.jpg",
+        "en_blog_office-food-employee-retention-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/office-food-employee-retention",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6988",
+      "changedPixels": 11788,
+      "changedPct": 0.433,
+      "files": [
+        "en_blog_office-food-employee-retention-mobile-base.jpg",
+        "en_blog_office-food-employee-retention-mobile-candidate.jpg",
+        "en_blog_office-food-employee-retention-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/reviewers/zitrone-food-safety-and-operations",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1943",
+      "changedPixels": 6989,
+      "changedPct": 0.25,
+      "files": [
+        "en_blog_reviewers_zitrone-food-safety-and-operations-desktop-base.jpg",
+        "en_blog_reviewers_zitrone-food-safety-and-operations-desktop-candidate.jpg",
+        "en_blog_reviewers_zitrone-food-safety-and-operations-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/reviewers/zitrone-food-safety-and-operations",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3431",
+      "changedPixels": 4854,
+      "changedPct": 0.363,
+      "files": [
+        "en_blog_reviewers_zitrone-food-safety-and-operations-mobile-base.jpg",
+        "en_blog_reviewers_zitrone-food-safety-and-operations-mobile-candidate.jpg",
+        "en_blog_reviewers_zitrone-food-safety-and-operations-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/workplace-food-program-that-works",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x7135",
+      "changedPixels": 23568,
+      "changedPct": 0.229,
+      "files": [
+        "en_blog_workplace-food-program-that-works-desktop-base.jpg",
+        "en_blog_workplace-food-program-that-works-desktop-candidate.jpg",
+        "en_blog_workplace-food-program-that-works-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/blog/workplace-food-program-that-works",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x7382",
+      "changedPixels": 7839,
+      "changedPct": 0.272,
+      "files": [
+        "en_blog_workplace-food-program-that-works-mobile-base.jpg",
+        "en_blog_workplace-food-program-that-works-mobile-candidate.jpg",
+        "en_blog_workplace-food-program-that-works-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/contact",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1791",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/contact",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2373",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en/privacy-notice",
+      "viewport": "desktop",
+      "sameSize": false,
+      "sizeA": "1440x9252",
+      "sizeB": "1440x7269",
+      "files": [
+        "en_privacy-notice-desktop-base.jpg",
+        "en_privacy-notice-desktop-candidate.jpg"
+      ]
+    },
+    {
+      "path": "/en/privacy-notice",
+      "viewport": "mobile",
+      "sameSize": false,
+      "sizeA": "390x9858",
+      "sizeB": "390x9899",
+      "files": [
+        "en_privacy-notice-mobile-base.jpg",
+        "en_privacy-notice-mobile-candidate.jpg"
+      ]
+    },
+    {
+      "path": "/en/services",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5503",
+      "changedPixels": 172955,
+      "changedPct": 2.183,
+      "files": [
+        "en_services-desktop-base.jpg",
+        "en_services-desktop-candidate.jpg",
+        "en_services-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8124",
+      "changedPixels": 39182,
+      "changedPct": 1.237,
+      "files": [
+        "en_services-mobile-base.jpg",
+        "en_services-mobile-candidate.jpg",
+        "en_services-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/coffee-water",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5141",
+      "changedPixels": 1002,
+      "changedPct": 0.014
+    },
+    {
+      "path": "/en/services/coffee-water",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6208",
+      "changedPixels": 926,
+      "changedPct": 0.038
+    },
+    {
+      "path": "/en/services/corporate-cafe",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4701",
+      "changedPixels": 4723,
+      "changedPct": 0.07
+    },
+    {
+      "path": "/en/services/corporate-cafe",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5648",
+      "changedPixels": 5319,
+      "changedPct": 0.241,
+      "files": [
+        "en_services_corporate-cafe-mobile-base.jpg",
+        "en_services_corporate-cafe-mobile-candidate.jpg",
+        "en_services_corporate-cafe-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/corporate-catering",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4701",
+      "changedPixels": 3835,
+      "changedPct": 0.057
+    },
+    {
+      "path": "/en/services/corporate-catering",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5659",
+      "changedPixels": 8383,
+      "changedPct": 0.38,
+      "files": [
+        "en_services_corporate-catering-mobile-base.jpg",
+        "en_services_corporate-catering-mobile-candidate.jpg",
+        "en_services_corporate-catering-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/corporate-dining",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4992",
+      "changedPixels": 52966,
+      "changedPct": 0.737,
+      "files": [
+        "en_services_corporate-dining-desktop-base.jpg",
+        "en_services_corporate-dining-desktop-candidate.jpg",
+        "en_services_corporate-dining-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/corporate-dining",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5982",
+      "changedPixels": 40612,
+      "changedPct": 1.741,
+      "files": [
+        "en_services_corporate-dining-mobile-base.jpg",
+        "en_services_corporate-dining-mobile-candidate.jpg",
+        "en_services_corporate-dining-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/pantry-restocking",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5089",
+      "changedPixels": 15178,
+      "changedPct": 0.207,
+      "files": [
+        "en_services_pantry-restocking-desktop-base.jpg",
+        "en_services_pantry-restocking-desktop-candidate.jpg",
+        "en_services_pantry-restocking-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/pantry-restocking",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6136",
+      "changedPixels": 16682,
+      "changedPct": 0.697,
+      "files": [
+        "en_services_pantry-restocking-mobile-base.jpg",
+        "en_services_pantry-restocking-mobile-candidate.jpg",
+        "en_services_pantry-restocking-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en/services/service-carts",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4701",
+      "changedPixels": 4975,
+      "changedPct": 0.073
+    },
+    {
+      "path": "/en/services/service-carts",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5670",
+      "changedPixels": 6751,
+      "changedPct": 0.305,
+      "files": [
+        "en_services_service-carts-mobile-base.jpg",
+        "en_services_service-carts-mobile-candidate.jpg",
+        "en_services_service-carts-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x8262",
+      "changedPixels": 78031,
+      "changedPct": 0.656,
+      "files": [
+        "es-desktop-base.jpg",
+        "es-desktop-candidate.jpg",
+        "es-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8249",
+      "changedPixels": 17160,
+      "changedPct": 0.533,
+      "files": [
+        "es-mobile-base.jpg",
+        "es-mobile-candidate.jpg",
+        "es-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x2416",
+      "changedPixels": 3810,
+      "changedPct": 0.11,
+      "files": [
+        "es_blog-desktop-base.jpg",
+        "es_blog-desktop-candidate.jpg",
+        "es_blog-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3172",
+      "changedPixels": 2796,
+      "changedPct": 0.226,
+      "files": [
+        "es_blog-mobile-base.jpg",
+        "es_blog-mobile-candidate.jpg",
+        "es_blog-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/authors/equipo-de-operaciones-zitrone",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1985",
+      "changedPixels": 6989,
+      "changedPct": 0.245,
+      "files": [
+        "es_blog_authors_equipo-de-operaciones-zitrone-desktop-base.jpg",
+        "es_blog_authors_equipo-de-operaciones-zitrone-desktop-candidate.jpg",
+        "es_blog_authors_equipo-de-operaciones-zitrone-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/authors/equipo-de-operaciones-zitrone",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3484",
+      "changedPixels": 4941,
+      "changedPct": 0.364,
+      "files": [
+        "es_blog_authors_equipo-de-operaciones-zitrone-mobile-base.jpg",
+        "es_blog_authors_equipo-de-operaciones-zitrone-mobile-candidate.jpg",
+        "es_blog_authors_equipo-de-operaciones-zitrone-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/caida-de-las-3pm-pantry-de-oficina",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x6694",
+      "changedPixels": 47724,
+      "changedPct": 0.495,
+      "files": [
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-desktop-base.jpg",
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-desktop-candidate.jpg",
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/caida-de-las-3pm-pantry-de-oficina",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x7394",
+      "changedPixels": 13827,
+      "changedPct": 0.479,
+      "files": [
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-mobile-base.jpg",
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-mobile-candidate.jpg",
+        "es_blog_caida-de-las-3pm-pantry-de-oficina-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/category/building-a-program",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1869",
+      "changedPixels": 3,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/category/building-a-program",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2185",
+      "changedPixels": 458,
+      "changedPct": 0.054
+    },
+    {
+      "path": "/es/blog/category/culture-retention",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1869",
+      "changedPixels": 13,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/category/culture-retention",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2185",
+      "changedPixels": 477,
+      "changedPct": 0.056
+    },
+    {
+      "path": "/es/blog/category/wellbeing-and-productivity",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1869",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/category/wellbeing-and-productivity",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2185",
+      "changedPixels": 186,
+      "changedPct": 0.022
+    },
+    {
+      "path": "/es/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x6627",
+      "changedPixels": 41531,
+      "changedPct": 0.435,
+      "files": [
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-desktop-base.jpg",
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-desktop-candidate.jpg",
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x7346",
+      "changedPixels": 11845,
+      "changedPct": 0.413,
+      "files": [
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-mobile-base.jpg",
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-mobile-candidate.jpg",
+        "es_blog_comida-en-la-oficina-y-retencion-de-talento-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x7768",
+      "changedPixels": 27831,
+      "changedPct": 0.249,
+      "files": [
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-desktop-base.jpg",
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-desktop-candidate.jpg",
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8227",
+      "changedPixels": 7864,
+      "changedPct": 0.245,
+      "files": [
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-mobile-base.jpg",
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-mobile-candidate.jpg",
+        "es_blog_como-construir-un-programa-de-alimentacion-corporativa-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/feed.xml",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x900",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/feed.xml",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x1226",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x2061",
+      "changedPixels": 6990,
+      "changedPct": 0.236,
+      "files": [
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-desktop-base.jpg",
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-desktop-candidate.jpg",
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3508",
+      "changedPixels": 4941,
+      "changedPct": 0.361,
+      "files": [
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-mobile-base.jpg",
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-mobile-candidate.jpg",
+        "es_blog_reviewers_seguridad-alimentaria-y-operaciones-zitrone-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/contact",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1834",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/contact",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2445",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/privacy-notice",
+      "viewport": "desktop",
+      "sameSize": false,
+      "sizeA": "1440x9106",
+      "sizeB": "1440x8613",
+      "files": [
+        "es_privacy-notice-desktop-base.jpg",
+        "es_privacy-notice-desktop-candidate.jpg"
+      ]
+    },
+    {
+      "path": "/es/privacy-notice",
+      "viewport": "mobile",
+      "sameSize": false,
+      "sizeA": "390x11406",
+      "sizeB": "390x11447",
+      "files": [
+        "es_privacy-notice-mobile-base.jpg",
+        "es_privacy-notice-mobile-candidate.jpg"
+      ]
+    },
+    {
+      "path": "/es/services",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5529",
+      "changedPixels": 183513,
+      "changedPct": 2.305,
+      "files": [
+        "es_services-desktop-base.jpg",
+        "es_services-desktop-candidate.jpg",
+        "es_services-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8032",
+      "changedPixels": 47473,
+      "changedPct": 1.516,
+      "files": [
+        "es_services-mobile-base.jpg",
+        "es_services-mobile-candidate.jpg",
+        "es_services-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/cafe-y-agua",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5181",
+      "changedPixels": 1004,
+      "changedPct": 0.013
+    },
+    {
+      "path": "/es/services/cafe-y-agua",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6197",
+      "changedPixels": 922,
+      "changedPct": 0.038
+    },
+    {
+      "path": "/es/services/cafeteria-corporativa",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4770",
+      "changedPixels": 4714,
+      "changedPct": 0.069
+    },
+    {
+      "path": "/es/services/cafeteria-corporativa",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5682",
+      "changedPixels": 5310,
+      "changedPct": 0.24,
+      "files": [
+        "es_services_cafeteria-corporativa-mobile-base.jpg",
+        "es_services_cafeteria-corporativa-mobile-candidate.jpg",
+        "es_services_cafeteria-corporativa-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/carritos-de-servicio",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4770",
+      "changedPixels": 4972,
+      "changedPct": 0.072
+    },
+    {
+      "path": "/es/services/carritos-de-servicio",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5707",
+      "changedPixels": 6751,
+      "changedPct": 0.303,
+      "files": [
+        "es_services_carritos-de-servicio-mobile-base.jpg",
+        "es_services_carritos-de-servicio-mobile-candidate.jpg",
+        "es_services_carritos-de-servicio-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/catering-corporativo",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4770",
+      "changedPixels": 3832,
+      "changedPct": 0.056
+    },
+    {
+      "path": "/es/services/catering-corporativo",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5742",
+      "changedPixels": 8322,
+      "changedPct": 0.372,
+      "files": [
+        "es_services_catering-corporativo-mobile-base.jpg",
+        "es_services_catering-corporativo-mobile-candidate.jpg",
+        "es_services_catering-corporativo-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/comedor-corporativo",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5061",
+      "changedPixels": 52964,
+      "changedPct": 0.727,
+      "files": [
+        "es_services_comedor-corporativo-desktop-base.jpg",
+        "es_services_comedor-corporativo-desktop-candidate.jpg",
+        "es_services_comedor-corporativo-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/comedor-corporativo",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6027",
+      "changedPixels": 40612,
+      "changedPct": 1.728,
+      "files": [
+        "es_services_comedor-corporativo-mobile-base.jpg",
+        "es_services_comedor-corporativo-mobile-candidate.jpg",
+        "es_services_comedor-corporativo-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/pantry-y-restocking",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5158",
+      "changedPixels": 15178,
+      "changedPct": 0.204,
+      "files": [
+        "es_services_pantry-y-restocking-desktop-base.jpg",
+        "es_services_pantry-y-restocking-desktop-candidate.jpg",
+        "es_services_pantry-y-restocking-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/pantry-y-restocking",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6171",
+      "changedPixels": 16680,
+      "changedPct": 0.693,
+      "files": [
+        "es_services_pantry-y-restocking-mobile-base.jpg",
+        "es_services_pantry-y-restocking-mobile-candidate.jpg",
+        "es_services_pantry-y-restocking-mobile-diff.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# SHA-256, 2026-10-15
+
+## public/fonts (candidate)
+ce093b341d9c10658ee1eaa85c5f8042ff3307bc6ccfc5f405616eb437f0009e  manrope-v20-latin-ext.woff2
+e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f  manrope-v20-latin.woff2
+bb31f95a33aa7b5de352f956137beb7c75a4bb08782571c1dc8856b4365e27f6  noto-serif-display-v29-latin-ext-italic.woff2
+a907f11d5c7c71ab350c46ba518935da6860866dec0325ba85e824f1d6fe9a06  noto-serif-display-v29-latin-ext.woff2
+77309ca264d577cdeb54d1aa60d2670f669e91b6ab000175207d8d1190368eaf  noto-serif-display-v29-latin-italic.woff2
+5343443b8fd91607b1b610a5a5a68ed74b682c28825d2c19a9f0ee6f04b36a60  noto-serif-display-v29-latin.woff2
+
+## Fonts emitted by the next/font/google build of 4563464 (.next/static/media), Node v24.21.0
+0e979c15a28553a5f313a905d943e6f63efae669842d2138f9260d6130905399  0167906552ab007e-s.0ls5anfqlwkdr.woff2
+41b2bbcc405f712833661781a4a60f78ddf59caade5d3e24a005eb3f90beeb90  0c57e32554b6a762-s.0wxxorqjnunto.woff2
+91d6637642f68eae8e48050e60c4147c1df001326cbc8e33bbea66c5e4dff823  0e095585557abe16-s.3un_zbmlitk8f.woff2
+77309ca264d577cdeb54d1aa60d2670f669e91b6ab000175207d8d1190368eaf  1693ab72ec24076e-s.p.2be5zz9hjzevq.woff2
+4ac5a9f6df7d1047be3cc63e2ad1f4d4ed3d06425832582363879056a86005af  17d9dc494268827a-s.1fhxrqsec52zx.woff2
+3e96c23055e2888c7c30aead1551933b89dbc04b143de5709e544b75ef02f0fd  542b8b51973871d8-s.02-8an3f6limn.woff2
+40af11327fe5308166c6cb5787808b042db6da889abf602f0a4876c49675d87e  58c4895d0a0ef7cc-s.2vhvl9vrvk-va.woff2
+ce093b341d9c10658ee1eaa85c5f8042ff3307bc6ccfc5f405616eb437f0009e  6ab0db14f70d8ed6-s.13hnt-xgp82zk.woff2
+bb31f95a33aa7b5de352f956137beb7c75a4bb08782571c1dc8856b4365e27f6  6c526cb6703de206-s.2t96ix70pu99c.woff2
+5343443b8fd91607b1b610a5a5a68ed74b682c28825d2c19a9f0ee6f04b36a60  710889c02c647b2f-s.p.0fjze5eukoi9c.woff2
+fe815de21dc3e5ed943c837f723cfec8f0036962e33d12d5c07cd2574272391b  922e84152f7c7d24-s.0ghw21-w-bs1j.woff2
+69afe38c1984c114c8ca9bc3bf3d59cf0fe87f18b4e38bdb0755f21aa3279a27  980e1ab65b7c1ef7-s.05dr089en3y2d.woff2
+a0df036aef8651bdf02a5b5f1580c2142f7c65e1db7c38b3ce3e48d018fc2df9  9c71ce68a682d8e8-s.0p65518x_7l9c.woff2
+e8c0b39992f06b3dc9a9834494088014859f363bf6ca8792b6bb07e17c7965f3  a342834df7752944-s.3hd2l7bm32o7k.woff2
+e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f  a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2
+a907f11d5c7c71ab350c46ba518935da6860866dec0325ba85e824f1d6fe9a06  b7f519ee93c5b6e3-s.3_nnq1nhvvcxt.woff2
+bab757f8a0a1bc04055ee98cb5777f3254aab11f6d222366e1f40a36f390506a  bfc7db5c00d21bc5-s.173xwsdme27n8.woff2
+95a493061fe0a8d0d027c2892747134ba747141112d3be4d5022e70ab7d3a1a6  d3fe2f289711ac3f-s.1l2zhvq5eocqf.woff2
+8e2bc4039418a4d328869243e3fde5d94295d8dd5d7c72df2c4e2925a0ce3d4e  d7ba58910e8b2f98-s.29f43i0b6m309.woff2
+0c19f35e296293706c3ef2437539ff1da9be689c0c8556784acf14f7ba7c7163  f5eafb9667e277ff-s.2vt8t_65wy_09.woff2
+
+## Match
+Each candidate file and the base build file with the same hash:
+- manrope-v20-latin-ext.woff2: MATCH 6ab0db14f70d8ed6-s.13hnt-xgp82zk.woff2
+- manrope-v20-latin.woff2: MATCH a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2
+- noto-serif-display-v29-latin-ext-italic.woff2: MATCH 6c526cb6703de206-s.2t96ix70pu99c.woff2
+- noto-serif-display-v29-latin-ext.woff2: MATCH b7f519ee93c5b6e3-s.3_nnq1nhvvcxt.woff2
+- noto-serif-display-v29-latin-italic.woff2: MATCH 1693ab72ec24076e-s.p.2be5zz9hjzevq.woff2
+- noto-serif-display-v29-latin.woff2: MATCH 710889c02c647b2f-s.p.0fjze5eukoi9c.woff2

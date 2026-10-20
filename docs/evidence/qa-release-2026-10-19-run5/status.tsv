@@ -1,0 +1,44 @@
+catalog	PASS	coincide con el inventario y el snapshot
+extract	PASS	volcado de las tablas aprobadas
+restore:counts	PASS	ok
+restore:free-text	PASS	ok
+states:status-before	PASS	ok
+states:capture-new-code	INFO	la captura con el código nuevo falla sobre el esquema anterior, como indica el procedimiento
+states:capture	PASS	ok
+states:baseline-links	PASS	ok
+states:baseline-home	PASS	ok
+states:migrate	PASS	ok
+states:status-after	PASS	ok
+states:all-migrated	PASS	todas aplicadas
+states:old-code-migrated	PASS	ok
+states:new-code-migrated	PASS	ok
+states:admin	PASS	ok
+states:migrated-home	PASS	ok
+states:rb-migrate-down	PASS	ok
+states:rb-old-after-down	PASS	ok
+states:rb-old-home	PASS	ok
+states:rb-migrate	PASS	ok
+states:rb-new-home	PASS	ok
+states:roll-forward	PASS	home igual a la copia migrada
+states:links-after-migrate	PASS	migrar no cambia ningún enlace, con el código anterior ni con el nuevo
+states:rb3-links	INFO	código anterior tras migrate:down: 0 diferencia(s), esperadas por diseño
+mirror:complete	PASS	848 archivo(s), 0 de los que usa el sitio no encontrados
+mirror:size-variants	INFO	92 variante(s) de tamaño no existen en Blob (solo miniaturas del admin; el sitio usa el original)
+build	PASS	el candidato compila sin cambiar archivos versionados
+serve	PASS	el candidato responde en :3105
+approved-deployment	PASS	dpl_C4cjcDJvz9UEwqs8z1n4pSM3hJv3
+sitemap:approved	PASS	40 páginas en el sitemap publicado
+sitemap:same	PASS	mismas páginas
+visual:approved-vs-mig:errors	PASS	80 comparaciones, 0 error(es)
+visual:approved-vs-mig:differences	PENDING	50 página(s) por encima de 0.1 %, por clasificar
+sweep:off-vercel	INFO	160 error(es) de consola excluidos: scripts /_vercel/insights y /_vercel/speed-insights, que solo existen en Vercel
+sweep:pages	PASS	72 páginas; 0 con estado distinto de 200, desbordamiento, imágenes rotas o errores de consola
+sweep:states	PASS	10 estados, 0 con errores de consola
+sweep:motion	PASS	igual al sitio aprobado
+integrations:lead-http	PASS	HTTP 201
+integrations:lead-saved	PASS	1 lead(s) con el correo de la prueba
+integrations:lead-email	PASS	entrega EMAIL_NOT_CONFIGURED, nada enviado
+integrations:embeddings	PASS	2 documento(s) guardados, 2 'embedding skipped'
+integrations:gtm	PASS	0 referencia(s) a GTM en el HTML
+integrations:cms-invalid	INFO	1 documento/idioma no se pueden guardar tal como están: faqs #5 es: The following field is invalid: Answer 1 > Paragraph
+network	PASS	ninguna salida fuera de la política

@@ -1,0 +1,707 @@
+
+> on-it-workspace@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 prebuild
+[2m[WebServer] [22m> node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[2m[WebServer] [22m
+[2m[WebServer] [22massets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+[2m[WebServer] [22mdesign-tokens-data: 1252 tokens → src/design-system/tokens.generated.json
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 build
+[2m[WebServer] [22m> next build
+[2m[WebServer] [22m
+[2m[WebServer] [22m(node:14561) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m▲ Next.js 16.2.10 (Turbopack)
+[2m[WebServer] [22m- Experiments (use with caution):
+[2m[WebServer] [22m  · clientTraceMetadata
+[2m[WebServer] [22m  ⨯ turbopackServerFastRefresh
+[2m[WebServer] [22m
+[2m[WebServer] [22m  Creating an optimized production build ...
+[2m[WebServer] [22m(node:14561) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14567) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m✓ Compiled successfully in 9.9s
+[2m[WebServer] [22m  Running next.config.js provided runAfterProductionCompile ...
+[2m[WebServer] [22m✓ Completed runAfterProductionCompile in 135ms
+[2m[WebServer] [22m  Running TypeScript ...
+[2m[WebServer] [22m  Finished TypeScript in 4.0s ...
+[2m[WebServer] [22m  Collecting page data using 11 workers ...
+[2m[WebServer] [22m(node:14584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14587) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14582) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14585) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14583) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14590) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14588) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14591) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14586) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:14592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m  Generating static pages using 11 workers (0/48) ...
+[2m[WebServer] [22m[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m  Generating static pages using 11 workers (12/48) 
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m  Generating static pages using 11 workers (24/48) 
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m  Generating static pages using 11 workers (36/48) 
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m✓ Generating static pages using 11 workers (48/48) in 585ms
+[2m[WebServer] [22m  Finalizing page optimization ...
+[2m[WebServer] [22m
+[2m[WebServer] [22mRoute (app)
+[2m[WebServer] [22m┌ ○ /_not-found
+[2m[WebServer] [22m├ ● /[locale]
+[2m[WebServer] [22m│ ├ /es
+[2m[WebServer] [22m│ └ /en
+[2m[WebServer] [22m├ ƒ /[locale]/blog
+[2m[WebServer] [22m├ ● /[locale]/blog/[slug]
+[2m[WebServer] [22m│ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[2m[WebServer] [22m│ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[2m[WebServer] [22m│ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[2m[WebServer] [22m│ └ [+3 more paths]
+[2m[WebServer] [22m├ ● /[locale]/blog/authors/[author]
+[2m[WebServer] [22m│ ├ /en/blog/authors/zitrone-operations-team
+[2m[WebServer] [22m│ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[2m[WebServer] [22m├ ƒ /[locale]/blog/category/[category]
+[2m[WebServer] [22m├ ƒ /[locale]/blog/feed.xml
+[2m[WebServer] [22m├ ● /[locale]/blog/reviewers/[reviewer]
+[2m[WebServer] [22m│ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[2m[WebServer] [22m│ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[2m[WebServer] [22m├ ● /[locale]/contact
+[2m[WebServer] [22m│ ├ /es/contact
+[2m[WebServer] [22m│ └ /en/contact
+[2m[WebServer] [22m├ ● /[locale]/privacy-notice
+[2m[WebServer] [22m│ ├ /es/privacy-notice
+[2m[WebServer] [22m│ └ /en/privacy-notice
+[2m[WebServer] [22m├ ● /[locale]/services
+[2m[WebServer] [22m│ ├ /es/services
+[2m[WebServer] [22m│ └ /en/services
+[2m[WebServer] [22m├ ● /[locale]/services/[slug]
+[2m[WebServer] [22m│ ├ /en/services/corporate-dining
+[2m[WebServer] [22m│ ├ /en/services/corporate-cafe
+[2m[WebServer] [22m│ ├ /en/services/pantry-restocking
+[2m[WebServer] [22m│ └ [+9 more paths]
+[2m[WebServer] [22m├ ƒ /admin/[[...segments]]
+[2m[WebServer] [22m├ ƒ /api/[...slug]
+[2m[WebServer] [22m├ ƒ /api/contact-request
+[2m[WebServer] [22m├ ƒ /api/leads/export
+[2m[WebServer] [22m├ ○ /design-system
+[2m[WebServer] [22m├ ○ /robots.txt
+[2m[WebServer] [22m└ ○ /sitemap.xml
+[2m[WebServer] [22m
+[2m[WebServer] [22m
+[2m[WebServer] [22mƒ Proxy (Middleware)
+[2m[WebServer] [22m
+[2m[WebServer] [22m○  (Static)   prerendered as static content
+[2m[WebServer] [22m●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[2m[WebServer] [22mƒ  (Dynamic)  server-rendered on demand
+[2m[WebServer] [22m
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 start
+[2m[WebServer] [22m> next start --hostname 127.0.0.1 --port 3100
+[2m[WebServer] [22m
+[2m[WebServer] [22m(node:14609) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m▲ Next.js 16.2.10
+[2m[WebServer] [22m- Local:         http://127.0.0.1:3100
+[2m[WebServer] [22m- Network:       http://127.0.0.1:3100
+[2m[WebServer] [22m✓ Ready in 85ms
+
+Running 61 tests using 6 workers
+
+(node:14615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14614) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14613) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14613) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14616) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14614) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓   4 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › blog index has no automatically detectable violations (2.5s)
+  ✓   2 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › blog article has no automatically detectable violations (2.9s)
+  ✓   1 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › service detail has no automatically detectable violations (3.4s)
+  ✓   6 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › services index has no automatically detectable violations (3.4s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓   7 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › privacy notice has no automatically detectable violations (2.0s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  10 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › home (en) exposes one main landmark and one h1 (1.6s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓   5 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › home (es) has no automatically detectable violations (5.8s)
+  ✓  12 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › services index exposes one main landmark and one h1 (943ms)
+  ✓   3 [chromium] › tests/e2e/accessibility.spec.ts:87:5 › axe: WCAG 2.2 AA › home (en) has no automatically detectable violations (5.9s)
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  11 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › home (es) exposes one main landmark and one h1 (1.4s)
+  ✓   9 [chromium] › tests/e2e/accessibility.spec.ts:113:3 › axe: WCAG 2.2 AA › mobile navigation panel is clean while open (2.7s)
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  15 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › blog article exposes one main landmark and one h1 (648ms)
+  ✓  13 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › service detail exposes one main landmark and one h1 (1.0s)
+  ✓  16 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › privacy notice exposes one main landmark and one h1 (823ms)
+  ✓  14 [chromium] › tests/e2e/accessibility.spec.ts:138:5 › structure › blog index exposes one main landmark and one h1 (898ms)
+  ✓   8 [chromium] › tests/e2e/accessibility.spec.ts:100:3 › axe: WCAG 2.2 AA › home stays clean at 320px, the WCAG reflow width (4.0s)
+  ✓  18 [chromium] › tests/e2e/accessibility.spec.ts:154:3 › keyboard › a skip link is the first stop and jumps to main content (1.5s)
+  ✓  17 [chromium] › tests/e2e/accessibility.spec.ts:145:3 › structure › every page declares its language (2.1s)
+  ✓  19 [chromium] › tests/e2e/accessibility.spec.ts:169:3 › keyboard › the services menu opens, closes on Escape and returns focus (1.6s)
+  ✓  20 [chromium] › tests/e2e/accessibility.spec.ts:231:3 › motion › no element animates when the user asks for reduced motion (1.7s)
+  ✓  21 [chromium] › tests/e2e/accessibility.spec.ts:187:3 › keyboard › every control reachable by keyboard shows a visible focus ring (1.7s)
+  ✓  22 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (1.8s)
+  ✓  23 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (1.5s)
+  ✓  25 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (2.2s)
+  ✓  27 [chromium] › tests/e2e/consent.spec.ts:145:3 › consent › the Spanish banner is translated, not falling back to English (2.2s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  24 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (2.8s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  30 [chromium] › tests/e2e/contact.spec.ts:125:1 › a 202 (honeypot / not persisted) shows success but counts no conversion (4.0s)
+  ✓  32 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy yes: only serialize an applicable percentage (3.7s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  28 [chromium] › tests/e2e/contact.spec.ts:53:3 › es: optional details, accessible validation, failure and retry (7.1s)
+  ✓  31 [chromium] › tests/e2e/contact.spec.ts:136:1 › an in-flight request cannot be submitted twice (5.1s)
+  ✓  34 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: cafeteria can use the three-step inquiry (1.4s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  29 [chromium] › tests/e2e/contact.spec.ts:53:3 › en: optional details, accessible validation, failure and retry (6.5s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  36 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: maquinas can use the three-step inquiry (1.4s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  37 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: carritos can use the three-step inquiry (1.4s)
+  ✓  35 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: pantry can use the three-step inquiry (1.9s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  39 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: otro can use the three-step inquiry (1.6s)
+  ✓  33 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy tbd: only serialize an applicable percentage (4.3s)
+  ✓  38 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: catering can use the three-step inquiry (2.5s)
+  ✓  40 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: cafeteria can use the three-step inquiry (1.4s)
+  ✓  41 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: pantry can use the three-step inquiry (1.6s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  42 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: maquinas can use the three-step inquiry (2.0s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  43 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: carritos can use the three-step inquiry (2.2s)
+  ✓  45 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: otro can use the three-step inquiry (2.1s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  49 [chromium] › tests/e2e/domain-migration.spec.ts:4:1 › known legacy paths resolve to real pages with the correct canonical (913ms)
+  ✓  50 [chromium] › tests/e2e/domain-migration.spec.ts:21:1 › unrecognized legacy services remain missing instead of redirecting to the index (15ms)
+  ✓  44 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: catering can use the three-step inquiry (3.5s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  52 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es contact: location hierarchy, reset and keyboard (1.8s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  51 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es home: location hierarchy, reset and keyboard (3.2s)
+  ✓  26 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (16.9s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  47 [chromium] › tests/e2e/contact.spec.ts:276:3 › es: multiple services and individual meal counts survive submission (6.1s)
+  ✓  48 [chromium] › tests/e2e/contact.spec.ts:276:3 › en: multiple services and individual meal counts survive submission (5.8s)
+  ✓  46 [chromium] › tests/e2e/contact.spec.ts:249:1 › switching from detailed dining to coffee excludes hidden dining answers (9.4s)
+  ✓  53 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en home: location hierarchy, reset and keyboard (4.6s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  57 [chromium] › tests/e2e/smoke.spec.ts:18:3 › localized marketing shell › renders the English home page (2.1s)
+  ✓  54 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en contact: location hierarchy, reset and keyboard (3.7s)
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  61 [chromium] › tests/e2e/smoke.spec.ts:73:3 › blog smoke › blog article renders recommended content (2.3s)
+  ✓  59 [chromium] › tests/e2e/smoke.spec.ts:45:3 › localized marketing shell › privacy navigation resolves back to the localized home (2.4s)
+  ✓  58 [chromium] › tests/e2e/smoke.spec.ts:33:3 › localized marketing shell › contact navigation resolves back to the localized home (2.5s)
+[2m[WebServer] [22m[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+[2m[WebServer] [22m    at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[2m[WebServer] [22m    at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[2m[WebServer] [22m  payloadInitError: [33mtrue[39m
+[2m[WebServer] [22m}
+  ✓  60 [chromium] › tests/e2e/smoke.spec.ts:59:3 › blog smoke › blog index renders and keeps localized shell links (2.7s)
+  ✓  55 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › es: home submits complete brief and retains it after failure (7.8s)
+  ✓  56 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › en: home submits complete brief and retains it after failure (7.4s)
+
+  61 passed (54.0s)

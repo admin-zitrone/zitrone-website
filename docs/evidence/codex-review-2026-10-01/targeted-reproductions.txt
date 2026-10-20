@@ -1,0 +1,17 @@
+Next 16.2.10, compiled ES article cache tags:
+_N_T_/layout
+_N_T_/[locale]/layout
+_N_T_/[locale]/blog/layout
+_N_T_/[locale]/blog/[slug]/layout
+_N_T_/[locale]/blog/[slug]/page
+_N_T_/es/blog/comida-en-la-oficina-y-retencion-de-talento
+
+Actual revalidatePath pending tags from Next workAsyncStorage:
+/es/blog, layout => _N_T_/es/blog/layout (absent)
+/[locale]/blog, layout => _N_T_/[locale]/blog/layout (present)
+
+readJsonWithLimit: ReadableStream.controller.error(new Error("simulated stream failure")) => rejected: UNHANDLED simulated stream failure
+
+embedText with synthetic key and in-memory fetch mock:
+{"mockedOnly":true,"attemptedDestinations":["https://api.openai.com/v1/embeddings"]}
+No provider request sent for this reproduction.

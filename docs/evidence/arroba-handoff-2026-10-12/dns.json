@@ -1,0 +1,83 @@
+{
+  "observedUtc": "2026-10-13T04:20:49.412060+00:00",
+  "resolver": "1.1.1.1",
+  "records": [
+    {
+      "host": "zitrone.com.mx",
+      "type": "NS",
+      "code": 9,
+      "answer": ";; connection timed out; no servers could be reached",
+      "error": ""
+    },
+    {
+      "host": "zitrone.com.mx",
+      "type": "A",
+      "code": 0,
+      "answer": "zitrone.com.mx.\t\t600\tIN\tA\t76.76.21.21",
+      "error": ""
+    },
+    {
+      "host": "zitrone.com.mx",
+      "type": "AAAA",
+      "code": 0,
+      "answer": "",
+      "error": ""
+    },
+    {
+      "host": "zitrone.com.mx",
+      "type": "MX",
+      "code": 0,
+      "answer": "zitrone.com.mx.\t\t3600\tIN\tMX\t10 alt4.aspmx.l.google.com.\nzitrone.com.mx.\t\t3600\tIN\tMX\t10 alt3.aspmx.l.google.com.\nzitrone.com.mx.\t\t3600\tIN\tMX\t5 alt2.aspmx.l.google.com.\nzitrone.com.mx.\t\t3600\tIN\tMX\t5 alt1.aspmx.l.google.com.\nzitrone.com.mx.\t\t3600\tIN\tMX\t1 aspmx.l.google.com.",
+      "error": ""
+    },
+    {
+      "host": "zitrone.com.mx",
+      "type": "TXT",
+      "code": 0,
+      "answer": "zitrone.com.mx.\t\t3600\tIN\tTXT\t\"v=spf1 include:_spf.google.com ~all\"",
+      "error": ""
+    },
+    {
+      "host": "www.zitrone.com.mx",
+      "type": "CNAME",
+      "code": 0,
+      "answer": "www.zitrone.com.mx.\t3600\tIN\tCNAME\tcname.vercel-dns.com.",
+      "error": ""
+    },
+    {
+      "host": "www.zitrone.com.mx",
+      "type": "A",
+      "code": 0,
+      "answer": "www.zitrone.com.mx.\t3600\tIN\tCNAME\tcname.vercel-dns.com.\ncname.vercel-dns.com.\t300\tIN\tA\t66.33.60.35\ncname.vercel-dns.com.\t300\tIN\tA\t76.76.21.123",
+      "error": ""
+    },
+    {
+      "host": "zitrone.mx",
+      "type": "NS",
+      "code": 0,
+      "answer": "zitrone.mx.\t\t3600\tIN\tNS\tns39.domaincontrol.com.\nzitrone.mx.\t\t3600\tIN\tNS\tns40.domaincontrol.com.",
+      "error": ""
+    },
+    {
+      "host": "zitrone.mx",
+      "type": "A",
+      "code": 9,
+      "answer": ";; connection timed out; no servers could be reached",
+      "error": ""
+    },
+    {
+      "host": "www.zitrone.mx",
+      "type": "CNAME",
+      "code": 0,
+      "answer": "www.zitrone.mx.\t\t3600\tIN\tCNAME\tb5ed8fefaf041f79.vercel-dns-017.com.",
+      "error": ""
+    },
+    {
+      "host": "_dmarc.zitrone.com.mx",
+      "type": "TXT",
+      "code": 0,
+      "answer": "_dmarc.zitrone.com.mx.\t3600\tIN\tTXT\t\"v=DMARC1; p=none; rua=mailto:059d95f9@mxtoolbox.dmarc-report.com; ruf=mailto:059d95f9@forensics.dmarc-report.com; fo=1\"",
+      "error": ""
+    }
+  ]
+}

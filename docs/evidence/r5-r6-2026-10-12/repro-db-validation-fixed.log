@@ -1,0 +1,9 @@
+# Codex repro (docs/evidence/codex-review-2026-10-11/repro-db-validation.sh) on the fixed helper
+TEST_PG_URL rejected: host must be 127.0.0.1 or localhost
+test-db: refusing TEST_PG_URL
+{ validatedHost: '127.0.0.1', pgActualHost: 'example.invalid' }
+exit 0
+# ?host= override through the helper
+TEST_PG_URL rejected: query parameters are not allowed
+test-db: refusing TEST_PG_URL
+exit 1

@@ -1,0 +1,263 @@
+:root {
+  /* ── Color primitives ────────────────────────────────────────────────────────
+     Three families define the brand palette:
+       ocean  — teal-navy axis. Primary brand scale. 50 = lightest, 950 = darkest.
+       lime   — chartreuse accent. Use on ocean-700/800 surfaces only (WCAG AAA).
+       natural — warm cream surfaces. 50 = page background (#FBF6F3).
+     Service accent families (teal, blue, purple, yellow) are category-identity
+     only — not for general decoration.
+     ──────────────────────────────────────────────────────────────────────────── */
+
+  /* Ocean ramp — teal-navy brand scale.
+     Anchors (user-defined):
+       400 #04998B — vivid teal
+       500 #0C5068 — mid teal-blue
+       600 #1A4352 — dark teal-blue
+       800 #052835 — depth / overlays / hero gradients   (H=201° naval blue-teal)
+       900 #003638 — brand dark / inverse section bg     (H=181° pure teal)
+       950 #00292A — ink / text primary / no-black       (H=181° pure teal, darkest)
+     Light tints 50–300 generated from the 400 anchor toward white. */
+  --primitive-color-ocean-50:  #E8F5F4;
+  --primitive-color-ocean-100: #C2E8E5;
+  --primitive-color-ocean-200: #8DD0CB;
+  --primitive-color-ocean-300: #4ABDB6;
+  --primitive-color-ocean-400: #04998B;
+  --primitive-color-ocean-500: #0C5068;
+  --primitive-color-ocean-600: #1A4352;
+  --primitive-color-ocean-700: #0F3040;
+  --primitive-color-ocean-800: #052835;
+  --primitive-color-ocean-900: #003638;
+  --primitive-color-ocean-950: #00292A;
+
+  /* Lime ramp — natural accent. ONLY pair with ocean-700/800 as background.
+     Anchor: 400 #AED658. Never use as text on natural/warm surfaces (fails WCAG):
+     500 on natural-50 is 2.1:1. Light surfaces take lime-700 instead, which is
+     the same hue carried down to 6.8:1 — see --color-text-accent-on-light. */
+  --primitive-color-lime-50:  #F4FAE2;
+  --primitive-color-lime-100: #E4F3BC;
+  --primitive-color-lime-200: #CEEC87;
+  --primitive-color-lime-300: #C1E370;
+  --primitive-color-lime-400: #AED658;
+  --primitive-color-lime-500: #93BA36;
+  --primitive-color-lime-600: #6B8620;
+  /* 650 is the brightest point on this ramp that still clears AA for body text
+     on natural-50 (4.6:1). It exists so light surfaces keep a recognisably
+     lime accent instead of dropping all the way to the 700 olive. */
+  --primitive-color-lime-650: #5F7A1C;
+  --primitive-color-lime-700: #4B5D23;
+
+  /* Natural ramp — warm cream surfaces.
+     Anchor: 50 #FBF6F3 (page background). */
+  --primitive-color-natural-50:  #FBF6F3;
+  --primitive-color-natural-100: #F1EBE4;
+  --primitive-color-natural-200: #E4D9CF;
+  --primitive-color-natural-300: #D0C2B5;
+  --primitive-color-natural-400: #B8A89A;
+
+  /* Grey-ocean ramp — desaturated ocean tones for borders, muted text, disabled states. */
+  --primitive-color-grey-green-100: #EEF3F4;
+  --primitive-color-grey-green-200: #D1DADC;
+  --primitive-color-grey-green-300: #A8B9BD;
+  --primitive-color-grey-green-500: #5E747A;
+  /* 600 exists because 500 lands at 4.2:1 on natural-50 and 4.2:1 on
+     natural-100 — under AA for the 13–16px copy it was being used for. */
+  --primitive-color-grey-green-600: #4E6469;
+  --primitive-color-grey-green-700: #2A3F45;
+
+  /* Danger — the one status hue outside the brand families. Deliberately a
+     deep brick rather than a signal red: it has to sit on warm cream without
+     vibrating against it, and it clears AA on both light surfaces
+     (6.9:1 on natural-50, 6.2:1 on natural-100). */
+  --primitive-color-danger-600: #A02A1F;
+
+  /* Neutral scale — pure grey, for UI chrome and system states.
+     Note: no black. Use ocean-950 (#00292A) as the darkest text color. */
+  --primitive-color-white: #ffffff;
+  --primitive-color-neutral-50: #fcfcfb;
+  --primitive-color-neutral-100: #f6f6f6;
+  --primitive-color-neutral-200: #ececec;
+  --primitive-color-neutral-300: #e4e4e2;
+  --primitive-color-neutral-400: #dee3e3;
+  --primitive-color-neutral-500: #697774;
+  --primitive-color-neutral-600: #616161;
+  --primitive-color-neutral-700: #2b2b2b;
+  --primitive-color-neutral-800: #252525;
+  --primitive-color-neutral-900: #1a1a1a;
+  --primitive-color-neutral-950: #111111;
+
+  /* Service accent families — category identity only, not general decoration. */
+  --primitive-color-teal-50: #e4fcff;
+  --primitive-color-teal-500: #26c9df;
+  --primitive-color-teal-700: #008799;
+  --primitive-color-teal-800: #007a8b;
+
+  --primitive-color-blue-50: #ddeefe;
+  --primitive-color-blue-500: #61a0ff;
+  --primitive-color-blue-700: #2469ff;
+  --primitive-color-blue-900: #02477a;
+
+  --primitive-color-purple-50: #ede9fc;
+  --primitive-color-purple-500: #7176ff;
+  --primitive-color-purple-700: #734dff;
+  --primitive-color-purple-900: #26248b;
+
+  --primitive-color-yellow-50: #fff4de;
+  --primitive-color-yellow-100: #fff2d1;
+  --primitive-color-yellow-400: #ffd622;
+  --primitive-color-yellow-500: #ffb122;
+  --primitive-color-yellow-600: #ffb628;
+  --primitive-color-yellow-700: #bd802e;
+  --primitive-color-yellow-800: #a47728;
+
+  /* Opacity primitives. */
+  --primitive-opacity-0: 0;
+  --primitive-opacity-5: 0.05;
+  --primitive-opacity-10: 0.1;
+  --primitive-opacity-20: 0.2;
+  --primitive-opacity-40: 0.4;
+  --primitive-opacity-60: 0.6;
+  --primitive-opacity-80: 0.8;
+  --primitive-opacity-100: 1;
+
+  /* Type primitives. */
+  --primitive-font-family-sans-display: "Manrope", Arial, sans-serif;
+  --primitive-font-family-sans-text: "Manrope", Arial, sans-serif;
+  --primitive-font-family-serif-display: "Noto Serif Display", Georgia, "Times New Roman", serif;
+  --primitive-font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --primitive-font-weight-thin: 100;
+  --primitive-font-weight-light: 300;
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-semibold: 600;
+  --primitive-font-weight-bold: 700;
+  --primitive-font-weight-extra-bold: 800;
+  --primitive-font-weight-black: 900;
+
+  --primitive-font-size-00: 0.75rem;
+  --primitive-font-size-0: 0.875rem;
+  --primitive-font-size-1: 1rem;
+  --primitive-font-size-2: 1.125rem;
+  --primitive-font-size-3: 1.25rem;
+  --primitive-font-size-4: 1.5rem;
+  --primitive-font-size-5: 2.375rem;
+  --primitive-font-size-6: 3rem;
+  --primitive-font-size-7: 3.5rem;
+  --primitive-font-size-8: 3.875rem;
+  --primitive-font-size-9: 4.75rem;
+  --primitive-font-size-10: 5.125rem;
+  --primitive-font-size-11: 5.25rem;
+  --primitive-font-size-12: 10rem;
+
+  /* Fluid steps — the home reference-template scale (2026-09), promoted to the
+     whole site. Semantic type roles point here; nothing else should. */
+  /* Phone supporting copy, one step under body. */
+  --primitive-font-size-copy-phone: 0.9375rem;
+  --primitive-font-size-fluid-display: clamp(3rem, 6vw, 5.5rem);
+  --primitive-font-size-fluid-display-medium: clamp(2.75rem, 5.2vw, 3.65rem);
+  --primitive-font-size-fluid-display-small: clamp(2rem, 9.25vw, 2.5rem);
+  --primitive-font-size-fluid-heading: clamp(2rem, 4vw, 3rem);
+  --primitive-font-size-heading-small: 2rem;
+  --primitive-font-size-fluid-subheading: clamp(1.5rem, 2.8vw, 2.375rem);
+  --primitive-font-size-fluid-title: clamp(1.25rem, 1.7vw, 1.625rem);
+
+  --primitive-letter-spacing-0: 0;
+  --primitive-letter-spacing-tight-1: -0.02em;
+  --primitive-letter-spacing-tight-2: -0.0417em;
+  --primitive-letter-spacing-tight-3: -0.045em;
+  --primitive-letter-spacing-wide-1: 0.08em;
+  --primitive-letter-spacing-wide-2: 0.14em;
+
+  --primitive-line-height-none: 1;
+  --primitive-line-height-display: 1.045;
+  --primitive-line-height-heading: 1.083;
+  --primitive-line-height-tight: 1.1;
+  --primitive-line-height-compact: 1.2;
+  --primitive-line-height-regular: 1.3;
+  --primitive-line-height-relaxed: 1.4;
+  --primitive-line-height-loose: 1.5;
+
+  /* Space primitives. */
+  --primitive-space-0: 0;
+  --primitive-space-px: 1px;
+  --primitive-space-1: 0.25rem;
+  --primitive-space-2: 0.5rem;
+  --primitive-space-3: 0.75rem;
+  --primitive-space-4: 1rem;
+  --primitive-space-5: 1.5rem;
+  --primitive-space-6: 2rem;
+  --primitive-space-7: 3rem;
+  --primitive-space-8: 4rem;
+  --primitive-space-9: 5rem;
+  --primitive-space-10: 6rem;
+  --primitive-space-11: 7.5rem;
+  --primitive-space-12: 9rem;
+  --primitive-space-13: 10rem;
+  --primitive-space-14: 12rem;
+  --primitive-space-15: 15rem;
+
+  /* Shape primitives. */
+  --primitive-radius-0: 0;
+  --primitive-radius-0-5: 0.125rem;
+  --primitive-radius-1: 0.25rem;
+  --primitive-radius-2: 0.5rem;
+  --primitive-radius-3: 0.75rem;
+  --primitive-radius-4: 1.5rem;
+  --primitive-radius-round: 999rem;
+
+  --primitive-border-width-0: 0;
+  --primitive-border-width-1: 1px;
+  --primitive-border-width-2: 2px;
+
+  /* Shadow primitives. */
+  --primitive-shadow-0: none;
+  --primitive-shadow-1: 0 1px 2px rgb(5 40 53 / 0.08);
+  --primitive-shadow-2: 0 8px 24px rgb(5 40 53 / 0.12);
+  --primitive-shadow-3: 0 18px 48px rgb(5 40 53 / 0.16);
+
+  /* Motion primitives. */
+  --primitive-duration-0: 0ms;
+  --primitive-duration-1: 120ms;
+  --primitive-duration-2: 200ms;
+  --primitive-duration-3: 320ms;
+  --primitive-duration-4: 500ms;
+  --primitive-duration-5: 800ms;
+
+  --primitive-ease-linear: linear;
+  --primitive-ease-1: cubic-bezier(0.2, 0, 0, 1);
+  --primitive-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --primitive-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --primitive-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Breakpoint primitives. */
+  --primitive-breakpoint-xs: 30rem;
+  --primitive-breakpoint-sm: 40rem;
+  --primitive-breakpoint-md: 48rem;
+  --primitive-breakpoint-lg: 64rem;
+  --primitive-breakpoint-xl: 80rem;
+  --primitive-breakpoint-2xl: 96rem;
+
+  /* Raw size primitives. */
+  --primitive-size-1: 0.25rem;
+  --primitive-size-2: 0.5rem;
+  --primitive-size-3: 0.75rem;
+  --primitive-size-4: 1rem;
+  --primitive-size-5: 1.5rem;
+  --primitive-size-6: 2rem;
+  --primitive-size-7: 2.75rem;
+  --primitive-size-8: 4rem;
+
+  /* Aspect-ratio primitives. */
+  --primitive-ratio-1-1: 1 / 1;
+  --primitive-ratio-4-3: 4 / 3;
+  --primitive-ratio-3-2: 3 / 2;
+  --primitive-ratio-16-9: 16 / 9;
+  --primitive-ratio-21-9: 21 / 9;
+
+  /* Layering primitives. */
+  --primitive-z-index-0: 0;
+  --primitive-z-index-1: 1;
+  --primitive-z-index-10: 10;
+  --primitive-z-index-100: 100;
+  --primitive-z-index-1000: 1000;
+}

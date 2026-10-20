@@ -1,0 +1,147 @@
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Environments: .env.local
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 14.2s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 117ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 5.2s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer] (node:60341) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:60347) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:60343) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer] (node:60340) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:60350) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer] ✓ Generating static pages using 11 workers (48/48) in 4.1s
+[WebServer]   Finalizing page optimization ...
+[WebServer] 
+[WebServer] Route (app)
+[WebServer] ┌ ○ /_not-found
+[WebServer] ├ ● /[locale]
+[WebServer] │ ├ /es
+[WebServer] │ └ /en
+[WebServer] ├ ƒ /[locale]/blog
+[WebServer] ├ ● /[locale]/blog/[slug]
+[WebServer] │ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[WebServer] │ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[WebServer] │ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[WebServer] │ └ [+3 more paths]
+[WebServer] ├ ● /[locale]/blog/authors/[author]
+[WebServer] │ ├ /en/blog/authors/zitrone-operations-team
+[WebServer] │ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[WebServer] ├ ƒ /[locale]/blog/category/[category]
+[WebServer] ├ ƒ /[locale]/blog/feed.xml
+[WebServer] ├ ● /[locale]/blog/reviewers/[reviewer]
+[WebServer] │ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[WebServer] │ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[WebServer] ├ ● /[locale]/contact
+[WebServer] │ ├ /es/contact
+[WebServer] │ └ /en/contact
+[WebServer] ├ ● /[locale]/privacy-notice
+[WebServer] │ ├ /es/privacy-notice
+[WebServer] │ └ /en/privacy-notice
+[WebServer] ├ ● /[locale]/services
+[WebServer] │ ├ /es/services
+[WebServer] │ └ /en/services
+[WebServer] ├ ● /[locale]/services/[slug]
+[WebServer] │ ├ /en/services/corporate-dining
+[WebServer] │ ├ /en/services/corporate-cafe
+[WebServer] │ ├ /en/services/pantry-restocking
+[WebServer] │ └ [+9 more paths]
+[WebServer] ├ ƒ /admin/[[...segments]]
+[WebServer] ├ ƒ /api/[...slug]
+[WebServer] ├ ƒ /api/contact-request
+[WebServer] ├ ƒ /api/leads/export
+[WebServer] ├ ○ /design-system
+[WebServer] ├ ○ /robots.txt
+[WebServer] └ ○ /sitemap.xml
+[WebServer] 
+[WebServer] 
+[WebServer] ƒ Proxy (Middleware)
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 start
+[WebServer] > next start --hostname 127.0.0.1 --port 3100
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10
+[WebServer] - Local:         http://127.0.0.1:3100
+[WebServer] - Network:       http://127.0.0.1:3100
+[WebServer] ✓ Ready in 77ms
+
+Running 2 tests using 2 workers
+
+[WebServer] (node:60380) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › tests/e2e/contact.spec.ts:192:5 › en: pantry can use the three-step inquiry (2.0s)
+  ✓  1 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (15.9s)
+
+  2 passed (46.5s)

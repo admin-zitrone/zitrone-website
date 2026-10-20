@@ -1,0 +1,5 @@
+
+> on-it-workspace@0.1.0 assets:check
+> node scripts/assets-sync.mjs --check
+
+assets:check OK — 250 assets, 39 clients; generated files consistent.

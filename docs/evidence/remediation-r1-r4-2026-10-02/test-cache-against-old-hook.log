@@ -1,0 +1,71 @@
+
+> on-it-workspace@0.1.0 test:cache
+> zsh scripts/test-blog-cache.sh
+
+NOTICE:  database "zitrone_cache_api_test" does not exist, skipping
+seed: {"id":1,"es":"comida-en-la-oficina-y-retencion-de-talento","en":"office-food-employee-retention"}
+building against the throwaway CMS…
+▶ blog: publish/unpublish through Next's cache
+  ✔ pre-rendered pages are served from the cache before any change (29.471833ms)
+  ✖ editing a published post replaces the cached page (1642.917042ms)
+  ✖ unpublishing removes the cached article, index entry, sitemap and feed, in ES and EN (1630.073625ms)
+  ✖ republishing brings everything back (1629.30125ms)
+✖ blog: publish/unpublish through Next's cache (5059.927666ms)
+ℹ tests 4
+ℹ suites 1
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5165.072166
+
+✖ failing tests:
+
+test at tests/cache/blog-cache.test.ts:1:2196
+✖ editing a published post replaces the cached page (1642.917042ms)
+  AssertionError [ERR_ASSERTION]: /es/blog/comida-en-la-oficina-y-retencion-de-talento never reached the expected state (status 200, cache HIT)
+      at eventually (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:45:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:78:20)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'fail',
+    diff: 'simple'
+  }
+
+test at tests/cache/blog-cache.test.ts:1:2536
+✖ unpublishing removes the cached article, index entry, sitemap and feed, in ES and EN (1630.073625ms)
+  AssertionError [ERR_ASSERTION]: /es/blog/comida-en-la-oficina-y-retencion-de-talento never reached the expected state (status 200, cache HIT)
+      at eventually (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:45:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:84:22)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'fail',
+    diff: 'simple'
+  }
+
+test at tests/cache/blog-cache.test.ts:1:3332
+✖ republishing brings everything back (1629.30125ms)
+  AssertionError [ERR_ASSERTION]: /es/blog/comida-en-la-oficina-y-retencion-de-talento never reached the expected state (status 200, cache HIT)
+      at eventually (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:45:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (/Users/a1085/Documents/Zitrone/Zitrone Website/tests/cache/blog-cache.test.ts:95:5)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Suite.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'fail',
+    diff: 'simple'
+  }

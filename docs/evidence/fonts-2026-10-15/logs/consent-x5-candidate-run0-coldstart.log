@@ -1,0 +1,407 @@
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 256 assets, 44 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 8.4s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 179ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 4.2s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer]     at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[WebServer] }
+[WebServer]     at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer] ✓ Generating static pages using 11 workers (48/48) in 545ms
+[WebServer]   Finalizing page optimization ...
+[WebServer] 
+[WebServer] Route (app)
+[WebServer] ┌ ○ /_not-found
+[WebServer] ├ ● /[locale]
+[WebServer] │ ├ /es
+[WebServer] │ └ /en
+[WebServer] ├ ƒ /[locale]/blog
+[WebServer] ├ ● /[locale]/blog/[slug]
+[WebServer] │ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[WebServer] │ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[WebServer] │ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[WebServer] │ └ [+3 more paths]
+[WebServer] ├ ● /[locale]/blog/authors/[author]
+[WebServer] │ ├ /en/blog/authors/zitrone-operations-team
+[WebServer] │ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[WebServer] ├ ƒ /[locale]/blog/category/[category]
+[WebServer] ├ ƒ /[locale]/blog/feed.xml
+[WebServer] ├ ● /[locale]/blog/reviewers/[reviewer]
+[WebServer] │ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[WebServer] │ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[WebServer] ├ ● /[locale]/contact
+[WebServer] │ ├ /es/contact
+[WebServer] │ └ /en/contact
+[WebServer] ├ ● /[locale]/privacy-notice
+[WebServer] │ ├ /es/privacy-notice
+[WebServer] │ └ /en/privacy-notice
+[WebServer] ├ ● /[locale]/services
+[WebServer] │ ├ /es/services
+[WebServer] │ └ /en/services
+[WebServer] ├ ● /[locale]/services/[slug]
+[WebServer] │ ├ /en/services/corporate-dining
+[WebServer] │ ├ /en/services/corporate-cafe
+[WebServer] │ ├ /en/services/pantry-restocking
+[WebServer] │ └ [+9 more paths]
+[WebServer] ├ ƒ /admin/[[...segments]]
+[WebServer] ├ ƒ /api/[...slug]
+[WebServer] ├ ƒ /api/contact-request
+[WebServer] ├ ƒ /api/leads/export
+[WebServer] ├ ○ /design-system
+[WebServer] ├ ○ /robots.txt
+[WebServer] └ ○ /sitemap.xml
+[WebServer] 
+[WebServer] 
+[WebServer] ƒ Proxy (Middleware)
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 start
+[WebServer] > next start --hostname 127.0.0.1 --port 3100
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10
+[WebServer] - Local:         http://127.0.0.1:3100
+[WebServer] - Network:       http://127.0.0.1:3100
+[WebServer] ✓ Ready in 75ms
+
+Running 35 tests using 6 workers
+
+  ✘   4 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (41.6s)
+  ✘   5 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (41.6s)
+  ✘   1 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (42.0s)
+  ✘   2 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (42.0s)
+  ✘   6 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (41.6s)
+  ✘   3 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (41.8s)
+  ✓   7 [chromium] › tests/e2e/consent.spec.ts:176:3 › consent › the Spanish banner is translated, not falling back to English (7.0s)
+  ✓   8 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (7.9s)
+  ✓   9 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (8.6s)
+  ✓  12 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (8.9s)
+  ✓  11 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (9.0s)
+  ✓  13 [chromium] › tests/e2e/consent.spec.ts:176:3 › consent › the Spanish banner is translated, not falling back to English (1.8s)
+  ✓  10 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (9.9s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  15 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (2.0s)
+  ✓  16 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (2.9s)
+  ✓  14 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (8.4s)
+  ✓  18 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (7.9s)
+  ✓  19 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (8.1s)
+  ✓  17 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (10.3s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  21 [chromium] › tests/e2e/consent.spec.ts:176:3 › consent › the Spanish banner is translated, not falling back to English (7.8s)
+  ✓  20 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (10.1s)
+  ✓  22 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (1.5s)
+  ✓  23 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (1.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  25 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (3.1s)
+  ✓  27 [chromium] › tests/e2e/consent.spec.ts:176:3 › consent › the Spanish banner is translated, not falling back to English (2.4s)
+  ✓  24 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (3.8s)
+  ✓  26 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (2.5s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  28 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (952ms)
+  ✓  30 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (1.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  29 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (6.5s)
+  ✓  33 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (6.2s)
+  ✓  32 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (6.4s)
+  ✓  35 [chromium] › tests/e2e/consent.spec.ts:176:3 › consent › the Spanish banner is translated, not falling back to English (5.3s)
+  ✓  31 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (7.1s)
+  ✓  34 [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page (7.2s)
+
+
+  1) [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-declares-d-9f649--EEA-before-anything-starts-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-declares-d-9f649--EEA-before-anything-starts-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-declares-d-9f649--EEA-before-anything-starts-chromium/error-context.md
+
+  2) [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-shows-the--79aba-tor-and-records-a-rejection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-shows-the--79aba-tor-and-records-a-rejection-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-shows-the--79aba-tor-and-records-a-rejection-chromium/error-context.md
+
+  3) [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+      - navigating to "http://127.0.0.1:3100/en", waiting until "load"
+
+
+      105 |     await expect(page.getByRole("dialog", { name: /cookie preferences/i })).toBeHidden()
+      106 |
+    > 107 |     await page.goto("/en")
+          |                ^
+      108 |     await expect(page.getByRole("dialog", { name: /cookie preferences/i })).toBeHidden()
+      109 |
+      110 |     // The bootstrap should replay the stored choice as an update on load.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-does-not-a-96307-d-replays-the-stored-choice-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-does-not-a-96307-d-replays-the-stored-choice-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-does-not-a-96307-d-replays-the-stored-choice-chromium/error-context.md
+
+  4) [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-category-choices-are-honoured-independently-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-category-choices-are-honoured-independently-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-category-choices-are-honoured-independently-chromium/error-context.md
+
+  5) [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-the-footer-6af15-references-after-a-decision-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-the-footer-6af15-references-after-a-decision-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-the-footer-6af15-references-after-a-decision-chromium/error-context.md
+
+  6) [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.evaluate: Test timeout of 30000ms exceeded.
+
+      166 |       if (!stop) continue
+      167 |       expect(stop.visible, `footer control "${stop.label}" is covered while focused`).toBe(true)
+    > 168 |       if (await reopen.evaluate((el) => el === document.activeElement)) break
+          |                        ^
+      169 |     }
+      170 |     await expect(reopen).toBeFocused()
+      171 |
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/consent-consent-keyboard-f-9f2a8-ever-hidden-behind-the-page-chromium/error-context.md
+
+  6 failed
+    [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts 
+    [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection 
+    [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice 
+    [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently 
+    [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision 
+    [chromium] › tests/e2e/consent.spec.ts:150:3 › consent › keyboard focus in the footer is never hidden behind the page 
+  29 passed (1.6m)

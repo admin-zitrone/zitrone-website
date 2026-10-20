@@ -1,0 +1,704 @@
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 256 assets, 44 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 7.9s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 154ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 4.0s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer]     at tI.init (.next/server/chunks/_1u-grdc._.js:136:9307) {
+[WebServer] }
+[WebServer]     at tI.init (.next/server/chunks/_1u-grdc._.js:136:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+[WebServer] }
+[WebServer] ✓ Generating static pages using 11 workers (48/48) in 538ms
+[WebServer]   Finalizing page optimization ...
+[WebServer] 
+[WebServer] Route (app)
+[WebServer] ┌ ○ /_not-found
+[WebServer] ├ ● /[locale]
+[WebServer] │ ├ /es
+[WebServer] │ └ /en
+[WebServer] ├ ƒ /[locale]/blog
+[WebServer] ├ ● /[locale]/blog/[slug]
+[WebServer] │ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[WebServer] │ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[WebServer] │ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[WebServer] │ └ [+3 more paths]
+[WebServer] ├ ● /[locale]/blog/authors/[author]
+[WebServer] │ ├ /en/blog/authors/zitrone-operations-team
+[WebServer] │ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[WebServer] ├ ƒ /[locale]/blog/category/[category]
+[WebServer] ├ ƒ /[locale]/blog/feed.xml
+[WebServer] ├ ● /[locale]/blog/reviewers/[reviewer]
+[WebServer] │ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[WebServer] │ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[WebServer] ├ ● /[locale]/contact
+[WebServer] │ ├ /es/contact
+[WebServer] │ └ /en/contact
+[WebServer] ├ ● /[locale]/privacy-notice
+[WebServer] │ ├ /es/privacy-notice
+[WebServer] │ └ /en/privacy-notice
+[WebServer] ├ ● /[locale]/services
+[WebServer] │ ├ /es/services
+[WebServer] │ └ /en/services
+[WebServer] ├ ● /[locale]/services/[slug]
+[WebServer] │ ├ /en/services/corporate-dining
+[WebServer] │ ├ /en/services/corporate-cafe
+[WebServer] │ ├ /en/services/pantry-restocking
+[WebServer] │ └ [+9 more paths]
+[WebServer] ├ ƒ /admin/[[...segments]]
+[WebServer] ├ ƒ /api/[...slug]
+[WebServer] ├ ƒ /api/contact-request
+[WebServer] ├ ƒ /api/leads/export
+[WebServer] ├ ○ /design-system
+[WebServer] ├ ○ /robots.txt
+[WebServer] └ ○ /sitemap.xml
+[WebServer] 
+[WebServer] 
+[WebServer] ƒ Proxy (Middleware)
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 start
+[WebServer] > next start --hostname 127.0.0.1 --port 3100
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10
+[WebServer] - Local:         http://127.0.0.1:3100
+[WebServer] - Network:       http://127.0.0.1:3100
+[WebServer] ✓ Ready in 74ms
+
+Running 60 tests using 6 workers
+
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓   5 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es contact (4.9s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓   3 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es blog-index (6.4s)
+  ✓   2 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es privacy-notice (6.6s)
+  ✓   4 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es services-index (6.7s)
+  ✓   6 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-comedor-corporativo (6.9s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓   1 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es home (9.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+  ✓   7 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-cafeteria-corporativa (6.2s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓   8 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-pantry-y-restocking (6.2s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓   9 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-cafe-y-agua (6.7s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  10 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-carritos-de-servicio (7.5s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  11 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es service-catering-corporativo (7.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  12 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es blog-article (5.3s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  13 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es blog-category (5.1s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  14 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es blog-author (5.0s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  15 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › es blog-reviewer (4.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  18 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en blog-index (5.1s)
+  ✓  17 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en services-index (5.4s)
+  ✓  16 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en home (6.1s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  19 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en contact (4.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  20 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en privacy-notice (5.5s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  21 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-corporate-dining (5.5s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+  ✓  22 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-corporate-cafe (5.4s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  23 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-pantry-restocking (5.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  24 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-coffee-water (5.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  25 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-service-carts (5.9s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  26 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en service-corporate-catering (5.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  27 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en blog-article (5.7s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  29 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en blog-author (4.7s)
+  ✓  28 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en blog-category (5.0s)
+  ✓  30 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — desktop › en blog-reviewer (4.7s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  31 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es home (5.1s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  32 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es services-index (5.2s)
+  ✓  33 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es blog-index (4.7s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  34 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es contact (4.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  35 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es privacy-notice (5.2s)
+  ✓  36 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-comedor-corporativo (5.0s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+  ✓  37 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-cafeteria-corporativa (5.1s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  39 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-cafe-y-agua (4.5s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  38 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-pantry-y-restocking (5.0s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  40 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-carritos-de-servicio (4.9s)
+  ✓  42 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es blog-article (4.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  41 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es service-catering-corporativo (4.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  43 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es blog-category (4.9s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  44 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es blog-author (4.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  45 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › es blog-reviewer (5.0s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  47 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en services-index (4.8s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  46 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en home (5.2s)
+  ✓  48 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en blog-index (5.0s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  49 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en contact (5.6s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  50 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en privacy-notice (6.2s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  52 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-corporate-cafe (5.1s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  51 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-corporate-dining (6.3s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  53 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-pantry-restocking (5.2s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  54 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-coffee-water (5.3s)
+[WebServer]     at bu.init (.next/server/chunks/ssr/_1u40ioi._.js:431:9307)
+[WebServer]     at async bx (.next/server/chunks/ssr/_1u40ioi._.js:431:13313) {
+[WebServer] }
+  ✓  55 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-service-carts (5.3s)
+  ✓  56 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en service-corporate-catering (5.7s)
+  ✓  57 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en blog-article (5.4s)
+  ✓  58 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en blog-category (5.3s)
+  ✓  59 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en blog-author (5.4s)
+  ✓  60 [chromium] › tests/e2e/visual.spec.ts:157:9 › visual — mobile › en blog-reviewer (5.3s)
+
+  60 passed (1.2m)

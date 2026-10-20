@@ -1,0 +1,35 @@
+# Zitrone
+
+> Zitrone designs and operates workplace food programs in Mexico: corporate dining rooms (comedor corporativo), corporate cafés, pantry and snack restocking, office coffee and water service, grab-and-go, and corporate catering. Site content is available in Spanish (default) and English.
+
+## Services (Spanish)
+
+- [Comedor corporativo](https://www.zitrone.mx/es/services/comedor-corporativo): design and operation of on-site corporate dining
+- [Cafetería corporativa](https://www.zitrone.mx/es/services/cafeteria-corporativa): staffed café service for workplaces
+- [Pantry y restocking](https://www.zitrone.mx/es/services/pantry-y-restocking): pantry supply and snack restocking
+- [Café y agua](https://www.zitrone.mx/es/services/cafe-y-agua): office coffee and water dispenser service
+- [Grab and go](https://www.zitrone.mx/es/services/grab-and-go): ready-to-eat meals and snacks to take away
+- [Catering corporativo](https://www.zitrone.mx/es/services/catering-corporativo): corporate event catering
+
+## Services (English)
+
+- [Corporate dining](https://www.zitrone.mx/en/services/corporate-dining)
+- [Corporate café](https://www.zitrone.mx/en/services/corporate-cafe)
+- [Pantry restocking](https://www.zitrone.mx/en/services/pantry-restocking)
+- [Coffee and water](https://www.zitrone.mx/en/services/coffee-water)
+- [Grab and go](https://www.zitrone.mx/en/services/grab-and-go)
+- [Corporate catering](https://www.zitrone.mx/en/services/corporate-catering)
+
+## Resources
+
+- [Home (Spanish)](https://www.zitrone.mx/es)
+- [Home (English)](https://www.zitrone.mx/en)
+- [Blog (Spanish)](https://www.zitrone.mx/es/blog): articles on workplace food service, food safety, and operations
+- [Blog (English)](https://www.zitrone.mx/en/blog)
+- [Sitemap](https://www.zitrone.mx/sitemap.xml)
+
+## Company
+
+- Market: workplaces in Mexico
+- [Privacy notice](https://www.zitrone.mx/es/privacy-notice)
+- [Billing](https://www.zitrone.mx/es/billing)

@@ -1,0 +1,20 @@
+{
+  "es": {
+    "shown": {
+      "footer.ctaPrimary.internalHref": "Hablemos -> /contact?src=footer",
+      "footer.ctaSecondary.internalHref": "Ver servicios -> /services",
+      "header.primaryCta.internalHref": "Hablemos -> /contact?src=nav"
+    },
+    "unlabeled": 0,
+    "ctaLabel": "Hablemos"
+  },
+  "en": {
+    "shown": {
+      "footer.ctaPrimary.internalHref": "Contact us -> /contact?src=footer",
+      "footer.ctaSecondary.internalHref": "View services -> /services",
+      "header.primaryCta.internalHref": "Contact us -> /contact?src=nav"
+    },
+    "unlabeled": 0,
+    "ctaLabel": "Contact us"
+  }
+}

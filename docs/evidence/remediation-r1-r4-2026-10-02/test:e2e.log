@@ -1,0 +1,210 @@
+
+> on-it-workspace@0.1.0 test:e2e
+> playwright test
+
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Environments: .env.local
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 6.8s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 46ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 3.4s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer] (node:80554) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80556) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80561) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer] (node:80553) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:80563) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer] ✓ Generating static pages using 11 workers (48/48) in 3.5s
+[WebServer]   Finalizing page optimization ...
+[WebServer] 
+[WebServer] Route (app)
+[WebServer] ┌ ○ /_not-found
+[WebServer] ├ ● /[locale]
+[WebServer] │ ├ /es
+[WebServer] │ └ /en
+[WebServer] ├ ƒ /[locale]/blog
+[WebServer] ├ ● /[locale]/blog/[slug]
+[WebServer] │ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[WebServer] │ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[WebServer] │ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[WebServer] │ └ [+3 more paths]
+[WebServer] ├ ● /[locale]/blog/authors/[author]
+[WebServer] │ ├ /en/blog/authors/zitrone-operations-team
+[WebServer] │ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[WebServer] ├ ƒ /[locale]/blog/category/[category]
+[WebServer] ├ ƒ /[locale]/blog/feed.xml
+[WebServer] ├ ● /[locale]/blog/reviewers/[reviewer]
+[WebServer] │ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[WebServer] │ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[WebServer] ├ ● /[locale]/contact
+[WebServer] │ ├ /es/contact
+[WebServer] │ └ /en/contact
+[WebServer] ├ ● /[locale]/privacy-notice
+[WebServer] │ ├ /es/privacy-notice
+[WebServer] │ └ /en/privacy-notice
+[WebServer] ├ ● /[locale]/services
+[WebServer] │ ├ /es/services
+[WebServer] │ └ /en/services
+[WebServer] ├ ● /[locale]/services/[slug]
+[WebServer] │ ├ /en/services/corporate-dining
+[WebServer] │ ├ /en/services/corporate-cafe
+[WebServer] │ ├ /en/services/pantry-restocking
+[WebServer] │ └ [+9 more paths]
+[WebServer] ├ ƒ /admin/[[...segments]]
+[WebServer] ├ ƒ /api/[...slug]
+[WebServer] ├ ƒ /api/contact-request
+[WebServer] ├ ƒ /api/leads/export
+[WebServer] ├ ○ /design-system
+[WebServer] ├ ○ /robots.txt
+[WebServer] └ ○ /sitemap.xml
+[WebServer] 
+[WebServer] 
+[WebServer] ƒ Proxy (Middleware)
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 start
+[WebServer] > next start --hostname 127.0.0.1 --port 3100
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10
+[WebServer] - Local:         http://127.0.0.1:3100
+[WebServer] - Network:       http://127.0.0.1:3100
+[WebServer] ✓ Ready in 75ms
+
+Running 61 tests using 6 workers
+
+[WebServer] (node:80592) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › blog article has no automatically detectable violations (1.5s)
+  ✓   1 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › service detail has no automatically detectable violations (1.7s)
+  ✓   4 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › services index has no automatically detectable violations (1.7s)
+  ✓   6 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › home (es) has no automatically detectable violations (2.3s)
+  ✓   5 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › home (en) has no automatically detectable violations (2.4s)
+  ✓   7 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › privacy notice has no automatically detectable violations (943ms)
+  ✓  10 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › home (en) exposes one main landmark and one h1 (1.1s)
+  ✓  12 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › services index exposes one main landmark and one h1 (928ms)
+  ✓   8 [chromium] › tests/e2e/accessibility.spec.ts:127:3 › axe: WCAG 2.2 AA › home stays clean at 320px, the WCAG reflow width (1.8s)
+  ✓  11 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › home (es) exposes one main landmark and one h1 (1.1s)
+  ✓   2 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › blog index has no automatically detectable violations (3.6s)
+  ✓   9 [chromium] › tests/e2e/accessibility.spec.ts:140:3 › axe: WCAG 2.2 AA › mobile navigation panel is clean while open (2.0s)
+  ✓  15 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › blog article exposes one main landmark and one h1 (451ms)
+  ✓  16 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › privacy notice exposes one main landmark and one h1 (442ms)
+  ✓  13 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › service detail exposes one main landmark and one h1 (595ms)
+  ✓  14 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › blog index exposes one main landmark and one h1 (1.8s)
+  ✓  18 [chromium] › tests/e2e/accessibility.spec.ts:181:3 › keyboard › a skip link is the first stop and jumps to main content (1.5s)
+  ✓  19 [chromium] › tests/e2e/accessibility.spec.ts:196:3 › keyboard › the services menu opens, closes on Escape and returns focus (1.4s)
+  ✓  20 [chromium] › tests/e2e/accessibility.spec.ts:214:3 › keyboard › every control reachable by keyboard shows a visible focus ring (1.4s)
+  ✓  21 [chromium] › tests/e2e/accessibility.spec.ts:258:3 › motion › no element animates when the user asks for reduced motion (1.5s)
+  ✓  17 [chromium] › tests/e2e/accessibility.spec.ts:172:3 › structure › every page declares its language (2.0s)
+  ✓  22 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (1.7s)
+  ✓  23 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (1.8s)
+  ✓  27 [chromium] › tests/e2e/consent.spec.ts:145:3 › consent › the Spanish banner is translated, not falling back to English (2.2s)
+  ✓  25 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (2.7s)
+  ✓  24 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (2.9s)
+  ✓  31 [chromium] › tests/e2e/contact.spec.ts:136:1 › an in-flight request cannot be submitted twice (4.5s)
+  ✓  32 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy yes: only serialize an applicable percentage (4.6s)
+  ✓  30 [chromium] › tests/e2e/contact.spec.ts:125:1 › a 202 (honeypot / not persisted) shows success but counts no conversion (4.9s)
+  ✓  29 [chromium] › tests/e2e/contact.spec.ts:53:3 › en: optional details, accessible validation, failure and retry (5.8s)
+  ✓  28 [chromium] › tests/e2e/contact.spec.ts:53:3 › es: optional details, accessible validation, failure and retry (6.8s)
+  ✓  34 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: cafeteria can use the three-step inquiry (1.4s)
+  ✓  36 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: maquinas can use the three-step inquiry (1.5s)
+  ✓  35 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: pantry can use the three-step inquiry (2.1s)
+  ✓  37 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: carritos can use the three-step inquiry (1.3s)
+  ✓  39 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: otro can use the three-step inquiry (1.4s)
+  ✓  40 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: cafeteria can use the three-step inquiry (1.4s)
+  ✓  33 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy tbd: only serialize an applicable percentage (3.7s)
+  ✓  38 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: catering can use the three-step inquiry (2.7s)
+  ✓  42 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: maquinas can use the three-step inquiry (1.6s)
+  ✓  41 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: pantry can use the three-step inquiry (2.3s)
+  ✓  43 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: carritos can use the three-step inquiry (1.6s)
+  ✓  45 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: otro can use the three-step inquiry (1.8s)
+  ✓  44 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: catering can use the three-step inquiry (2.6s)
+  ✓  50 [chromium] › tests/e2e/domain-migration.spec.ts:21:1 › unrecognized legacy services remain missing instead of redirecting to the index (31ms)
+  ✓  49 [chromium] › tests/e2e/domain-migration.spec.ts:4:1 › known legacy paths resolve to real pages with the correct canonical (444ms)
+  ✓  52 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es contact: location hierarchy, reset and keyboard (2.8s)
+  ✓  51 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es home: location hierarchy, reset and keyboard (3.0s)
+  ✓  26 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (16.6s)
+  ✓  48 [chromium] › tests/e2e/contact.spec.ts:276:3 › en: multiple services and individual meal counts survive submission (5.1s)
+  ✓  46 [chromium] › tests/e2e/contact.spec.ts:249:1 › switching from detailed dining to coffee excludes hidden dining answers (6.5s)
+  ✓  47 [chromium] › tests/e2e/contact.spec.ts:276:3 › es: multiple services and individual meal counts survive submission (6.9s)
+  ✓  54 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en contact: location hierarchy, reset and keyboard (3.5s)
+  ✓  57 [chromium] › tests/e2e/smoke.spec.ts:18:3 › localized marketing shell › renders the English home page (2.0s)
+  ✓  58 [chromium] › tests/e2e/smoke.spec.ts:33:3 › localized marketing shell › contact navigation resolves back to the localized home (1.7s)
+  ✓  59 [chromium] › tests/e2e/smoke.spec.ts:45:3 › localized marketing shell › privacy navigation resolves back to the localized home (1.2s)
+  ✓  53 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en home: location hierarchy, reset and keyboard (4.9s)
+  ✓  61 [chromium] › tests/e2e/smoke.spec.ts:73:3 › blog smoke › blog article renders recommended content (635ms)
+  ✓  60 [chromium] › tests/e2e/smoke.spec.ts:59:3 › blog smoke › blog index renders and keeps localized shell links (1.3s)
+  ✓  56 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › en: home submits complete brief and retains it after failure (5.2s)
+  ✓  55 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › es: home submits complete brief and retains it after failure (7.0s)
+
+  61 passed (50.1s)

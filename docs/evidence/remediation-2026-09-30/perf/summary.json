@@ -1,0 +1,258 @@
+{
+ "meta": {
+  "lighthouse": "12.8.2",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+  "benchmarkIndex": 3700,
+  "throttling": "mobile:{\"rttMs\": 150, \"throughputKbps\": 1638.4, \"requestLatencyMs\": 562.5, \"downloadThroughputKbps\": 1474.5600000000002, \"uploadThroughputKbps\": 675, \"cpuSlowdownMultiplier\": 4}"
+ },
+ "results": {
+  "es_blog_comida-en-la-oficina-y-retencion-de-talento_desktop": {
+   "runs": [
+    {
+     "score": 98,
+     "lcp": 1106.1800000000003,
+     "cls": 0,
+     "tbt": 47.00000000000023,
+     "fcp": 385.308,
+     "si": 638.7476142391024,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    },
+    {
+     "score": 98,
+     "lcp": 1106.9700000000003,
+     "cls": 0,
+     "tbt": 30.499999999999886,
+     "fcp": 383.382,
+     "si": 645.7231169667031,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    },
+    {
+     "score": 98,
+     "lcp": 1084.31,
+     "cls": 0,
+     "tbt": 39.5,
+     "fcp": 379.26,
+     "si": 559.9950019748966,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    }
+   ]
+  },
+  "es_blog_comida-en-la-oficina-y-retencion-de-talento_mobile": {
+   "runs": [
+    {
+     "score": 83,
+     "lcp": 4630.960000000001,
+     "cls": 0,
+     "tbt": 38,
+     "fcp": 1352.9759999999999,
+     "si": 1795.5294963150714,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    },
+    {
+     "score": 83,
+     "lcp": 4607.15,
+     "cls": 0,
+     "tbt": 27,
+     "fcp": 1501.8899999999999,
+     "si": 1558.3705196660908,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    },
+    {
+     "score": 74,
+     "lcp": 5043.93,
+     "cls": 0,
+     "tbt": 319.5,
+     "fcp": 1369.158,
+     "si": 1833.0851561752158,
+     "lcpEl": "section.ds-section > div.ds-container > figure.ds-article-hero-image > img"
+    }
+   ]
+  },
+  "es_contact_desktop": {
+   "runs": [
+    {
+     "score": 99,
+     "lcp": 989.0544999999998,
+     "cls": 0,
+     "tbt": 44,
+     "fcp": 340.70300000000003,
+     "si": 597.2333839374951,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    },
+    {
+     "score": 99,
+     "lcp": 988.7915,
+     "cls": 0,
+     "tbt": 43,
+     "fcp": 381.861,
+     "si": 617.8106803714836,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    },
+    {
+     "score": 99,
+     "lcp": 1014.7620000000001,
+     "cls": 0,
+     "tbt": 47.000000000000114,
+     "fcp": 380.50800000000004,
+     "si": 628.7013142414203,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    }
+   ]
+  },
+  "es_contact_mobile": {
+   "runs": [
+    {
+     "score": 75,
+     "lcp": 5000.226,
+     "cls": 0,
+     "tbt": 306.49999999999955,
+     "fcp": 1369.1129999999998,
+     "si": 2177.6808965050295,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    },
+    {
+     "score": 75,
+     "lcp": 4691.9349999999995,
+     "cls": 0,
+     "tbt": 344.5,
+     "fcp": 1369.761,
+     "si": 1719.7899466061865,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    },
+    {
+     "score": 75,
+     "lcp": 4656.334999999999,
+     "cls": 0,
+     "tbt": 333.5,
+     "fcp": 1367.0010000000002,
+     "si": 1771.0334890257661,
+     "lcpEl": "div.ds-container > div.ds-contact-shell > aside.ds-contact-rail > h1.ds-heading"
+    }
+   ]
+  },
+  "es_desktop": {
+   "runs": [
+    {
+     "score": 94,
+     "lcp": 1553.5975,
+     "cls": 0.0008035181080903598,
+     "tbt": 0,
+     "fcp": 402.8275,
+     "si": 980.1671090000567,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    },
+    {
+     "score": 94,
+     "lcp": 1553.6567499999996,
+     "cls": 0.0008035181080903598,
+     "tbt": 0,
+     "fcp": 363.0855,
+     "si": 992.4621964617812,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    },
+    {
+     "score": 94,
+     "lcp": 1557.8444999999997,
+     "cls": 0.0008035181080903598,
+     "tbt": 0,
+     "fcp": 403.79049999999995,
+     "si": 1020.5906157331418,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    }
+   ]
+  },
+  "es_mobile": {
+   "runs": [
+    {
+     "score": 73,
+     "lcp": 11961.942,
+     "cls": 0,
+     "tbt": 25.5,
+     "fcp": 1695.7240000000002,
+     "si": 3239.171147435267,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    },
+    {
+     "score": 74,
+     "lcp": 7603.315500000001,
+     "cls": 0,
+     "tbt": 122,
+     "fcp": 1657.2630000000001,
+     "si": 2911.5738404666367,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    },
+    {
+     "score": 75,
+     "lcp": 7044.498,
+     "cls": 0,
+     "tbt": 103,
+     "fcp": 1356.2489999999998,
+     "si": 3134.8832844369585,
+     "lcpEl": "header.ds-section > div.ds-hero-frame > div.ds-hero-media > img.ds-hero-media-image"
+    }
+   ]
+  },
+  "es_services_comedor-corporativo_desktop": {
+   "runs": [
+    {
+     "score": 99,
+     "lcp": 1031.864,
+     "cls": 0,
+     "tbt": 0,
+     "fcp": 323.74399999999997,
+     "si": 447.4096385447366,
+     "lcpEl": "figure.ds-service-lp-hero-media > div.ds-service-media-rotator > div.ds-service-media-rotator-frame > img"
+    },
+    {
+     "score": 99,
+     "lcp": 1039.294,
+     "cls": 0,
+     "tbt": 0,
+     "fcp": 364.524,
+     "si": 399.28892297791714,
+     "lcpEl": "figure.ds-service-lp-hero-media > div.ds-service-media-rotator > div.ds-service-media-rotator-frame > img"
+    },
+    {
+     "score": 99,
+     "lcp": 1031.1865000000003,
+     "cls": 0,
+     "tbt": 0,
+     "fcp": 362.829,
+     "si": 382.2059167730422,
+     "lcpEl": "figure.ds-service-lp-hero-media > div.ds-service-media-rotator > div.ds-service-media-rotator-frame > img"
+    }
+   ]
+  },
+  "es_services_comedor-corporativo_mobile": {
+   "runs": [
+    {
+     "score": 81,
+     "lcp": 5232.984999999999,
+     "cls": 0,
+     "tbt": 31.5,
+     "fcp": 1354.4924999999998,
+     "si": 1651.3371662150203,
+     "lcpEl": "figure.ds-service-lp-hero-media > div.ds-service-media-rotator > div.ds-service-media-rotator-frame > img"
+    },
+    {
+     "score": 79,
+     "lcp": 5542.90175,
+     "cls": 0,
+     "tbt": 31.499999999999545,
+     "fcp": 1354.1085,
+     "si": 1550.7558740173738,
+     "lcpEl": "article.ds-service-lp-hero-stage > div.ds-service-lp-hero-content > div.ds-service-lp-hero-main > p.ds-heading"
+    },
+    {
+     "score": 80,
+     "lcp": 5359.9455,
+     "cls": 0,
+     "tbt": 27,
+     "fcp": 1353.243,
+     "si": 1682.4572432588752,
+     "lcpEl": "figure.ds-service-lp-hero-media > div.ds-service-media-rotator > div.ds-service-media-rotator-frame > img"
+    }
+   ]
+  }
+ }
+}

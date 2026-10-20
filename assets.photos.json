@@ -1,0 +1,205 @@
+{
+  "_about": "Deck photo registry — the single source of truth for the photographs used across the decks. sync-assets.mjs fills the <!-- PHOTO:START <id> --> markers in slides from this; build.mjs runs it automatically. SOURCE photos live in deck-system/assets/images/<section>/ (curated, web-safe names); sync-images.mjs (run by build.mjs) copies them into public/img/shared/services/<section>/ — a deck-only folder, kept separate from the website's own assets elsewhere in public. To swap a photo: replace the file in assets/images/<section>/ keeping the same name, then rebuild — it cascades to every slide and deck using that id. To add a photo: drop it in assets/images/<section>/, register it here, reference its id from a slide marker. `id` convention is <section>-<name>; `file` is the deck-only public path. `placeholder:true` marks a slot whose final photo hasn't landed yet.",
+  "photos": [
+    {
+      "id": "comedor-bowl-station",
+      "file": "/img/shared/services/comedor/bowl-station.jpg",
+      "alt": "Make Your Own Bowl Station — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-beverage-bar",
+      "file": "/img/shared/services/comedor/beverage-dessert-bar.jpg",
+      "alt": "Barra de bebidas, postres y complementos — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-corporate-catering",
+      "file": "/img/shared/services/comedor/corporate-catering.jpg",
+      "alt": "Catering corporativo — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-menu-premium",
+      "file": "/img/shared/services/comedor/menu-premium.jpg",
+      "alt": "Menú premium — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-menu-traditional",
+      "file": "/img/shared/services/comedor/menu-traditional.jpg",
+      "alt": "Menú tradicional — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-barra-grill",
+      "file": "/img/shared/services/comedor/barra-grill.jpg",
+      "alt": "Barra Grill — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-barra-ensaladas",
+      "file": "/img/shared/services/comedor/barra-ensaladas.jpg",
+      "alt": "Barra de Ensaladas — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-poke-bowl",
+      "file": "/img/shared/services/comedor/poke-bowl.jpg",
+      "alt": "Poke Bowl — Comedor Zitrone"
+    },
+    {
+      "id": "comedor-taco-station",
+      "file": "/img/shared/services/comedor/taco-station.jpg",
+      "alt": "Taco Station — Comedor Zitrone"
+    },
+    {
+      "id": "stripe-comedor-hall",
+      "file": "/img/shared/services/stripe/comedor-hall.jpg",
+      "alt": "Comedor corporativo de Stripe en su piso — Zitrone"
+    },
+    {
+      "id": "stripe-salad-bar",
+      "file": "/img/shared/services/stripe/salad-bar.jpg",
+      "alt": "Barra de ensaladas y complementos en Stripe — Zitrone"
+    },
+    {
+      "id": "stripe-grilled-vegetables",
+      "file": "/img/shared/services/stripe/grilled-vegetables.jpg",
+      "alt": "Verduras al grill — Zitrone"
+    },
+    {
+      "id": "estandares-chapter-cover",
+      "file": "/img/shared/services/estandares/chapter-cover.jpg",
+      "alt": "Portada de capítulo — Estándares Zitrone"
+    },
+    {
+      "id": "estandares-ehs-protocol",
+      "file": "/img/shared/services/estandares/ehs-protocol.jpg",
+      "alt": "Protocolo EHS — Estándares Zitrone"
+    },
+    {
+      "id": "estandares-food-safety",
+      "file": "/img/shared/services/estandares/food-safety.jpg",
+      "alt": "Inocuidad alimentaria — Estándares Zitrone"
+    },
+    {
+      "id": "estandares-portion-weights",
+      "file": "/img/shared/services/estandares/portion-weights.jpg",
+      "alt": "Control de gramajes — Estándares Zitrone"
+    },
+    {
+      "id": "estandares-staff-uniforms",
+      "file": "/img/shared/services/estandares/staff-uniforms.jpg",
+      "alt": "Personal y uniformes — Estándares Zitrone"
+    },
+    {
+      "id": "estandares-operational-staffing",
+      "file": "/img/shared/services/estandares/operational-staffing.jpg",
+      "alt": "Plantilla operativa — Estándares Zitrone"
+    },
+    {
+      "id": "propuesta-chapter-cover",
+      "file": "/img/shared/services/propuesta/chapter-cover.jpg",
+      "alt": "Portada de capítulo — Propuesta económica Zitrone"
+    },
+    {
+      "id": "propuesta-contract-operations",
+      "file": "/img/shared/services/propuesta/contract-operations.jpg",
+      "alt": "Contrato y operación — Propuesta Zitrone"
+    },
+    {
+      "id": "propuesta-commercial-details",
+      "file": "/img/shared/services/propuesta/commercial-details.jpg",
+      "alt": "Detalles comerciales — Propuesta Zitrone"
+    },
+    {
+      "id": "propuesta-guarantees",
+      "file": "/img/shared/services/propuesta/guarantees.jpg",
+      "alt": "Garantías — Propuesta Zitrone"
+    },
+    {
+      "id": "closing-uber",
+      "file": "/img/shared/services/closing/closing-uber.jpg",
+      "alt": "Uber México — cliente Zitrone"
+    },
+    {
+      "id": "closing-pinterest",
+      "file": "/img/shared/services/closing/closing-pinterest.jpg",
+      "alt": "Pinterest México — cliente Zitrone"
+    },
+    {
+      "id": "closing-stripe",
+      "file": "/img/shared/services/closing/closing-stripe.jpg",
+      "alt": "Stripe — cliente Zitrone"
+    },
+    {
+      "id": "closing-salesforce",
+      "file": "/img/shared/services/closing/closing-salesforce.jpg",
+      "alt": "Salesforce — cliente Zitrone"
+    },
+    {
+      "id": "closing-amex",
+      "file": "/img/shared/services/closing/closing-amex.jpg",
+      "alt": "American Express — cliente Zitrone"
+    },
+    {
+      "id": "closing-contact",
+      "file": "/img/shared/services/closing/closing-contact.jpg",
+      "alt": "Equipo Zitrone — contacto"
+    },
+    {
+      "id": "cafeteras-person-machine",
+      "file": "/img/shared/services/cafeteras/person-machine.jpg",
+      "alt": "Colaboradora preparando café en la máquina Zitrone"
+    },
+    {
+      "id": "cafeteras-person-machine-side",
+      "file": "/img/shared/services/cafeteras/person-machine-side.jpg",
+      "alt": "Servicio de café en oficina — máquina Zitrone"
+    },
+    {
+      "id": "cafeteras-coffee-conversation",
+      "file": "/img/shared/services/cafeteras/coffee-conversation.jpg",
+      "alt": "Pausa de café entre colaboradores — Zitrone"
+    },
+    {
+      "id": "cafeteras-coffee-bar",
+      "file": "/img/shared/services/cafeteras/coffee-bar.jpg",
+      "alt": "Barra de café corporativa — Zitrone"
+    },
+    {
+      "id": "cafeteras-machine-aulika",
+      "file": "/img/shared/services/cafeteras/machine-aulika.jpg",
+      "alt": "Cafetera Saeco Aulika en oficina — Zitrone"
+    },
+    {
+      "id": "cafeteras-machine-saeco-front",
+      "file": "/img/shared/services/cafeteras/machine-saeco-front.jpg",
+      "alt": "Cafetera automática Saeco — vista frontal — Zitrone"
+    },
+    {
+      "id": "cafeteras-machine-saeco-angled",
+      "file": "/img/shared/services/cafeteras/machine-saeco-angled.jpg",
+      "alt": "Cafetera automática Saeco — Zitrone"
+    },
+    {
+      "id": "cafeteras-machine-black-portrait",
+      "file": "/img/shared/services/cafeteras/machine-black-portrait.jpg",
+      "alt": "Cafetera automática negra — Zitrone"
+    },
+    {
+      "id": "cafeteras-coffee-beans",
+      "file": "/img/shared/services/cafeteras/coffee-beans.jpg",
+      "alt": "Granos de café de altura — Zitrone"
+    },
+    {
+      "id": "cafeteras-espresso-pull",
+      "file": "/img/shared/services/cafeteras/espresso-pull.jpg",
+      "alt": "Extracción de espresso — Zitrone"
+    },
+    {
+      "id": "cafeteras-complementos",
+      "file": "/img/shared/services/cafeteras/complementos.jpg",
+      "alt": "Barra de complementos: azúcar, stevia, miel y edulcorantes — Zitrone"
+    },
+    {
+      "id": "cafeteria-cover-salesforce",
+      "file": "/img/shared/services/cafeteria/cover-salesforce.jpg",
+      "alt": "Barra de cafetería corporativa con baristas y equipo de espresso — Zitrone"
+    }
+  ]
+}

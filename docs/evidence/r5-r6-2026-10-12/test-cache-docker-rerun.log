@@ -1,0 +1,23 @@
+
+> on-it-workspace@0.1.0 test:cache
+> zsh scripts/test-blog-cache.sh
+
+NOTICE:  database "zitrone_cache_api_test" does not exist, skipping
+seed: {"id":1,"es":"comida-en-la-oficina-y-retencion-de-talento","en":"office-food-employee-retention"}
+building against the throwaway CMS…
+▶ blog: publish/unpublish through Next's cache
+  ✔ pre-rendered pages are served from the cache before any change (29.556834ms)
+edit visible after 1 visit(s)
+  ✔ editing a published post replaces the cached page (243.161583ms)
+unpublish: ES 404 after 1, EN 404 after 1 visit(s)
+  ✔ unpublishing removes the cached article, index entry, sitemap and feed, in ES and EN (113.4155ms)
+  ✔ republishing brings everything back (98.746458ms)
+✔ blog: publish/unpublish through Next's cache (610.055292ms)
+ℹ tests 4
+ℹ suites 1
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 711.212792

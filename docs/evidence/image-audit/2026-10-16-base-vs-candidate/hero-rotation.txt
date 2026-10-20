@@ -1,0 +1,13 @@
+PASS  [normal] rotates through frames: dining-hall-skyline → coffee-bar-lounge → buffet-line → food-hall-service → dining-hall-skyline
+PASS  [normal] every rotated-in frame was loaded when it became active
+PASS  [normal] accent word stable per photo: [["dining-hall-skyline",["alimenta"]],["coffee-bar-lounge",["cuida"]],["buffet-line",["conecta"]],["food-hall-service",["impulsa"]]]
+PASS  [late] late frame eventually shown: dining-hall-skyline@110 → coffee-bar-lounge@6206 → buffet-line@20388 → food-hall-service@26262
+PASS  [late] never activated a frame that was not loaded
+PASS  [late] held the previous photo (coffee-bar-lounge) until the late frame arrived (shown at 20388 ms, slot was ~12000 ms)
+PASS  [late] accent word stable per photo: [["dining-hall-skyline",["alimenta"]],["coffee-bar-lounge",["cuida"]],["buffet-line",["conecta"]],["food-hall-service",["impulsa"]]]
+PASS  [error] failed frame never shown: dining-hall-skyline → coffee-bar-lounge → buffet-line → dining-hall-skyline → coffee-bar-lounge → buffet-line
+PASS  [error] rotation continues past the failed frame
+PASS  [error] never activated a frame that was not loaded
+PASS  [error] accent word stable per photo: [["dining-hall-skyline",["alimenta"]],["coffee-bar-lounge",["cuida"]],["buffet-line",["conecta"]]]
+PASS  [slow3g] never activated a frame that was not loaded: dining-hall-skyline@8411 → coffee-bar-lounge@46611 → buffet-line@57530
+PASS  [slow3g] accent word stable per photo: [["dining-hall-skyline",["alimenta"]],["coffee-bar-lounge",["cuida"]],["buffet-line",["conecta"]]]

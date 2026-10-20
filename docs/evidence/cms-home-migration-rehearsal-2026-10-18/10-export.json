@@ -1,0 +1,2380 @@
+{
+  "es": {
+    "header": {
+      "id": 1,
+      "navAriaLabel": "Principal",
+      "primaryNav": [
+        {
+          "id": "6ad46a81158eaf388fbc956d",
+          "link": {
+            "type": "anchor",
+            "label": "Servicios",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "service-system"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc956e",
+          "link": {
+            "type": "anchor",
+            "label": "Cómo trabajamos",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "outcomes"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc956f",
+          "link": {
+            "type": "internal",
+            "label": "Blog",
+            "internalHref": "/es/blog",
+            "externalHref": null,
+            "anchor": null
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc9570",
+          "link": {
+            "type": "anchor",
+            "label": "FAQs",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "faq"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc9571",
+          "link": {
+            "type": "anchor",
+            "label": "Contacto",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "cta"
+          }
+        }
+      ],
+      "primaryCta": {
+        "type": "internal",
+        "label": "Hablemos [rehearsal es]",
+        "internalHref": "/contact?src=nav",
+        "externalHref": null,
+        "anchor": null
+      },
+      "languageMenu": {
+        "label": null,
+        "ariaLabel": null
+      }
+    },
+    "footer": {
+      "id": 1,
+      "ariaLabel": "Pie de página de Zitrone",
+      "tagline": "Cuando la comida funciona, el día funciona mejor.",
+      "taglineEmphasis": "día funciona mejor",
+      "ctaPrimary": {
+        "type": "internal",
+        "label": "Hablemos",
+        "internalHref": "/contact?src=footer",
+        "externalHref": null,
+        "anchor": null
+      },
+      "ctaSecondary": {
+        "type": "internal",
+        "label": "Ver servicios",
+        "internalHref": "/services",
+        "externalHref": null,
+        "anchor": null
+      },
+      "columns": [
+        {
+          "id": "6ad46a81158eaf388fbc9593",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc958e",
+              "link": {
+                "type": "internal",
+                "label": "Servicios",
+                "internalHref": "#service-system",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc958f",
+              "link": {
+                "type": "internal",
+                "label": "Cómo trabajamos",
+                "internalHref": "#outcomes",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9590",
+              "link": {
+                "type": "internal",
+                "label": "Encuentra tu solución",
+                "internalHref": "#profiler",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9591",
+              "link": {
+                "type": "internal",
+                "label": "Casos de clientes",
+                "internalHref": "#stories",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9592",
+              "link": {
+                "type": "internal",
+                "label": "Preguntas frecuentes",
+                "internalHref": "#faq",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Zitrone"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc959b",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc9594",
+              "link": {
+                "type": "internal",
+                "label": "Todos los servicios",
+                "internalHref": "/services",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9595",
+              "link": {
+                "type": "internal",
+                "label": "Comedor corporativo",
+                "internalHref": "/services/comedor-corporativo",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9596",
+              "link": {
+                "type": "internal",
+                "label": "Cafetería corporativa",
+                "internalHref": "/services/cafeteria-corporativa",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9597",
+              "link": {
+                "type": "internal",
+                "label": "Snacks y bebidas",
+                "internalHref": "/services/pantry-y-restocking",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9598",
+              "link": {
+                "type": "internal",
+                "label": "Máquinas de café y dispensadores de agua",
+                "internalHref": "/services/cafe-y-agua",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9599",
+              "link": {
+                "type": "internal",
+                "label": "Carritos de servicio",
+                "internalHref": "/services/carritos-de-servicio",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc959a",
+              "link": {
+                "type": "internal",
+                "label": "Catering corporativo",
+                "internalHref": "/services/catering-corporativo",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Servicios"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc959e",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc959c",
+              "link": {
+                "type": "internal",
+                "label": "Blog",
+                "internalHref": "/blog",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc959d",
+              "link": {
+                "type": "internal",
+                "label": "RSS del blog",
+                "internalHref": "/blog/feed.xml",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Recursos"
+        }
+      ],
+      "contact": {
+        "label": "Contacto",
+        "address": [
+          {
+            "id": "6ad46a81158eaf388fbc959f",
+            "line": "Calle 3 13-1, Alce Blanco"
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a0",
+            "line": "53370 Naucalpan de Juárez"
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a1",
+            "line": "Estado de México"
+          }
+        ],
+        "links": [
+          {
+            "id": "6ad46a81158eaf388fbc95a2",
+            "link": {
+              "type": "external",
+              "label": "Consultas generales",
+              "internalHref": null,
+              "externalHref": "mailto:opina@zitrone.com.mx",
+              "anchor": null
+            }
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a3",
+            "link": {
+              "type": "external",
+              "label": "Teléfono",
+              "internalHref": null,
+              "externalHref": "tel:+525512054000",
+              "anchor": null
+            }
+          }
+        ]
+      },
+      "legal": {
+        "copyright": "© 2026 Zitrone",
+        "links": [
+          {
+            "id": "6ad46a81158eaf388fbc95a4",
+            "link": {
+              "type": "internal",
+              "label": "Aviso de Privacidad",
+              "internalHref": "/privacy-notice",
+              "externalHref": null,
+              "anchor": null
+            }
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a5",
+            "link": {
+              "type": "internal",
+              "label": "Facturación",
+              "internalHref": "mailto:facturacion@zitrone.com.mx,contabilidad@zitrone.com.mx?subject=Solicitud%20de%20factura&body=Adjunto%20RFC%20y%20ticket%20de%20compra.",
+              "externalHref": null,
+              "anchor": null
+            }
+          }
+        ]
+      },
+      "socialsLabel": "Redes sociales",
+      "socialLinks": [
+        {
+          "id": "6ad46a81158eaf388fbc95a6",
+          "icon": "instagram",
+          "href": "https://www.instagram.com/zitrone_mx/",
+          "label": "Zitrone en Instagram"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a7",
+          "icon": "twitter",
+          "href": "https://twitter.com/ZitroneNatural",
+          "label": "Zitrone en X"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a8",
+          "icon": "facebook",
+          "href": "https://www.facebook.com/ZitroneMx/",
+          "label": "Zitrone en Facebook"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a9",
+          "icon": "linkedin",
+          "href": "https://mx.linkedin.com/company/zitrone-natural",
+          "label": "Zitrone en LinkedIn"
+        }
+      ]
+    },
+    "home": {
+      "id": 1,
+      "meta": {
+        "title": "Zitrone — Una mejor experiencia de comida para el trabajo moderno",
+        "description": "Zitrone diseña y opera comedor corporativo, cafetería corporativa, snacks y bebidas, máquinas de café y dispensadores de agua, carritos de servicio y catering corporativo para lugares de trabajo en México.",
+        "siteName": "Zitrone",
+        "ogImage": 134
+      },
+      "sections": [
+        {
+          "id": "es-hero",
+          "title": "Comida que alimenta a tu equipo.",
+          "titleEmphasis": "alimenta",
+          "copy": "Trabajamos dentro de tus instalaciones, entendemos tu cultura y construimos una experiencia de alimentación que refleja e impulsa a tu equipo.",
+          "copyShort": "Una experiencia de alimentación que refleja e impulsa a tu equipo, dentro de tus instalaciones.",
+          "ribbonLabel": "Marcas que confían en Zitrone",
+          "navAriaLabel": "Principal",
+          "mobileNavAriaLabel": "Principal móvil",
+          "menuOpenLabel": "Abrir menú",
+          "menuCloseLabel": "Cerrar menú",
+          "marqueeAriaLabel": "Credenciales",
+          "blockName": null,
+          "frames": [
+            {
+              "id": "es-hero-frame-0",
+              "pillar": "nourishment",
+              "accentWord": "alimenta",
+              "image": 104,
+              "alt": "Comedor corporativo en servicio"
+            },
+            {
+              "id": "es-hero-frame-1",
+              "pillar": "care",
+              "accentWord": "cuida",
+              "image": 105,
+              "alt": "Cafetería corporativa con barra de barista"
+            },
+            {
+              "id": "es-hero-frame-2",
+              "pillar": "connection",
+              "accentWord": "conecta",
+              "image": 106,
+              "alt": "Línea de buffet durante el servicio de comida"
+            },
+            {
+              "id": "es-hero-frame-3",
+              "pillar": "momentum",
+              "accentWord": "impulsa",
+              "image": 103,
+              "alt": "Comedor corporativo con isla de bebidas y barras de servicio"
+            }
+          ],
+          "primaryNav": [],
+          "blockType": "hero",
+          "cta": {
+            "type": "internal",
+            "label": "Hablemos",
+            "internalHref": "/contact?src=nav",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ribbonStat": {
+            "value": 15000,
+            "label": "Comidas diarias en grandes empresas:"
+          },
+          "heroLogos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "es-services",
+          "kicker": "Formatos de servicio",
+          "titleAriaLabel": "Y cada momento, a la medida de tu empresa.",
+          "copy": "Todos los servicios, coordinados por un solo equipo y adaptados a la operación, la cultura y la gente de tu empresa.",
+          "coverCopy": "Un servicio completo que armamos contigo, formato por formato, según tu cultura, tus necesidades y tu presupuesto, para que se sienta tuyo.",
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "es-services-title-0",
+              "text": "Y",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-services-title-1",
+              "text": "cada",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-services-title-2",
+              "text": "momento,",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-services-title-3",
+              "text": "a",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-services-title-4",
+              "text": "la",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-services-title-5",
+              "text": "medida",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-services-title-6",
+              "text": "de",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-services-title-7",
+              "text": "tu",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-services-title-8",
+              "text": "empresa.",
+              "emphasis": "accent"
+            }
+          ],
+          "orbitItems": [
+            {
+              "id": "es-orbit-item-0",
+              "title": "Desayunos",
+              "theme": "dining",
+              "image": 107,
+              "copy": "Un buen arranque para quienes llegan temprano, con un montaje completo cada mañana en el comedor."
+            },
+            {
+              "id": "es-orbit-item-1",
+              "title": "Menús premium",
+              "theme": "dining",
+              "image": 108,
+              "copy": "Menús de chef con proteínas especiales, repostería fina y servicio tipo restaurante, para el día a día o tu comedor ejecutivo."
+            },
+            {
+              "id": "es-orbit-item-2",
+              "title": "Barras de café",
+              "theme": "cafe",
+              "image": 111,
+              "copy": "Baristas que preparan espresso, lattes, cappuccinos y chai al momento, sin salir de la oficina."
+            },
+            {
+              "id": "es-orbit-item-3",
+              "title": "Barras de ensaladas",
+              "theme": "dining",
+              "image": 112,
+              "copy": "Hojas frescas, vegetales, proteínas y toppings para que cada quien arme su ensalada, todos los días."
+            },
+            {
+              "id": "es-orbit-item-4",
+              "title": "Box lunches",
+              "theme": "catering",
+              "image": 120,
+              "copy": "Comidas individuales completas para capacitaciones, lanzamientos y juntas que no se pueden detener."
+            },
+            {
+              "id": "es-orbit-item-5",
+              "title": "Poke bowls",
+              "theme": "dining",
+              "image": 124,
+              "copy": "Ingredientes frescos y combinaciones flexibles para una comida ligera y llena de color."
+            },
+            {
+              "id": "es-orbit-item-6",
+              "title": "Coffee breaks",
+              "theme": "catering",
+              "image": 122,
+              "copy": "Café, fruta, repostería y sándwiches para recargar energía entre una sesión y otra."
+            },
+            {
+              "id": "es-orbit-item-7",
+              "title": "Grab & Go",
+              "theme": "cafe",
+              "image": 123,
+              "copy": "Sándwiches, ensaladas, fruta, postres y bebidas listos en vitrina para comer bien sin frenar el día."
+            },
+            {
+              "id": "es-orbit-item-8",
+              "title": "Estaciones de tacos",
+              "theme": "dining",
+              "image": 125,
+              "copy": "Tortillas calientes, proteínas y toppings preparados al momento, como parte del menú del comedor."
+            },
+            {
+              "id": "es-orbit-item-9",
+              "title": "Snacks saludables",
+              "theme": "pantry",
+              "image": 109,
+              "copy": "Fruta y opciones ligeras siempre a la mano para picar algo bueno durante la jornada."
+            },
+            {
+              "id": "es-orbit-item-10",
+              "title": "Barras de grill",
+              "theme": "dining",
+              "image": 115,
+              "copy": "Proteínas frescas terminadas al grill al momento, dentro del comedor."
+            },
+            {
+              "id": "es-orbit-item-11",
+              "title": "Jugos y smoothies",
+              "theme": "cafe",
+              "image": 114,
+              "copy": "Opciones frías recién preparadas en la cafetería, para cuando el día pide algo más que café."
+            },
+            {
+              "id": "es-orbit-item-12",
+              "title": "Bebidas frías",
+              "theme": "pantry",
+              "image": 113,
+              "copy": "Aguas, refrescos, jugos, kombuchas y bebidas vegetales bien frías, resurtidas antes de que se acaben."
+            },
+            {
+              "id": "es-orbit-item-13",
+              "title": "Snacks y dulces",
+              "theme": "pantry",
+              "image": 121,
+              "copy": "Papas, galletas, palomitas y gomitas en porciones individuales, siempre surtidas."
+            },
+            {
+              "id": "es-orbit-item-14",
+              "title": "Barras de pizzas",
+              "theme": "dining",
+              "image": 110,
+              "copy": "Una estación que rota en el comedor y le da a la semana un antojo distinto."
+            },
+            {
+              "id": "es-orbit-item-15",
+              "title": "Máquinas de café",
+              "theme": "coffee",
+              "image": 116,
+              "copy": "Café molido al momento en tu oficina, con equipo, insumos, limpieza y mantenimiento a nuestro cargo."
+            },
+            {
+              "id": "es-orbit-item-16",
+              "title": "Pan y pastelería",
+              "theme": "cafe",
+              "image": 119,
+              "copy": "Pan recién horneado y postres del día en la cafetería, para acompañar el café o darse un gusto."
+            },
+            {
+              "id": "es-orbit-item-17",
+              "title": "Dispensadores de agua",
+              "theme": "coffee",
+              "image": 117,
+              "copy": "Agua fría, caliente, al tiempo o con gas, con filtros y mantenimiento incluidos."
+            },
+            {
+              "id": "es-orbit-item-18",
+              "title": "Comidas de trabajo",
+              "theme": "catering",
+              "image": 120,
+              "copy": "Comida bien servida para visitas de dirección, all-hands y talleres dentro de tu empresa."
+            },
+            {
+              "id": "es-orbit-item-19",
+              "title": "Barras de bowls",
+              "theme": "dining",
+              "image": 118,
+              "copy": "Ingredientes frescos para que cada persona arme su bowl a su gusto."
+            }
+          ],
+          "blockType": "servicesCarousel",
+          "ctaPrimary": {
+            "type": "internal",
+            "label": "Ver servicios",
+            "internalHref": "/services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ctaSecondary": {
+            "type": "internal",
+            "label": "Hablemos",
+            "internalHref": "/contact?src=home-services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "services": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "labels": {
+            "regionLabel": "Programas de servicio",
+            "previous": "Servicio anterior",
+            "next": "Servicio siguiente",
+            "progressLabel": "Avance de los programas de servicio",
+            "slideTemplate": "Diapositiva {current} de {total}",
+            "viewService": "Conocer más",
+            "logosAriaLabel": "Logotipos de clientes de Zitrone"
+          }
+        },
+        {
+          "id": "es-proof",
+          "kicker": "Experiencia en servicios de alimentación para empresas",
+          "headingAriaLabel": "Las empresas que cuidan a su gente eligen Zitrone",
+          "headingLead": "Las empresas que cuidan a su gente eligen",
+          "headingAccent": "Zitrone",
+          "headingTrail": "",
+          "clientLogosAriaLabel": "Logotipos de clientes de Zitrone",
+          "copy": "Más de 17 años operando comedores corporativos y servicios de alimentación en México. Combinamos producción diaria, equipos capacitados y procesos que mantienen la calidad de principio a fin.",
+          "blockName": null,
+          "columns": [
+            {
+              "id": "es-proof-column-0",
+              "cards": [
+                {
+                  "id": "es-proof-card-0-0",
+                  "title": "Menús que combinan sabor, variedad y nutrición",
+                  "sub": "Chefs y nutriólogos desarrollan menús frescos y balanceados, con rotación y ajustes basados en el consumo y los comentarios de tu equipo.",
+                  "image": 106,
+                  "alt": "Menú fresco y balanceado de un comedor corporativo Zitrone",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                },
+                {
+                  "id": "es-proof-card-0-1",
+                  "title": "Producción y abasto todos los días",
+                  "sub": "Preparamos alimentos diariamente en nuestros comisariatos y también operamos cocinas dentro de las empresas para mantener frescura, control y continuidad.",
+                  "image": 128,
+                  "alt": "Comedor corporativo operado y abastecido diariamente por Zitrone",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                }
+              ]
+            },
+            {
+              "id": "es-proof-column-1",
+              "cards": [
+                {
+                  "id": "es-proof-card-1-0",
+                  "title": "Inocuidad respaldada por Distintivo H",
+                  "sub": "Nuestros comisariatos cuentan con Distintivo H y controles documentados de manejo higiénico de alimentos en producción, transporte y servicio.",
+                  "image": 127,
+                  "alt": "Manejo higiénico de alimentos y Distintivo H en Zitrone",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                },
+                {
+                  "id": "es-proof-card-1-1",
+                  "title": "Un equipo fijo en tu empresa",
+                  "sub": "Asignamos personal capacitado que conoce tus horarios, protocolos y cultura. La supervisión y el seguimiento forman parte de la operación diaria.",
+                  "image": 126,
+                  "alt": "Personal capacitado para operar servicios de alimentación en empresas",
+                  "blockName": null,
+                  "blockType": "studiesCard"
+                }
+              ]
+            },
+            {
+              "id": "es-proof-column-2",
+              "cards": [
+                {
+                  "id": "es-proof-card-2-0",
+                  "title": "Experiencia comprobada en operaciones exigentes",
+                  "sub": "Parte de la operación diaria de algunas de las empresas más importantes de México.",
+                  "tone": "green",
+                  "hideLogos": true,
+                  "blockName": null,
+                  "stats": [
+                    {
+                      "id": "es-proof-stat-2-0-0",
+                      "value": "17 años",
+                      "label": "de experiencia"
+                    },
+                    {
+                      "id": "es-proof-stat-2-0-1",
+                      "value": "15,000",
+                      "label": "comidas servidas cada día"
+                    }
+                  ],
+                  "blockType": "logosCard"
+                }
+              ]
+            }
+          ],
+          "blockType": "proofBento"
+        },
+        {
+          "id": "es-featured-media",
+          "label": "Medios destacados",
+          "ariaLabel": "Referencias en medios",
+          "blockName": null,
+          "blockType": "featuredMedia",
+          "logos": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "es-operating-system",
+          "kicker": "Así trabajamos contigo",
+          "titleAriaLabel": "Cada detalle, pensado para tu gente.",
+          "copy": "Antes de proponer un menú, conocemos tus horarios, tus espacios y a tu gente. Después cuidamos cada servicio y lo afinamos con lo que tu equipo nos dice.",
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "es-operating-title-0",
+              "text": "Cada",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-operating-title-1",
+              "text": "detalle,",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-operating-title-2",
+              "text": "pensado",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-operating-title-3",
+              "text": "para",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-operating-title-4",
+              "text": "tu",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-operating-title-5",
+              "text": "gente.",
+              "emphasis": "accent"
+            }
+          ],
+          "tabs": [
+            {
+              "id": "es-operating-tab-0",
+              "key": "plan",
+              "icon": "briefcase",
+              "tone": "ocean",
+              "stage": "Entendemos tu operación",
+              "title": "Entendemos cómo opera tu empresa",
+              "copy": "Revisamos la cultura, los horarios, los espacios y los hábitos de tu equipo antes de proponer una solución.",
+              "panelTitle": "Entendemos cómo opera tu empresa",
+              "panelCopy": "Revisamos la cultura, los horarios, los espacios y los hábitos de tu equipo antes de proponer una solución.",
+              "image": 131,
+              "stageCopy": {
+                "before": "Revisamos ",
+                "highlight": "la cultura, los horarios, los espacios y los hábitos de tu equipo",
+                "after": " antes de proponer una solución."
+              }
+            },
+            {
+              "id": "es-operating-tab-1",
+              "key": "prepare",
+              "icon": "shield",
+              "tone": "natural",
+              "stage": "Diseñamos el programa",
+              "title": "Diseñamos el programa adecuado",
+              "copy": "Definimos el formato, el menú, el personal y la forma de operar que mejor encajan con tu empresa.",
+              "panelTitle": "Diseñamos el programa adecuado",
+              "panelCopy": "Definimos el formato, el menú, el personal y la forma de operar que mejor encajan con tu empresa.",
+              "image": 129,
+              "stageCopy": {
+                "before": "Definimos ",
+                "highlight": "el formato, el menú, el personal y la forma de operar",
+                "after": " que mejor encajan con tu empresa."
+              }
+            },
+            {
+              "id": "es-operating-tab-2",
+              "key": "serve",
+              "icon": "people",
+              "tone": "sage",
+              "stage": "Operamos todos los días",
+              "title": "Operamos todos los días",
+              "copy": "Nuestro equipo produce, abastece, sirve y supervisa para que tú no cargues la operación.",
+              "panelTitle": "Operamos todos los días",
+              "panelCopy": "Nuestro equipo produce, abastece, sirve y supervisa para que tú no cargues la operación.",
+              "image": 130,
+              "stageCopy": {
+                "before": "Nuestro equipo ",
+                "highlight": "produce, abastece, sirve y supervisa",
+                "after": " para que tú no cargues la operación."
+              }
+            },
+            {
+              "id": "es-operating-tab-3",
+              "key": "measure",
+              "icon": "chart",
+              "tone": "lime",
+              "stage": "Medimos y mejoramos",
+              "title": "Medimos y mejoramos",
+              "copy": "Revisamos consumo, satisfacción y servicio para ajustar el programa cuando hace falta.",
+              "panelTitle": "Medimos y mejoramos",
+              "panelCopy": "Revisamos consumo, satisfacción y servicio para ajustar el programa cuando hace falta.",
+              "image": 132,
+              "stageCopy": {
+                "before": "Revisamos ",
+                "highlight": "consumo, satisfacción y servicio",
+                "after": " para ajustar el programa cuando hace falta."
+              }
+            }
+          ],
+          "blockType": "operatingSystem",
+          "ctaPrimary": {
+            "type": "internal",
+            "label": "Ver servicios",
+            "internalHref": "/services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ctaSecondary": {
+            "type": "internal",
+            "label": null,
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": null
+          },
+          "labels": {
+            "sectionLabel": "Cómo trabajamos",
+            "listAriaLabel": "Pasos del programa Zitrone",
+            "previous": "Paso anterior",
+            "next": "Paso siguiente"
+          }
+        },
+        {
+          "id": "es-service-system",
+          "blockName": null,
+          "layers": [
+            {
+              "id": "es-service-layer-0",
+              "title": "Comedor corporativo",
+              "shortTitle": null,
+              "theme": "dining",
+              "image": 84,
+              "copy": "Un comedor diario para servir la comida principal de tu equipo.",
+              "href": "/services/comedor-corporativo",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-0-0",
+                  "title": "Comedor corporativo, industrial o premium",
+                  "text": "Tres formatos, según el tamaño y los turnos de tu empresa.",
+                  "icon": "utensils"
+                },
+                {
+                  "id": "es-service-feature-0-1",
+                  "title": "Con **cocina en sitio** o **sin cocina en sitio**",
+                  "text": "Sin cocina, la comida llega terminada y transportada por nosotros.",
+                  "icon": "chef"
+                },
+                {
+                  "id": "es-service-feature-0-2",
+                  "title": "Menús diseñados por nutriólogos",
+                  "text": "Cambian cada semana, con opción vegetariana y alérgenos etiquetados.",
+                  "icon": "leaf"
+                }
+              ]
+            },
+            {
+              "id": "es-service-layer-1",
+              "title": "Cafetería corporativa",
+              "shortTitle": null,
+              "theme": "cafe",
+              "image": 85,
+              "copy": "Una cafetería atendida dentro de la oficina, disponible durante toda la jornada.",
+              "href": "/services/cafeteria-corporativa",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-1-0",
+                  "title": "Barra de café con productos de especialidad",
+                  "text": "Cafés y tés preparados por barista.",
+                  "icon": "coffee"
+                },
+                {
+                  "id": "es-service-feature-1-1",
+                  "title": "Comida fría y caliente, en sitio o para llevar",
+                  "text": "Desayunos, grab & go, repostería fina, botanas y más.",
+                  "icon": "utensils"
+                },
+                {
+                  "id": "es-service-feature-1-2",
+                  "title": "Smoothies, frappés y jugos cold pressed",
+                  "text": "Licuados y bebidas frías, más allá del café.",
+                  "icon": "drink"
+                }
+              ]
+            },
+            {
+              "id": "es-service-layer-2",
+              "title": "Snacks y bebidas",
+              "shortTitle": null,
+              "theme": "pantry",
+              "image": 86,
+              "copy": "Snacks y bebidas disponibles cada día, con consumo y costo bajo control.",
+              "href": "/services/pantry-y-restocking",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-2-0",
+                  "title": "Snacks, bebidas y fruta fresca cada día",
+                  "text": "Personal de Zitrone en sitio surte, distribuye y reabastece.",
+                  "icon": "fruit"
+                },
+                {
+                  "id": "es-service-feature-2-1",
+                  "title": "Catálogo elegido contigo, con lo saludable al frente",
+                  "text": "Fruta, barras, frutos secos y snacks bajos en azúcar a la vista.",
+                  "icon": "leaf"
+                },
+                {
+                  "id": "es-service-feature-2-2",
+                  "title": "Consumo abierto o con asignación por persona",
+                  "text": "La asignación pone límites por persona para un costo más controlado.",
+                  "icon": "people"
+                }
+              ]
+            },
+            {
+              "id": "es-service-layer-3",
+              "title": "Máquinas de café y dispensadores de agua",
+              "shortTitle": "Café y agua",
+              "theme": "coffee",
+              "image": 87,
+              "copy": "Café y agua de autoservicio, sin comprar ni operar equipos.",
+              "href": "/services/cafe-y-agua",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-3-0",
+                  "title": "Las máquinas las ponemos nosotros",
+                  "text": "No compras ni rentas equipo. Instalación, abasto, limpieza y mantenimiento preventivo incluidos.",
+                  "icon": "machine"
+                },
+                {
+                  "id": "es-service-feature-3-1",
+                  "title": "Espresso, americano, cappuccino, cortado y latte",
+                  "text": "Café 100% arábiga de Chiapas y Veracruz, más chocolate y tés.",
+                  "icon": "coffee"
+                },
+                {
+                  "id": "es-service-feature-3-2",
+                  "title": "Agua fría, caliente, al tiempo y mineral con gas",
+                  "text": "Filtración multietapa, con cambio de filtros y pruebas microbiológicas semestrales.",
+                  "icon": "water"
+                }
+              ]
+            },
+            {
+              "id": "es-service-layer-4",
+              "title": "Carritos de servicio",
+              "shortTitle": null,
+              "theme": "grab-go",
+              "image": 133,
+              "copy": "Comida fresca que llega a cada piso cuando no hay un punto fijo.",
+              "href": "/services/carritos-de-servicio",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-4-0",
+                  "title": "Un punto de servicio móvil, sin montar nada",
+                  "text": "Sumas comida en la oficina sin obra ni equipo fijo.",
+                  "icon": "cart"
+                },
+                {
+                  "id": "es-service-feature-4-1",
+                  "title": "Recorrido y horarios definidos con tu operación",
+                  "text": "Ponemos carrito, producto y gente, con reabasto diario.",
+                  "icon": "clock"
+                },
+                {
+                  "id": "es-service-feature-4-2",
+                  "title": "Del salado a la fruta, listo para comer",
+                  "text": "Ensaladas, sándwiches, wraps, pastas y platos del día.",
+                  "icon": "utensils"
+                }
+              ]
+            },
+            {
+              "id": "es-service-layer-5",
+              "title": "Catering corporativo",
+              "shortTitle": null,
+              "theme": "catering",
+              "image": 89,
+              "copy": "Comida y servicio para reuniones, celebraciones y eventos de empresa.",
+              "href": "/services/catering-corporativo",
+              "ctaLabel": "Ver servicio",
+              "features": [
+                {
+                  "id": "es-service-feature-5-0",
+                  "title": "Coffee break, desayuno, box lunch o comida emplatada",
+                  "text": "Elegimos el formato según el momento del evento.",
+                  "icon": "calendar"
+                },
+                {
+                  "id": "es-service-feature-5-1",
+                  "title": "Paquetes del catálogo o propuesta a la medida",
+                  "text": "Menús armados para los gustos y restricciones de tus invitados.",
+                  "icon": "chat"
+                },
+                {
+                  "id": "es-service-feature-5-2",
+                  "title": "Montaje, loza, mantelería y meseros coordinados",
+                  "text": "Un solo proveedor produce, monta y atiende el evento.",
+                  "icon": "people"
+                }
+              ]
+            }
+          ],
+          "blockType": "serviceSystemSlider",
+          "labels": {
+            "kicker": "Servicios de alimentación para empresas",
+            "titleLine1": "Una solución para cada",
+            "titleLine2": "momento del día",
+            "titleAriaLabel": "Una solución para cada momento del día: comedor corporativo, cafetería corporativa, snacks y bebidas, máquinas de café y dispensadores de agua, carritos de servicio y catering corporativo.",
+            "navAriaLabel": "Categorías de servicio",
+            "progressAriaLabel": "Avance de los programas de servicio",
+            "progressValueTextTemplate": "Programa {current} de {total}",
+            "eyebrowTemplate": "Programa {index}",
+            "previous": "Programa anterior",
+            "next": "Programa siguiente",
+            "ctaLabel": "Ver servicios",
+            "viewDetails": "Ver detalles",
+            "hideDetails": "Ocultar detalles"
+          }
+        },
+        {
+          "id": "es-stories",
+          "kicker": null,
+          "titleAriaLabel": "Los equipos más exigentes confían en Zitrone",
+          "copy": null,
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "es-stories-title-0",
+              "text": "Los",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-stories-title-1",
+              "text": "equipos",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-stories-title-2",
+              "text": "más",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-stories-title-3",
+              "text": "exigentes",
+              "emphasis": "accent"
+            },
+            {
+              "id": "es-stories-title-4",
+              "text": "confían",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-stories-title-5",
+              "text": "en",
+              "emphasis": "regular"
+            },
+            {
+              "id": "es-stories-title-6",
+              "text": "Zitrone",
+              "emphasis": "regular"
+            }
+          ],
+          "blockType": "stories",
+          "cta": {
+            "type": "internal",
+            "label": "Hablemos",
+            "internalHref": "/contact?src=home-proof",
+            "externalHref": null,
+            "anchor": null
+          },
+          "panelCta": {
+            "type": "internal",
+            "label": "Hablemos",
+            "internalHref": "/contact?src=home-proof-panel",
+            "externalHref": null,
+            "anchor": null
+          },
+          "stories": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "labels": {
+            "tablistAriaLabel": "Casos de clientes"
+          }
+        },
+        {
+          "id": "es-faq",
+          "heading": "Preguntas frecuentes",
+          "headingLead": "Preguntas frecuentes",
+          "ctaTitle": "¿Tienes más dudas?",
+          "ctaCopy": "Cuéntanos qué necesita tu equipo y diseñamos la solución adecuada para su día a día.",
+          "blockName": null,
+          "blockType": "faq",
+          "cta": {
+            "type": "internal",
+            "label": "Hablemos",
+            "internalHref": "/contact?src=home-faq",
+            "externalHref": null,
+            "anchor": null
+          },
+          "faqs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "seo": {
+        "title": null,
+        "description": null,
+        "ogImage": null,
+        "canonical": null
+      },
+      "_status": "published"
+    }
+  },
+  "en": {
+    "header": {
+      "id": 1,
+      "navAriaLabel": "Primary",
+      "primaryNav": [
+        {
+          "id": "6ad46a81158eaf388fbc956d",
+          "link": {
+            "type": "anchor",
+            "label": "Services",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "service-system"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc956e",
+          "link": {
+            "type": "anchor",
+            "label": "How we work",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "outcomes"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc956f",
+          "link": {
+            "type": "internal",
+            "label": "Blog",
+            "internalHref": "/en/blog",
+            "externalHref": null,
+            "anchor": null
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc9570",
+          "link": {
+            "type": "anchor",
+            "label": "FAQs",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "faq"
+          }
+        },
+        {
+          "id": "6ad46a81158eaf388fbc9571",
+          "link": {
+            "type": "anchor",
+            "label": "Contact",
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": "cta"
+          }
+        }
+      ],
+      "primaryCta": {
+        "type": "internal",
+        "label": "Contact us [rehearsal en]",
+        "internalHref": "/contact?src=nav",
+        "externalHref": null,
+        "anchor": null
+      },
+      "languageMenu": {
+        "label": null,
+        "ariaLabel": null
+      }
+    },
+    "footer": {
+      "id": 1,
+      "ariaLabel": "Zitrone site footer",
+      "tagline": "When food works, the day works better.",
+      "taglineEmphasis": "day works better",
+      "ctaPrimary": {
+        "type": "internal",
+        "label": "Contact us",
+        "internalHref": "/contact?src=footer",
+        "externalHref": null,
+        "anchor": null
+      },
+      "ctaSecondary": {
+        "type": "internal",
+        "label": "View services",
+        "internalHref": "/services",
+        "externalHref": null,
+        "anchor": null
+      },
+      "columns": [
+        {
+          "id": "6ad46a81158eaf388fbc9593",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc958e",
+              "link": {
+                "type": "internal",
+                "label": "Services",
+                "internalHref": "#service-system",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc958f",
+              "link": {
+                "type": "internal",
+                "label": "How we work",
+                "internalHref": "#outcomes",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9590",
+              "link": {
+                "type": "internal",
+                "label": "Find your solution",
+                "internalHref": "#profiler",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9591",
+              "link": {
+                "type": "internal",
+                "label": "Client stories",
+                "internalHref": "#stories",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9592",
+              "link": {
+                "type": "internal",
+                "label": "FAQs",
+                "internalHref": "#faq",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Zitrone"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc959b",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc9594",
+              "link": {
+                "type": "internal",
+                "label": "All services",
+                "internalHref": "/services",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9595",
+              "link": {
+                "type": "internal",
+                "label": "Corporate dining",
+                "internalHref": "/services/corporate-dining",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9596",
+              "link": {
+                "type": "internal",
+                "label": "Corporate cafe",
+                "internalHref": "/services/corporate-cafe",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9597",
+              "link": {
+                "type": "internal",
+                "label": "Snacks & beverages",
+                "internalHref": "/services/pantry-restocking",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9598",
+              "link": {
+                "type": "internal",
+                "label": "Coffee machines & water dispensers",
+                "internalHref": "/services/coffee-water",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc9599",
+              "link": {
+                "type": "internal",
+                "label": "Service carts",
+                "internalHref": "/services/service-carts",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc959a",
+              "link": {
+                "type": "internal",
+                "label": "Corporate catering",
+                "internalHref": "/services/corporate-catering",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Services"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc959e",
+          "links": [
+            {
+              "id": "6ad46a81158eaf388fbc959c",
+              "link": {
+                "type": "internal",
+                "label": "Blog",
+                "internalHref": "/blog",
+                "externalHref": null,
+                "anchor": null
+              }
+            },
+            {
+              "id": "6ad46a81158eaf388fbc959d",
+              "link": {
+                "type": "internal",
+                "label": "Blog RSS feed",
+                "internalHref": "/blog/feed.xml",
+                "externalHref": null,
+                "anchor": null
+              }
+            }
+          ],
+          "label": "Resources"
+        }
+      ],
+      "contact": {
+        "label": "Contact",
+        "address": [
+          {
+            "id": "6ad46a81158eaf388fbc959f",
+            "line": "Calle 3 13-1, Alce Blanco"
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a0",
+            "line": "53370 Naucalpan de Juárez"
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a1",
+            "line": "State of Mexico"
+          }
+        ],
+        "links": [
+          {
+            "id": "6ad46a81158eaf388fbc95a2",
+            "link": {
+              "type": "external",
+              "label": "General inquiries",
+              "internalHref": null,
+              "externalHref": "mailto:opina@zitrone.com.mx",
+              "anchor": null
+            }
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a3",
+            "link": {
+              "type": "external",
+              "label": "Phone",
+              "internalHref": null,
+              "externalHref": "tel:+525512054000",
+              "anchor": null
+            }
+          }
+        ]
+      },
+      "legal": {
+        "copyright": "© 2026 Zitrone",
+        "links": [
+          {
+            "id": "6ad46a81158eaf388fbc95a4",
+            "link": {
+              "type": "internal",
+              "label": "Privacy notice",
+              "internalHref": "/privacy-notice",
+              "externalHref": null,
+              "anchor": null
+            }
+          },
+          {
+            "id": "6ad46a81158eaf388fbc95a5",
+            "link": {
+              "type": "internal",
+              "label": "Billing",
+              "internalHref": "mailto:facturacion@zitrone.com.mx,contabilidad@zitrone.com.mx?subject=Invoice%20request%20%2F%20Solicitud%20de%20factura&body=Attached%20are%20my%20RFC%20and%20purchase%20ticket.",
+              "externalHref": null,
+              "anchor": null
+            }
+          }
+        ]
+      },
+      "socialsLabel": "Social media",
+      "socialLinks": [
+        {
+          "id": "6ad46a81158eaf388fbc95a6",
+          "icon": "instagram",
+          "href": "https://www.instagram.com/zitrone_mx/",
+          "label": "Zitrone on Instagram"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a7",
+          "icon": "twitter",
+          "href": "https://twitter.com/ZitroneNatural",
+          "label": "Zitrone on X"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a8",
+          "icon": "facebook",
+          "href": "https://www.facebook.com/ZitroneMx/",
+          "label": "Zitrone on Facebook"
+        },
+        {
+          "id": "6ad46a81158eaf388fbc95a9",
+          "icon": "linkedin",
+          "href": "https://mx.linkedin.com/company/zitrone-natural",
+          "label": "Zitrone on LinkedIn"
+        }
+      ]
+    },
+    "home": {
+      "id": 1,
+      "meta": {
+        "title": "Zitrone — A better food experience for modern work",
+        "description": "Zitrone designs and operates corporate dining, corporate cafe, snacks & beverages, coffee machines & water dispensers, service carts, and corporate catering for modern workplaces in Mexico.",
+        "siteName": "Zitrone",
+        "ogImage": 134
+      },
+      "sections": [
+        {
+          "id": "en-hero",
+          "title": "Food that nourishes your team.",
+          "titleEmphasis": "nourishes",
+          "copy": "We work inside your workplace, understand your culture, and build a food experience that reflects and energizes your team.",
+          "copyShort": "A food experience that reflects and energizes your team, inside your workplace.",
+          "ribbonLabel": "Brands that trust Zitrone",
+          "navAriaLabel": "Primary",
+          "mobileNavAriaLabel": "Primary mobile",
+          "menuOpenLabel": "Open menu",
+          "menuCloseLabel": "Close menu",
+          "marqueeAriaLabel": "Credentials",
+          "blockName": null,
+          "frames": [
+            {
+              "id": "en-hero-frame-0",
+              "pillar": "nourishment",
+              "accentWord": "nourishes",
+              "image": 104,
+              "alt": "Corporate dining hall in full service"
+            },
+            {
+              "id": "en-hero-frame-1",
+              "pillar": "care",
+              "accentWord": "nurtures",
+              "image": 105,
+              "alt": "Workplace cafe and barista bar"
+            },
+            {
+              "id": "en-hero-frame-2",
+              "pillar": "connection",
+              "accentWord": "connects",
+              "image": 106,
+              "alt": "Buffet line during lunch service"
+            },
+            {
+              "id": "en-hero-frame-3",
+              "pillar": "momentum",
+              "accentWord": "powers",
+              "image": 103,
+              "alt": "Corporate dining hall with a beverage island and service counters"
+            }
+          ],
+          "primaryNav": [],
+          "blockType": "hero",
+          "cta": {
+            "type": "internal",
+            "label": "Contact us",
+            "internalHref": "/contact?src=nav",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ribbonStat": {
+            "value": 15000,
+            "label": "Meals served daily at great companies:"
+          },
+          "heroLogos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "id": "en-services",
+          "kicker": "Service formats",
+          "titleAriaLabel": "And every moment, made to fit your company.",
+          "copy": "Every service, coordinated by one team and adapted to your company's operation, culture, and people.",
+          "coverCopy": "A complete service we build with you, format by format, around your culture, your needs and your budget, so it feels like your own.",
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "en-services-title-0",
+              "text": "And",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-services-title-1",
+              "text": "every",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-services-title-2",
+              "text": "moment,",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-services-title-3",
+              "text": "made",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-services-title-4",
+              "text": "to",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-services-title-5",
+              "text": "fit",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-services-title-6",
+              "text": "your",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-services-title-7",
+              "text": "company.",
+              "emphasis": "accent"
+            }
+          ],
+          "orbitItems": [
+            {
+              "id": "en-orbit-item-0",
+              "title": "Breakfasts",
+              "theme": "dining",
+              "image": 107,
+              "copy": "A good start for early arrivals, with a complete setup every morning in the dining room."
+            },
+            {
+              "id": "en-orbit-item-1",
+              "title": "Premium menus",
+              "theme": "dining",
+              "image": 108,
+              "copy": "Chef-designed menus with specialty proteins, fine pastries and restaurant-style service, for every day or your executive dining room."
+            },
+            {
+              "id": "en-orbit-item-2",
+              "title": "Coffee bars",
+              "theme": "cafe",
+              "image": 111,
+              "copy": "Baristas making espresso, lattes, cappuccinos and chai to order, without leaving the office."
+            },
+            {
+              "id": "en-orbit-item-3",
+              "title": "Salad bars",
+              "theme": "dining",
+              "image": 112,
+              "copy": "Fresh greens, vegetables, proteins and toppings so everyone can build their own salad, every day."
+            },
+            {
+              "id": "en-orbit-item-4",
+              "title": "Box lunches",
+              "theme": "catering",
+              "image": 120,
+              "copy": "Complete individual meals for training days, launches and meetings that cannot pause."
+            },
+            {
+              "id": "en-orbit-item-5",
+              "title": "Poke bowls",
+              "theme": "dining",
+              "image": 124,
+              "copy": "Fresh ingredients and flexible combinations for a light, colorful lunch."
+            },
+            {
+              "id": "en-orbit-item-6",
+              "title": "Coffee breaks",
+              "theme": "catering",
+              "image": 122,
+              "copy": "Coffee, fruit, pastries and sandwiches to recharge between one session and the next."
+            },
+            {
+              "id": "en-orbit-item-7",
+              "title": "Grab & Go",
+              "theme": "cafe",
+              "image": 123,
+              "copy": "Sandwiches, salads, fruit, desserts and drinks ready in the display case, so people eat well without slowing down."
+            },
+            {
+              "id": "en-orbit-item-8",
+              "title": "Taco stations",
+              "theme": "dining",
+              "image": 125,
+              "copy": "Warm tortillas, proteins and toppings made to order, as part of the dining room menu."
+            },
+            {
+              "id": "en-orbit-item-9",
+              "title": "Healthy snacks",
+              "theme": "pantry",
+              "image": 109,
+              "copy": "Fruit and lighter options always within reach for something good to snack on through the day."
+            },
+            {
+              "id": "en-orbit-item-10",
+              "title": "Grill bars",
+              "theme": "dining",
+              "image": 115,
+              "copy": "Fresh proteins finished on the grill to order, right in the dining room."
+            },
+            {
+              "id": "en-orbit-item-11",
+              "title": "Juices and smoothies",
+              "theme": "cafe",
+              "image": 114,
+              "copy": "Freshly made cold options in the cafe, for when the day calls for more than coffee."
+            },
+            {
+              "id": "en-orbit-item-12",
+              "title": "Cold drinks",
+              "theme": "pantry",
+              "image": 113,
+              "copy": "Water, sodas, juices, kombuchas and plant-based drinks, kept cold and restocked before they run out."
+            },
+            {
+              "id": "en-orbit-item-13",
+              "title": "Snacks and sweets",
+              "theme": "pantry",
+              "image": 121,
+              "copy": "Chips, cookies, popcorn and candy in single portions, always stocked."
+            },
+            {
+              "id": "en-orbit-item-14",
+              "title": "Pizza bars",
+              "theme": "dining",
+              "image": 110,
+              "copy": "A station that rotates through the dining room and gives the week something different to look forward to."
+            },
+            {
+              "id": "en-orbit-item-15",
+              "title": "Coffee machines",
+              "theme": "coffee",
+              "image": 116,
+              "copy": "Fresh-ground coffee at your office, with equipment, supplies, cleaning and maintenance on us."
+            },
+            {
+              "id": "en-orbit-item-16",
+              "title": "Bakery and pastry",
+              "theme": "cafe",
+              "image": 119,
+              "copy": "Freshly baked bread and the day's desserts in the cafe, to go with coffee or as a small treat."
+            },
+            {
+              "id": "en-orbit-item-17",
+              "title": "Water dispensers",
+              "theme": "coffee",
+              "image": 117,
+              "copy": "Cold, hot, room-temperature or sparkling water, with filters and maintenance included."
+            },
+            {
+              "id": "en-orbit-item-18",
+              "title": "Working lunches",
+              "theme": "catering",
+              "image": 120,
+              "copy": "Well-served food for leadership visits, all-hands meetings and workshops at your company."
+            },
+            {
+              "id": "en-orbit-item-19",
+              "title": "Bowl bars",
+              "theme": "dining",
+              "image": 118,
+              "copy": "Fresh ingredients so everyone can build their bowl the way they like it."
+            }
+          ],
+          "blockType": "servicesCarousel",
+          "ctaPrimary": {
+            "type": "internal",
+            "label": "View services",
+            "internalHref": "/services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ctaSecondary": {
+            "type": "internal",
+            "label": "Contact us",
+            "internalHref": "/contact?src=home-services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "services": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "labels": {
+            "regionLabel": "Service programs",
+            "previous": "Previous service",
+            "next": "Next service",
+            "progressLabel": "Service programs progress",
+            "slideTemplate": "Slide {current} of {total}",
+            "viewService": "Learn more",
+            "logosAriaLabel": "Zitrone client logos"
+          }
+        },
+        {
+          "id": "en-proof",
+          "kicker": "Experience in workplace food services",
+          "headingAriaLabel": "The companies that care for their people choose Zitrone",
+          "headingLead": "The companies that care for their people choose",
+          "headingAccent": "Zitrone",
+          "headingTrail": "",
+          "clientLogosAriaLabel": "Zitrone client logos",
+          "copy": "More than 17 years operating corporate dining rooms and workplace food services in Mexico. We combine daily production, trained teams, and processes that maintain quality from end to end.",
+          "blockName": null,
+          "columns": [
+            {
+              "id": "en-proof-column-0",
+              "cards": [
+                {
+                  "id": "en-proof-card-0-0",
+                  "title": "Menus that balance flavor, variety, and nutrition",
+                  "sub": "Chefs and registered nutritionists develop fresh, balanced menus with rotation and adjustments based on consumption and team feedback.",
+                  "image": 106,
+                  "alt": "Fresh balanced menu in a Zitrone corporate dining room",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                },
+                {
+                  "id": "en-proof-card-0-1",
+                  "title": "Daily production and reliable supply",
+                  "sub": "We prepare food daily in our commissaries and also operate kitchens inside companies to maintain freshness, control, and continuity.",
+                  "image": 128,
+                  "alt": "Corporate dining room operated and supplied daily by Zitrone",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                }
+              ]
+            },
+            {
+              "id": "en-proof-column-1",
+              "cards": [
+                {
+                  "id": "en-proof-card-1-0",
+                  "title": "Food safety backed by Distintivo H",
+                  "sub": "Our commissaries hold Distintivo H and use documented food handling controls across production, transport, and service.",
+                  "image": 127,
+                  "alt": "Food safety and Distintivo H standards at Zitrone",
+                  "blockName": null,
+                  "blockType": "photoCard"
+                },
+                {
+                  "id": "en-proof-card-1-1",
+                  "title": "A dedicated team in your workplace",
+                  "sub": "We assign trained people who learn your schedules, protocols, and culture. Supervision and follow-up are part of the daily operation.",
+                  "image": 126,
+                  "alt": "Trained team operating workplace food services",
+                  "blockName": null,
+                  "blockType": "studiesCard"
+                }
+              ]
+            },
+            {
+              "id": "en-proof-column-2",
+              "cards": [
+                {
+                  "id": "en-proof-card-2-0",
+                  "title": "Proven experience in demanding operations",
+                  "sub": "Part of the daily operation at some of Mexico’s most important companies.",
+                  "tone": "green",
+                  "hideLogos": true,
+                  "blockName": null,
+                  "stats": [
+                    {
+                      "id": "en-proof-stat-2-0-0",
+                      "value": "17 years",
+                      "label": "of experience"
+                    },
+                    {
+                      "id": "en-proof-stat-2-0-1",
+                      "value": "15,000",
+                      "label": "meals served every day"
+                    }
+                  ],
+                  "blockType": "logosCard"
+                }
+              ]
+            }
+          ],
+          "blockType": "proofBento"
+        },
+        {
+          "id": "en-featured-media",
+          "label": "Featured media",
+          "ariaLabel": "Featured media references",
+          "blockName": null,
+          "blockType": "featuredMedia",
+          "logos": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "id": "en-operating-system",
+          "kicker": "How we work with you",
+          "titleAriaLabel": "Every detail, shaped around your people.",
+          "copy": "Before we propose a menu, we get to know your schedules, your spaces and your people. Then we look after every service and refine it with what your team tells us.",
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "en-operating-title-0",
+              "text": "Every",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-operating-title-1",
+              "text": "detail,",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-operating-title-2",
+              "text": "shaped",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-operating-title-3",
+              "text": "around",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-operating-title-4",
+              "text": "your",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-operating-title-5",
+              "text": "people.",
+              "emphasis": "accent"
+            }
+          ],
+          "tabs": [
+            {
+              "id": "en-operating-tab-0",
+              "key": "plan",
+              "icon": "briefcase",
+              "tone": "ocean",
+              "stage": "Learn",
+              "title": "Designed and run by the experts",
+              "copy": "You tell us what your team needs, and we design the program and define how the operation runs. You should not have to engineer your own food service, so we take that weight off you and make it happen.",
+              "panelTitle": "Designed and run by the experts",
+              "panelCopy": "You tell us what your team needs, and we design the program and define how the operation runs. You should not have to engineer your own food service, so we take that weight off you and make it happen.",
+              "image": 131,
+              "stageCopy": {
+                "before": "We get to know ",
+                "highlight": "your team’s culture, preferences, and rhythm",
+                "after": " before making a single decision."
+              }
+            },
+            {
+              "id": "en-operating-tab-1",
+              "key": "prepare",
+              "icon": "shield",
+              "tone": "natural",
+              "stage": "Solve",
+              "title": "Your team eats well today, tomorrow, and always",
+              "copy": "Standardized production, documented food-safety controls, and teams trained by Zitrone. Quality stays consistent because the process stays consistent.",
+              "panelTitle": "Your team eats well today, tomorrow, and always",
+              "panelCopy": "Standardized production, documented food-safety controls, and teams trained by Zitrone. Quality stays consistent because the process stays consistent.",
+              "image": 129,
+              "stageCopy": {
+                "before": "An expert team takes care of ",
+                "highlight": "getting every detail right, every day",
+                "after": "."
+              }
+            },
+            {
+              "id": "en-operating-tab-2",
+              "key": "serve",
+              "icon": "people",
+              "tone": "sage",
+              "stage": "Show up",
+              "title": "One active team across every moment of the day",
+              "copy": "It is not a single service, it is full coverage. Dining, barista, breakfast, snacks & beverages, carts, and catering coordinated by Zitrone from start to finish.",
+              "panelTitle": "One active team across every moment of the day",
+              "panelCopy": "It is not a single service, it is full coverage. Dining, barista, breakfast, snacks & beverages, carts, and catering coordinated by Zitrone from start to finish.",
+              "image": 130,
+              "stageCopy": {
+                "before": "The same people are there ",
+                "highlight": "for every moment that matters",
+                "after": ", from coffee to key meetings."
+              }
+            },
+            {
+              "id": "en-operating-tab-3",
+              "key": "measure",
+              "icon": "chart",
+              "tone": "lime",
+              "stage": "Evolve",
+              "title": "The program improves because we measure what matters",
+              "copy": "We stay close every day through constant feedback, surveys, and regular reviews. We track satisfaction and the key metrics that matter, follow up on what we find, and keep improving. We do not wait for the complaint; we look for it first.",
+              "panelTitle": "The program improves because we measure what matters",
+              "panelCopy": "We stay close every day through constant feedback, surveys, and regular reviews. We track satisfaction and the key metrics that matter, follow up on what we find, and keep improving. We do not wait for the complaint; we look for it first.",
+              "image": 132,
+              "stageCopy": {
+                "before": "We listen and adapt so ",
+                "highlight": "the service evolves with your operation",
+                "after": "."
+              }
+            }
+          ],
+          "blockType": "operatingSystem",
+          "ctaPrimary": {
+            "type": "internal",
+            "label": "View services",
+            "internalHref": "/services",
+            "externalHref": null,
+            "anchor": null
+          },
+          "ctaSecondary": {
+            "type": "internal",
+            "label": null,
+            "internalHref": null,
+            "externalHref": null,
+            "anchor": null
+          },
+          "labels": {
+            "sectionLabel": "How we work",
+            "listAriaLabel": "Zitrone program steps",
+            "previous": "Previous step",
+            "next": "Next step"
+          }
+        },
+        {
+          "id": "en-service-system",
+          "blockName": null,
+          "layers": [
+            {
+              "id": "en-service-layer-0",
+              "title": "Corporate dining",
+              "shortTitle": null,
+              "theme": "dining",
+              "image": 84,
+              "copy": "A complete fresh menu every day, with on-site or commissary production and full operations by Zitrone.",
+              "href": "/services/corporate-dining",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-0-0",
+                  "title": "Corporate, industrial or premium dining",
+                  "text": "Three formats, matched to your headcount and your shifts.",
+                  "icon": "utensils"
+                },
+                {
+                  "id": "en-service-feature-0-1",
+                  "title": "With an **on-site kitchen** or **no kitchen on site**",
+                  "text": "Without one, the food arrives finished and delivered by us.",
+                  "icon": "chef"
+                },
+                {
+                  "id": "en-service-feature-0-2",
+                  "title": "Menus designed by nutritionists",
+                  "text": "They change weekly, with a vegetarian option and allergens labelled.",
+                  "icon": "leaf"
+                }
+              ]
+            },
+            {
+              "id": "en-service-layer-1",
+              "title": "Corporate cafe",
+              "shortTitle": null,
+              "theme": "cafe",
+              "image": 85,
+              "copy": "A complete cafe with barista, beverages, ready food, pastries, snacks, and fruit.",
+              "href": "/services/corporate-cafe",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-1-0",
+                  "title": "A coffee bar with specialty products",
+                  "text": "Coffees and teas made by a barista.",
+                  "icon": "coffee"
+                },
+                {
+                  "id": "en-service-feature-1-1",
+                  "title": "Hot and cold food, to eat in or take away",
+                  "text": "Breakfasts, grab & go, fine pastries, snacks and more.",
+                  "icon": "utensils"
+                },
+                {
+                  "id": "en-service-feature-1-2",
+                  "title": "Smoothies, frappés and cold-pressed juices",
+                  "text": "Shakes and cold drinks, beyond coffee.",
+                  "icon": "drink"
+                }
+              ]
+            },
+            {
+              "id": "en-service-layer-2",
+              "title": "Snacks & beverages",
+              "shortTitle": null,
+              "theme": "pantry",
+              "image": 86,
+              "copy": "Snacks and beverages operated by Zitrone, with open consumption or a per-person allocation, and personalised pricing.",
+              "href": "/services/pantry-restocking",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-2-0",
+                  "title": "Snacks, drinks, and fresh fruit every day",
+                  "text": "Zitrone people on site stock, hand out, and replenish.",
+                  "icon": "fruit"
+                },
+                {
+                  "id": "en-service-feature-2-1",
+                  "title": "A catalogue chosen with you, healthy first",
+                  "text": "Fruit, bars, nuts, and lower-sugar snacks at eye level.",
+                  "icon": "leaf"
+                },
+                {
+                  "id": "en-service-feature-2-2",
+                  "title": "Open consumption or a per-person allocation",
+                  "text": "Allocation sets per-person limits for a more controlled cost.",
+                  "icon": "people"
+                }
+              ]
+            },
+            {
+              "id": "en-service-layer-3",
+              "title": "Coffee machines & water dispensers",
+              "shortTitle": "Coffee & water",
+              "theme": "coffee",
+              "image": 87,
+              "copy": "Fresh-ground coffee and filtered water, with no upfront investment and maintenance included.",
+              "href": "/services/coffee-water",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-3-0",
+                  "title": "The machines are ours to provide",
+                  "text": "No equipment to buy or rent. Installation, restocking, cleaning and maintenance included.",
+                  "icon": "machine"
+                },
+                {
+                  "id": "en-service-feature-3-1",
+                  "title": "Espresso, americano, cappuccino, cortado and latte",
+                  "text": "100% arabica from Chiapas and Veracruz, plus hot chocolate and teas.",
+                  "icon": "coffee"
+                },
+                {
+                  "id": "en-service-feature-3-2",
+                  "title": "Water cold, hot, ambient, and sparkling",
+                  "text": "Multi-stage filtration, with filter changes and microbiological testing every six months.",
+                  "icon": "water"
+                }
+              ]
+            },
+            {
+              "id": "en-service-layer-4",
+              "title": "Service carts",
+              "shortTitle": null,
+              "theme": "grab-go",
+              "image": 133,
+              "copy": "A Zitrone-operated cart visits every floor with fresh ready food for your team to choose.",
+              "href": "/services/service-carts",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-4-0",
+                  "title": "A mobile service point, with nothing to build",
+                  "text": "You add workplace food without construction or fixed equipment.",
+                  "icon": "cart"
+                },
+                {
+                  "id": "en-service-feature-4-1",
+                  "title": "Route and times defined with your operation",
+                  "text": "We bring the cart, the product and the people, restocked daily.",
+                  "icon": "clock"
+                },
+                {
+                  "id": "en-service-feature-4-2",
+                  "title": "From savoury to fruit, ready to eat",
+                  "text": "Salads, sandwiches, wraps, pasta and the dish of the day.",
+                  "icon": "utensils"
+                }
+              ]
+            },
+            {
+              "id": "en-service-layer-5",
+              "title": "Corporate catering",
+              "shortTitle": null,
+              "theme": "catering",
+              "image": 89,
+              "copy": "Custom corporate events with food, setup, tableware, and servers coordinated by Zitrone.",
+              "href": "/services/corporate-catering",
+              "ctaLabel": "Learn more",
+              "features": [
+                {
+                  "id": "en-service-feature-5-0",
+                  "title": "Coffee break, breakfast, box lunch or a plated meal",
+                  "text": "We pick the format to match the moment of the event.",
+                  "icon": "calendar"
+                },
+                {
+                  "id": "en-service-feature-5-1",
+                  "title": "Catalogue packages or a custom proposal",
+                  "text": "Menus built around the tastes and restrictions of your guests.",
+                  "icon": "chat"
+                },
+                {
+                  "id": "en-service-feature-5-2",
+                  "title": "Setup, tableware, linens and servers coordinated",
+                  "text": "One provider produces, sets up and serves the event.",
+                  "icon": "people"
+                }
+              ]
+            }
+          ],
+          "blockType": "serviceSystemSlider",
+          "labels": {
+            "kicker": "Our services",
+            "titleLine1": "A program for every",
+            "titleLine2": "moment of the day",
+            "titleAriaLabel": "A program for every moment of the day: corporate dining, corporate cafe, snacks & beverages, coffee machines & water dispensers, service carts, and corporate catering.",
+            "navAriaLabel": "Service categories",
+            "progressAriaLabel": "Service programs progress",
+            "progressValueTextTemplate": "Program {current} of {total}",
+            "eyebrowTemplate": "Program {index}",
+            "previous": "Previous program",
+            "next": "Next program",
+            "ctaLabel": "View services",
+            "viewDetails": "View details",
+            "hideDetails": "Hide details"
+          }
+        },
+        {
+          "id": "en-stories",
+          "kicker": null,
+          "titleAriaLabel": "The most demanding teams trust Zitrone",
+          "copy": null,
+          "blockName": null,
+          "titleWords": [
+            {
+              "id": "en-stories-title-0",
+              "text": "The",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-stories-title-1",
+              "text": "most",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-stories-title-2",
+              "text": "demanding",
+              "emphasis": "accent"
+            },
+            {
+              "id": "en-stories-title-3",
+              "text": "teams",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-stories-title-4",
+              "text": "trust",
+              "emphasis": "regular"
+            },
+            {
+              "id": "en-stories-title-5",
+              "text": "Zitrone",
+              "emphasis": "regular"
+            }
+          ],
+          "blockType": "stories",
+          "cta": {
+            "type": "internal",
+            "label": "Contact us",
+            "internalHref": "/contact?src=home-proof",
+            "externalHref": null,
+            "anchor": null
+          },
+          "panelCta": {
+            "type": "internal",
+            "label": "Contact us",
+            "internalHref": "/contact?src=home-proof-panel",
+            "externalHref": null,
+            "anchor": null
+          },
+          "stories": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "labels": {
+            "tablistAriaLabel": "Client stories"
+          }
+        },
+        {
+          "id": "en-faq",
+          "heading": "FAQs",
+          "headingLead": "FAQs",
+          "ctaTitle": "Have more questions?",
+          "ctaCopy": "Tell us what your team needs and we will shape the right solution for the workday.",
+          "blockName": null,
+          "blockType": "faq",
+          "cta": {
+            "type": "internal",
+            "label": "Contact us",
+            "internalHref": "/contact?src=home-faq",
+            "externalHref": null,
+            "anchor": null
+          },
+          "faqs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "seo": {
+        "title": null,
+        "description": null,
+        "ogImage": null,
+        "canonical": null
+      },
+      "_status": "published"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "base": "http://127.0.0.1:3106",
+  "candidate": "http://127.0.0.1:3105",
+  "date": "2026-10-16T02:30:55.442Z",
+  "results": [
+    {
+      "path": "/es",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x8262",
+      "changedPixels": 20584,
+      "changedPct": 0.173,
+      "files": [
+        "es-desktop-base.jpg",
+        "es-desktop-candidate.jpg",
+        "es-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8249",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/en",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x8192",
+      "changedPixels": 20584,
+      "changedPct": 0.174,
+      "files": [
+        "en-desktop-base.jpg",
+        "en-desktop-candidate.jpg",
+        "en-desktop-diff.jpg"
+      ]
+    },
+    {
+      "path": "/en",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8158",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/services",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5529",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/services",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x8032",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/services/comedor-corporativo",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x5061",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/services/comedor-corporativo",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x6027",
+      "changedPixels": 35618,
+      "changedPct": 1.515,
+      "files": [
+        "es_services_comedor-corporativo-mobile-base.jpg",
+        "es_services_comedor-corporativo-mobile-candidate.jpg",
+        "es_services_comedor-corporativo-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/services/carritos-de-servicio",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x4770",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/services/carritos-de-servicio",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x5707",
+      "changedPixels": 5994,
+      "changedPct": 0.269,
+      "files": [
+        "es_services_carritos-de-servicio-mobile-base.jpg",
+        "es_services_carritos-de-servicio-mobile-candidate.jpg",
+        "es_services_carritos-de-servicio-mobile-diff.jpg"
+      ]
+    },
+    {
+      "path": "/es/blog",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x2416",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3172",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/category/culture-retention",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1869",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/category/culture-retention",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x2185",
+      "changedPixels": 563,
+      "changedPct": 0.066
+    },
+    {
+      "path": "/es/blog/authors/equipo-de-operaciones-zitrone",
+      "viewport": "desktop",
+      "sameSize": true,
+      "size": "1440x1985",
+      "changedPixels": 0,
+      "changedPct": 0
+    },
+    {
+      "path": "/es/blog/authors/equipo-de-operaciones-zitrone",
+      "viewport": "mobile",
+      "sameSize": true,
+      "size": "390x3484",
+      "changedPixels": 0,
+      "changedPct": 0
+    }
+  ]
+}

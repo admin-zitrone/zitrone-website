@@ -1,0 +1,5 @@
+
+> on-it-workspace@0.1.0 email:check
+> node scripts/email-tokens-check.mjs
+
+email:check OK — 12 colours match their design-system tokens.

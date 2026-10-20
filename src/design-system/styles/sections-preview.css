@@ -1,0 +1,805 @@
+@import "./sections-preview-proof.css";
+@import "./sections-preview-profiler.css";
+
+.semantic-shell {
+  min-height: 100vh;
+  background: var(--color-surface-page);
+}
+
+.semantic-hero {
+  min-height: var(--media-hero-min-height);
+  background: var(--color-surface-inverse);
+}
+
+.semantic-hero-zitrone {
+  --hero-frame-background: var(--color-surface-page);
+  --hero-shell-max-width: 100%;
+  --hero-frame-max-height: 65rem;
+  --hero-brand-font-family: var(--font-body);
+  --hero-brand-font-size: clamp(1.3rem, 1.6vw, 1.55rem);
+  --hero-brand-font-weight: var(--primitive-font-weight-light);
+  --hero-nav-font-family: var(--font-body);
+  --hero-nav-font-size: 0.95rem;
+  --hero-nav-font-weight: var(--primitive-font-weight-regular);
+  --hero-media-position: 50% 34%;
+  --hero-media-overlay: var(--media-overlay-hero);
+  --hero-content-max-width: 42.5rem;
+  --hero-content-max-width-medium: 35rem;
+  --hero-content-max-width-small: 28rem;
+  --hero-heading-max-width: 35.25rem;
+  /* Copy block spans the same width as the h1. */
+  --hero-copy-measure: var(--hero-heading-max-width);
+  --hero-menu-toggle-size: 2.85rem;
+  --hero-menu-toggle-gap: 0.26rem;
+  --hero-menu-toggle-line-width: 0.95rem;
+  --hero-menu-toggle-line-thickness: var(--border-width-default);
+  --hero-menu-toggle-shadow: var(--primitive-shadow-3);
+  --hero-menu-sheet-padding: 1rem 1rem 1.15rem;
+  --hero-menu-sheet-gap: 1.6rem;
+  --hero-menu-sheet-link-min-height: 5.2rem;
+  --hero-ribbon-marquee-gap: 2.75rem;
+  --hero-logo-image-slot-width: clamp(4.75rem, 6.5vw, 5.75rem);
+  --hero-logo-image-slot-height: 1.45rem;
+  --hero-logo-image-opacity-rest: 0.76;
+  --hero-ribbon-label-color: var(--color-text-inverse);
+  --hero-cta-shadow: var(--primitive-shadow-2);
+  --hero-logo-chip-border: var(--color-border-inverse-subtle);
+  --hero-logo-chip-border-hover: var(--color-border-inverse);
+  --hero-logo-chip-background: var(--color-surface-inverse-soft);
+  --hero-logo-chip-background-hover: var(--color-surface-inverse-strong);
+  --hero-logo-chip-text: var(--color-text-inverse);
+  --logo-chip-font-family: var(--font-body);
+  --logo-chip-font-size: var(--type-meta-size);
+  --logo-chip-font-weight: var(--primitive-font-weight-medium);
+  --logo-chip-padding-block: var(--primitive-space-2);
+  --logo-chip-padding-inline: var(--primitive-space-4);
+}
+
+.semantic-hero-zitrone .ds-hero-frame {
+  display: block;
+}
+
+.semantic-hero-zitrone .ds-hero-ribbon {
+  position: absolute;
+  inset: auto 0 0;
+  align-self: auto;
+}
+
+.semantic-hero-zitrone .ds-hero-media,
+.semantic-hero-zitrone-media {
+  background-image: var(--hero-media-image);
+}
+
+/* Webflow-style parallax: the media is taller than the frame and slides
+   vertically on scroll with no zoom (scale 1). The hook publishes
+   --hero-media-parallax-progress (≈0.5 at load → -7.5% start, like the
+   reference template's translate3d(0, -7.5%, 0) scale3d(1, 1, 1)). */
+.semantic-hero-zitrone .ds-hero-media {
+  --hero-media-parallax-scale: 1;
+  inset: 0 0 auto 0;
+  height: 120%;
+  transform: translate3d(0, calc(var(--hero-media-parallax-progress, 0.5) * -15%), 0);
+  will-change: transform;
+  /* The JS lerp loop owns the easing (Caladan-style scrub), so don't add a
+     second CSS transition on transform or the two fight and feel laggy. */
+  transition: none;
+}
+
+.ds-service-system-image {
+  background-image: var(--image-url);
+}
+
+.semantic-hero-zitrone .ds-hero-frame > .ds-container {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  width: min(var(--hero-shell-max-width), calc(100% - (var(--hero-container-margin) * 2)));
+  min-height: 100%;
+  margin-inline: auto;
+  padding: 0;
+}
+
+.semantic-hero-zitrone-copy {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: clamp(7.2rem, 10.5vw, 8.6rem);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min(var(--hero-content-max-width), 100%);
+  max-width: none;
+  gap: clamp(1.3rem, 2.6vw, 1.9rem);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.semantic-hero-zitrone-copy .ds-heading,
+.semantic-hero-zitrone-copy .ds-copy {
+  margin-inline: 0;
+}
+
+.semantic-hero-zitrone-copy-short {
+  display: none;
+}
+
+.semantic-hero-zitrone .ds-hero-ribbon {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 3;
+  /* The label always sits to the left of the logos, at every width. */
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: clamp(1rem, 3vw, 2rem);
+}
+
+.semantic-hero-zitrone .ds-hero-ribbon-label {
+  padding-inline: 0.35rem;
+  font-size: var(--type-caption-size);
+  letter-spacing: var(--type-eyebrow-letter-spacing);
+  white-space: nowrap;
+}
+
+/* Daily diners figure, ticker style: the meta label, then the number in a
+   small chip at the same size. One quiet line, so the ribbon keeps its height. */
+.semantic-hero-zitrone .ds-hero-ribbon-stat {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+}
+
+.ds-hero-ribbon-stat-number {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.25rem;
+  background: color-mix(in srgb, var(--color-text-inverse) 14%, transparent);
+  color: var(--color-text-inverse);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.ds-hero-ribbon-stat-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.semantic-hero-zitrone-marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  /* The overflow + mask clip this box vertically, and optical scales up to
+     1.42x (Salesforce) push logos past the slot height. Extra block padding
+     gives them room; the matching negative margin keeps the ribbon height. */
+  padding-block: 0.5rem;
+  margin-block: -0.38rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0,
+    black calc(100% - var(--hero-container-margin)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    black 0,
+    black calc(100% - var(--hero-container-margin)),
+    transparent 100%
+  );
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 9%, black 91%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 9%, black 91%, transparent 100%);
+}
+
+.semantic-kicker {
+  margin: 0;
+  color: var(--color-text-action);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  text-transform: var(--type-label-transform);
+}
+
+.ds-section[data-tone='brand'] .semantic-kicker,
+.ds-section[data-tone='inverse'] .semantic-kicker,
+.ds-band[data-tone='brand'] .semantic-kicker,
+.ds-band[data-tone='inverse'] .semantic-kicker,
+/* Not a section or a band: a dark photo panel that carries section copy. */
+.ds-outcomes-reveal .semantic-kicker {
+  color: var(--color-text-inverse-secondary);
+}
+
+/* ── Selection preview strip ─────────────────────────────────
+   Dev-only element — shows the selection highlight tokens live.
+   Appears as a small labelled mark at the top of a section.   */
+
+@media (max-width: 48rem) {
+
+  .semantic-hero {
+    min-height: var(--media-hero-min-height-small);
+  }
+
+  .semantic-hero-zitrone-copy {
+    inset-block-end: clamp(6.4rem, 11vw, 7.4rem);
+    width: min(var(--hero-content-max-width-medium), 100%);
+    gap: clamp(1.05rem, 1.9vw, 1.45rem);
+  }
+
+  .semantic-hero-zitrone-copy .ds-heading,
+  .semantic-hero-zitrone-copy .ds-copy {
+    margin-inline: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 68.75rem) {
+  /* --hero-menu-breakpoint: compact navigation, not the mobile hero composition. */
+  .semantic-hero-zitrone {
+    --hero-content-max-width-medium: 31rem;
+    --hero-heading-max-width: min(12.5ch, 100%);
+    --hero-copy-measure: 29rem;
+  }
+
+  .semantic-hero-zitrone-copy {
+    inset-block-end: clamp(6.1rem, 12vw, 7.1rem);
+  }
+
+  .semantic-hero-zitrone .ds-logo-chip:not(.ds-logo-chip--image) {
+    padding: 0.55rem 0.85rem;
+  }
+}
+
+@media (min-width: 48.001rem) and (max-width: 68.75rem) {
+  .semantic-hero-zitrone.ds-hero-stage[data-frame='contained']
+    .semantic-hero-zitrone-copy {
+    text-align: left;
+  }
+
+  .semantic-hero-zitrone.ds-hero-stage[data-frame='contained']
+    .semantic-hero-zitrone-copy
+    .ds-heading,
+  .semantic-hero-zitrone.ds-hero-stage[data-frame='contained']
+    .semantic-hero-zitrone-copy
+    .ds-copy {
+    margin-inline: 0;
+  }
+}
+
+@media (min-width: 40.001rem) and (max-width: 48rem) {
+  .semantic-hero-zitrone {
+    --hero-content-max-width-small: 28rem;
+    --hero-heading-max-width: 100%;
+    --hero-copy-measure: min(26rem, 100%);
+  }
+}
+
+
+@media (max-width: 40rem) {
+  .semantic-hero-zitrone {
+    --hero-content-max-width-small: 100%;
+    --hero-heading-max-width: 100%;
+    --hero-copy-measure: 100%;
+    --hero-ribbon-marquee-gap: 1.9rem;
+    --hero-logo-image-slot-width: clamp(5.25rem, 24vw, 6.25rem);
+    --hero-logo-image-slot-height: 1.65rem;
+    --hero-logo-image-opacity-rest: 0.86;
+  }
+
+  /* Phones: the daily-diners figure repeats in the proof section below, so
+     the ribbon drops it and the logo marquee runs full width on its own. */
+  .semantic-hero-zitrone .ds-hero-ribbon {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.55rem;
+    padding-inline: 0.85rem;
+  }
+
+  .semantic-hero-zitrone .ds-hero-ribbon-stat {
+    display: none;
+  }
+
+  /* Phones read the short lede; the full one returns from 40rem up. */
+  .semantic-hero-zitrone-copy-full {
+    display: none;
+  }
+
+  .semantic-hero-zitrone-copy-short {
+    display: inline;
+  }
+
+  .semantic-hero-zitrone-copy .ds-hero-copy {
+    text-wrap: pretty;
+  }
+
+  .semantic-hero-zitrone-copy {
+    inset-block-end: clamp(5.25rem, 19vw, 6.4rem);
+    width: min(var(--hero-content-max-width-small), 100%);
+    gap: clamp(1rem, 1.8vw, 1.3rem);
+    text-align: left;
+  }
+
+  .semantic-hero-zitrone-copy .ds-heading,
+  .semantic-hero-zitrone-copy .ds-copy {
+    margin-inline: 0;
+    max-width: 100%;
+  }
+
+  .semantic-hero-zitrone .ds-hero-ribbon-label {
+    padding-inline: 0;
+    max-width: 8.5rem;
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+
+.semantic-faq-action {
+  margin-top: var(--primitive-space-6);
+  text-align: center;
+}
+
+.semantic-faq-action-icon {
+  width: var(--primitive-size-4);
+  height: var(--primitive-size-4);
+  margin-left: var(--primitive-space-2);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: var(--border-width-strong);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   STORIES / TESTIMONIALS
+   Tabbed testimonial carousel — Maven-style rounded card panel
+   with noise BG, compact logo tabs, progress bars, and a light
+   content card containing portrait photo + serif quote.
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── Section wrapper ─────────────────────────
+   Now a bento card floating inside the FAQ dark section.
+   Rounded corners, internal padding, noise/radial BG clipped. */
+.semantic-stories {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--primitive-radius-4);
+  background: var(--primitive-color-ocean-900);
+  color: var(--primitive-color-natural-50);
+
+  /* Override DS heading/copy color tokens for dark bg contrast */
+  --heading-color: var(--color-text-inverse);
+  --copy-color: var(--color-text-inverse-body);
+}
+
+/* Shell wrapper — inherits ds-faq__shell sizing,
+   controls spacing between bento card and FAQ content */
+.semantic-stories-shell {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Inner content — sits above the noise/radial BG */
+.semantic-stories-inner {
+  position: relative;
+  z-index: 1;
+  padding: clamp(2.5rem, 5vw, 5rem) clamp(1.5rem, 4vw, 3.5rem);
+}
+
+/* Noise overlay — matches bento card treatment */
+.semantic-stories-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.semantic-stories-bg-radial {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 40%,
+    var(--primitive-color-ocean-800) 0%,
+    transparent 70%
+  );
+  opacity: 0.4;
+}
+
+.semantic-stories-bg-noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 12.5rem 12.5rem;
+  opacity: 0.5;
+}
+
+/* Content sits above backgrounds — handled by .semantic-stories-inner */
+
+/* ── Header: centered ─────────────────────── */
+.semantic-stories-head {
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin-inline: auto;
+  max-width: 36rem;
+}
+
+/* Dark surface without a [data-tone] attribute, so it does not inherit the
+   dark-surface accent swap and would otherwise render the light-surface blue
+   on near-black. Same trap as .ds-service-operations-bento. */
+.semantic-stories {
+  --color-text-accent: var(--color-text-accent-brand);
+}
+
+.semantic-stories-heading {
+  max-width: 16ch;
+  margin-inline: auto;
+}
+
+/* Heading accent (strong/em) now handled by ds-heading in the design system */
+
+.semantic-stories-text {
+  max-width: 34ch;
+  margin-inline: auto;
+}
+
+/* ── Tab menu: compact company logos ──────── */
+.semantic-stories-tabs {
+  margin-top: var(--primitive-space-8);
+}
+
+.semantic-stories-menu {
+  display: flex;
+  align-items: end;
+  position: relative;
+  gap: 0;
+  width: 100%;
+  margin: 0 0 var(--stories-menu-margin-bottom);
+  padding-bottom: var(--stories-menu-padding-bottom);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.semantic-stories-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.semantic-stories-tab {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: end;
+  gap: 0;
+  padding: 0 0 var(--stories-tab-padding-bottom);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.35;
+  transition: opacity 400ms ease;
+}
+
+.semantic-stories-tab.is-active {
+  opacity: 1;
+}
+
+.semantic-stories-tab:hover {
+  opacity: 0.7;
+}
+
+.semantic-stories-tab.is-active:hover {
+  opacity: 1;
+}
+
+.semantic-stories-tab:focus-visible {
+  outline: var(--focus-outline-width) solid var(--color-focus-ring);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: var(--primitive-radius-1);
+}
+
+/* Logo thumbnail — sized to match Maven reference */
+.semantic-stories-tab-thumb {
+  position: relative;
+  width: 100%;
+  height: var(--stories-logo-stage-height);
+  min-height: var(--stories-logo-stage-height);
+  padding-inline: var(--stories-logo-stage-padding-inline);
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
+  --logo-fit-max-width: 78%;
+  --logo-fit-max-height: 100%;
+}
+
+.semantic-stories-tab-thumb img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(var(--stories-logo-max-width), var(--logo-fit-max-width));
+  max-height: min(var(--stories-logo-max-height), var(--logo-fit-max-height));
+  object-fit: contain;
+  transform: scale(var(--stories-logo-scale));
+  transform-origin: center center;
+}
+
+.semantic-stories-tab-thumb[data-logo-fit="wide"] {
+  --logo-fit-max-width: 100%;
+  --logo-fit-max-height: 88%;
+}
+
+.semantic-stories-tab-thumb[data-logo-fit="balanced"] {
+  --logo-fit-max-width: 78%;
+  --logo-fit-max-height: 100%;
+}
+
+.semantic-stories-tab-thumb[data-logo-fit="compact"] {
+  --logo-fit-max-width: 56%;
+  --logo-fit-max-height: 82%;
+}
+
+.semantic-stories-progress-rail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: var(--stories-rail-height);
+  background:
+    repeating-linear-gradient(
+      to right,
+      var(--stories-rail-color-strong) 0,
+      var(--stories-rail-color-strong) var(--stories-rail-segment-size),
+      var(--stories-rail-color-soft) var(--stories-rail-segment-size),
+      var(--stories-rail-color-soft) calc(var(--stories-rail-segment-size) * 2)
+    );
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.semantic-stories-progress-fill {
+  position: absolute;
+  top: 0;
+  left: var(--stories-progress-left, 0);
+  height: 100%;
+  width: var(--stories-progress-width, 0px);
+  background: var(--stories-rail-active-color);
+  transform-origin: left center;
+}
+
+.semantic-stories-progress-fill {
+  animation: stories-fill var(--stories-duration, 8s) linear forwards;
+}
+
+@keyframes stories-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ── Content card ─────────────────────────────
+   Light mint/cream container holding image + quote */
+.semantic-stories-panels {
+  position: relative;
+  display: grid;
+  min-height: 22rem;
+  background: var(--primitive-color-natural-50);
+  border-radius: var(--primitive-radius-4);
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.semantic-stories-panel {
+  grid-area: 1 / 1;
+  display: none;
+  grid-template-columns: 51% minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  min-height: 22rem;
+}
+
+.semantic-stories-panel.is-active {
+  display: grid;
+  animation: stories-fade-in var(--stories-panel-fade-duration) var(--stories-panel-fade-ease) both;
+}
+
+@keyframes stories-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(var(--stories-panel-fade-distance));
+  }
+  35% {
+    opacity: 0.72;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Image (left column) ──────────────────── */
+.semantic-stories-image {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.semantic-stories-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transform: scale(var(--stories-media-scale-rest));
+  transition:
+    transform var(--stories-media-transition),
+    opacity var(--stories-media-enter-duration) var(--stories-media-enter-ease);
+}
+
+.semantic-stories-panel.is-active .semantic-stories-image img {
+  animation: stories-image-fade var(--stories-media-enter-duration) var(--stories-media-enter-ease)
+    both;
+}
+
+@keyframes stories-image-fade {
+  from {
+    opacity: var(--stories-media-enter-opacity-start);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .semantic-stories-panel.is-active:hover .semantic-stories-image img,
+  .semantic-stories-panel.is-active:focus-within .semantic-stories-image img {
+    transform: scale(var(--stories-media-scale-hover));
+  }
+}
+
+/* ── Quote body (right column) ────────────── */
+.semantic-stories-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--primitive-space-6);
+  padding: clamp(1.5rem, 1.2rem + 1.2vw, 3rem);
+  color: var(--primitive-color-ocean-950);
+}
+
+.semantic-stories-quote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.semantic-stories-quote p {
+  margin: 0;
+  font-family: var(--stories-quote-family);
+  font-size: var(--type-title-size);
+  font-weight: var(--stories-quote-weight);
+  font-style: var(--stories-quote-style);
+  line-height: var(--stories-quote-line-height);
+  color: var(--primitive-color-ocean-950);
+  text-wrap: pretty;
+}
+
+.semantic-stories-quote-highlight {
+  color: var(--stories-quote-highlight-color);
+  font-weight: var(--stories-quote-highlight-weight);
+}
+
+/* Bio */
+.semantic-stories-bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--primitive-space-1);
+}
+
+.semantic-stories-name {
+  font-family: var(--font-body);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  color: var(--primitive-color-ocean-950);
+}
+
+.semantic-stories-role {
+  font-family: var(--font-body);
+  font-size: var(--type-body-small-size);
+  color: var(--primitive-color-ocean-700);
+}
+
+.semantic-stories-panel-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  color: var(--color-text-link);
+  font-family: var(--font-label);
+  font-size: var(--type-nav-size);
+  font-weight: var(--type-nav-weight);
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    transform 180ms ease,
+    gap 180ms ease;
+}
+
+.semantic-stories-panel-cta:hover {
+  color: var(--color-text-link-hover);
+  gap: 0.7rem;
+  transform: translateX(0.1rem);
+}
+
+.semantic-stories-panel-cta:focus-visible {
+  outline: var(--focus-outline-width) solid var(--color-focus-ring);
+  outline-offset: var(--primitive-space-1);
+  border-radius: var(--primitive-radius-1);
+}
+
+/* ══ Responsive: Stories ══════════════════════ */
+
+/* Tablet — stack image above quote */
+@media (max-width: 64rem) {
+  .semantic-stories-panel {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .semantic-stories-image {
+    aspect-ratio: 16 / 9;
+    max-height: 18rem;
+    min-height: auto;
+  }
+}
+
+/* Mobile — tighten everything */
+@media (max-width: 40rem) {
+  .semantic-stories-head {
+    max-width: 100%;
+  }
+
+  .semantic-stories-heading {
+    max-width: 100%;
+  }
+
+  .semantic-stories-tab-thumb {
+    height: var(--stories-logo-stage-height-small);
+    min-height: var(--stories-logo-stage-height-small);
+    padding-inline: var(--stories-logo-stage-padding-inline-small);
+  }
+
+  .semantic-stories-tab-thumb img {
+    max-width: min(var(--stories-logo-max-width-small), var(--logo-fit-max-width));
+    max-height: min(var(--stories-logo-max-height-small), var(--logo-fit-max-height));
+  }
+
+  .semantic-stories-tab {
+    flex: 0 0 clamp(4.5rem, 17vw, 5.75rem);
+    min-width: clamp(4.5rem, 17vw, 5.75rem);
+  }
+
+  .semantic-stories-panel {
+    border-radius: var(--primitive-radius-3);
+  }
+
+  .semantic-stories-image {
+    aspect-ratio: 4 / 3;
+    max-height: 14rem;
+  }
+}

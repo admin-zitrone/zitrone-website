@@ -1,0 +1,781 @@
+{
+  "_about": "Single source of truth for Zitrone's visual assets. Humans edit this file + the assets/ master tree (clean kebab-case names). `scripts/assets-sync.mjs` copies masters into public/ and GENERATES the consumers: src/lib/assets.generated.ts (website imports assets by ID) and the deck registries (deck-system/data/*.json). Query `tags` to find the canonical image(s) for a topic — e.g. an AI building a coffee-machines one-pager filters tags for `equipment:coffee-machines`. EVERYTHING served lives under one tree, public/img/*: services/<section>/ (shared service + deck photography), clients/ (+ clients/mono), media/, brand/, food/, operations/, hero/, site/, service-detail/, testimonials/. Deck section photos are folded into the index automatically by scanning public/img/shared/services/<section>/.",
+  "version": 1,
+  "publicPrefix": "/img",
+  "files": [
+    {
+      "id": "site-hero-dining-hall",
+      "public": "/img/site/hero-dining-hall.jpg",
+      "alt": "Comedor corporativo Zitrone en hora pico",
+      "tags": [
+        "site",
+        "hero"
+      ]
+    },
+    {
+      "id": "site-hero-dining-hall-email",
+      "public": "/img/site/hero-dining-hall-email.jpg",
+      "alt": "Comedor corporativo Zitrone en hora pico",
+      "tags": [
+        "site",
+        "email"
+      ]
+    },
+    {
+      "id": "site-hero-dining-hall-skyline",
+      "public": "/img/site/hero/dining-hall-skyline.jpg",
+      "alt": "Comedor corporativo Zitrone con ventanal panorámico",
+      "tags": [
+        "site",
+        "hero",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-hero-coffee-bar-lounge",
+      "public": "/img/site/hero/coffee-bar-lounge.jpg",
+      "alt": "Barra de café de especialidad en cafetería corporativa Zitrone",
+      "tags": [
+        "site",
+        "hero",
+        "service:cafeteria"
+      ]
+    },
+    {
+      "id": "site-hero-buffet-line",
+      "public": "/img/site/hero/buffet-line.jpg",
+      "alt": "Línea de buffet Zitrone con guisos, guarniciones y barra de toppings",
+      "tags": [
+        "site",
+        "hero",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-hero-pantry-station",
+      "public": "/img/site/hero/pantry-snack-station.jpg",
+      "alt": "Pantry Zitrone con dispensadores de cereal, snacks y fruta fresca",
+      "tags": [
+        "site",
+        "hero",
+        "service:pantry"
+      ]
+    },
+    {
+      "id": "site-hero-food-hall",
+      "public": "/img/site/hero/food-hall-service.jpg",
+      "alt": "Comedor corporativo Zitrone con isla de bebidas y barras de servicio",
+      "tags": [
+        "site",
+        "hero",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-hero-photo",
+      "public": "/img/shared/hero/photo.jpg",
+      "alt": "Experiencia gastronómica Zitrone en oficina",
+      "tags": [
+        "site",
+        "hero",
+        "og"
+      ]
+    },
+    {
+      "id": "site-og-card",
+      "public": "/img/site/og/zitrone-share-card.jpg",
+      "alt": "Experiencia gastronómica Zitrone en oficina",
+      "tags": [
+        "site",
+        "og"
+      ]
+    },
+    {
+      "id": "site-blog-office-food-employee-retention",
+      "public": "/img/site/blog/office-food-employee-retention.jpg",
+      "alt": "Comedor y área de convivencia que enriquecen la experiencia diaria en la oficina",
+      "tags": [
+        "site",
+        "blog",
+        "topic:employee-retention"
+      ]
+    },
+    {
+      "id": "site-blog-afternoon-slump-office-pantry",
+      "public": "/img/site/blog/afternoon-slump-office-pantry.jpg",
+      "alt": "Colaboradora eligiendo snacks y bebidas en un pantry de oficina",
+      "tags": [
+        "site",
+        "blog",
+        "service:pantry"
+      ]
+    },
+    {
+      "id": "site-blog-workplace-food-program-that-works",
+      "public": "/img/site/blog/workplace-food-program-that-works.jpg",
+      "alt": "Equipo de cocina preparando alimentos para un programa de comedor corporativo",
+      "tags": [
+        "site",
+        "blog",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-service-detail-chef-hygiene-portrait",
+      "public": "/img/shared/service-detail/chef-hygiene-portrait.jpg",
+      "alt": "Chef Zitrone con uniforme e higiene completa en cocina",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-detail-staff-handwashing",
+      "public": "/img/shared/service-detail/staff-handwashing.jpg",
+      "alt": "Lavado de manos — protocolo de higiene Zitrone",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-detail-dining-hall-buffet",
+      "public": "/img/shared/service-detail/dining-hall-buffet.jpg",
+      "alt": "Comedor corporativo con estaciones de buffet — Zitrone",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-detail-chef-plated-dish",
+      "public": "/img/shared/service-detail/chef-plated-dish.jpg",
+      "alt": "Chef Zitrone presentando un platillo emplatado",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-detail-pantry-attendant-portrait",
+      "public": "/img/shared/service-detail/pantry-attendant-portrait.jpg",
+      "alt": "Colaborador Zitrone en el área de pantry y market",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-detail-buffet-toppings-bar",
+      "public": "/img/shared/service-detail/buffet-toppings-bar.jpg",
+      "alt": "Barra de buffet con guarniciones y complementos — Zitrone",
+      "tags": [
+        "site",
+        "service-detail"
+      ]
+    },
+    {
+      "id": "site-service-corporate-dining",
+      "public": "/img/site/service-cards/corporate-dining.jpg",
+      "alt": "Comedor corporativo Zitrone",
+      "tags": [
+        "site",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-service-cart",
+      "public": "/img/site/service-cards/service-cart.jpg",
+      "alt": "Carrito de servicio Zitrone surtido con jugos, ensaladas y sándwiches",
+      "tags": [
+        "site",
+        "service:carritos"
+      ]
+    },
+    {
+      "id": "site-service-cart-full",
+      "public": "/img/site/service-cards/service-cart-full.jpg",
+      "alt": "Carrito de servicio Zitrone completo, con su encargada",
+      "tags": [
+        "site",
+        "service:carritos"
+      ]
+    },
+    {
+      "id": "site-service-corporate-dining-food-hall",
+      "public": "/img/site/service-cards/corporate-dining-food-hall.jpg",
+      "alt": "Comedor corporativo Zitrone con isla de bebidas y barras de servicio",
+      "tags": [
+        "site",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "site-service-corporate-cafe",
+      "public": "/img/site/service-cards/corporate-cafe.jpg",
+      "alt": "Cafetería corporativa Zitrone",
+      "tags": [
+        "site",
+        "service:cafeteria"
+      ]
+    },
+    {
+      "id": "site-service-pantry",
+      "public": "/img/site/service-cards/pantry-v2.jpg",
+      "alt": "Pantry y snacks Zitrone",
+      "tags": [
+        "site",
+        "service:pantry"
+      ]
+    },
+    {
+      "id": "site-service-coffee-and-water",
+      "public": "/img/site/service-cards/coffee-and-water.jpg",
+      "alt": "Café y agua Zitrone",
+      "tags": [
+        "site",
+        "service:cafeteras",
+        "service:water"
+      ]
+    },
+    {
+      "id": "site-service-catering",
+      "public": "/img/site/service-cards/catering.jpg",
+      "alt": "Catering corporativo Zitrone",
+      "tags": [
+        "site",
+        "service:catering"
+      ]
+    },
+    {
+      "id": "site-service-catering-buffet",
+      "public": "/img/shared/services/catering/event-buffet-spread.png",
+      "alt": "Montaje de buffet para evento corporativo Zitrone",
+      "tags": [
+        "site",
+        "service:catering"
+      ]
+    },
+    {
+      "id": "site-service-grab-and-go",
+      "public": "/img/site/service-cards/grab-and-go.jpg",
+      "alt": "Grab & Go Zitrone",
+      "tags": [
+        "site",
+        "service:cafeteria"
+      ]
+    },
+    {
+      "id": "food-mini-market-snacks",
+      "public": "/img/shared/food/mini-market-snacks.jpg",
+      "alt": "Mini market de snacks Zitrone",
+      "tags": [
+        "food",
+        "service:pantry"
+      ]
+    },
+    {
+      "id": "food-breakfast-molletes",
+      "public": "/img/shared/food/breakfast-molletes.jpg",
+      "alt": "Molletes para llevar — desayuno Zitrone",
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "food-pizza-station",
+      "public": "/img/shared/food/pizza-station.jpg",
+      "alt": "Estación de pizza Zitrone",
+      "tags": [
+        "food",
+        "service:comedor"
+      ]
+    },
+    {
+      "id": "ops-operating-system-1",
+      "public": "/img/site/operations/operating-system-1.jpg",
+      "alt": "Sistema operativo Zitrone — paso 1",
+      "tags": [
+        "operations",
+        "operating-system"
+      ]
+    },
+    {
+      "id": "ops-operating-system-2",
+      "public": "/img/site/operations/operating-system-2.jpg",
+      "alt": "Sistema operativo Zitrone — paso 2",
+      "tags": [
+        "operations",
+        "operating-system"
+      ]
+    },
+    {
+      "id": "ops-operating-system-3",
+      "public": "/img/site/operations/operating-system-3.jpg",
+      "alt": "Sistema operativo Zitrone — paso 3",
+      "tags": [
+        "operations",
+        "operating-system"
+      ]
+    },
+    {
+      "id": "ops-operating-system-4",
+      "public": "/img/site/operations/operating-system-4-v2.jpg",
+      "alt": "Sistema operativo Zitrone — paso 4",
+      "tags": [
+        "operations",
+        "operating-system"
+      ]
+    },
+    {
+      "id": "ops-hygiene",
+      "public": "/img/site/operations/hygiene.jpg",
+      "alt": "Estándares de higiene Zitrone",
+      "tags": [
+        "operations",
+        "workplace-partner"
+      ]
+    },
+    {
+      "id": "ops-trained-teams",
+      "public": "/img/site/operations/trained-teams.jpg",
+      "alt": "Equipos capacitados Zitrone",
+      "tags": [
+        "operations",
+        "workplace-partner"
+      ]
+    },
+    {
+      "id": "ops-care-in-detail",
+      "public": "/img/site/operations/care-in-detail.jpg",
+      "alt": "Cuidado en cada detalle — Zitrone",
+      "tags": [
+        "operations",
+        "workplace-partner"
+      ]
+    },
+    {
+      "id": "ops-flexible-programs",
+      "public": "/img/site/operations/flexible-programs.jpg",
+      "alt": "Programas flexibles Zitrone",
+      "tags": [
+        "operations",
+        "workplace-partner"
+      ]
+    },
+    {
+      "id": "site-featured-spread",
+      "public": "/img/shared/featured-spread.jpg",
+      "alt": "Selección destacada Zitrone",
+      "tags": [
+        "site"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "uber",
+      "name": "Uber",
+      "logo": "/img/shared/clients/uber.svg",
+      "wallRow": 0,
+      "lead": true,
+      "logoMono": "/img/shared/clients/mono/uber.svg",
+      "photo": "/img/site/testimonials/uber.jpg"
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "logo": "/img/shared/clients/salesforce.svg",
+      "wallRow": 0,
+      "lead": true,
+      "logoMono": "/img/shared/clients/mono/salesforce.svg",
+      "photo": "/img/site/testimonials/salesforce.jpg"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "logo": "/img/shared/clients/amazon.svg",
+      "wallRow": 0,
+      "lead": true
+    },
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "logo": "/img/shared/clients/pinterest.svg",
+      "wallRow": 0,
+      "lead": true,
+      "scale": 0.8,
+      "logoMono": "/img/shared/clients/mono/pinterest.svg",
+      "photo": "/img/site/testimonials/pinterest.jpg",
+      "logoWide": "/img/shared/clients/wide/pinterest.svg"
+    },
+    {
+      "id": "doordash",
+      "name": "DoorDash",
+      "logo": "/img/shared/clients/doordash.svg",
+      "wallRow": 0,
+      "lead": true,
+      "scale": 0.82,
+      "logoWide": "/img/shared/clients/wide/doordash.svg"
+    },
+    {
+      "id": "coca-cola",
+      "name": "Coca-Cola",
+      "logo": "/img/shared/clients/coca-cola.svg",
+      "wallRow": 1,
+      "logoWide": "/img/shared/clients/wide/coca-cola.svg"
+    },
+    {
+      "id": "disney",
+      "name": "Disney",
+      "logo": "/img/shared/clients/disney.svg",
+      "wallRow": 1,
+      "logoWide": "/img/shared/clients/wide/disney.svg"
+    },
+    {
+      "id": "nike",
+      "name": "Nike",
+      "logo": "/img/shared/clients/nike.svg",
+      "wallRow": 1,
+      "scale": 1.15,
+      "logoMono": "/img/shared/clients/mono/nike.svg",
+      "photo": "/img/site/testimonials/nike-v2.jpg"
+    },
+    {
+      "id": "american-express",
+      "name": "American Express",
+      "logo": "/img/shared/clients/american-express.svg",
+      "wallRow": 1,
+      "logoWide": "/img/shared/clients/wide/american-express.svg"
+    },
+    {
+      "id": "att",
+      "name": "AT&T",
+      "logo": "/img/shared/clients/att.svg",
+      "wallRow": 1,
+      "scale": 0.8,
+      "logoMono": "/img/shared/clients/mono/att.svg",
+      "photo": "/img/site/testimonials/att.jpg",
+      "logoWide": "/img/shared/clients/wide/att.svg"
+    },
+    {
+      "id": "ford",
+      "name": "Ford",
+      "logo": "/img/shared/clients/ford.svg",
+      "wallRow": 1
+    },
+    {
+      "id": "chanel",
+      "name": "Chanel",
+      "logo": "/img/shared/clients/chanel.svg",
+      "wallRow": 1,
+      "scale": 0.92,
+      "active": false
+    },
+    {
+      "id": "puma",
+      "name": "Puma",
+      "logo": "/img/shared/clients/puma.svg",
+      "wallRow": 2,
+      "scale": 0.78
+    },
+    {
+      "id": "pg",
+      "name": "P&G",
+      "logo": "/img/shared/clients/pg.svg",
+      "wallRow": 2,
+      "scale": 0.82,
+      "logoMono": "/img/shared/clients/mono/pg.svg"
+    },
+    {
+      "id": "hilton",
+      "name": "Hilton",
+      "logo": "/img/shared/clients/hilton.svg",
+      "wallRow": 2,
+      "scale": 1.3
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "logo": "/img/shared/clients/stripe.svg",
+      "wallRow": 2,
+      "logoMono": "/img/shared/clients/mono/stripe.svg",
+      "photo": "/img/site/testimonials/stripe.jpg"
+    },
+    {
+      "id": "capital-one",
+      "name": "Capital One",
+      "logo": "/img/shared/clients/capital-one.svg",
+      "wallRow": 2,
+      "logoMono": "/img/shared/clients/mono/capital-one.svg",
+      "photo": "/img/site/testimonials/capital-one.jpg"
+    },
+    {
+      "id": "santander",
+      "name": "Santander",
+      "logo": "/img/shared/clients/wide/santander.svg",
+      "wallRow": 2,
+      "logoWide": "/img/shared/clients/wide/santander.svg",
+      "logoMono": "/img/shared/clients/mono/santander.svg"
+    },
+    {
+      "id": "novartis",
+      "name": "Novartis",
+      "logo": "/img/shared/clients/novartis.svg",
+      "wallRow": 2,
+      "scale": 1.3
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "logo": "/img/shared/clients/audible.svg",
+      "wallRow": 2
+    },
+    {
+      "id": "henkel",
+      "name": "Henkel",
+      "logo": "/img/shared/clients/henkel.svg",
+      "wallRow": 3,
+      "logoMono": "/img/shared/clients/mono/henkel.svg"
+    },
+    {
+      "id": "aon",
+      "name": "Aon",
+      "logo": "/img/shared/clients/aon.svg",
+      "wallRow": 3
+    },
+    {
+      "id": "emerson",
+      "name": "Emerson",
+      "logo": "/img/shared/clients/emerson.svg",
+      "wallRow": 3
+    },
+    {
+      "id": "bupa",
+      "name": "Bupa",
+      "logo": "/img/shared/clients/bupa.svg",
+      "wallRow": 3,
+      "scale": 0.86
+    },
+    {
+      "id": "mercado-libre",
+      "name": "Mercado Libre",
+      "logo": "/img/shared/clients/mercado-libre-color.svg",
+      "wallRow": 3,
+      "logoMono": "/img/shared/clients/mono/mercado-libre.svg"
+    },
+    {
+      "id": "ingram",
+      "name": "Ingram Micro",
+      "logo": "/img/shared/clients/ingram-micro.svg",
+      "wallRow": 3
+    },
+    {
+      "id": "alcon",
+      "name": "Alcon",
+      "logo": "/img/shared/clients/alcon.svg",
+      "wallRow": 3
+    },
+    {
+      "id": "symrise",
+      "name": "Symrise",
+      "logo": "/img/shared/clients/symrise.svg",
+      "wallRow": 4,
+      "scale": 1.3
+    },
+    {
+      "id": "lockton",
+      "name": "Lockton",
+      "logo": "/img/shared/clients/lockton.svg",
+      "wallRow": 4
+    },
+    {
+      "id": "prologis",
+      "name": "Prologis",
+      "logo": "/img/shared/clients/prologis.svg",
+      "wallRow": 4
+    },
+    {
+      "id": "evo",
+      "name": "EVO Payments",
+      "logo": "/img/shared/clients/evo-payments.svg",
+      "wallRow": 4,
+      "scale": 0.82
+    },
+    {
+      "id": "liv-golf",
+      "name": "LIV Golf",
+      "logo": "/img/shared/clients/liv-golf.svg",
+      "wallRow": 4
+    },
+    {
+      "id": "tecnologico",
+      "name": "Tecnológico de Monterrey",
+      "logo": "/img/shared/clients/tec-de-monterrey.svg",
+      "wallRow": 4
+    },
+    {
+      "id": "ufc-performance-institute",
+      "name": "UFC Performance Institute",
+      "logo": "/img/shared/clients/ufc.svg",
+      "wallRow": 4,
+      "scale": 1.3
+    },
+    {
+      "id": "betterware",
+      "name": "Betterware",
+      "logo": "/img/shared/clients/betterware.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "caaarem",
+      "name": "CAAAREM",
+      "logo": "/img/shared/clients/caaarem.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "gda",
+      "name": "Grupo Diagnóstico Aries",
+      "logo": "/img/shared/clients/grupo-diagnostico-aries.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "superfarmacia",
+      "name": "Super Farmacia",
+      "logo": "/img/shared/clients/super-farmacia.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "universo-fragancias",
+      "name": "Universo de Fragancias",
+      "logo": "/img/shared/clients/universo-de-fragancias.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "chobani",
+      "name": "Chobani",
+      "logo": "/img/shared/clients/chobani.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "logo": "/img/shared/clients/crunchyroll.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "galderma",
+      "name": "Galderma",
+      "logo": "/img/shared/clients/galderma.svg",
+      "wallRow": 5
+    },
+    {
+      "id": "bacardi",
+      "name": "Bacardí",
+      "logo": "/img/shared/clients/bacardi.svg",
+      "wallRow": 5,
+      "active": false
+    },
+    {
+      "id": "jose-cuervo",
+      "name": "Jose Cuervo",
+      "logo": "/img/shared/clients/jose-cuervo.svg",
+      "wallRow": 5,
+      "active": false
+    }
+  ],
+  "media": [
+    {
+      "id": "el-financiero",
+      "name": "El Financiero",
+      "logo": "/img/shared/media/el-financiero.svg",
+      "scale": 1.06
+    },
+    {
+      "id": "el-universal",
+      "name": "El Universal",
+      "logo": "/img/shared/media/el-universal.svg",
+      "scale": 1.02
+    },
+    {
+      "id": "entrepreneur",
+      "name": "Entrepreneur",
+      "logo": "/img/shared/media/entrepreneur.svg",
+      "scale": 1.02
+    },
+    {
+      "id": "mundo-ejecutivo",
+      "name": "Mundo Ejecutivo",
+      "logo": "/img/shared/media/mundo-ejecutivo.svg",
+      "scale": 1.04
+    },
+    {
+      "id": "reforma",
+      "name": "Periódico Reforma",
+      "logo": "/img/shared/media/reforma.svg",
+      "scale": 1.04
+    }
+  ],
+  "brand": [
+    {
+      "id": "zitrone-logo-dark",
+      "name": "Zitrone logotipo (oscuro)",
+      "logo": "/img/shared/brand/zitrone-logo-dark.svg"
+    },
+    {
+      "id": "zitrone-logo-dark-raster",
+      "name": "Zitrone logotipo (oscuro, PNG raster)",
+      "logo": "/img/shared/brand/zitrone-logo-dark.png"
+    },
+    {
+      "id": "zitrone-logo-white",
+      "name": "Zitrone logotipo (blanco)",
+      "logo": "/img/shared/brand/zitrone-logo-white.svg"
+    },
+    {
+      "id": "zitrone-logo-white-raster",
+      "name": "Zitrone logotipo (blanco, PNG raster para correo)",
+      "logo": "/img/shared/brand/zitrone-logo-white.png"
+    },
+    {
+      "id": "email-social-instagram",
+      "name": "Icono Instagram (blanco, correo)",
+      "logo": "/img/shared/email/social-instagram-white.png"
+    },
+    {
+      "id": "email-social-linkedin",
+      "name": "Icono LinkedIn (blanco, correo)",
+      "logo": "/img/shared/email/social-linkedin-white.png"
+    },
+    {
+      "id": "email-social-facebook",
+      "name": "Icono Facebook (blanco, correo)",
+      "logo": "/img/shared/email/social-facebook-white.png"
+    },
+    {
+      "id": "email-social-x",
+      "name": "Icono X (blanco, correo)",
+      "logo": "/img/shared/email/social-x-white.png"
+    },
+    {
+      "id": "zitrone-favicon",
+      "name": "Zitrone favicon",
+      "logo": "/img/shared/brand/favicon.svg"
+    },
+    {
+      "id": "zitrone-apple-touch-icon",
+      "name": "Zitrone apple touch icon (PNG 180)",
+      "logo": "/img/shared/brand/apple-touch-icon.png"
+    },
+    {
+      "id": "zitrone-favicon-32",
+      "name": "Zitrone favicon (PNG 32)",
+      "logo": "/img/shared/brand/favicon-32.png"
+    },
+    {
+      "id": "zitrone-favicon-192",
+      "name": "Zitrone favicon (PNG 192)",
+      "logo": "/img/shared/brand/favicon-192.png"
+    }
+  ]
+}

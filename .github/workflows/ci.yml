@@ -1,0 +1,134 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Cheap checks first: each runs in seconds, so a failure reports back
+      # long before the multi-minute build and browser install.
+      - name: Validate environment
+        run: npm run env:check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Check generated asset index is in sync
+        run: npm run assets:check
+
+      - name: Check email palette matches design tokens
+        run: npm run email:check
+
+      # The design-system contract. This is a ratchet, not a clean-room check:
+      # it holds the ~985 known violations at their recorded count and fails
+      # only when that number grows. See scripts/design-system-audit.baseline.
+      - name: Check design-system token contract
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq zsh ripgrep
+          npm run design:audit
+
+      - name: Run content contract tests
+        run: npm run test:contracts
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright smoke tests
+        run: npm run test:e2e
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            playwright-report
+            test-results
+
+  # Payload REST permissions, blog publishing, CMS outage and network
+  # isolation (test:api), then the blog against Next's real cache
+  # (test:cache: its own build and server on :3110). Both run on a throwaway
+  # Postgres service, never on a hosted database; the runners refuse anything
+  # that is not local and named *_api_test, start from an empty environment
+  # and block non-loopback network access (scripts/lib/test-db.sh).
+  isolated-api:
+    runs-on: ubuntu-latest
+    # Two cache suites each run a production build; 35 leaves margin.
+    timeout-minutes: 35
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      TEST_PG_URL: postgres://postgres:postgres@127.0.0.1:5432/postgres
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install zsh
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq zsh
+
+      - name: Test database guard (refuses non-loopback Postgres)
+        run: npm run test:scripts
+
+      - name: Isolated API suites
+        run: npm run test:api
+
+      - name: Blog publishing through the real Next cache
+        run: npm run test:cache
+
+      - name: Home, navigation and footer edits through the real Next cache
+        run: npm run test:cache:home

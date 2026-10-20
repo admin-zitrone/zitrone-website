@@ -1,0 +1,33 @@
+<claude-code-hint v="1" type="plugin" value="vercel@claude-plugins-official" />
+Fetching deployment "www.zitrone.mx" in zitrone
+> Fetched deployment "zitrone-website-cf2rpw0yj-zitrone.vercel.app" in zitrone [430ms]
+
+  General
+
+    id		dpl_C4cjcDJvz9UEwqs8z1n4pSM3hJv3
+    name	zitrone-website
+    target	production
+    status	● Ready
+    url		https://zitrone-website-cf2rpw0yj-zitrone.vercel.app
+    created	Thu Oct 15 2026 18:19:28 GMT-0600 (Central Standard Time) [4d ago]
+
+
+  Aliases
+
+    ╶ https://www.zitrone.mx
+    ╶ https://zitrone-website-eight.vercel.app
+    ╶ https://zitrone.mx
+    ╶ https://zitrone-website-zitrone.vercel.app
+    
+
+  Builds
+
+    ┌ .        [0ms]
+    ├── λ [locale] (13.08MB) [iad1]
+    ├── λ [locale].rsc (13.08MB) [iad1]
+    ├── λ [locale]/contact (13.08MB) [iad1]
+    ├── λ [locale]/contact.rsc (13.08MB) [iad1]
+    ├── λ [locale]/privacy-notice (13.08MB) [iad1]
+    └── 337 output items hidden
+    
+

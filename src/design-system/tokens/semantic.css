@@ -1,0 +1,571 @@
+:root {
+  /* Layer 2 candidate tokens. Promote only after page specimens prove the role. */
+
+  /* Surfaces. */
+  --color-surface-page: var(--primitive-color-natural-50);
+  --color-surface-navigation: var(--primitive-color-natural-50);
+  --color-surface-container: var(--primitive-color-white);
+  --color-surface-container-muted: var(--primitive-color-natural-100);
+  --color-surface-container-strong: var(--primitive-color-natural-200);
+  --color-surface-default: var(--color-surface-container);
+  --color-surface-section-warm: var(--primitive-color-natural-100);
+  --color-surface-section-warm-strong: var(--primitive-color-natural-200);
+  --color-surface-section-soft: var(--primitive-color-ocean-50);
+  --color-surface-cool: var(--primitive-color-grey-green-100);
+  /* Brand icon tile: soft lime ground, deeper lime glyph (about 3.9:1). Approved exception to the lime-500-only rule (user, 2026-10-11). */
+  --color-icon-tile-brand-surface: var(--primitive-color-lime-100);
+  --color-icon-tile-brand-icon: var(--primitive-color-lime-600);
+  /* Icon tile on any dark surface (data-tone inverse/brand): neutral glass,
+     white glyph. Hue stays out so the tile never muddies the dark ground. */
+  --color-icon-tile-inverse-surface: rgb(255 255 255 / 0.08);
+  --color-icon-tile-inverse-icon: var(--color-text-inverse);
+  --color-surface-section-brand: var(--primitive-color-ocean-900);
+  --color-surface-inverse: var(--primitive-color-ocean-900);
+  --color-surface-disabled: var(--primitive-color-natural-300);
+
+  /* Bento card surfaces — each one contrasts against both warm and inverse panels. */
+  --color-surface-bento-deep: var(--primitive-color-ocean-950);
+  --color-surface-bento-raised: var(--primitive-color-ocean-800);
+  --color-surface-bento-light: var(--primitive-color-grey-green-300);
+  --color-surface-bento-warm: var(--color-surface-section-warm-strong);
+  --image-surface-section-default: none;
+  --image-surface-section-warm: linear-gradient(180deg, rgb(255 255 255 / 0.24), rgb(255 255 255 / 0));
+  --image-surface-section-soft: linear-gradient(180deg, rgb(255 255 255 / 0.18), rgb(255 255 255 / 0));
+  --image-surface-section-brand: linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0));
+  --image-surface-section-inverse:
+    radial-gradient(circle at top right, rgb(255 255 255 / 0.08), transparent 18rem),
+    linear-gradient(180deg, rgb(255 255 255 / 0.04), rgb(255 255 255 / 0));
+
+  /* Text hierarchy — light surfaces (natural-50 / warm / soft).
+     Every ratio below is measured against natural-50 (#FBF6F3) and must hold
+     at natural-100 (#F1EBE4) too, which is the darker of the two light
+     surfaces. Kickers and "secondary" were both below AA here until the
+     2026-08 audit; they are text, not decoration, so 4.5:1 is the floor.
+     Kicker    ocean-500      8.3:1  AAA — signpost label. Was ocean-400 (3.3:1).
+     Heading   ocean-600      9.9:1  AAA — max for light bg, main message.
+     Body      ocean-500      8.3:1  AAA — content, clearly below heading in tone.
+     Secondary grey-green-600 5.8:1  AA  — captions, meta, supporting copy.
+     Muted     grey-green-300 decorative / disabled — never for reading text.
+
+     Text hierarchy — dark surfaces (brand / inverse, ocean-900 bg):
+     Heading   white         12.5:1  AAA — maximum brightness, anchors the section.
+     Body      ocean-100      9.6:1  AAA — content, clear step down from white.
+     Secondary ocean-200      7.3:1  AAA — supporting copy, labels, nav.           */
+  --color-text-primary: var(--primitive-color-ocean-500);
+  --color-text-heading: var(--primitive-color-ocean-600);
+  --color-text-secondary: var(--primitive-color-grey-green-600);
+  --color-text-muted: var(--primitive-color-grey-green-300);
+  --color-text-inverse: var(--primitive-color-white);
+  --color-text-inverse-body: var(--primitive-color-ocean-100);
+  --color-text-inverse-secondary: var(--primitive-color-ocean-200);
+  /* Neutral text tiers on dark surfaces: white title > lead > support.
+     Solid ramp steps, never alpha (see DESIGN.md). On ocean-950: lead
+     10.9:1, support 7.7:1; on ocean-900: 9.3:1, 6.5:1. */
+  --color-text-inverse-lead: var(--primitive-color-grey-green-200);
+  --color-text-inverse-support: var(--primitive-color-grey-green-300);
+  /* Inactive controls are exempt from 1.4.3, so this may stay at 4.2:1. */
+  --color-text-disabled: var(--primitive-color-grey-green-500);
+  --color-text-link: var(--primitive-color-ocean-900);
+  --color-text-link-hover: var(--primitive-color-ocean-950);
+  --color-text-link-inverse: var(--primitive-color-white);
+  --color-text-link-inverse-hover: var(--primitive-color-ocean-100);
+
+  /* Selection highlight — two contexts, one clear rule per surface:
+     Light surface (warm/soft/default): ocean-400 highlight + white text → 3.5:1 AA-large.
+       Vivid teal on light bg — text flips to white. Passes AA for UI/large text.
+     Dark surface (brand/inverse):     ocean-50 highlight + ocean-900 text → 11.9:1 AAA.
+       Pale tint on dark bg — text shifts to deep ink, no jarring flip. */
+  --color-selection-background: var(--primitive-color-ocean-400);
+  --color-selection-text: var(--primitive-color-white);
+  --color-selection-background-inverse: var(--primitive-color-ocean-50);
+  --color-selection-text-inverse: var(--primitive-color-ocean-900);
+  /* Eyebrows/kickers on light surfaces. Same blue as --kicker-color so every
+     signpost label on the site matches, whichever class renders it. */
+  --color-text-action: var(--color-text-accent-on-light);
+  /* Accent words. Brand/inverse *surfaces* swap them to ocean-300 (see
+     layout/sections.css); a surface that is neither — a photograph, say —
+     reclaims the vivid lime via --color-text-accent-brand, which is legible
+     because it sits on dark imagery rather than on cream.
+
+     On light surfaces the accent is ocean-500, not a green. Any lime dark
+     enough to clear AA on cream stops reading as the brand lime and starts
+     reading as olive, so rather than ship a muddy compromise the accent role
+     switches family: blue on light, green on dark. This is the split the lime
+     ramp in primitives.css has always described — "pair with ocean-700/800 as
+     background" — now enforced rather than merely documented. This is the rule the
+     lime ramp in primitives.css has always documented; --color-text-accent is
+     where it is now actually enforced. */
+  --color-text-accent-brand: var(--primitive-color-lime-500);
+  --color-text-accent-on-light: var(--primitive-color-ocean-500);
+  --color-text-accent: var(--color-text-accent-on-light);
+  /* Display accent: the serif-italic accent word inside headings only, one
+     brand green on every surface (brand decision 2026-09-23). lime-500 is
+     6.9:1 on ocean-950 but only 2.25:1 on white and 2.1:1 on natural-50, below
+     the 3:1 large-text minimum: a known, accepted contrast exception on light
+     sections. Never use it for body-size text; that stays on
+     --color-text-accent. */
+  --color-text-accent-display: var(--color-text-accent-brand);
+
+  /* Status. Form validation is the only consumer today; it is a semantic role
+     rather than a one-off because an error colour that lives in a component
+     file is an error colour the next form will re-invent slightly differently. */
+  --color-text-danger: var(--primitive-color-danger-600);
+  --color-border-danger: var(--primitive-color-danger-600);
+  /* Danger-600 is tuned for light surfaces; on ocean-900 it reads as a dark
+     smudge, so the inverse pair lifts the same hue until it carries. */
+  --color-text-danger-inverse: color-mix(in srgb, var(--primitive-color-danger-600) 45%, white);
+  --color-border-danger-inverse: color-mix(in srgb, var(--primitive-color-danger-600) 55%, white);
+
+  /* Borders and focus. */
+  --color-border-subtle: var(--primitive-color-grey-green-200);
+  --color-border-default: var(--primitive-color-grey-green-300);
+  --color-border-strong: var(--primitive-color-ocean-950);
+  --color-border-inverse: rgb(255 255 255 / 0.6);
+  --color-border-inverse-subtle: rgb(255 255 255 / 0.2);
+  --color-border-disabled: var(--primitive-color-natural-400);
+  --border-width-default: var(--primitive-border-width-1);
+  --border-width-strong: var(--primitive-border-width-2);
+  --color-focus-ring: var(--primitive-color-ocean-900);
+  --color-focus-ring-inverse: var(--primitive-color-ocean-400);
+  --focus-ring-width: 3px;
+  --focus-outline-width: var(--border-width-strong);
+  --focus-outline-offset: var(--primitive-space-px);
+
+  /* Layers, elevation, and effects. */
+  --layer-content: var(--primitive-z-index-1);
+  --layer-sticky: var(--primitive-z-index-100);
+  --elevation-sticky: var(--primitive-shadow-1);
+  --elevation-raised: var(--primitive-shadow-2);
+  --effect-backdrop-blur-sticky: 0.75rem;
+
+  /* Overlays. */
+  --color-overlay-scrim: rgb(5 40 53 / 0.6);
+  --color-overlay-hero-strong: rgb(5 40 53 / 0.9);
+  --color-overlay-hero-medium: rgb(5 40 53 / 0.52);
+  --color-overlay-hero-weak: rgb(5 40 53 / 0.16);
+  --color-overlay-hero-menu: rgb(5 40 53 / 0.46);
+  --color-overlay-hero-menu-dim: rgb(5 40 53 / 0.24);
+  --color-overlay-surface: rgb(255 255 255 / 0.8);
+  --color-surface-inverse-soft: rgb(255 255 255 / 0.08);
+  --color-surface-inverse-strong: rgb(255 255 255 / 0.14);
+  --color-border-inverse-strong: rgb(255 255 255 / 0.24);
+
+  /* Media roles. */
+  --breakpoint-compact: 40rem;
+  --breakpoint-medium: 48rem;
+  --breakpoint-wide: 64rem;
+  --media-ratio-wide: var(--primitive-ratio-21-9);
+  --media-ratio-landscape: var(--primitive-ratio-3-2);
+  --media-ratio-square: var(--primitive-ratio-1-1);
+  --media-ratio-portrait: 4 / 5;
+  --media-object-position-default: 50% 50%;
+  --media-object-position-hero: 50% 50%;
+  --media-object-position-hero-medium: 56% 50%;
+  --media-object-position-hero-small: 62% 50%;
+  --media-object-position-feature: 50% 50%;
+  --media-object-position-feature-small: 50% 50%;
+  --media-object-position-portrait: 50% 24%;
+  --media-object-position-portrait-small: 50% 20%;
+  --media-overlay-hero: linear-gradient(90deg, var(--color-overlay-hero-strong), var(--color-overlay-hero-medium), var(--color-overlay-hero-weak));
+  --media-overlay-scrim: linear-gradient(180deg, var(--color-overlay-scrim), var(--color-overlay-scrim));
+  --media-overlay-surface: linear-gradient(180deg, var(--color-overlay-surface), var(--color-overlay-surface));
+  --media-hero-min-height: 72svh;
+  --media-hero-min-height-medium: 68svh;
+  --media-hero-min-height-small: 64svh;
+  --motion-media-parallax-scale: 1.06;
+
+  /* Actions. */
+  --color-action-primary-background: var(--primitive-color-ocean-900);
+  --color-action-primary-background-hover: var(--primitive-color-lime-500);
+  --color-action-primary-background-active: var(--primitive-color-ocean-950);
+  --color-action-primary-text: var(--primitive-color-white);
+  --color-action-primary-text-active: var(--primitive-color-white);
+  --color-action-primary-border: var(--primitive-color-ocean-900);
+  --color-action-primary-border-hover: var(--primitive-color-lime-500);
+  --color-action-primary-border-active: var(--primitive-color-ocean-950);
+
+  --color-action-secondary-background: transparent;
+  --color-action-secondary-background-hover: var(--primitive-color-lime-500);
+  --color-action-secondary-background-active: var(--primitive-color-ocean-950);
+  --color-action-secondary-text: var(--primitive-color-ocean-900);
+  --color-action-secondary-text-hover: var(--primitive-color-white);
+  --color-action-secondary-text-active: var(--primitive-color-white);
+  --color-action-secondary-border: var(--primitive-color-ocean-900);
+  --color-action-secondary-border-hover: var(--primitive-color-lime-500);
+  --color-action-secondary-border-active: var(--primitive-color-ocean-950);
+
+  --color-action-inverse-primary-background: var(--primitive-color-white);
+  --color-action-inverse-primary-background-hover: var(--primitive-color-lime-200);
+  --color-action-inverse-primary-background-active: var(--primitive-color-ocean-200);
+  --color-action-inverse-primary-text: var(--primitive-color-ocean-950);
+  --color-action-inverse-primary-text-active: var(--primitive-color-ocean-950);
+  --color-action-inverse-primary-border: var(--primitive-color-white);
+  --color-action-inverse-primary-border-hover: var(--primitive-color-lime-200);
+  --color-action-inverse-primary-border-active: var(--primitive-color-ocean-200);
+  --color-action-inverse-secondary-background: transparent;
+  --color-action-inverse-secondary-background-hover: var(--primitive-color-lime-400);
+  --color-action-inverse-secondary-background-active: var(--primitive-color-ocean-100);
+  --color-action-inverse-secondary-text: var(--primitive-color-white);
+  --color-action-inverse-secondary-text-hover: var(--primitive-color-ocean-950);
+  --color-action-inverse-secondary-text-active: var(--primitive-color-ocean-950);
+  --color-action-inverse-secondary-border: var(--primitive-color-white);
+  --color-action-inverse-secondary-border-hover: var(--primitive-color-lime-400);
+  --color-action-inverse-secondary-border-active: var(--primitive-color-ocean-100);
+
+  --color-action-accent-background: var(--primitive-color-lime-400);
+  --color-action-accent-background-hover: var(--primitive-color-lime-500);
+  --color-action-accent-background-active: var(--primitive-color-lime-500);
+  --color-action-accent-text: var(--primitive-color-ocean-950);
+  --color-action-accent-text-active: var(--primitive-color-ocean-950);
+  --color-action-accent-border: var(--primitive-color-lime-400);
+  --color-action-accent-border-hover: var(--primitive-color-lime-500);
+  --color-action-accent-border-active: var(--primitive-color-lime-500);
+
+  --color-action-disabled-background: var(--color-surface-disabled);
+  --color-action-disabled-text: var(--primitive-color-grey-green-700);
+  --color-action-disabled-border: var(--color-border-disabled);
+
+  --color-action-primary: var(--color-action-primary-background);
+  --color-action-primary-hover: var(--color-action-primary-background-hover);
+  --color-action-secondary: var(--color-action-secondary-background);
+  --color-action-inverse: var(--color-action-inverse-primary-background);
+  --color-action-inverse-hover: var(--color-action-inverse-primary-background-hover);
+  --color-action-inverse-text: var(--color-action-inverse-primary-text);
+
+  /* Zitrone service verticals: Comedor=ocean, Workplace Fuel=lime, Eventos=natural. */
+  --color-accent-brand: var(--primitive-color-ocean-500);
+  --color-accent-brand-strong: var(--primitive-color-ocean-900);
+  --color-accent-service-dining: var(--primitive-color-ocean-400);
+  --color-accent-service-dining-surface: var(--primitive-color-ocean-50);
+  --color-accent-service-dining-text: var(--primitive-color-ocean-400);
+  --color-accent-service-dining-border: var(--primitive-color-ocean-400);
+  --color-accent-service-cafe: var(--primitive-color-lime-500);
+  --color-accent-service-cafe-surface: var(--primitive-color-lime-100);
+  --color-accent-service-cafe-text: var(--primitive-color-lime-500);
+  --color-accent-service-cafe-border: var(--primitive-color-lime-500);
+  --color-accent-service-pantry: var(--primitive-color-lime-500);
+  --color-accent-service-pantry-surface: var(--primitive-color-lime-100);
+  --color-accent-service-pantry-text: var(--primitive-color-lime-500);
+  --color-accent-service-pantry-border: var(--primitive-color-lime-500);
+  --color-accent-service-catering: var(--primitive-color-natural-400);
+  --color-accent-service-catering-surface: var(--primitive-color-natural-100);
+  --color-accent-service-catering-text: var(--primitive-color-grey-green-500);
+  --color-accent-service-catering-border: var(--primitive-color-natural-400);
+
+  /* Typography roles. */
+  --font-display: var(--primitive-font-family-sans-display);
+  --font-body: var(--primitive-font-family-sans-text);
+  --font-serif-accent: var(--primitive-font-family-serif-display);
+  --font-label: var(--primitive-font-family-sans-text);
+  --font-code: var(--primitive-font-family-monospace);
+
+  /* ── Type scale ──────────────────────────────────────────────────────
+     THE site type scale. Every text element on the site resolves to one of
+     these roles; component CSS never sets a raw font-size / line-height /
+     letter-spacing. Change a role here and it changes everywhere.
+
+       display-hero     page H1 (hero)                 ~88 → 64 → 56px
+       section-heading  section H2                      48 → 28px
+       card-heading     subheading / large card name    38 → 24px
+       title            card & step titles              26 → 20px
+       title-small      small titles, FAQ questions     18px
+       body-large       ledes, intros                   18 → 16px
+       body             running copy                    16px
+       body-small       secondary copy, UI text         14px
+       label / meta     kickers, tags, metadata         14px semibold
+       caption          fine print, micro labels        12px
+     Responsive steps are re-pointed in the @media blocks at the bottom. */
+  --type-display-hero-family: var(--font-display);
+  --type-display-hero-size: var(--primitive-font-size-fluid-display);
+  --type-display-hero-size-medium: var(--primitive-font-size-fluid-display-medium);
+  --type-display-hero-size-small: var(--primitive-font-size-fluid-display-small);
+  --type-display-hero-weight: var(--primitive-font-weight-light);
+  --type-display-hero-line-height: var(--primitive-line-height-display);
+  --type-display-hero-letter-spacing: var(--primitive-letter-spacing-tight-3);
+  --type-display-hero-measure: 21ch;
+  --type-display-hero-measure-medium: 17ch;
+  --type-display-hero-measure-small: 13ch;
+
+  --type-heading-measure-tight: 11ch;
+  --type-heading-measure-default: 22ch;
+  --type-heading-measure-wide: 38ch;
+
+  --type-section-heading-family: var(--font-display);
+  --type-section-heading-size: var(--primitive-font-size-fluid-heading);
+  --type-section-heading-size-medium: var(--primitive-font-size-fluid-heading);
+  --type-section-heading-size-small: var(--primitive-font-size-heading-small);
+  --type-section-heading-weight: var(--primitive-font-weight-light);
+  --type-section-heading-line-height: var(--primitive-line-height-heading);
+  --type-section-heading-letter-spacing: var(--primitive-letter-spacing-tight-2);
+  --type-section-heading-measure: var(--type-heading-measure-default);
+  --type-section-heading-measure-medium: 18ch;
+  --type-section-heading-measure-small: 16ch;
+
+  --type-card-heading-family: var(--font-display);
+  --type-card-heading-size: var(--primitive-font-size-fluid-subheading);
+  --type-card-heading-size-small: var(--primitive-font-size-3);
+  --type-card-heading-weight: var(--primitive-font-weight-light);
+  --type-card-heading-line-height: var(--primitive-line-height-regular);
+  --type-card-heading-letter-spacing: var(--primitive-letter-spacing-tight-1);
+  --type-card-heading-measure: var(--type-heading-measure-default);
+  --type-card-heading-measure-small: 18ch;
+  --type-card-heading-measure-phone: 20ch;
+
+  --type-title-size: var(--primitive-font-size-fluid-title);
+  --type-title-weight: var(--primitive-font-weight-light);
+  --type-title-line-height: var(--primitive-line-height-compact);
+  --type-title-letter-spacing: var(--primitive-letter-spacing-tight-1);
+  --type-title-small-size: var(--primitive-font-size-2);
+  --type-title-small-weight: var(--primitive-font-weight-regular);
+  --type-title-small-line-height: var(--primitive-line-height-regular);
+
+  --type-stat-number-family: var(--font-serif-accent);
+  --type-stat-number-size: var(--primitive-font-size-9);
+  --type-stat-number-size-medium: var(--primitive-font-size-8);
+  --type-stat-number-size-small: var(--primitive-font-size-5);
+  --type-stat-number-weight: var(--primitive-font-weight-regular);
+  --type-stat-number-line-height: var(--primitive-line-height-tight);
+
+  --type-quote-family: var(--font-serif-accent);
+  --type-quote-size: var(--primitive-font-size-5);
+  --type-quote-size-small: var(--primitive-font-size-4);
+  --type-quote-weight: var(--primitive-font-weight-regular);
+  --type-quote-style: normal;
+  --type-quote-line-height: var(--primitive-line-height-tight);
+  --type-quote-measure: var(--type-heading-measure-wide);
+  --type-quote-measure-small: 24ch;
+
+  --type-accent-word-family: var(--font-serif-accent);
+  --type-accent-word-weight: var(--primitive-font-weight-regular);
+  --type-accent-word-style: italic;
+
+  --type-body-large-size: var(--primitive-font-size-2);
+  --type-body-large-line-height: var(--primitive-line-height-loose);
+  --type-body-large-measure: 48ch;
+  --type-body-large-measure-small: 34ch;
+  --type-support-size: var(--primitive-font-size-1);
+  --type-support-line-height: var(--primitive-line-height-loose);
+  --type-body-size: var(--primitive-font-size-1);
+  --type-body-weight: var(--primitive-font-weight-regular);
+  --type-body-line-height: var(--primitive-line-height-loose);
+  --type-body-measure: var(--size-container-readable);
+  --type-body-small-size: var(--primitive-font-size-0);
+  --type-body-small-line-height: var(--primitive-line-height-loose);
+  --type-meta-size: var(--primitive-font-size-0);
+  --type-meta-weight: var(--primitive-font-weight-semibold);
+  --type-meta-line-height: var(--primitive-line-height-regular);
+  --type-brand-size: var(--primitive-font-size-3);
+  --type-brand-weight: var(--primitive-font-weight-bold);
+  --type-brand-line-height: var(--primitive-line-height-regular);
+  --type-legal-size: var(--primitive-font-size-00);
+  --type-legal-line-height: var(--primitive-line-height-regular);
+  --type-caption-size: var(--primitive-font-size-00);
+  --type-caption-line-height: var(--primitive-line-height-regular);
+  --type-caption-letter-spacing: var(--primitive-letter-spacing-wide-1);
+  --type-label-size: var(--primitive-font-size-0);
+  --type-label-weight: var(--primitive-font-weight-semibold);
+  --type-label-line-height: var(--primitive-line-height-regular);
+  --type-label-transform: uppercase;
+  --type-label-letter-spacing: var(--primitive-letter-spacing-wide-1);
+  --type-eyebrow-letter-spacing: var(--primitive-letter-spacing-wide-2);
+  --type-nav-size: var(--primitive-font-size-0);
+  --type-nav-weight: var(--primitive-font-weight-semibold);
+  --type-nav-line-height: var(--primitive-line-height-regular);
+  /* Interactive text that is not a button: nav links, UI links, feature labels. */
+  --type-ui-weight: var(--primitive-font-weight-medium);
+  --type-button-size: var(--primitive-font-size-2);
+  --type-button-size-small: var(--primitive-font-size-1);
+  --type-button-weight: var(--primitive-font-weight-medium);
+  --type-button-line-height: var(--primitive-line-height-loose);
+
+  --line-height-heading: var(--primitive-line-height-tight);
+  --line-height-body: var(--primitive-line-height-loose);
+  --letter-spacing-default: var(--primitive-letter-spacing-0);
+
+  /* Layout roles. */
+  --size-container-main: 94.5rem;
+  --size-container-narrow: 55rem;
+  --size-container-readable: 54ch;
+  --size-container-heading: var(--type-heading-measure-default);
+  --size-hero-layout-max: 50rem;
+  --size-hero-layout-medium: 40rem;
+  --size-hero-layout-small: 32rem;
+  --size-measure-hero-copy: 44ch;
+  --size-measure-service-card-content: 21rem;
+  --size-measure-support-copy: 30ch;
+  --size-carousel-progress-min: 10rem;
+  --size-carousel-progress-max: 18rem;
+  --size-panel-media: 26rem;
+  --size-panel-media-small: 20rem;
+  --size-service-card-media-medium: 28rem;
+  --size-service-card-media-small: 26rem;
+  --size-hero-frame-inset-base: clamp(0.75rem, 1vw, 1rem);
+  --size-hero-frame-inset: var(--size-hero-frame-inset-base);
+  --size-hero-frame-inset-medium: var(--size-hero-frame-inset-base);
+  --size-hero-frame-inset-small: var(--size-hero-frame-inset-base);
+  --size-hero-frame-max-height: 65rem;
+  --size-section-surface-frame-inset: var(--primitive-space-3);
+  --size-section-surface-frame-inset-small: var(--primitive-space-2);
+  --size-section-break-overlap: clamp(3rem, 6vw, 5rem);
+  --size-section-break-overlap-small: clamp(2.25rem, 7vw, 3.25rem);
+  --size-page-margin-min: var(--primitive-space-5);
+  --size-page-margin-max: var(--primitive-space-9);
+  --size-page-margin: clamp(var(--size-page-margin-min), 5vw, var(--size-page-margin-max));
+  --size-page-margin-medium: var(--primitive-space-7);
+  --size-page-margin-small: var(--primitive-space-5);
+  --size-grid-gutter: var(--space-grid-gap);
+  --layout-column-count-editorial: 12;
+  --layout-column-gutter-tight: var(--space-content-gap);
+  --layout-column-gutter: var(--size-grid-gutter);
+  --layout-column-gutter-loose: var(--space-grid-gap-large);
+  --size-carousel-card-min: 17rem;
+  --size-carousel-card-max: 23rem;
+  --size-carousel-card-min-medium: 16rem;
+  --size-carousel-card-max-medium: 20rem;
+  --size-carousel-card-min-small: 14.5rem;
+  --size-carousel-card-max-small: 17.5rem;
+
+  --space-content-gap-tight: var(--primitive-space-2);
+  --space-content-gap: var(--primitive-space-4);
+  --space-content-gap-loose: var(--primitive-space-6);
+  --space-cluster-gap: var(--primitive-space-3);
+  --space-grid-gap: var(--primitive-space-5);
+  --space-grid-gap-large: var(--primitive-space-6);
+  --space-split-gap: var(--primitive-space-9);
+  --space-split-gap-large: var(--primitive-space-11);
+  --space-rail-padding-block-end: var(--primitive-space-3);
+  --space-section-head-to-body: var(--primitive-space-9);
+  --space-section-head-to-body-medium: var(--primitive-space-8);
+  --space-section-head-to-body-small: var(--primitive-space-7);
+  --space-section-surface-gap: var(--primitive-space-2);
+  --space-section-surface-gap-small: var(--primitive-space-2);
+  --space-card-inset: var(--primitive-space-5);
+  --space-card-gap: var(--primitive-space-6);
+  --space-stat-inset: var(--primitive-space-5);
+  --space-stat-gap: var(--primitive-space-3);
+  --space-quote-inset: var(--primitive-space-6);
+  --space-quote-gap: var(--primitive-space-5);
+
+  --space-section-small: var(--primitive-space-8);
+  --space-section-medium: var(--primitive-space-10);
+  --space-section-large: var(--primitive-space-12);
+  --space-section-hero-block: var(--primitive-space-15);
+  --space-section-services-block: var(--primitive-space-12);
+  --space-section-proof-block: var(--primitive-space-10);
+  --space-section-stats-block: var(--primitive-space-11);
+  --space-section-story-block: var(--primitive-space-11);
+  --space-section-cta-block: var(--primitive-space-12);
+  --space-section-footer-block: var(--primitive-space-8);
+  --space-section-hero-block-small: var(--primitive-space-8);
+  --space-section-services-block-small: var(--primitive-space-7);
+  --space-section-proof-block-small: var(--primitive-space-7);
+  --space-section-stats-block-small: var(--primitive-space-7);
+  --space-section-story-block-small: var(--primitive-space-7);
+  --space-section-cta-block-small: var(--primitive-space-8);
+  --space-section-footer-block-small: var(--primitive-space-7);
+
+  --layout-grid-template-2-col: repeat(2, minmax(0, 1fr));
+  --layout-grid-template-3-col: repeat(3, minmax(0, 1fr));
+  --layout-grid-template-4-col: repeat(4, minmax(0, 1fr));
+  --layout-grid-template-editorial: repeat(var(--layout-column-count-editorial), minmax(0, 1fr));
+  --layout-editorial-content-span: 7;
+  --layout-editorial-content-start: 1;
+  --layout-editorial-support-span: 5;
+  --layout-editorial-support-start: 8;
+  --layout-split-columns-6-6: minmax(0, 6fr) minmax(0, 6fr);
+  --layout-split-columns-5-7: minmax(0, 5fr) minmax(0, 7fr);
+  --layout-split-columns-4-8: minmax(0, 4fr) minmax(0, 8fr);
+  --layout-split-columns-even: var(--layout-split-columns-6-6);
+  --layout-split-columns-feature: var(--layout-split-columns-5-7);
+  --layout-split-columns-story: var(--layout-split-columns-4-8);
+
+  /* Shape roles. */
+  --radius-hero-frame: 2rem;
+  --radius-hero-frame-small: 1.625rem;
+  --radius-section-surface: 2rem;
+  --radius-section-surface-small: 1.625rem;
+  --radius-section-break: clamp(3rem, 7vw, 4.5rem);
+  --radius-section-break-small: clamp(2rem, 8vw, 3rem);
+  --radius-control: var(--primitive-radius-2);
+  --radius-card: var(--primitive-radius-2);
+  --radius-media: var(--primitive-radius-2);
+  --radius-pill: var(--primitive-radius-2);
+
+  /* Motion roles. */
+  --motion-duration-hover: var(--primitive-duration-2);
+  --motion-duration-nav: var(--primitive-duration-2);
+  --motion-duration-reveal: var(--primitive-duration-5);
+  --motion-duration-control: var(--primitive-duration-3);
+  --motion-duration-carousel: var(--primitive-duration-4);
+  --motion-title-reveal-duration: var(--primitive-duration-5);
+  --motion-reveal-duration: var(--primitive-duration-4);
+  --motion-reveal-stagger: 50ms;
+  --motion-reveal-distance: 0.75rem;
+  --motion-title-reveal-stagger: 30ms;
+  --motion-title-reveal-distance: 0.3125rem;
+  --motion-title-reveal-blur: 0.3125rem;
+  --motion-hover-lift-distance: -0.25rem;
+  --motion-nav-scroll-threshold: 12;
+  --motion-media-parallax-distance: 1rem;
+  --motion-ease-standard: var(--primitive-ease-1);
+}
+
+@media (max-width: 64rem) {
+  :root {
+    --type-display-hero-size: var(--type-display-hero-size-medium);
+    --type-display-hero-measure: var(--type-display-hero-measure-medium);
+    --type-section-heading-size: var(--type-section-heading-size-medium);
+    --type-section-heading-measure: var(--type-section-heading-measure-medium);
+    --type-stat-number-size: var(--type-stat-number-size-medium);
+    --media-object-position-hero: var(--media-object-position-hero-medium);
+    --media-hero-min-height: var(--media-hero-min-height-medium);
+    --size-hero-frame-inset: var(--size-hero-frame-inset-medium);
+    --size-section-surface-frame-inset: var(--size-section-surface-frame-inset-small);
+    --size-page-margin: var(--size-page-margin-medium);
+    --size-carousel-card-min: var(--size-carousel-card-min-medium);
+    --size-carousel-card-max: var(--size-carousel-card-max-medium);
+    --space-section-head-to-body: var(--space-section-head-to-body-medium);
+  }
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --media-object-position-hero: var(--media-object-position-hero-small);
+    --size-hero-frame-inset: var(--size-hero-frame-inset-small);
+    --size-section-surface-frame-inset: var(--size-section-surface-frame-inset-small);
+    --size-carousel-card-min: var(--size-carousel-card-min-small);
+    --size-carousel-card-max: var(--size-carousel-card-max-small);
+  }
+}
+
+@media (max-width: 40rem) {
+  :root {
+    --type-display-hero-size: var(--type-display-hero-size-small);
+    --type-display-hero-measure: var(--type-display-hero-measure-small);
+    --type-section-heading-size: var(--type-section-heading-size-small);
+    --type-section-heading-measure: var(--type-section-heading-measure-small);
+    --type-card-heading-size: var(--type-card-heading-size-small);
+    --type-card-heading-measure: var(--type-card-heading-measure-small);
+    /* On phones a light 18-20px title next to 16px copy reads as one size.
+       Card titles settle at 20px regular (under the 32px section title) and
+       supporting copy steps down to 15px. */
+    --type-card-heading-weight: var(--primitive-font-weight-regular);
+    --type-title-small-size: var(--primitive-font-size-3);
+    --type-support-size: var(--primitive-font-size-copy-phone);
+    --type-title-size: var(--primitive-font-size-3);
+    --type-stat-number-size: var(--type-stat-number-size-small);
+    --type-quote-size: var(--type-quote-size-small);
+    --type-quote-measure: var(--type-quote-measure-small);
+    --type-body-large-size: var(--type-body-size);
+    --type-body-large-measure: var(--type-body-large-measure-small);
+    --type-button-size: var(--type-button-size-small);
+    --media-hero-min-height: var(--media-hero-min-height-small);
+    --size-page-margin: var(--size-page-margin-small);
+    --radius-hero-frame: var(--radius-hero-frame-small);
+    --radius-section-surface: var(--radius-section-surface-small);
+    --radius-section-break: var(--radius-section-break-small);
+    --size-section-break-overlap: var(--size-section-break-overlap-small);
+    --space-section-surface-gap: var(--space-section-surface-gap-small);
+    --space-section-head-to-body: var(--space-section-head-to-body-small);
+  }
+}

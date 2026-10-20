@@ -1,0 +1,1 @@
+STAND-IN images for carritos deck. Copies from assets/images/cafeteria (café / grab-and-go photos used as placeholders for the mobile service cart). Swap each file keeping its name when real carritos photography arrives, then rebuild. bento-* slots MUST stay landscape (cbento grid). See project_zitrone_deck_architecture memory.

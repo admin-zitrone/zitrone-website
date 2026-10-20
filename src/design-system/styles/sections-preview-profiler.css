@@ -1,0 +1,969 @@
+/* ══════════════════════════════════════════════════════════════
+   PROFILER — Single brief form: rail with the running brief on the
+   left, one scene at a time on the right.
+
+   The panel keeps a fixed block size across every scene so the
+   section never changes height as the user advances. Scenes that
+   need more room scroll inside the panel, not the page.
+   ══════════════════════════════════════════════════════════════ */
+
+.ds-section.semantic-profiler-section {
+  --profiler-accent: var(--color-border-strong);
+  --profiler-panel-block: 21rem;
+  /* The controls start below the heading's first line so the question
+     leads and the answers read as subordinate to it. */
+  --profiler-panel-offset: clamp(2.75rem, 4.5vw, 4.75rem);
+  --profiler-hairline: color-mix(in srgb, var(--color-border-default) 72%, transparent);
+  padding-block-start: var(--primitive-space-11);
+  padding-block-end: calc(var(--space-section-hero-block) + var(--primitive-space-9));
+}
+
+.semantic-profiler-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: start;
+}
+
+.semantic-profiler-heading {
+  max-width: var(--type-section-heading-measure-medium);
+  margin: 0;
+  color: var(--color-text-heading);
+  font-family: var(--type-section-heading-family);
+  font-size: var(--type-section-heading-size);
+  font-weight: var(--type-section-heading-weight);
+  line-height: var(--type-section-heading-line-height);
+  text-wrap: balance;
+}
+
+.semantic-profiler-body {
+  max-width: var(--type-body-measure);
+}
+
+/* ── Rail: kicker, the live question, the step numeral ─────────
+   The question is the section heading. Nothing here echoes the
+   answers back: the running summary saturated the column and the
+   answers are already visible in the controls beside it. */
+
+.semantic-profiler-rail {
+  display: grid;
+  gap: var(--primitive-space-4);
+  align-content: start;
+  min-width: 0;
+  min-block-size: var(--profiler-panel-block);
+  grid-template-rows: auto auto auto 1fr;
+}
+
+/* ── Stage bar ─────────────────────────────────────────────────
+   Six named stages over thirteen questions: the names tell the user
+   where they are, the track tells them how much is left, and the
+   caption keeps the literal count available without leading with it. */
+
+/* The literal count stays available, it just no longer leads. */
+.semantic-profiler-count {
+  display: flex;
+  gap: 0.35rem;
+  align-items: baseline;
+  margin: 0;
+  color: color-mix(in srgb, var(--color-text-primary) 55%, transparent);
+  font-family: var(--font-label);
+  font-size: var(--type-meta-size);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--type-meta-line-height);
+}
+
+.semantic-profiler-count strong {
+  color: var(--color-text-heading);
+  font-weight: var(--type-card-heading-weight);
+}
+
+/* ── Panel ─────────────────────────────────────────────────────
+   A floor, not a ceiling: every scene is laid out to fit inside
+   --profiler-panel-block, so the section holds one height without
+   ever trapping the user in an inner scrollbar. */
+
+ /* The actions sit a fixed distance under the last control, so short and
+    tall questions share one rhythm. The min-block-size only keeps the
+    section from resizing as the steps change. */
+.semantic-profiler-panel {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: start;
+  gap: var(--primitive-space-7);
+  min-width: 0;
+  min-block-size: var(--profiler-panel-block);
+  padding-block-start: var(--profiler-panel-offset);
+}
+
+.semantic-profiler-panel-body {
+  display: grid;
+  align-content: start;
+  min-block-size: 0;
+  animation: semantic-profiler-slide-next var(--primitive-duration-4) var(--primitive-ease-out) both;
+}
+
+.semantic-profiler-panel-body[data-direction='back'] {
+  animation-name: semantic-profiler-slide-back;
+}
+
+@keyframes semantic-profiler-slide-next {
+  from {
+    opacity: 0;
+    transform: translateX(2.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes semantic-profiler-slide-back {
+  from {
+    opacity: 0;
+    transform: translateX(-2.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+ /* One question per step: a single column with real rhythm, never a
+    two-up grid of competing controls. */
+.semantic-profiler-step-fields {
+  display: grid;
+  gap: var(--primitive-space-6);
+  align-content: start;
+  justify-items: start;
+  max-inline-size: 32rem;
+}
+
+.semantic-profiler-step-fields > * {
+  inline-size: 100%;
+}
+
+@keyframes semantic-profiler-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+/* ── Review: the answer list, only on the closing screen ──────── */
+
+.semantic-profiler-review {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.semantic-profiler-review li {
+  display: grid;
+  grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
+  gap: var(--primitive-space-3);
+  align-items: baseline;
+  padding: 0.25rem 0;
+}
+
+.semantic-profiler-review li > span {
+  color: var(--color-text-secondary);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  letter-spacing: var(--type-label-letter-spacing);
+  text-transform: uppercase;
+}
+
+.semantic-profiler-review li > button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-heading);
+  font: inherit;
+  font-size: var(--type-body-size);
+  text-align: left;
+  cursor: pointer;
+}
+
+.semantic-profiler-review li > button:hover {
+  color: var(--color-text-action);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ── Intro ─────────────────────────────────────────────────────
+   The entry screen: the form does not start until it is asked to.
+   It is one block — heading, lede and CTA together — because there
+   is no second column to balance until the questions begin. */
+
+.semantic-profiler-shell[data-state='intro'] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.semantic-profiler-shell[data-state='intro'] .semantic-profiler-rail {
+  min-block-size: 0;
+  grid-template-rows: none;
+}
+
+.semantic-profiler-intro {
+  display: grid;
+  gap: var(--primitive-space-3);
+  justify-items: start;
+  align-content: start;
+  margin-block-start: var(--primitive-space-4);
+}
+
+.semantic-profiler-actions[hidden],
+.semantic-profiler-panel[hidden] {
+  display: none;
+}
+
+/* ── Field shell ───────────────────────────────────────────────── */
+
+.semantic-profiler-field {
+  display: grid;
+  gap: var(--primitive-space-4);
+  align-content: start;
+  min-width: 0;
+}
+
+.semantic-profiler-field[data-wide] {
+  grid-column: 1 / -1;
+}
+
+.semantic-profiler-field-label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--primitive-space-2);
+  align-items: baseline;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  letter-spacing: var(--type-label-letter-spacing);
+  line-height: var(--type-label-line-height);
+  text-transform: uppercase;
+}
+
+/* ── Chips ─────────────────────────────────────────────────────── */
+
+/* Every answer, single or multiple, is a full-width row in one column.
+   A ragged wrap of pills next to a two-up grid of cards reads as three
+   different systems on three consecutive questions. */
+.semantic-profiler-chips,
+.semantic-profiler-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+  inline-size: 100%;
+}
+
+/* Every selectable box follows the CTA logic: a quiet light pill at rest,
+   solid ink on hover, and the lime accent once chosen — "lime = activated"
+   holds across the whole site, so selection reads the same here as it does
+   on a button. Easing and duration are the button's too. */
+.semantic-profiler-chip,
+.semantic-profiler-day,
+.semantic-profiler-card {
+  --profiler-option-ease: cubic-bezier(0.22, 0.76, 0.2, 1);
+  border: 0;
+  border-radius: var(--button-radius);
+  background: var(--color-surface-default);
+  color: var(--color-text-secondary);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  cursor: pointer;
+  transition:
+    background-color 0.35s var(--profiler-option-ease),
+    border-color 0.35s var(--profiler-option-ease),
+    color 0.35s var(--profiler-option-ease);
+}
+
+.semantic-profiler-chip:hover,
+.semantic-profiler-day:hover,
+.semantic-profiler-card:hover {
+  background: var(--color-action-primary-background);
+  color: var(--color-action-primary-text);
+}
+
+.semantic-profiler-chip[data-selected],
+.semantic-profiler-day[data-selected],
+.semantic-profiler-card[data-selected] {
+  background: var(--color-action-accent-background);
+  color: var(--color-action-accent-text);
+}
+
+.semantic-profiler-chip[data-selected]:hover,
+.semantic-profiler-day[data-selected]:hover,
+.semantic-profiler-card[data-selected]:hover {
+  background: var(--color-action-accent-background-hover);
+  color: var(--color-action-accent-text-active);
+}
+
+.semantic-profiler-chip {
+  position: relative;
+  padding: 0.95rem 2.6rem 0.95rem 1.15rem;
+  text-align: left;
+}
+
+/* ── Day pills ─────────────────────────────────────────────────── */
+
+.semantic-profiler-days {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.semantic-profiler-day {
+  display: grid;
+  place-items: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+}
+
+/* ── Shifts ───────────────────────────────────────────────────
+   The count belongs inside the box it describes. A stepper sitting
+   under the pill read as a separate, unrelated control. */
+
+.semantic-profiler-shifts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+  inline-size: 100%;
+}
+
+.semantic-profiler-shift {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--primitive-space-3);
+  align-items: center;
+  padding: 0.55rem 0.6rem 0.55rem 1.15rem;
+  border-radius: var(--button-radius);
+  background: var(--color-surface-default);
+  min-block-size: 3.5rem;
+  transition:
+    background-color 0.35s cubic-bezier(0.22, 0.76, 0.2, 1),
+    border-color 0.35s cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.semantic-profiler-shift[data-selected] {
+  background: var(--color-action-accent-background);
+}
+
+.semantic-profiler-shift-toggle {
+  position: static;
+  justify-self: start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.35s cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.semantic-profiler-shift:hover {
+  background: color-mix(in srgb, var(--color-action-primary-background) 6%, var(--color-surface-default));
+}
+
+.semantic-profiler-shift[data-selected]:hover {
+  background: var(--color-action-accent-background-hover);
+}
+
+.semantic-profiler-shift:hover .semantic-profiler-shift-toggle {
+  color: var(--color-text-heading);
+}
+
+/* The label spans the row so the whole box is the target, and it never
+   paints a background of its own on top of the box. */
+.semantic-profiler-shift-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.semantic-profiler-shift[data-selected] .semantic-profiler-shift-toggle {
+  color: var(--color-action-accent-text);
+}
+
+/* ── Stepper ─────────────────────────────────────────────────── */
+
+.semantic-profiler-stepper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.15rem;
+  border-radius: calc(var(--button-radius) - 0.35rem);
+  background: color-mix(in srgb, var(--color-surface-default) 70%, transparent);
+}
+
+.semantic-profiler-stepper button {
+  inline-size: 2rem;
+  block-size: 2rem;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-size: var(--type-title-small-size);
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.semantic-profiler-stepper button:hover:not([disabled]) {
+  background: var(--color-action-primary-background);
+  color: var(--color-action-primary-text);
+}
+
+.semantic-profiler-stepper button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.semantic-profiler-stepper-value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  padding-inline: 0.15rem;
+  color: var(--color-text-heading);
+  font-family: var(--font-body);
+  font-size: var(--type-body-small-size);
+}
+
+.semantic-profiler-stepper-value input {
+  min-inline-size: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-heading);
+  font: inherit;
+  font-size: var(--type-body-size);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.semantic-profiler-stepper-value input:focus {
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ── Slider ────────────────────────────────────────────────────── */
+
+.semantic-profiler-slider {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.semantic-profiler-slider[data-disabled] {
+  opacity: 0.45;
+}
+
+.semantic-profiler-slider-readout {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
+}
+
+.semantic-profiler-slider-readout strong {
+  color: var(--color-text-heading);
+  font-family: var(--font-heading);
+  font-size: var(--type-card-heading-size);
+  letter-spacing: var(--type-card-heading-letter-spacing);
+  font-weight: var(--type-card-heading-weight);
+  line-height: var(--type-card-heading-line-height);
+  font-variant-numeric: tabular-nums;
+}
+
+.semantic-profiler-slider-readout span {
+  color: var(--color-text-secondary);
+  font-size: var(--type-body-small-size);
+  line-height: var(--type-body-small-line-height);
+}
+
+.semantic-profiler-range {
+  inline-size: 100%;
+  block-size: 2.75rem;
+  margin: 0;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+}
+
+.semantic-profiler-range::-webkit-slider-runnable-track {
+  block-size: 0.15rem;
+  border-radius: var(--primitive-radius-1);
+  background: linear-gradient(
+    to right,
+    var(--color-text-action) var(--profiler-range-filled, 0%),
+    var(--profiler-hairline) var(--profiler-range-filled, 0%)
+  );
+}
+
+.semantic-profiler-range::-moz-range-track {
+  block-size: 0.15rem;
+  border-radius: var(--primitive-radius-1);
+  background: linear-gradient(
+    to right,
+    var(--color-text-action) var(--profiler-range-filled, 0%),
+    var(--profiler-hairline) var(--profiler-range-filled, 0%)
+  );
+}
+
+.semantic-profiler-range::-webkit-slider-thumb {
+  appearance: none;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  margin-block-start: -0.675rem;
+  border: var(--border-width-default) solid var(--color-text-action);
+  border-radius: 50%;
+  background: var(--color-surface-default);
+}
+
+.semantic-profiler-range::-moz-range-thumb {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border: var(--border-width-default) solid var(--color-text-action);
+  border-radius: 50%;
+  background: var(--color-surface-default);
+}
+
+/* ── Cards ─────────────────────────────────────────────────────── */
+
+.semantic-profiler-card {
+  position: relative;
+  display: grid;
+  gap: 0.2rem;
+  align-content: start;
+  padding: 0.95rem 2.6rem 0.95rem 1.15rem;
+  text-align: left;
+}
+
+/* A mark in the corner so the chosen box is unmistakable, including for
+   anyone who cannot separate the tint from the unselected surface. */
+.semantic-profiler-card::after,
+.semantic-profiler-chip::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 1.15rem;
+  margin-block-start: -0.55rem;
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
+  border: var(--button-border-width) solid currentColor;
+  border-radius: 50%;
+  opacity: 0.35;
+  transition:
+    opacity 0.35s var(--profiler-option-ease),
+    background 0.35s var(--profiler-option-ease);
+}
+
+.semantic-profiler-card[data-selected]::after,
+.semantic-profiler-chip[data-selected]::after {
+  opacity: 1;
+  background:
+    var(--color-action-accent-text)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 6.2 5 8.6l4.5-5'/%3E%3C/svg%3E")
+    center / 0.7rem no-repeat;
+}
+
+.semantic-profiler-card strong {
+  color: var(--color-text-heading);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line-height);
+  transition: color 0.35s var(--profiler-option-ease);
+}
+
+.semantic-profiler-card span {
+  color: inherit;
+  font-size: var(--type-body-small-size);
+  line-height: var(--type-body-small-line-height);
+}
+
+/* On the filled states the title has to travel with the label. */
+.semantic-profiler-card:hover strong {
+  color: var(--color-action-primary-text);
+}
+
+.semantic-profiler-card[data-selected] strong,
+.semantic-profiler-card[data-selected]:hover strong {
+  color: var(--color-action-accent-text);
+}
+
+/* ── Text inputs ───────────────────────────────────────────────
+   Underline, not a box: a boxed field competes with the option pills
+   for the same visual weight, and there is only ever one field on a
+   step. Colour and easing stay on the action tokens. */
+
+ /* The field creates its own stacking context so the suggestion panel is
+    never painted under the actions further down the DOM. */
+.semantic-profiler-combobox {
+  position: relative;
+  z-index: 3;
+}
+
+.semantic-profiler-panel-body {
+  position: relative;
+  z-index: 1;
+}
+
+.semantic-profiler-actions {
+  position: relative;
+  z-index: 0;
+  margin-block-start: var(--primitive-space-6);
+}
+
+/* El aviso de error vive junto al botón que falló, no arriba del todo. */
+.semantic-profiler-send-error {
+  margin: var(--primitive-space-5) 0 0;
+  color: var(--color-text-danger);
+  font-size: var(--type-label-size);
+}
+
+/* Fuera de pantalla, no display:none: un bot la lee, una persona no la
+   alcanza con ningún método de entrada. */
+.semantic-profiler-honeypot {
+  position: absolute;
+  left: -9999px;
+  inline-size: 1px;
+  block-size: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.semantic-profiler-combobox input,
+.semantic-profiler-contact input,
+.semantic-profiler-textarea {
+  inline-size: 100%;
+  padding: 0.75rem 0;
+  border: 0;
+  border-bottom: var(--border-width-default) solid var(--color-border-default);
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-text-heading);
+  font-family: var(--font-body);
+  font-size: var(--type-body-large-size);
+  line-height: var(--type-body-line-height);
+  transition: border-color 0.35s cubic-bezier(0.22, 0.76, 0.2, 1);
+}
+
+.semantic-profiler-combobox input:focus,
+.semantic-profiler-contact input:focus,
+.semantic-profiler-textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-action-primary-background);
+}
+
+.semantic-profiler-textarea {
+  resize: vertical;
+}
+
+.semantic-profiler-combobox input::placeholder,
+.semantic-profiler-contact input::placeholder,
+.semantic-profiler-textarea::placeholder {
+  color: var(--color-text-secondary);
+}
+
+/* Suggestions read as a quiet list under the line, not as a bordered
+   panel floating over the page. */
+.semantic-profiler-combobox-list {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: calc(100% + 0.5rem);
+  z-index: 2;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  max-block-size: 14rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-radius: var(--primitive-radius-3);
+  background: var(--color-surface-default);
+  box-shadow: 0 24px 48px -24px rgb(0 0 0 / 0.28);
+}
+
+.semantic-profiler-combobox-list button {
+  inline-size: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  border-radius: calc(var(--primitive-radius-3) - 0.35rem);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--type-body-size);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.semantic-profiler-combobox-list button:hover,
+.semantic-profiler-combobox-list button:focus-visible {
+  outline: none;
+  background: var(--color-action-primary-background);
+  color: var(--color-action-primary-text);
+}
+
+.semantic-profiler-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--primitive-space-5);
+}
+
+.semantic-profiler-contact label {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.semantic-profiler-contact label > span {
+  color: var(--color-text-secondary);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  letter-spacing: var(--type-label-letter-spacing);
+  text-transform: uppercase;
+}
+
+.semantic-profiler-contact label em {
+  font-style: normal;
+  opacity: 0.7;
+}
+
+/* ── Toggle ────────────────────────────────────────────────────── */
+
+.semantic-profiler-toggle {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--color-text-secondary);
+  font-size: var(--type-body-small-size);
+  cursor: pointer;
+}
+
+.semantic-profiler-toggle input {
+  inline-size: 1rem;
+  block-size: 1rem;
+  accent-color: var(--color-text-action);
+}
+
+/* ── Actions ───────────────────────────────────────────────────── */
+
+.semantic-profiler-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-cluster-gap);
+  align-items: center;
+  padding-block-start: var(--primitive-space-2);
+}
+
+.semantic-profiler-actions .ds-button {
+  min-width: 0;
+}
+
+.semantic-profiler-actions .ds-button[disabled],
+.semantic-profiler-actions .ds-button[data-disabled] {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ── Result ────────────────────────────────────────────────────── */
+
+.semantic-profiler-result {
+  display: grid;
+  gap: var(--primitive-space-5);
+  align-content: start;
+}
+
+.semantic-profiler-picks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0;
+  max-width: 38rem;
+  border-top: var(--border-width-default) solid var(--profiler-hairline);
+}
+
+.semantic-profiler-pick {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--primitive-space-4);
+  padding: 1.1rem 0;
+  border-bottom: var(--border-width-default) solid var(--profiler-hairline);
+}
+
+.semantic-profiler-pick[data-accent='dining'] {
+  --service-accent: var(--color-accent-service-dining);
+  --service-accent-text: var(--color-accent-service-dining-text);
+}
+
+.semantic-profiler-pick[data-accent='cafe'] {
+  --service-accent: var(--color-accent-service-cafe);
+  --service-accent-text: var(--color-accent-service-cafe-text);
+}
+
+.semantic-profiler-pick[data-accent='pantry'] {
+  --service-accent: var(--color-accent-service-pantry);
+  --service-accent-text: var(--color-accent-service-pantry-text);
+}
+
+.semantic-profiler-pick[data-accent='catering'] {
+  --service-accent: var(--color-accent-service-catering);
+  --service-accent-text: var(--color-accent-service-catering-text);
+}
+
+.semantic-profiler-pick-icon {
+  display: grid;
+  place-items: center;
+  width: var(--primitive-space-8);
+  height: var(--primitive-space-8);
+  margin-top: 0.1rem;
+  color: var(--service-accent-text, var(--color-text-action));
+}
+
+.semantic-profiler-pick-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.semantic-profiler-pick-body {
+  display: grid;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.semantic-profiler-pick-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--primitive-space-3);
+  color: var(--color-text-heading);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line-height);
+}
+
+.semantic-profiler-pick-tag {
+  padding: 0.1rem var(--primitive-space-2);
+  border: var(--border-width-default) solid var(--service-accent, var(--color-border-strong));
+  border-radius: var(--primitive-radius-1);
+  color: var(--service-accent-text, var(--color-text-action));
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  letter-spacing: var(--type-eyebrow-letter-spacing);
+  line-height: var(--type-label-line-height);
+  text-transform: uppercase;
+}
+
+.semantic-profiler-pick-why {
+  max-width: 42ch;
+  color: var(--color-text-secondary);
+  font-size: var(--type-body-small-size);
+  line-height: var(--type-body-small-line-height);
+}
+
+.semantic-profiler-pick-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--primitive-space-2);
+  width: fit-content;
+  margin-top: 0.15rem;
+  color: var(--color-text-action);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  letter-spacing: var(--type-eyebrow-letter-spacing);
+  line-height: var(--type-label-line-height);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.semantic-profiler-pick-link:hover {
+  color: var(--color-text-link-hover);
+}
+
+.semantic-profiler-note {
+  max-width: 38rem;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--type-body-small-size);
+  line-height: var(--type-body-small-line-height);
+}
+
+/* ── Motion ────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .semantic-profiler-panel-body {
+    animation: none;
+  }
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media (max-width: 68rem) {
+  .ds-section.semantic-profiler-section {
+    --profiler-panel-block: 24rem;
+  }
+
+  .semantic-profiler-shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .semantic-profiler-rail {
+    min-block-size: 0;
+    grid-template-rows: none;
+  }
+
+  .semantic-profiler-heading,
+  .semantic-profiler-body,
+  .semantic-profiler-picks,
+  .semantic-profiler-note {
+    max-width: 100%;
+  }
+
+  .semantic-profiler-panel {
+    min-block-size: 0;
+    padding-block-start: 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .ds-section.semantic-profiler-section {
+    --profiler-panel-block: 26rem;
+  }
+
+  .semantic-profiler-days {
+    justify-content: space-between;
+  }
+
+  .semantic-profiler-day {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+  }
+}

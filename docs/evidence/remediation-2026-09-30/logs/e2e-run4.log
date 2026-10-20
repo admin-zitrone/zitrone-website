@@ -1,0 +1,71 @@
+
+> on-it-workspace@0.1.0 test:e2e
+> playwright test
+
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 prebuild
+[WebServer] > node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[WebServer] 
+[WebServer] assets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+[WebServer] design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[WebServer] 
+[WebServer] > on-it-workspace@0.1.0 build
+[WebServer] > next build
+[WebServer] 
+[WebServer] ▲ Next.js 16.2.10 (Turbopack)
+[WebServer] - Environments: .env.local
+[WebServer] - Experiments (use with caution):
+[WebServer]   · clientTraceMetadata
+[WebServer]   ⨯ turbopackServerFastRefresh
+[WebServer] 
+[WebServer]   Creating an optimized production build ...
+[WebServer] ✓ Compiled successfully in 6.3s
+[WebServer]   Running next.config.js provided runAfterProductionCompile ...
+[WebServer] ✓ Completed runAfterProductionCompile in 57ms
+[WebServer]   Running TypeScript ...
+[WebServer]   Finished TypeScript in 3.2s ...
+[WebServer]   Collecting page data using 11 workers ...
+[WebServer] (node:61572) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:61571) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:61579) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (0/48) ...
+[WebServer] (node:61569) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[WebServer] In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[WebServer] 
+[WebServer] To prepare for this change:
+[WebServer] - If you want the current behavior, explicitly use 'sslmode=verify-full'
+[WebServer] - If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[WebServer] 
+[WebServer] See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   Generating static pages using 11 workers (12/48) 
+[WebServer]   Generating static pages using 11 workers (24/48) 
+[WebServer]   Generating static pages using 11 workers (36/48) 
+[WebServer] Failed to build /[locale]/blog/authors/[author]/page: /en/blog/authors/zitrone-operations-team (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+[WebServer] Failed to build /[locale]/blog/authors/[author]/page: /es/blog/authors/equipo-de-operaciones-zitrone (attempt 1 of 3) because it took more than 60 seconds. Retrying again shortly.
+Error: Timed out waiting 120000ms from config.webServer.
+

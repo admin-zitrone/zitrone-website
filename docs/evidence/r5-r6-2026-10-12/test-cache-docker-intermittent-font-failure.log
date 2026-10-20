@@ -1,0 +1,37 @@
+
+> on-it-workspace@0.1.0 test:cache
+> zsh scripts/test-blog-cache.sh
+
+NOTICE:  database "zitrone_cache_api_test" does not exist, skipping
+seed: {"id":1,"es":"comida-en-la-oficina-y-retencion-de-talento","en":"office-food-employee-retention"}
+building against the throwaway CMS…
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:138:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:148:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:158:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:168:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:178:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:188:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:198:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:208:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:218:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:228:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:238:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:248:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:258:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:268:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> ([next]/internal/font/google/noto_serif_display_205e940d.module.css:278:8)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

@@ -1,0 +1,335 @@
+
+> on-it-workspace@0.1.0 prebuild
+> node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+
+assets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+design-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+
+> on-it-workspace@0.1.0 build
+> next build
+
+▲ Next.js 16.2.10 (Turbopack)
+- Experiments (use with caution):
+  · clientTraceMetadata
+  ⨯ turbopackServerFastRefresh
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 16.8s
+  Running next.config.js provided runAfterProductionCompile ...
+✓ Completed runAfterProductionCompile in 95ms
+  Running TypeScript ...
+  Finished TypeScript in 3.5s ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/48) ...
+[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/privacy] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+  Generating static pages using 11 workers (12/48) 
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+  Generating static pages using 11 workers (24/48) 
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+  Generating static pages using 11 workers (36/48) 
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/blog] falling back to static categories: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at tI.init (.next/server/chunks/_09iqtw7._.js:136:9307) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+[payload/home] falling back to static content: Error: Error: missing secret key. A secret key is needed to secure Payload.
+    at bu.init (.next/server/chunks/ssr/_0z_i8i0._.js:136:9307)
+    at async bx (.next/server/chunks/ssr/_0z_i8i0._.js:136:13313) {
+  payloadInitError: true
+}
+✓ Generating static pages using 11 workers (48/48) in 507ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /_not-found
+├ ● /[locale]
+│ ├ /es
+│ └ /en
+├ ƒ /[locale]/blog
+├ ● /[locale]/blog/[slug]
+│ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+│ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+│ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+│ └ [+3 more paths]
+├ ● /[locale]/blog/authors/[author]
+│ ├ /en/blog/authors/zitrone-operations-team
+│ └ /es/blog/authors/equipo-de-operaciones-zitrone
+├ ƒ /[locale]/blog/category/[category]
+├ ƒ /[locale]/blog/feed.xml
+├ ● /[locale]/blog/reviewers/[reviewer]
+│ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+│ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+├ ● /[locale]/contact
+│ ├ /es/contact
+│ └ /en/contact
+├ ● /[locale]/privacy-notice
+│ ├ /es/privacy-notice
+│ └ /en/privacy-notice
+├ ● /[locale]/services
+│ ├ /es/services
+│ └ /en/services
+├ ● /[locale]/services/[slug]
+│ ├ /en/services/corporate-dining
+│ ├ /en/services/corporate-cafe
+│ ├ /en/services/pantry-restocking
+│ └ [+9 more paths]
+├ ƒ /admin/[[...segments]]
+├ ƒ /api/[...slug]
+├ ƒ /api/contact-request
+├ ƒ /api/leads/export
+├ ○ /design-system
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

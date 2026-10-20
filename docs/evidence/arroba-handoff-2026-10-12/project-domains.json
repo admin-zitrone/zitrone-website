@@ -1,0 +1,44 @@
+{
+  "domains": [
+    {
+      "name": "zitrone.mx",
+      "apexName": "zitrone.mx",
+      "projectId": "prj_nsMWJdqhkAswimnns9Ps3YJsUToQ",
+      "redirect": "www.zitrone.mx",
+      "redirectStatusCode": null,
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "updatedAt": 1778819443823,
+      "createdAt": 1778594593011,
+      "verified": true
+    },
+    {
+      "name": "www.zitrone.mx",
+      "apexName": "zitrone.mx",
+      "projectId": "prj_nsMWJdqhkAswimnns9Ps3YJsUToQ",
+      "redirect": null,
+      "redirectStatusCode": null,
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "updatedAt": 1778819443960,
+      "createdAt": 1778594592813,
+      "verified": true
+    },
+    {
+      "name": "zitrone-website-eight.vercel.app",
+      "apexName": "vercel.app",
+      "projectId": "prj_nsMWJdqhkAswimnns9Ps3YJsUToQ",
+      "redirect": null,
+      "gitBranch": null,
+      "customEnvironmentId": null,
+      "updatedAt": 1778200729179,
+      "createdAt": 1778200729179,
+      "verified": true
+    }
+  ],
+  "pagination": {
+    "count": 3,
+    "next": null,
+    "prev": 1778594593011
+  }
+}

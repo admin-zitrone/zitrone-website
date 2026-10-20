@@ -1,0 +1,5 @@
+[00:44:14] [32mINFO[39m: [36mReading migration files from ./src/migrations[39m
+[00:44:14] [32mINFO[39m: [36mRolling back batch 2 consisting of 13 migration(s).[39m
+[00:44:14] [32mINFO[39m: [36mMigrating down: 20261016_042603_home_cms_parity[39m
+[00:44:14] [32mINFO[39m: [36mMigrated down:  20261016_042603_home_cms_parity (52ms)[39m
+[00:44:14] [32mINFO[39m: [36mDone.[39m

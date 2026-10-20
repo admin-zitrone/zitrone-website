@@ -1,0 +1,4 @@
+
+es: 0 text field(s) still read from code
+
+en: 0 text field(s) still read from code

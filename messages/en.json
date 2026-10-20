@@ -1,0 +1,34 @@
+{
+  "Accessibility": {
+    "skipToContent": "Skip to main content"
+  },
+  "Consent": {
+    "title": "Cookies and measurement",
+    "body": "We use our own and Google's cookies to measure how the site is used and whether our advertising works. You can accept, reject, or choose by category.",
+    "privacyLink": "Read the Privacy Notice",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "customize": "Choose by category",
+    "save": "Save",
+    "back": "Back",
+    "dialogLabel": "Cookie preferences",
+    "close": "Close",
+    "necessaryTitle": "Necessary",
+    "necessaryBody": "Required for the site to work and to prevent fraud. Always on.",
+    "necessaryState": "Always on",
+    "analyticsTitle": "Measurement",
+    "analyticsBody": "Google Analytics. Tells us which pages get used and where people get stuck. Never used for advertising.",
+    "marketingTitle": "Advertising",
+    "marketingBody": "Google Ads. Measures which ads lead to real enquiries, including enhanced conversions.",
+    "on": "On",
+    "off": "Off",
+    "footerLink": "Cookie preferences"
+  },
+  "LanguageMenu": {
+    "trigger": "English",
+    "ariaLabel": "Change language. Current: English",
+    "menuLabel": "Select language",
+    "english": "English",
+    "spanish": "Spanish"
+  }
+}

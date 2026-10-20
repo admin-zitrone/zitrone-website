@@ -1,0 +1,32 @@
+{
+  "configuredBy": "A",
+  "nameservers": [
+    "ns76.domaincontrol.com",
+    "ns75.domaincontrol.com"
+  ],
+  "serviceType": "external",
+  "cnames": [],
+  "aValues": [
+    "76.76.21.21"
+  ],
+  "conflicts": [],
+  "acceptedChallenges": [
+    "http-01"
+  ],
+  "recommendedIPv4": [
+    {
+      "rank": 1,
+      "value": [
+        "76.76.21.21"
+      ]
+    }
+  ],
+  "recommendedCNAME": [
+    {
+      "rank": 1,
+      "value": "cname.vercel-dns.com."
+    }
+  ],
+  "ipStatus": "no-change",
+  "misconfigured": false
+}

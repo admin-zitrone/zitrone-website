@@ -1,0 +1,1186 @@
+{
+  "base": "http://127.0.0.1:3105",
+  "date": "2026-10-19T21:14:30.334Z",
+  "pages": [
+    {
+      "locale": "es",
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — Una mejor experiencia de comida para el trabajo moderno",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_home_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — Una mejor experiencia de comida para el trabajo moderno",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_home_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — Una mejor experiencia de comida para el trabajo moderno",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_home_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — Una mejor experiencia de comida para el trabajo moderno",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_home_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Servicios de alimentación corporativa | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Servicios de alimentación corporativa | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Servicios de alimentación corporativa | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Servicios de alimentación corporativa | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services/comedor-corporativo",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedor corporativo en CDMX | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_comedor-corporativo_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services/comedor-corporativo",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedor corporativo en CDMX | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_comedor-corporativo_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services/comedor-corporativo",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedor corporativo en CDMX | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_comedor-corporativo_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/services/comedor-corporativo",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedor corporativo en CDMX | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_services_comedor-corporativo_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedores, snacks y comida para oficinas | Blog de Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedores, snacks y comida para oficinas | Blog de Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedores, snacks y comida para oficinas | Blog de Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comedores, snacks y comida para oficinas | Blog de Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Cómo contratar un comedor corporativo | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_como-construir-un-programa-de-alimentacion-corporativa_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Cómo contratar un comedor corporativo | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_como-construir-un-programa-de-alimentacion-corporativa_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Cómo contratar un comedor corporativo | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_como-construir-un-programa-de-alimentacion-corporativa_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/como-construir-un-programa-de-alimentacion-corporativa",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Cómo contratar un comedor corporativo | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_como-construir-un-programa-de-alimentacion-corporativa_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/caida-de-las-3pm-pantry-de-oficina",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Snacks para oficina: surtido y reposición | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_caida-de-las-3pm-pantry-de-oficina_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/caida-de-las-3pm-pantry-de-oficina",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Snacks para oficina: surtido y reposición | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_caida-de-las-3pm-pantry-de-oficina_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/caida-de-las-3pm-pantry-de-oficina",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Snacks para oficina: surtido y reposición | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_caida-de-las-3pm-pantry-de-oficina_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/caida-de-las-3pm-pantry-de-oficina",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Snacks para oficina: surtido y reposición | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_caida-de-las-3pm-pantry-de-oficina_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comida en la oficina como prestación | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_comida-en-la-oficina-y-retencion-de-talento_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comida en la oficina como prestación | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_comida-en-la-oficina-y-retencion-de-talento_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comida en la oficina como prestación | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_comida-en-la-oficina-y-retencion-de-talento_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/blog/comida-en-la-oficina-y-retencion-de-talento",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Comida en la oficina como prestación | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_blog_comida-en-la-oficina-y-retencion-de-talento_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/contact",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contacto | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_contact_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/contact",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contacto | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_contact_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/contact",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contacto | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_contact_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/contact",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contacto | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_contact_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/privacy-notice",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Aviso de Privacidad — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_privacy-notice_320.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/privacy-notice",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Aviso de Privacidad — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_privacy-notice_390.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/privacy-notice",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Aviso de Privacidad — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_privacy-notice_768.jpg"
+    },
+    {
+      "locale": "es",
+      "route": "/privacy-notice",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Aviso de Privacidad — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_privacy-notice_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — A better food experience for modern work",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_home_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — A better food experience for modern work",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_home_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — A better food experience for modern work",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_home_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone — A better food experience for modern work",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_home_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate food services for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate food services for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate food services for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate food services for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services/corporate-dining",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate dining service for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_corporate-dining_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services/corporate-dining",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate dining service for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_corporate-dining_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services/corporate-dining",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate dining service for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_corporate-dining_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/services/corporate-dining",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Corporate dining service for offices | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_services_corporate-dining_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone Journal — Corporate dining, pantry, coffee, and catering",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone Journal — Corporate dining, pantry, coffee, and catering",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone Journal — Corporate dining, pantry, coffee, and catering",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Zitrone Journal — Corporate dining, pantry, coffee, and catering",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/workplace-food-program-that-works",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "How to build a workplace food program that actually works — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_workplace-food-program-that-works_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/workplace-food-program-that-works",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "How to build a workplace food program that actually works — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_workplace-food-program-that-works_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/workplace-food-program-that-works",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "How to build a workplace food program that actually works — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_workplace-food-program-that-works_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/workplace-food-program-that-works",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "How to build a workplace food program that actually works — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_workplace-food-program-that-works_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/afternoon-slump-office-pantry",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "The 3pm slump and what your office pantry can do about it — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_afternoon-slump-office-pantry_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/afternoon-slump-office-pantry",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "The 3pm slump and what your office pantry can do about it — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch"
+      ],
+      "file": "en_blog_afternoon-slump-office-pantry_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/afternoon-slump-office-pantry",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "The 3pm slump and what your office pantry can do about it — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_afternoon-slump-office-pantry_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/afternoon-slump-office-pantry",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "The 3pm slump and what your office pantry can do about it — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_afternoon-slump-office-pantry_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/office-food-employee-retention",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Office food and employee retention: what really moves the needle — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_office-food-employee-retention_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/office-food-employee-retention",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Office food and employee retention: what really moves the needle — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_office-food-employee-retention_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/office-food-employee-retention",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Office food and employee retention: what really moves the needle — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_office-food-employee-retention_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/blog/office-food-employee-retention",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Office food and employee retention: what really moves the needle — Zitrone Journal",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_blog_office-food-employee-retention_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/contact",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contact | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_contact_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/contact",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contact | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_contact_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/contact",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contact | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_contact_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/contact",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Contact | Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_contact_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/privacy-notice",
+      "width": 320,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Privacy Notice — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_privacy-notice_320.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/privacy-notice",
+      "width": 390,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Privacy Notice — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_privacy-notice_390.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/privacy-notice",
+      "width": 768,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Privacy Notice — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_privacy-notice_768.jpg"
+    },
+    {
+      "locale": "en",
+      "route": "/privacy-notice",
+      "width": 1440,
+      "status": 200,
+      "overflowPx": 0,
+      "brokenImages": [],
+      "title": "Privacy Notice — Zitrone",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_privacy-notice_1440.jpg"
+    }
+  ],
+  "states": [
+    {
+      "locale": "es",
+      "state": "mobile menu open",
+      "expanded": "true",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_state_menu-open_390.jpg"
+    },
+    {
+      "locale": "es",
+      "state": "consent banner (no stored choice)",
+      "visible": true,
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_state_consent-banner_390.jpg"
+    },
+    {
+      "locale": "es",
+      "state": "home, prefers-reduced-motion",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "es_state_home-reduced-motion_1440.jpg"
+    },
+    {
+      "locale": "es",
+      "state": "keyboard: first 8 tab stops on home",
+      "stops": [
+        {
+          "tag": "a",
+          "text": "Saltar al contenido principal",
+          "focusIndicator": true
+        },
+        {
+          "tag": "button",
+          "text": "Servicios",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Cómo trabajamos",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Blog",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "FAQs",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Zitrone home",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Hablemos",
+          "focusIndicator": true
+        },
+        {
+          "tag": "button",
+          "text": "Comedor corporativo",
+          "focusIndicator": true
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "state": "mobile menu open",
+      "expanded": "true",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_state_menu-open_390.jpg"
+    },
+    {
+      "locale": "en",
+      "state": "consent banner (no stored choice)",
+      "visible": true,
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_state_consent-banner_390.jpg"
+    },
+    {
+      "locale": "en",
+      "state": "home, prefers-reduced-motion",
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ],
+      "file": "en_state_home-reduced-motion_1440.jpg"
+    },
+    {
+      "locale": "en",
+      "state": "keyboard: first 8 tab stops on home",
+      "stops": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "focusIndicator": true
+        },
+        {
+          "tag": "button",
+          "text": "Services",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "How we work",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Blog",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "FAQs",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Zitrone home",
+          "focusIndicator": true
+        },
+        {
+          "tag": "a",
+          "text": "Contact us",
+          "focusIndicator": true
+        },
+        {
+          "tag": "button",
+          "text": "Corporate dining",
+          "focusIndicator": true
+        }
+      ]
+    },
+    {
+      "locale": "es",
+      "state": "contact validation/error/success (mocked) 390",
+      "reachedSend": false,
+      "mockedCalls": 0,
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ]
+    },
+    {
+      "locale": "es",
+      "state": "contact validation/error/success (mocked) 1440",
+      "reachedSend": false,
+      "mockedCalls": 0,
+      "consoleErrors": [
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type ch",
+        "Refused to execute script from 'http://127.0.0.1:3105/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME t"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "../design-system/tokens/index.css";
+@import "../design-system/layout/sections.css";
+@import "../design-system/components/marketing.css";
+@import "../design-system/components/consent.css";
+@import "../design-system/styles/sections-preview.css";
+
+@theme {
+  /* ── Fonts ─────────────────────────────────────────────────
+     Bridge next/font CSS variables into Tailwind's font system
+     so `font-sans` and `font-serif` resolve to the correct families. */
+  --font-sans:
+    var(--next-font-manrope), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif:
+    var(--next-font-noto-serif-display), ui-serif, Georgia, Cambria,
+    "Times New Roman", serif;
+
+  /* ── Tailwind color aliases → real semantic tokens ─────────
+     These let Tailwind utilities like `bg-surface`, `text-heading`
+     resolve through the design system's actual token chain. */
+  --color-background: var(--color-surface-page);
+  --color-foreground: var(--color-text-primary);
+  --color-surface: var(--color-surface-container);
+  --color-surface-strong: var(--color-surface-container-strong);
+  --color-muted: var(--color-text-secondary);
+  --color-border: var(--color-border-subtle);
+  --color-accent: var(--color-text-action);
+  --color-accent-strong: var(--color-accent-brand-strong);
+  --color-accent-soft: var(--color-surface-section-soft);
+  --color-heading: var(--color-text-heading);
+
+  /* ── Shape ─────────────────────────────────────────────────
+     Tailwind radius utilities bridged to the token system. */
+  --radius-md: var(--radius-control);
+  --radius-lg: var(--radius-card);
+
+  /* ── Spacing ───────────────────────────────────────────────
+     Page margin token available as a Tailwind utility. */
+  --space-page: var(--size-page-margin);
+  --size-page: var(--size-container-main);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  --_selection-bg: var(--color-selection-background);
+  --_selection-text: var(--color-selection-text);
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-tone="inverse"],
+[data-tone="brand"],
+.ds-hero-frame,
+.semantic-bento-card,
+.ds-service-system-card,
+.semantic-stories,
+.ds-faq,
+.site-footer {
+  --_selection-bg: var(--color-selection-background-inverse);
+  --_selection-text: var(--color-selection-text-inverse);
+}
+
+.semantic-bento-card--fill-slate,
+.semantic-bento-card--fill-natural {
+  --_selection-bg: var(--color-selection-background);
+  --_selection-text: var(--color-selection-text);
+}
+
+::selection {
+  background-color: var(--_selection-bg);
+  color: var(--_selection-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Line breaking, site-wide: titles balance their lines and copy never ends
+   on a lone word. :where() keeps specificity at zero so components can opt
+   out. Never hand-place line breaks for this. */
+:where(h1, h2, h3, h4, h5, h6) {
+  text-wrap: balance;
+}
+
+:where(p, li, dd, figcaption, blockquote) {
+  text-wrap: pretty;
+}
+
+/* ── Accessibility baseline ──────────────────────────────────
+   Added 2026-08 after the first tool-verified audit. Note that
+   `src/design-system/styles/base.css` carries near-identical rules but is
+   imported by nothing — this file is the one that ships, so anything that has
+   to reach the site belongs here.
+   ─────────────────────────────────────────────────────────── */
+
+/* WCAG 2.4.7. There was no global focus style at all: keyboard users had only
+   whatever ring individual components happened to define, and most defined
+   none. */
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+[data-tone="inverse"] :focus-visible,
+[data-tone="brand"] :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--color-focus-ring-inverse);
+}
+
+/* ── Skip link ───────────────────────────────────────────────
+   Off-screen until focused, then pinned over the navbar. Moved with a
+   transform rather than `display: none` or `visibility: hidden`, either of
+   which would take it out of the tab order and defeat the point. */
+.ds-skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  background: var(--primitive-color-ocean-950);
+  color: var(--primitive-color-natural-50);
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  text-decoration: none;
+  transform: translateY(calc(-100% - 1rem));
+}
+
+.ds-skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* Focus lands on a whole page region here; outlining the entire <main> reads
+   as a rendering bug rather than as a focus cue. */
+#main-content:focus {
+  outline: none;
+}
+
+/* ── Reduced motion ──────────────────────────────────────────
+   A global opt-out rather than a per-component one: ribbons, marquees, word
+   reveals and the stories carousel all animated straight through the
+   preference before this was added.
+
+   Durations collapse to ~0 instead of `animation: none` on purpose. Several
+   components (the stories progress bar, the profiler panel, the title
+   reveals) advance their state on `animationend`/`transitionend`; removing
+   the animation outright would delete the event and leave the component
+   stalled mid-reveal, so the animation still runs and still completes, just
+   imperceptibly. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

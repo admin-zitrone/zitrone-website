@@ -1,0 +1,34 @@
+{
+  "Accessibility": {
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "Consent": {
+    "title": "Cookies y medición",
+    "body": "Usamos cookies propias y de Google para medir el uso del sitio y la efectividad de nuestra publicidad. Puedes aceptarlas, rechazarlas o elegir por categoría.",
+    "privacyLink": "Leer el Aviso de Privacidad",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Rechazar todo",
+    "customize": "Elegir por categoría",
+    "save": "Guardar",
+    "back": "Volver",
+    "dialogLabel": "Preferencias de cookies",
+    "close": "Cerrar",
+    "necessaryTitle": "Necesarias",
+    "necessaryBody": "Requeridas para que el sitio funcione y para prevenir fraude. Siempre activas.",
+    "necessaryState": "Siempre activas",
+    "analyticsTitle": "Medición",
+    "analyticsBody": "Google Analytics. Nos dice qué páginas se usan y dónde se atoran las personas. No se usa para publicidad.",
+    "marketingTitle": "Publicidad",
+    "marketingBody": "Google Ads. Mide qué anuncios generan contacto real, incluyendo conversiones mejoradas.",
+    "on": "Activado",
+    "off": "Desactivado",
+    "footerLink": "Preferencias de cookies"
+  },
+  "LanguageMenu": {
+    "trigger": "Español",
+    "ariaLabel": "Cambiar idioma. Actual: Español",
+    "menuLabel": "Selecciona idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  }
+}

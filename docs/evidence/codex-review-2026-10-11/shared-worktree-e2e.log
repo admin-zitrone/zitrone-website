@@ -1,0 +1,250 @@
+
+> on-it-workspace@0.1.0 test:e2e
+> playwright test
+
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 prebuild
+[2m[WebServer] [22m> node scripts/assets-sync.mjs && node scripts/design-tokens-data.mjs
+[2m[WebServer] [22m
+[2m[WebServer] [22massets:sync OK — 250 assets, 39 clients indexed; wrote assets.generated.ts + assets-index.json.
+[2m[WebServer] [22mdesign-tokens-data: 1250 tokens → src/design-system/tokens.generated.json
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 build
+[2m[WebServer] [22m> next build
+[2m[WebServer] [22m
+[2m[WebServer] [22m(node:2521) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m▲ Next.js 16.2.10 (Turbopack)
+[2m[WebServer] [22m- Environments: .env.local
+[2m[WebServer] [22m- Experiments (use with caution):
+[2m[WebServer] [22m  · clientTraceMetadata
+[2m[WebServer] [22m  ⨯ turbopackServerFastRefresh
+[2m[WebServer] [22m
+[2m[WebServer] [22m  Creating an optimized production build ...
+[2m[WebServer] [22m(node:2521) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2526) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m✓ Compiled successfully in 6.9s
+[2m[WebServer] [22m  Running next.config.js provided runAfterProductionCompile ...
+[2m[WebServer] [22m✓ Completed runAfterProductionCompile in 82ms
+[2m[WebServer] [22m  Running TypeScript ...
+[2m[WebServer] [22m  Finished TypeScript in 3.9s ...
+[2m[WebServer] [22m  Collecting page data using 11 workers ...
+[2m[WebServer] [22m(node:2551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2547) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2555) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2557) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2554) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2556) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2548) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[2m[WebServer] [22mIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[2m[WebServer] [22m
+[2m[WebServer] [22mTo prepare for this change:
+[2m[WebServer] [22m- If you want the current behavior, explicitly use 'sslmode=verify-full'
+[2m[WebServer] [22m- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[2m[WebServer] [22m
+[2m[WebServer] [22mSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[2m[WebServer] [22m(node:2547) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[2m[WebServer] [22mIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[2m[WebServer] [22m
+[2m[WebServer] [22mTo prepare for this change:
+[2m[WebServer] [22m- If you want the current behavior, explicitly use 'sslmode=verify-full'
+[2m[WebServer] [22m- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[2m[WebServer] [22m
+[2m[WebServer] [22mSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[2m[WebServer] [22m(node:2550) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[2m[WebServer] [22mIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[2m[WebServer] [22m
+[2m[WebServer] [22mTo prepare for this change:
+[2m[WebServer] [22m- If you want the current behavior, explicitly use 'sslmode=verify-full'
+[2m[WebServer] [22m- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[2m[WebServer] [22m
+[2m[WebServer] [22mSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[2m[WebServer] [22m  Generating static pages using 11 workers (0/48) ...
+[2m[WebServer] [22m(node:2557) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[2m[WebServer] [22mIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[2m[WebServer] [22m
+[2m[WebServer] [22mTo prepare for this change:
+[2m[WebServer] [22m- If you want the current behavior, explicitly use 'sslmode=verify-full'
+[2m[WebServer] [22m- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[2m[WebServer] [22m
+[2m[WebServer] [22mSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+[2m[WebServer] [22m  Generating static pages using 11 workers (12/48) 
+[2m[WebServer] [22m  Generating static pages using 11 workers (24/48) 
+[2m[WebServer] [22m  Generating static pages using 11 workers (36/48) 
+[2m[WebServer] [22m✓ Generating static pages using 11 workers (48/48) in 3.7s
+[2m[WebServer] [22m  Finalizing page optimization ...
+[2m[WebServer] [22m
+[2m[WebServer] [22mRoute (app)
+[2m[WebServer] [22m┌ ○ /_not-found
+[2m[WebServer] [22m├ ● /[locale]
+[2m[WebServer] [22m│ ├ /es
+[2m[WebServer] [22m│ └ /en
+[2m[WebServer] [22m├ ƒ /[locale]/blog
+[2m[WebServer] [22m├ ● /[locale]/blog/[slug]
+[2m[WebServer] [22m│ ├ /es/blog/como-construir-un-programa-de-alimentacion-corporativa
+[2m[WebServer] [22m│ ├ /es/blog/caida-de-las-3pm-pantry-de-oficina
+[2m[WebServer] [22m│ ├ /es/blog/comida-en-la-oficina-y-retencion-de-talento
+[2m[WebServer] [22m│ └ [+3 more paths]
+[2m[WebServer] [22m├ ● /[locale]/blog/authors/[author]
+[2m[WebServer] [22m│ ├ /en/blog/authors/zitrone-operations-team
+[2m[WebServer] [22m│ └ /es/blog/authors/equipo-de-operaciones-zitrone
+[2m[WebServer] [22m├ ƒ /[locale]/blog/category/[category]
+[2m[WebServer] [22m├ ƒ /[locale]/blog/feed.xml
+[2m[WebServer] [22m├ ● /[locale]/blog/reviewers/[reviewer]
+[2m[WebServer] [22m│ ├ /en/blog/reviewers/zitrone-food-safety-and-operations
+[2m[WebServer] [22m│ └ /es/blog/reviewers/seguridad-alimentaria-y-operaciones-zitrone
+[2m[WebServer] [22m├ ● /[locale]/contact
+[2m[WebServer] [22m│ ├ /es/contact
+[2m[WebServer] [22m│ └ /en/contact
+[2m[WebServer] [22m├ ● /[locale]/privacy-notice
+[2m[WebServer] [22m│ ├ /es/privacy-notice
+[2m[WebServer] [22m│ └ /en/privacy-notice
+[2m[WebServer] [22m├ ● /[locale]/services
+[2m[WebServer] [22m│ ├ /es/services
+[2m[WebServer] [22m│ └ /en/services
+[2m[WebServer] [22m├ ● /[locale]/services/[slug]
+[2m[WebServer] [22m│ ├ /en/services/corporate-dining
+[2m[WebServer] [22m│ ├ /en/services/corporate-cafe
+[2m[WebServer] [22m│ ├ /en/services/pantry-restocking
+[2m[WebServer] [22m│ └ [+9 more paths]
+[2m[WebServer] [22m├ ƒ /admin/[[...segments]]
+[2m[WebServer] [22m├ ƒ /api/[...slug]
+[2m[WebServer] [22m├ ƒ /api/contact-request
+[2m[WebServer] [22m├ ƒ /api/leads/export
+[2m[WebServer] [22m├ ○ /design-system
+[2m[WebServer] [22m├ ○ /robots.txt
+[2m[WebServer] [22m└ ○ /sitemap.xml
+[2m[WebServer] [22m
+[2m[WebServer] [22m
+[2m[WebServer] [22mƒ Proxy (Middleware)
+[2m[WebServer] [22m
+[2m[WebServer] [22m○  (Static)   prerendered as static content
+[2m[WebServer] [22m●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+[2m[WebServer] [22mƒ  (Dynamic)  server-rendered on demand
+[2m[WebServer] [22m
+[2m[WebServer] [22m
+[2m[WebServer] [22m> on-it-workspace@0.1.0 start
+[2m[WebServer] [22m> next start --hostname 127.0.0.1 --port 3100
+[2m[WebServer] [22m
+[2m[WebServer] [22m(node:2598) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m▲ Next.js 16.2.10
+[2m[WebServer] [22m- Local:         http://127.0.0.1:3100
+[2m[WebServer] [22m- Network:       http://127.0.0.1:3100
+[2m[WebServer] [22m✓ Ready in 76ms
+
+Running 61 tests using 6 workers
+
+(node:2604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2602) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2603) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2605) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2606) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2601) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2603) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2605) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2602) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2601) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2606) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:2598) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[2m[WebServer] [22mIn the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
+[2m[WebServer] [22m
+[2m[WebServer] [22mTo prepare for this change:
+[2m[WebServer] [22m- If you want the current behavior, explicitly use 'sslmode=verify-full'
+[2m[WebServer] [22m- If you want libpq compatibility now, use 'uselibpqcompat=true&sslmode=require'
+[2m[WebServer] [22m
+[2m[WebServer] [22mSee https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
+  ✓   2 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › blog article has no automatically detectable violations (1.3s)
+  ✓   6 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › service detail has no automatically detectable violations (1.5s)
+  ✓   3 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › services index has no automatically detectable violations (1.5s)
+  ✓   7 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › privacy notice has no automatically detectable violations (717ms)
+  ✓   4 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › home (en) has no automatically detectable violations (2.1s)
+  ✓   1 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › home (es) has no automatically detectable violations (2.2s)
+  ✓  10 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › home (en) exposes one main landmark and one h1 (632ms)
+  ✓  11 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › home (es) exposes one main landmark and one h1 (760ms)
+  ✓  12 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › services index exposes one main landmark and one h1 (782ms)
+  ✓   8 [chromium] › tests/e2e/accessibility.spec.ts:127:3 › axe: WCAG 2.2 AA › home stays clean at 320px, the WCAG reflow width (1.6s)
+  ✓  13 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › service detail exposes one main landmark and one h1 (552ms)
+  ✓   9 [chromium] › tests/e2e/accessibility.spec.ts:140:3 › axe: WCAG 2.2 AA › mobile navigation panel is clean while open (1.8s)
+  ✓  15 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › blog article exposes one main landmark and one h1 (412ms)
+  ✓  16 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › privacy notice exposes one main landmark and one h1 (403ms)
+  ✓   5 [chromium] › tests/e2e/accessibility.spec.ts:114:5 › axe: WCAG 2.2 AA › blog index has no automatically detectable violations (3.9s)
+  ✓  18 [chromium] › tests/e2e/accessibility.spec.ts:181:3 › keyboard › a skip link is the first stop and jumps to main content (890ms)
+  ✓  14 [chromium] › tests/e2e/accessibility.spec.ts:165:5 › structure › blog index exposes one main landmark and one h1 (1.6s)
+  ✓  19 [chromium] › tests/e2e/accessibility.spec.ts:196:3 › keyboard › the services menu opens, closes on Escape and returns focus (1.1s)
+  ✓  17 [chromium] › tests/e2e/accessibility.spec.ts:172:3 › structure › every page declares its language (1.3s)
+  ✓  20 [chromium] › tests/e2e/accessibility.spec.ts:214:3 › keyboard › every control reachable by keyboard shows a visible focus ring (1.1s)
+  ✓  21 [chromium] › tests/e2e/accessibility.spec.ts:258:3 › motion › no element animates when the user asks for reduced motion (1.1s)
+  ✓  22 [chromium] › tests/e2e/consent.spec.ts:25:3 › consent › declares denied defaults for the EEA before anything starts (1.2s)
+  ✓  23 [chromium] › tests/e2e/consent.spec.ts:75:3 › consent › shows the banner to a first-time visitor and records a rejection (1.3s)
+  ✓  25 [chromium] › tests/e2e/consent.spec.ts:116:3 › consent › category choices are honoured independently (1.9s)
+  ✓  24 [chromium] › tests/e2e/consent.spec.ts:102:3 › consent › does not ask again on the next visit, and replays the stored choice (2.4s)
+  ✓  27 [chromium] › tests/e2e/consent.spec.ts:145:3 › consent › the Spanish banner is translated, not falling back to English (1.8s)
+  ✓  30 [chromium] › tests/e2e/contact.spec.ts:125:1 › a 202 (honeypot / not persisted) shows success but counts no conversion (3.7s)
+  ✓  31 [chromium] › tests/e2e/contact.spec.ts:136:1 › an in-flight request cannot be submitted twice (3.2s)
+  ✓  34 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: cafeteria can use the three-step inquiry (1.3s)
+  ✓  29 [chromium] › tests/e2e/contact.spec.ts:53:3 › en: optional details, accessible validation, failure and retry (6.2s)
+  ✓  32 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy yes: only serialize an applicable percentage (5.4s)
+  ✓  33 [chromium] › tests/e2e/contact.spec.ts:165:3 › subsidy tbd: only serialize an applicable percentage (2.4s)
+  ✓  28 [chromium] › tests/e2e/contact.spec.ts:53:3 › es: optional details, accessible validation, failure and retry (7.0s)
+  ✓  35 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: pantry can use the three-step inquiry (1.2s)
+  ✓  36 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: maquinas can use the three-step inquiry (1.3s)
+  ✓  37 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: carritos can use the three-step inquiry (1.3s)
+  ✓  39 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: otro can use the three-step inquiry (1.3s)
+  ✓  40 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: cafeteria can use the three-step inquiry (1.5s)
+  ✓  38 [chromium] › tests/e2e/contact.spec.ts:191:5 › es: catering can use the three-step inquiry (2.3s)
+  ✓  41 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: pantry can use the three-step inquiry (1.6s)
+  ✓  42 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: maquinas can use the three-step inquiry (1.4s)
+  ✓  43 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: carritos can use the three-step inquiry (1.4s)
+  ✓  45 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: otro can use the three-step inquiry (1.6s)
+  ✓  49 [chromium] › tests/e2e/domain-migration.spec.ts:4:1 › known legacy paths resolve to real pages with the correct canonical (378ms)
+  ✓  50 [chromium] › tests/e2e/domain-migration.spec.ts:21:1 › unrecognized legacy services remain missing instead of redirecting to the index (15ms)
+  ✓  44 [chromium] › tests/e2e/contact.spec.ts:191:5 › en: catering can use the three-step inquiry (2.9s)
+  ✓  51 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es home: location hierarchy, reset and keyboard (2.7s)
+  ✓  52 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › es contact: location hierarchy, reset and keyboard (2.7s)
+  ✓  26 [chromium] › tests/e2e/consent.spec.ts:133:3 › consent › the footer link reopens preferences after a decision (16.0s)
+  ✓  48 [chromium] › tests/e2e/contact.spec.ts:276:3 › en: multiple services and individual meal counts survive submission (5.5s)
+  ✓  47 [chromium] › tests/e2e/contact.spec.ts:276:3 › es: multiple services and individual meal counts survive submission (6.9s)
+  ✓  46 [chromium] › tests/e2e/contact.spec.ts:249:1 › switching from detailed dining to coffee excludes hidden dining answers (7.7s)
+  ✓  54 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en contact: location hierarchy, reset and keyboard (3.1s)
+  ✓  53 [chromium] › tests/e2e/inquiry-location.spec.ts:9:5 › en home: location hierarchy, reset and keyboard (3.3s)
+  ✓  57 [chromium] › tests/e2e/smoke.spec.ts:18:3 › localized marketing shell › renders the English home page (903ms)
+  ✓  60 [chromium] › tests/e2e/smoke.spec.ts:73:3 › blog smoke › blog article renders recommended content (547ms)
+  ✓  58 [chromium] › tests/e2e/smoke.spec.ts:33:3 › localized marketing shell › contact navigation resolves back to the localized home (982ms)
+  ✓  59 [chromium] › tests/e2e/smoke.spec.ts:45:3 › localized marketing shell › privacy navigation resolves back to the localized home (915ms)
+  ✓  61 [chromium] › tests/e2e/smoke.spec.ts:59:3 › blog smoke › blog index renders and keeps localized shell links (1.3s)
+  ✓  56 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › en: home submits complete brief and retains it after failure (5.0s)
+  ✓  55 [chromium] › tests/e2e/profiler-submission.spec.ts:7:3 › es: home submits complete brief and retains it after failure (5.7s)
+
+  61 passed (47.2s)
